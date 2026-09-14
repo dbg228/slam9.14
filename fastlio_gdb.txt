@@ -1,0 +1,6 @@
+BFD: warning: /home/zkam/test_nav/install/localization/lib/localization/fastlio_mapping has a section extending past end of file
+"/home/zkam/test_nav/install/localization/lib/localization/fastlio_mapping": not in executable format: file format not recognized
+No executable file specified.
+Use the "file" or "exec-file" command.
+No stack.
+No shared libraries loaded at this time.

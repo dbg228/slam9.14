@@ -1,0 +1,15 @@
+# ROS 2 build and runtime products
+build/
+install/
+installbackup/
+log/
+__pycache__/
+*.py[cod]
+
+# Raw and derived mapping data can be regenerated or backed up separately.
+robot_data/maps/data/
+robot_data/maps/pcd_to_2d_debug/
+robot_data/maps/*.png
+
+# Runtime UI selections
+robot_data/inspection_route_selection.txt

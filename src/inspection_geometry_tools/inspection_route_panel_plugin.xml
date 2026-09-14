@@ -1,0 +1,7 @@
+<library path="inspection_route_panel">
+  <class name="inspection_geometry_tools/InspectionRoutePanel"
+         type="inspection_geometry_tools::InspectionRoutePanel"
+         base_class_type="rviz_common::Panel">
+    <description>Save, load, start, cancel and inspect distance for an inspection route.</description>
+  </class>
+</library>

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+FAST_LIO_PID=0
+
+# 清理后台进程
+cleanup() {
+    [ $FAST_LIO_PID -ne 0 ] && kill $FAST_LIO_PID 2>/dev/null || true
+    pkill -f "fast_lio mapping.launch.py" 2>/dev/null || true
+    echo -e "\n进程已清理,脚本退出"
+    exit 0
+}
+
+# 捕获Ctrl+C信号
+trap cleanup SIGINT
+
+cd /home/zkam/test_nav
+source install/setup.bash
+ros2 launch fast_lio mapping.launch.py &
+sleep 2
+cd /home/zkam/test_nav
+source install/setup.bash
+ros2 launch fast_lio pgo.launch.py
+
+cleanup

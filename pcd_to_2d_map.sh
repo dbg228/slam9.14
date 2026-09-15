@@ -31,9 +31,20 @@ echo "[pcd_to_2d_map] output: ${OUTPUT_PREFIX}.pgm / ${OUTPUT_PREFIX}.yaml"
     --min-z-bins-per-cell 2 \
     --min-z-span-per-cell 0.08 \
     --vertical-keep-dense-cells 6 \
+    --enable-multi-height-evidence true \
+    --height-layers=-0.15:0.05,0.05:0.35,0.35:0.60 \
+    --multi-height-min-layers-per-cell 2 \
+    --multi-height-min-points-per-layer 1 \
+    --enable-line-bridge true \
+    --line-vote-threshold 28 \
+    --line-min-length-m 1.5 \
+    --line-max-gap-m 0.40 \
+    --line-min-support-ratio 0.65 \
     --enable-component-filter true \
     --connectivity 8 \
     --min-component-size 8 \
+    --enable-morphological-close true \
+    --closing-radius-cells 1 \
     --inflate-cells 0
 
 echo "[pcd_to_2d_map] done:"

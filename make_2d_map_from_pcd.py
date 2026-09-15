@@ -12,7 +12,8 @@ Nav2 occupancy map:
   3. PCL RadiusOutlierRemoval-style light outlier filter
   4. direct XY projection
   5. per-cell point-count threshold
-  6. 8-neighbour connected component cleanup
+  6. small-gap morphological closing (wall continuity)
+  7. 8-neighbour connected component cleanup
 
   robot_data/maps/map.pgm
   robot_data/maps/map.yaml
@@ -33,7 +34,9 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 import numpy as np
+import cv2
 from PIL import Image
+from scipy.ndimage import binary_closing
 from scipy.spatial import cKDTree
 
 
@@ -141,6 +144,32 @@ def dilate(mask: np.ndarray, radius: int) -> np.ndarray:
     return out
 
 
+def disk_structure(radius: int) -> np.ndarray:
+    """Return a circular grid kernel with a radius measured in map cells."""
+    if radius < 1:
+        return np.ones((1, 1), dtype=bool)
+    ys, xs = np.ogrid[-radius:radius + 1, -radius:radius + 1]
+    return (xs * xs + ys * ys) <= radius * radius
+
+
+def close_small_gaps(mask: np.ndarray, radius: int, resolution: float) -> np.ndarray:
+    """Bridge small breaks and fill small holes without inflating all walls.
+
+    Closing is dilation followed by erosion with the same circular kernel.  It
+    is deliberately different from ``--inflate-cells``: occupied walls retain
+    approximately their original thickness, while gaps smaller than the kernel
+    are connected.
+    """
+    if radius <= 0:
+        return mask
+    closed = binary_closing(mask, structure=disk_structure(radius), border_value=0)
+    print(
+        f"[closing] radius_cells={radius}, radius_m={radius * resolution:.3f}, "
+        f"added_cells={int(closed.sum()) - int(mask.sum())}"
+    )
+    return closed
+
+
 def voxel_grid_filter(points: np.ndarray, leaf_size: float) -> np.ndarray:
     """PCL VoxelGrid-style centroid downsample."""
     if len(points) == 0 or leaf_size <= 0:
@@ -197,6 +226,122 @@ def project_to_counts(
     counts = np.zeros((height, width), dtype=np.uint16)
     np.add.at(counts, (rows, cols), 1)
     return counts, min_x, min_y
+
+
+def project_to_existing_grid_counts(
+    points: np.ndarray,
+    resolution: float,
+    origin_x: float,
+    origin_y: float,
+    shape: Tuple[int, int],
+) -> np.ndarray:
+    """Project points into an existing map grid without changing its origin."""
+    height, width = shape
+    counts = np.zeros(shape, dtype=np.uint16)
+    if len(points) == 0:
+        return counts
+    cols = np.floor((points[:, 0] - origin_x) / resolution).astype(np.int64)
+    rows_from_bottom = np.floor((points[:, 1] - origin_y) / resolution).astype(np.int64)
+    valid = (cols >= 0) & (cols < width) & (rows_from_bottom >= 0) & (rows_from_bottom < height)
+    rows = height - 1 - rows_from_bottom[valid]
+    np.add.at(counts, (rows, cols[valid]), 1)
+    return counts
+
+
+def parse_height_layers(value: str) -> List[Tuple[float, float]]:
+    """Parse ``low:high,low:high`` height-layer syntax."""
+    layers: List[Tuple[float, float]] = []
+    for item in value.split(","):
+        item = item.strip()
+        if not item:
+            continue
+        try:
+            low_text, high_text = item.split(":", maxsplit=1)
+            low, high = float(low_text), float(high_text)
+        except ValueError as exc:
+            raise ValueError(f"Invalid height layer {item!r}; expected low:high") from exc
+        if high <= low:
+            raise ValueError(f"Height layer upper bound must exceed lower bound: {item!r}")
+        layers.append((low, high))
+    if not layers:
+        raise ValueError("At least one height layer is required")
+    return layers
+
+
+def multi_height_wall_evidence(
+    points: np.ndarray,
+    layers: List[Tuple[float, float]],
+    min_layers_per_cell: int,
+    min_points_per_layer: int,
+    resolution: float,
+    origin_x: float,
+    origin_y: float,
+    shape: Tuple[int, int],
+) -> np.ndarray:
+    """Return cells supported by endpoints from several independent heights.
+
+    A floor speckle or a table edge normally appears in only one horizontal
+    slice. A wall normally has endpoints in more than one slice. This makes
+    high/low point evidence useful without projecting every high object as a
+    2-D obstacle.
+    """
+    support = np.zeros(shape, dtype=np.uint8)
+    for low, high in layers:
+        layer_points = points[(points[:, 2] >= low) & (points[:, 2] <= high)]
+        counts = project_to_existing_grid_counts(
+            layer_points, resolution, origin_x, origin_y, shape)
+        support += (counts >= max(1, min_points_per_layer)).astype(np.uint8)
+    evidence = support >= max(1, min_layers_per_cell)
+    print(
+        f"[multi-height] layers={','.join(f'{low:.2f}:{high:.2f}' for low, high in layers)}, "
+        f"min_layers={min_layers_per_cell}, evidence_cells={int(evidence.sum())}"
+    )
+    return evidence
+
+
+def bridge_collinear_wall_gaps(
+    evidence_mask: np.ndarray,
+    output_mask: np.ndarray,
+    resolution: float,
+    vote_threshold: int,
+    min_length_m: float,
+    max_gap_m: float,
+    min_support_ratio: float,
+) -> Tuple[np.ndarray, int]:
+    """Bridge only short gaps in long, evidence-backed Hough line segments."""
+    if min_length_m <= 0.0 or max_gap_m <= 0.0:
+        return output_mask, 0
+    minimum_length = max(2, int(round(min_length_m / resolution)))
+    maximum_gap = max(1, int(round(max_gap_m / resolution)))
+    source = (evidence_mask.astype(np.uint8) * 255)
+    lines = cv2.HoughLinesP(
+        source,
+        rho=1,
+        theta=np.pi / 180.0,
+        threshold=max(1, vote_threshold),
+        minLineLength=minimum_length,
+        maxLineGap=maximum_gap,
+    )
+    if lines is None:
+        print("[line-bridge] no eligible Hough line segments")
+        return output_mask, 0
+
+    bridged = output_mask.copy()
+    accepted = 0
+    for x1, y1, x2, y2 in lines.reshape(-1, 4):
+        line = np.zeros(evidence_mask.shape, dtype=np.uint8)
+        cv2.line(line, (int(x1), int(y1)), (int(x2), int(y2)), color=1, thickness=1)
+        pixels = line.astype(bool)
+        if not pixels.any() or float(evidence_mask[pixels].mean()) < min_support_ratio:
+            continue
+        bridged[pixels] = True
+        accepted += 1
+    added = int(bridged.sum()) - int(output_mask.sum())
+    print(
+        f"[line-bridge] accepted_lines={accepted}, min_length_m={min_length_m:.2f}, "
+        f"max_gap_m={max_gap_m:.2f}, min_support={min_support_ratio:.2f}, added_cells={added}"
+    )
+    return bridged, accepted
 
 
 def vertical_structure_filter(
@@ -476,6 +621,52 @@ def main() -> None:
         default=6,
         help="always keep cells with at least this many points even if z span is small",
     )
+    parser.add_argument(
+        "--enable-multi-height-evidence",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=True,
+        help="add only cells supported by endpoints from multiple height layers",
+    )
+    parser.add_argument(
+        "--height-layers",
+        default="-0.15:0.05,0.05:0.35,0.35:0.60",
+        help="comma-separated low:high endpoint layers for multi-height wall evidence",
+    )
+    parser.add_argument(
+        "--multi-height-min-layers-per-cell",
+        type=int,
+        default=2,
+        help="number of independent height layers required to add a cell",
+    )
+    parser.add_argument(
+        "--multi-height-min-points-per-layer",
+        type=int,
+        default=1,
+        help="minimum endpoints in one layer before it contributes support",
+    )
+    parser.add_argument(
+        "--enable-line-bridge",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=True,
+        help="use Hough line segments to bridge short, collinear wall gaps",
+    )
+    parser.add_argument("--line-vote-threshold", type=int, default=28, help="minimum Hough votes for a wall line")
+    parser.add_argument(
+        "--line-min-length-m", type=float, default=1.5,
+        help="minimum evidence-backed line length in meters",
+    )
+    parser.add_argument(
+        "--line-max-gap-m", type=float, default=0.40,
+        help="maximum collinear gap in meters that may be bridged",
+    )
+    parser.add_argument(
+        "--line-min-support-ratio", type=float, default=0.65,
+        help="minimum pre-existing wall evidence fraction along a fitted line",
+    )
     parser.add_argument("--connectivity", type=int, choices=(4, 8), default=8, help="connected component connectivity")
     parser.add_argument(
         "--min-component-size",
@@ -487,6 +678,20 @@ def main() -> None:
     )
     parser.add_argument("--padding", type=float, default=1.0, help="free border around point cloud, meters")
     parser.add_argument("--inflate-cells", type=int, default=0, help="optional occupied-cell dilation radius; default disabled")
+    parser.add_argument(
+        "--enable-morphological-close",
+        type=str2bool,
+        nargs="?",
+        const=True,
+        default=True,
+        help="bridge small occupied-wall gaps with a closing operation",
+    )
+    parser.add_argument(
+        "--closing-radius-cells",
+        type=int,
+        default=1,
+        help="closing kernel radius in map cells; 1 equals 5 cm at 5 cm resolution",
+    )
     parser.add_argument("--debug-dir", default="", help="directory for intermediate PCD/PNG debug outputs")
     parser.add_argument(
         "--enable-debug-output",
@@ -587,14 +792,68 @@ def main() -> None:
     if args.enable_debug_output:
         write_debug_png(debug_dir / "05b_vertical_filtered.png", vertical_filtered)
 
+    if args.enable_multi_height_evidence:
+        layers = parse_height_layers(args.height_layers)
+        multi_height = multi_height_wall_evidence(
+            xyz,
+            layers,
+            args.multi_height_min_layers_per_cell,
+            args.multi_height_min_points_per_layer,
+            args.map_resolution,
+            min_x,
+            min_y,
+            vertical_filtered.shape,
+        )
+        line_evidence = vertical_filtered | multi_height
+        print(
+            f"[multi-height] occupied_before={int(vertical_filtered.sum())}, "
+            f"line_evidence_after={int(line_evidence.sum())}"
+        )
+    else:
+        line_evidence = vertical_filtered
+        print("[multi-height] disabled")
+
+    if args.enable_debug_output:
+        write_debug_png(debug_dir / "05c_multi_height_evidence.png", line_evidence)
+
+    if args.enable_line_bridge:
+        line_bridged, accepted_lines = bridge_collinear_wall_gaps(
+            line_evidence,
+            vertical_filtered,
+            args.map_resolution,
+            args.line_vote_threshold,
+            args.line_min_length_m,
+            args.line_max_gap_m,
+            args.line_min_support_ratio,
+        )
+    else:
+        line_bridged = vertical_filtered
+        accepted_lines = 0
+        print("[line-bridge] disabled")
+
+    if args.enable_debug_output:
+        write_debug_png(debug_dir / "05d_line_bridged.png", line_bridged)
+
+    if args.enable_morphological_close:
+        before_closing = int(line_bridged.sum())
+        continuity_filtered = close_small_gaps(
+            line_bridged, args.closing_radius_cells, args.map_resolution)
+        print(f"[closing] occupied_before={before_closing}, occupied_after={int(continuity_filtered.sum())}")
+    else:
+        continuity_filtered = vertical_filtered
+        print("[closing] disabled")
+
+    if args.enable_debug_output:
+        write_debug_png(debug_dir / "05e_closed.png", continuity_filtered)
+
     if args.enable_component_filter:
         occupied, total_components, removed_components, removed_component_cells = connected_component_filter(
-            vertical_filtered,
+            continuity_filtered,
             args.min_component_size,
             args.connectivity,
         )
     else:
-        occupied = vertical_filtered
+        occupied = continuity_filtered
         total_components = 0
         removed_components = 0
         removed_component_cells = 0
@@ -613,6 +872,7 @@ def main() -> None:
     occ_ratio = float(occupied.mean())
     print(f"[stats] component_total_count={total_components}")
     print(f"[stats] vertical_removed_cells={vertical_removed}")
+    print(f"[stats] hough_line_count={accepted_lines}")
     print(f"[stats] component_removed_count={removed_components}")
     print(f"[stats] component_removed_cells={removed_component_cells}")
     print(f"[stats] final_occupied_cells={int(occupied.sum())} ({occ_ratio:.3%})")

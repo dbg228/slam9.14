@@ -1,5 +1,10 @@
 #include <chrono>
+#include <cerrno>
 #include <cmath>
+#include <cstring>
+#include <ctime>
+#include <filesystem>
+#include <fcntl.h>
 #include <functional>
 #include <fstream>
 #include <iomanip>
@@ -7,12 +12,16 @@
 #include <memory>
 #include <optional>
 #include <sstream>
+#include <stdexcept>
 #include <string>
+#include <sys/file.h>
+#include <unistd.h>
 #include <vector>
 
 #include "geometry_msgs/msg/point_stamped.hpp"
 #include "nav2_msgs/action/compute_path_to_pose.hpp"
 #include "nav2_msgs/action/follow_path.hpp"
+#include "nav_msgs/msg/odometry.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
@@ -34,6 +43,22 @@ public:
   InspectionPathExecutorNode()
   : Node("inspection_path_executor_node")
   {
+    // A second executor has the same ROS name, topics and FollowPath action.
+    // ROS 2 permits that situation, but the two instances can preempt each
+    // other's goals without an obvious RViz error.  Hold an OS lock for the
+    // node lifetime so a duplicate launch fails immediately and visibly.
+    executor_lock_fd_ = open("/tmp/inspection_path_executor.lock", O_CREAT | O_RDWR, 0644);
+    if (executor_lock_fd_ < 0 || flock(executor_lock_fd_, LOCK_EX | LOCK_NB) != 0) {
+      const std::string reason = executor_lock_fd_ < 0 ? std::strerror(errno) : "another executor is running";
+      if (executor_lock_fd_ >= 0) {
+        close(executor_lock_fd_);
+        executor_lock_fd_ = -1;
+      }
+      RCLCPP_FATAL(get_logger(),
+        "Only one inspection_path_executor_node may run (%s). Stop the older "
+        "inspection_geometry launch before starting another one.", reason.c_str());
+      throw std::runtime_error("inspection path executor is already running");
+    }
     frame_id_ = declare_parameter<std::string>("frame_id", "map");
     follow_path_action_ = declare_parameter<std::string>("follow_path_action", "/follow_path");
     // The approach and the purple segment are concatenated into ONE fixed
@@ -46,6 +71,14 @@ public:
     goal_checker_id_ = declare_parameter<std::string>("goal_checker_id", "goal_checker");
     route_selection_file_ = declare_parameter<std::string>(
       "route_selection_file", "/home/zkam/test_nav/robot_data/inspection_route_selection.txt");
+    // /Odometry is only the sampling clock.  The localization binary labels
+    // its raw LiDAR pose as base_link, while Nav2 drives the corrected TF
+    // base_link.  Record that TF so reference and actual paths use one point.
+    tracking_odom_topic_ = declare_parameter<std::string>("tracking_odom_topic", "/Odometry");
+    tracking_base_frame_ = declare_parameter<std::string>("tracking_base_frame", "base_link");
+    experiment_output_dir_ = declare_parameter<std::string>(
+      "experiment_output_dir", "/home/zkam/test_nav/robot_data/experiments");
+    experiment_label_ = declare_parameter<std::string>("experiment_label", "mppi");
 
     path_sub_ = create_subscription<nav_msgs::msg::Path>(
       "/inspection_path", rclcpp::QoS(1).reliable().transient_local(),
@@ -69,6 +102,13 @@ public:
       "/inspection_route_markers", rclcpp::QoS(1).reliable().transient_local());
     status_pub_ = create_publisher<std_msgs::msg::String>(
       "/inspection_route/status", rclcpp::QoS(1).reliable().transient_local());
+    reference_path_pub_ = create_publisher<nav_msgs::msg::Path>(
+      "/inspection_route/reference_path", rclcpp::QoS(1).reliable().transient_local());
+    actual_path_pub_ = create_publisher<nav_msgs::msg::Path>(
+      "/inspection_route/actual_path", rclcpp::QoS(1).reliable().transient_local());
+    tracking_odom_sub_ = create_subscription<nav_msgs::msg::Odometry>(
+      tracking_odom_topic_, rclcpp::QoS(100),
+      std::bind(&InspectionPathExecutorNode::trackingOdomCallback, this, std::placeholders::_1));
     follow_service_ = create_service<std_srvs::srv::Trigger>(
       "/inspection_route/follow",
       std::bind(&InspectionPathExecutorNode::follow, this, std::placeholders::_1, std::placeholders::_2));
@@ -88,6 +128,14 @@ public:
     status_timer_ = create_wall_timer(std::chrono::milliseconds(250),
       std::bind(&InspectionPathExecutorNode::publishStatus, this));
     publishStatus();
+  }
+
+  ~InspectionPathExecutorNode() override
+  {
+    if (executor_lock_fd_ >= 0) {
+      flock(executor_lock_fd_, LOCK_UN);
+      close(executor_lock_fd_);
+    }
   }
 
 private:
@@ -388,6 +436,300 @@ private:
     status_pub_->publish(status);
   }
 
+  struct TrackingSample
+  {
+    double time_s{};
+    double x{};
+    double y{};
+    double yaw{};
+    double vx{};
+    double vy{};
+    double wz{};
+  };
+
+  struct PathProjection
+  {
+    double distance{std::numeric_limits<double>::infinity()};
+    double along_track{};
+    size_t segment{};
+  };
+
+  static double yawFromQuaternion(const geometry_msgs::msg::Quaternion & q)
+  {
+    return std::atan2(2.0 * (q.w * q.z + q.x * q.y),
+      1.0 - 2.0 * (q.y * q.y + q.z * q.z));
+  }
+
+  static PathProjection projectToPath(const nav_msgs::msg::Path & path, double x, double y)
+  {
+    PathProjection best;
+    double cumulative = 0.0;
+    for (size_t index = 1U; index < path.poses.size(); ++index) {
+      const auto & a = path.poses[index - 1U].pose.position;
+      const auto & b = path.poses[index].pose.position;
+      const double dx = b.x - a.x;
+      const double dy = b.y - a.y;
+      const double length = std::hypot(dx, dy);
+      if (length < 1e-6) {
+        continue;
+      }
+      const double ratio = std::clamp(((x - a.x) * dx + (y - a.y) * dy) / (length * length), 0.0, 1.0);
+      const double error = std::hypot(x - (a.x + ratio * dx), y - (a.y + ratio * dy));
+      if (error < best.distance) {
+        best.distance = error;
+        best.along_track = cumulative + ratio * length;
+        best.segment = index - 1U;
+      }
+      cumulative += length;
+    }
+    return best;
+  }
+
+  static std::string timestampForFile()
+  {
+    const auto now = std::chrono::system_clock::now();
+    const std::time_t raw_time = std::chrono::system_clock::to_time_t(now);
+    std::tm local_time{};
+    localtime_r(&raw_time, &local_time);
+    std::ostringstream text;
+    text << std::put_time(&local_time, "%Y%m%d_%H%M%S");
+    return text.str();
+  }
+
+  void trackingOdomCallback(const nav_msgs::msg::Odometry::SharedPtr)
+  {
+    if (!recording_) {
+      return;
+    }
+    geometry_msgs::msg::TransformStamped map_to_base;
+    try {
+      map_to_base = tf_buffer_->lookupTransform(frame_id_, tracking_base_frame_, tf2::TimePointZero);
+    } catch (const tf2::TransformException & exception) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 2000,
+        "Tracking sample skipped: cannot transform %s to %s: %s",
+        tracking_base_frame_.c_str(), frame_id_.c_str(), exception.what());
+      return;
+    }
+    const auto sample_stamp = now();
+    TrackingSample sample;
+    sample.time_s = sample_stamp.seconds() - experiment_start_stamp_.seconds();
+    sample.x = map_to_base.transform.translation.x;
+    sample.y = map_to_base.transform.translation.y;
+    sample.yaw = yawFromQuaternion(map_to_base.transform.rotation);
+    if (!tracking_samples_.empty() && sample.time_s <= tracking_samples_.back().time_s) {
+      return;
+    }
+    if (!tracking_samples_.empty()) {
+      const auto & previous = tracking_samples_.back();
+      const double delta_time = sample.time_s - previous.time_s;
+      if (delta_time > 1e-4) {
+        sample.vx = (sample.x - previous.x) / delta_time;
+        sample.vy = (sample.y - previous.y) / delta_time;
+        sample.wz = std::atan2(std::sin(sample.yaw - previous.yaw),
+          std::cos(sample.yaw - previous.yaw)) / delta_time;
+      }
+    }
+    tracking_samples_.push_back(sample);
+    geometry_msgs::msg::PoseStamped pose;
+    pose.header.stamp = sample_stamp;
+    pose.header.frame_id = frame_id_;
+    pose.pose.position.x = sample.x;
+    pose.pose.position.y = sample.y;
+    pose.pose.position.z = map_to_base.transform.translation.z;
+    pose.pose.orientation = map_to_base.transform.rotation;
+    actual_path_.header = pose.header;
+    actual_path_.header.frame_id = frame_id_;
+    actual_path_.poses.push_back(pose);
+    actual_path_pub_->publish(actual_path_);
+  }
+
+  void beginExperiment(const nav_msgs::msg::Path & reference)
+  {
+    tracking_reference_ = reference;
+    tracking_reference_.header.frame_id = frame_id_;
+    tracking_samples_.clear();
+    actual_path_.poses.clear();
+    actual_path_.header.frame_id = frame_id_;
+    experiment_start_stamp_ = now();
+    recording_ = true;
+    reference_path_pub_->publish(tracking_reference_);
+    RCLCPP_INFO(get_logger(), "Tracking experiment started: label=%s, reference=%.2f m.",
+      experiment_label_.c_str(), pathLength(tracking_reference_));
+  }
+
+  static void writeTimeSeriesSvg(const std::filesystem::path & file,
+    const std::string & title, const std::string & y_label, const std::string & color,
+    const std::vector<std::pair<double, double>> & values, const std::string & result)
+  {
+    std::ofstream output(file);
+    output << std::fixed << std::setprecision(3)
+      << "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1120\" height=\"860\" viewBox=\"0 0 1120 860\">\n"
+      << "<rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n"
+      << "<text x=\"100\" y=\"42\" font-family=\"sans-serif\" font-size=\"24\">" << title << "</text>\n"
+      << "<text x=\"100\" y=\"70\" font-family=\"sans-serif\" font-size=\"16\">result=" << result << "</text>\n";
+    if (values.empty()) {
+      output << "<text x=\"100\" y=\"130\" font-family=\"sans-serif\" font-size=\"20\" fill=\"#d32f2f\">"
+             << "No /Odometry samples were received during this trial.</text>\n</svg>\n";
+      return;
+    }
+    const double plot_left = 110.0;
+    const double plot_top = 110.0;
+    const double plot_width = 900.0;
+    const double plot_height = 620.0;
+    const double max_time = std::max(1.0, values.back().first);
+    double max_value = 0.01;
+    for (const auto & value : values) {
+      max_value = std::max(max_value, value.second);
+    }
+    max_value *= 1.10;
+    const auto x = [plot_left, plot_width, max_time](double value) {
+        return plot_left + value / max_time * plot_width;
+      };
+    const auto y = [plot_top, plot_height, max_value](double value) {
+        return plot_top + plot_height - value / max_value * plot_height;
+      };
+    output << "<line x1=\"" << plot_left << "\" y1=\"" << plot_top + plot_height
+           << "\" x2=\"" << plot_left + plot_width << "\" y2=\"" << plot_top + plot_height
+           << "\" stroke=\"#333\" stroke-width=\"2\"/>\n"
+           << "<line x1=\"" << plot_left << "\" y1=\"" << plot_top << "\" x2=\"" << plot_left
+           << "\" y2=\"" << plot_top + plot_height << "\" stroke=\"#333\" stroke-width=\"2\"/>\n"
+           << "<polyline fill=\"none\" stroke=\"" << color << "\" stroke-width=\"3\" points=\"";
+    for (const auto & value : values) {
+      output << x(value.first) << ',' << y(value.second) << ' ';
+    }
+    output << "\"/>\n"
+           << "<text x=\"" << plot_left + plot_width - 140.0 << "\" y=\"" << plot_top + plot_height + 42.0
+           << "\" font-family=\"sans-serif\" font-size=\"18\">time (s), max=" << max_time << "</text>\n"
+           << "<text x=\"" << plot_left << "\" y=\"" << plot_top - 12.0
+           << "\" font-family=\"sans-serif\" font-size=\"18\">" << y_label << ", max=" << max_value / 1.10
+           << "</text>\n</svg>\n";
+  }
+
+  void exportExperiment(const std::string & result)
+  {
+    if (!recording_) {
+      return;
+    }
+    recording_ = false;
+    if (tracking_reference_.poses.size() < 2U) {
+      RCLCPP_WARN(get_logger(), "Tracking experiment has no reference path; nothing exported.");
+      return;
+    }
+    const std::filesystem::path directory = std::filesystem::path(experiment_output_dir_) /
+      (timestampForFile() + "_" + experiment_label_);
+    std::filesystem::create_directories(directory);
+    const double reference_length = pathLength(tracking_reference_);
+    const bool has_samples = !tracking_samples_.empty();
+    const double unavailable = std::numeric_limits<double>::quiet_NaN();
+    double actual_length = 0.0;
+    double absolute_sum = 0.0;
+    double squared_sum = 0.0;
+    double maximum_error = 0.0;
+    std::vector<PathProjection> projections;
+    projections.reserve(tracking_samples_.size());
+    for (size_t index = 0U; index < tracking_samples_.size(); ++index) {
+      const auto & sample = tracking_samples_[index];
+      const auto projection = projectToPath(tracking_reference_, sample.x, sample.y);
+      projections.push_back(projection);
+      absolute_sum += projection.distance;
+      squared_sum += projection.distance * projection.distance;
+      maximum_error = std::max(maximum_error, projection.distance);
+      if (index > 0U) {
+        actual_length += std::hypot(sample.x - tracking_samples_[index - 1U].x,
+          sample.y - tracking_samples_[index - 1U].y);
+      }
+    }
+    const double sample_count = static_cast<double>(tracking_samples_.size());
+    const double mae = has_samples ? absolute_sum / sample_count : unavailable;
+    const double rmse = has_samples ? std::sqrt(squared_sum / sample_count) : unavailable;
+    const double duration = has_samples ? tracking_samples_.back().time_s : 0.0;
+    const double final_error = has_samples ? projections.back().distance : unavailable;
+
+    // SVG is a vector figure: it can be inserted into a paper directly or
+    // converted to PNG/PDF later without losing line quality.
+    double min_x = std::numeric_limits<double>::infinity();
+    double max_x = -std::numeric_limits<double>::infinity();
+    double min_y = std::numeric_limits<double>::infinity();
+    double max_y = -std::numeric_limits<double>::infinity();
+    const auto expand_bounds = [&min_x, &max_x, &min_y, &max_y](double x, double y) {
+        min_x = std::min(min_x, x); max_x = std::max(max_x, x);
+        min_y = std::min(min_y, y); max_y = std::max(max_y, y);
+      };
+    for (const auto & pose : tracking_reference_.poses) {
+      expand_bounds(pose.pose.position.x, pose.pose.position.y);
+    }
+    for (const auto & sample : tracking_samples_) {
+      expand_bounds(sample.x, sample.y);
+    }
+    const double border = 0.5;
+    min_x -= border; max_x += border; min_y -= border; max_y += border;
+    const double plot_width = 920.0;
+    const double plot_height = 680.0;
+    const double scale = std::min(plot_width / std::max(0.1, max_x - min_x),
+      plot_height / std::max(0.1, max_y - min_y));
+    const double offset_x = 100.0 + 0.5 * (plot_width - (max_x - min_x) * scale);
+    const double offset_y = 110.0 + 0.5 * (plot_height - (max_y - min_y) * scale);
+    const auto svg_x = [min_x, scale, offset_x](double x) {return offset_x + (x - min_x) * scale;};
+    const auto svg_y = [max_y, scale, offset_y](double y) {return offset_y + (max_y - y) * scale;};
+    std::ofstream figure_file(directory / "trajectory.svg");
+    figure_file << std::fixed << std::setprecision(2)
+      << "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1120\" height=\"860\" viewBox=\"0 0 1120 860\">\n"
+      << "<rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n"
+      << "<text x=\"100\" y=\"42\" font-family=\"sans-serif\" font-size=\"24\">Tracking experiment: "
+      << experiment_label_ << " (" << controller_id_ << ")</text>\n"
+      << "<text x=\"100\" y=\"70\" font-family=\"sans-serif\" font-size=\"16\">"
+      << "result=" << result << ", RMSE=" << rmse << " m, MAE=" << mae << " m, max=" << maximum_error
+      << " m, final=" << final_error << " m, duration=" << duration << " s, ref=" << reference_length
+      << " m, actual=" << actual_length << " m</text>\n";
+    const auto write_polyline = [&figure_file](const char * color, double width, const auto & points) {
+        figure_file << "<polyline fill=\"none\" stroke=\"" << color << "\" stroke-width=\"" << width
+                    << "\" points=\"";
+        for (const auto & point : points) {
+          figure_file << point.first << ',' << point.second << ' ';
+        }
+        figure_file << "\"/>\n";
+      };
+    std::vector<std::pair<double, double>> reference_points;
+    std::vector<std::pair<double, double>> actual_points;
+    for (const auto & pose : tracking_reference_.poses) {
+      reference_points.emplace_back(svg_x(pose.pose.position.x), svg_y(pose.pose.position.y));
+    }
+    for (const auto & sample : tracking_samples_) {
+      actual_points.emplace_back(svg_x(sample.x), svg_y(sample.y));
+    }
+    write_polyline("#bf00bf", 4.0, reference_points);
+    write_polyline("#e53935", 2.5, actual_points);
+    figure_file << "<circle cx=\"" << reference_points.front().first << "\" cy=\""
+                << reference_points.front().second << "\" r=\"6\" fill=\"#18a558\"/>\n"
+                << "<circle cx=\"" << reference_points.back().first << "\" cy=\""
+                << reference_points.back().second << "\" r=\"6\" fill=\"#d32f2f\"/>\n"
+                << "<text x=\"100\" y=\"825\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#bf00bf\">Purple: reference FollowPath</text>\n"
+                << "<text x=\"400\" y=\"825\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#e53935\">Red: estimated robot trajectory</text>\n"
+                << "</svg>\n";
+    std::vector<std::pair<double, double>> error_values;
+    std::vector<std::pair<double, double>> speed_values;
+    error_values.reserve(tracking_samples_.size());
+    speed_values.reserve(tracking_samples_.size());
+    for (size_t index = 0U; index < tracking_samples_.size(); ++index) {
+      const auto & sample = tracking_samples_[index];
+      error_values.emplace_back(sample.time_s, projections[index].distance);
+      speed_values.emplace_back(sample.time_s, std::hypot(sample.vx, sample.vy));
+    }
+    writeTimeSeriesSvg(directory / "cross_track_error.svg",
+      "Cross-track error: " + experiment_label_, "error (m)", "#e53935", error_values, result);
+    writeTimeSeriesSvg(directory / "speed_profile.svg",
+      "Estimated speed: " + experiment_label_, "speed (m/s)", "#1976d2", speed_values, result);
+    if (has_samples) {
+      RCLCPP_INFO(get_logger(),
+        "Tracking experiment exported: %s (result=%s, RMSE=%.3f m, MAE=%.3f m, max=%.3f m).",
+        directory.c_str(), result.c_str(), rmse, mae, maximum_error);
+    } else {
+      RCLCPP_WARN(get_logger(),
+        "Tracking experiment exported without odometry samples: %s (result=%s).",
+        directory.c_str(), result.c_str());
+    }
+  }
+
   void sendFollowPath(const nav_msgs::msg::Path & route)
   {
     FollowPath::Goal goal;
@@ -395,12 +737,13 @@ private:
     goal.controller_id = controller_id_;
     goal.goal_checker_id = goal_checker_id_;
     rclcpp_action::Client<FollowPath>::SendGoalOptions options;
-    options.goal_response_callback = [this](GoalHandleFollowPath::SharedPtr goal_handle) {
+    options.goal_response_callback = [this, route](GoalHandleFollowPath::SharedPtr goal_handle) {
         if (!goal_handle) {
           RCLCPP_ERROR(get_logger(), "Nav2 rejected the inspection FollowPath goal.");
           return;
         }
         active_goal_ = goal_handle;
+        beginExperiment(route);
         RCLCPP_INFO(get_logger(), "Nav2 accepted %zu-pose inspection route.", selected_route_size_);
       };
     options.feedback_callback = [this](GoalHandleFollowPath::SharedPtr,
@@ -412,9 +755,11 @@ private:
         follow_distance_remaining_ = 0.0;
         if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
           RCLCPP_INFO(get_logger(), "Inspection FollowPath route completed.");
+          exportExperiment("succeeded");
         } else {
           RCLCPP_WARN(get_logger(), "Inspection FollowPath finished with action result code %d.",
             static_cast<int>(result.code));
+          exportExperiment(result.code == rclcpp_action::ResultCode::CANCELED ? "canceled" : "failed");
         }
     };
     selected_route_size_ = route.poses.size();
@@ -587,6 +932,11 @@ private:
   std::string controller_id_;
   std::string goal_checker_id_;
   std::string route_selection_file_;
+  std::string tracking_odom_topic_;
+  std::string tracking_base_frame_;
+  std::string experiment_output_dir_;
+  std::string experiment_label_;
+  int executor_lock_fd_{-1};
   size_t selected_route_size_{0U};
   double follow_distance_remaining_{0.0};
   nav_msgs::msg::Path path_;
@@ -603,12 +953,20 @@ private:
   GoalHandleFollowPath::SharedPtr active_goal_;
   bool approach_planning_{false};
   std::optional<nav_msgs::msg::Path> pending_route_;
+  bool recording_{false};
+  rclcpp::Time experiment_start_stamp_{0, 0, RCL_ROS_TIME};
+  nav_msgs::msg::Path tracking_reference_;
+  nav_msgs::msg::Path actual_path_;
+  std::vector<TrackingSample> tracking_samples_;
   rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr path_sub_;
+  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr tracking_odom_sub_;
   rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr start_sub_;
   rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr middle_sub_;
   rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr end_sub_;
   rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr status_pub_;
+  rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr reference_path_pub_;
+  rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr actual_path_pub_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr follow_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr cancel_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr save_service_;

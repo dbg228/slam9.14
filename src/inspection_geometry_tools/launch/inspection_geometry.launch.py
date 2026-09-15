@@ -19,6 +19,11 @@ def generate_launch_description():
         DeclareLaunchArgument('path_spacing', default_value='0.10'),
         DeclareLaunchArgument('reverse_path', default_value='false'),
         DeclareLaunchArgument('close_radius', default_value='0.25'),
+        DeclareLaunchArgument('experiment_label', default_value='mppi'),
+        DeclareLaunchArgument('tracking_base_frame', default_value='base_link'),
+        DeclareLaunchArgument(
+            'experiment_output_dir',
+            default_value='/home/zkam/test_nav/robot_data/experiments'),
         Node(
             package='inspection_geometry_tools',
             executable='map_alignment_node',
@@ -68,7 +73,12 @@ def generate_launch_description():
             executable='inspection_path_executor_node',
             name='inspection_path_executor_node',
             output='screen',
-            parameters=[{'frame_id': LaunchConfiguration('frame_id')}],
+            parameters=[{
+                'frame_id': LaunchConfiguration('frame_id'),
+                'experiment_label': LaunchConfiguration('experiment_label'),
+                'experiment_output_dir': LaunchConfiguration('experiment_output_dir'),
+                'tracking_base_frame': LaunchConfiguration('tracking_base_frame'),
+            }],
         ),
         Node(
             package='rviz2',

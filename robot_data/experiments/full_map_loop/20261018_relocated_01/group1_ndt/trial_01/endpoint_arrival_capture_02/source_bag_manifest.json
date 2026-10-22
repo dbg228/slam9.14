@@ -1,0 +1,9 @@
+{
+  "source_bag": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/formal_bag_01",
+  "files": {
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/formal_bag_01/formal_bag_01_0.db3": {
+      "bytes": 883937280,
+      "sha256": "3dc18a44cb6c526782f0e3d9bb3db27d97cc66e1d08c055b0d89b6aee2811fdb"
+    }
+  }
+}

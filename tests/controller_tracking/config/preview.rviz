@@ -1,0 +1,26 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: tracking_world
+    Background Color: 48; 48; 48
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 30
+    - Class: rviz_default_plugins/Path
+      Name: Fixed Reference
+      Enabled: true
+      Topic:
+        Value: /tracking/reference_path
+        Durability Policy: Transient Local
+      Line Style: Lines
+      Line Width: 0.02
+      Color: 255; 80; 255
+    - Class: rviz_default_plugins/TF
+      Name: Experimental TF
+      Enabled: false

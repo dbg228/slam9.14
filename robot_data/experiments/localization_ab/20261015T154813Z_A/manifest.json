@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "group": "A",
+  "execute_requested": false,
+  "onsite_route_clear_confirmed": false,
+  "protocol": {
+    "speed_mps": 0.15,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "read_only_preflight",
+  "control": "constant 0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "common_controller_sha256": "1982929cdea652243845652c644baabd9cfbc2ca292dd250b44db311edc31023",
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 200,
+    "mocap_fresh": true,
+    "mocap_frame": "mocap_world",
+    "mocap_header_age_s": 0.0089985,
+    "mocap_base_pose": {
+      "stamp_ns": 1792079297309968663,
+      "valid": true,
+      "x": -0.7752936245813785,
+      "y": 0.0438322124206777,
+      "z": 0.21217950626811619,
+      "qx": -0.0017732642935747878,
+      "qy": 0.0014836826882995851,
+      "qz": -0.022162571980288103,
+      "qw": 0.9997517064864877
+    },
+    "fastlio_present": true,
+    "fastlio_node_count": 1,
+    "cmd_publishers": [],
+    "mode_publishers": [],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 0.25,
+    "wheel_homing_done": {
+      "wheel_2_turn": 0.0,
+      "wheel_1_turn": 0.0,
+      "wheel_3_turn": 0.0,
+      "wheel_4_turn": 0.0
+    },
+    "all_wheels_homed": false,
+    "chassis_driver_evidence": {
+      "process_pid": 5038,
+      "log_file": "/home/zkam/.ros/log/ros2_control_node_5038_1792073613749.log",
+      "ready": true,
+      "last_open_offset": 3921237,
+      "last_restore_offset": 3921318,
+      "last_reset_offset": 3915115,
+      "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+    },
+    "chassis_homing_verified": true,
+    "local_pose_finite_fresh": true,
+    "local_xy_norm_m": 0.5048703613442997,
+    "ndt_present": false,
+    "free_disk_bytes": 20826914816,
+    "ready_to_arm": true,
+    "blocking_reasons": []
+  }
+}

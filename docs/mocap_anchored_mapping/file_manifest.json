@@ -1,0 +1,220 @@
+{
+  "scope": "current native mapping tool/documentation snapshot; generated build/test and real acquisition excluded",
+  "files": [
+    {
+      "path": "/home/zkam/test_nav/ARCHITECTURE.md",
+      "bytes": 14623,
+      "sha256": "e04918f034174a5a1ed5fc7162d97df9955a16ff8b2609b4faf0bf6464bfb281"
+    },
+    {
+      "path": "/home/zkam/test_nav/README.md",
+      "bytes": 18317,
+      "sha256": "36b1fb638d680764bd0524cdcba7ea70a5b3222a348b5eb2b032000d1f4b98c8"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/CHANGES.md",
+      "bytes": 3430,
+      "sha256": "36a0a3144939d37aa9c3e60e984ece52b2bb1ed01ad11afd009842d68f441865"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/README.md",
+      "bytes": 11966,
+      "sha256": "e23e0356979248efb9f5dad572c3acfa472fde61d3b6c97eb774de5cd9bee43c"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/VALIDATION.md",
+      "bytes": 6283,
+      "sha256": "163b1bf1b898c7f64a435cbf9731a436cc56d1ff5470236a671f9674da0f75f3"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/cleanup_native_done.json",
+      "bytes": 76527,
+      "sha256": "3802e6318acfe41950b8a5d9241d2597cd95044ec98db6a3ed1e344922a36458"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/cleanup_native_plan.json",
+      "bytes": 76974,
+      "sha256": "8f51fc1ec78ab317763bd9f08aadf2e8a44e969be2d9347d34f2097de6fca3fd"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/live_preflight.json",
+      "bytes": 952,
+      "sha256": "f6e15f0d046f4a4e2793c91c099b5c6ff43aaad22bdd24ade55399e87010f575"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/prepared_run_check.json",
+      "bytes": 1115,
+      "sha256": "9199e88bf0998551005a0487d380f1669ba9b6b7be2b88869a1fcea715ce8a1f"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/protected_after.json",
+      "bytes": 22213,
+      "sha256": "950c3d8660a4fecba92921b2118522e559ffada4e0566fcf43bdf0d9ec9ff4ae"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/protected_before.json",
+      "bytes": 40510,
+      "sha256": "c484abf56a8daea7eae430480ca410ee14febe96282e94513fd588a313f77f89"
+    },
+    {
+      "path": "/home/zkam/test_nav/mapping_modes.sh",
+      "bytes": 1342,
+      "sha256": "50fb99081bf383b2e4cf47a631bcf7a02156a94624d17a34b2fe22a3934ee505"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/README.md",
+      "bytes": 4997,
+      "sha256": "3cce1e1fd9b78a3721261ef12299a67fa842f88dfc4c1b262048de7d41e1f333"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/config/site.yaml",
+      "bytes": 1496,
+      "sha256": "a7b94fd990617715b036350ab03163798078f1440ec60877d4c57bf3e9e6488e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_localization.launch.py",
+      "bytes": 128,
+      "sha256": "2fa35932954b68af4484fb496dc5d27df84c6eaadd5c4bdd0dc180a1b61cec40"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_mapping.launch.py",
+      "bytes": 123,
+      "sha256": "0ebf58c9175e6ee7144fe0044053789793af58d8e3a0b1d6fa3e00cdff6b6411"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_navigation.launch.py",
+      "bytes": 126,
+      "sha256": "66b8bfeed0899b60e84cc6ca8efddf5a935d7f8f9d89baf0cb5cc2bbb5601af0"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/cli.py",
+      "bytes": 8244,
+      "sha256": "bfd8b6edc13fad7ffd56bf0a0d78f9fd913776d05eb51207bad31dac907bc689"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/core.py",
+      "bytes": 13055,
+      "sha256": "e885ec8897c9e063dcf4ea7d121d86b74cfb27ceb97e316f21548f9c26bb2ff1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/isolation.py",
+      "bytes": 1326,
+      "sha256": "ba80777d20a3a5ab8190a2c0d75247fc4ca50e2c382cf91e78ef03a1115cdca8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/launching.py",
+      "bytes": 5489,
+      "sha256": "a3727e7f1ac8040d365e29b81f9298a680f64de502cfd703aafb340ad74b6145"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/online.py",
+      "bytes": 18701,
+      "sha256": "f52985f664ace5646306b6a9678b822e07c1df86980b9bfad93e7e7f02ba865a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/products.py",
+      "bytes": 4712,
+      "sha256": "b51a703a6c66548232338041e72d70b21cd7778cb882875a60ca34fd75582206"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/package.xml",
+      "bytes": 1447,
+      "sha256": "9b3b20701c5f8f9da0bd936768cb5fa1ff05cfde7b880112d03d9f8a4ddcde72"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/resource/mocap_anchored_mapping",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/setup.cfg",
+      "bytes": 113,
+      "sha256": "cb1b81d355a7671f5a1b2ed839573864e15137672832e991bab1503228839ba2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/setup.py",
+      "bytes": 828,
+      "sha256": "7aac43741b487c988267d964cf2b9071bd32c22bc0a7152a55fa68abf9cde0cc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_auto_2m_safety.py",
+      "bytes": 5466,
+      "sha256": "6b3f331c3417871e9cf46d236cf84704d99fc6b7d4b5cdf0e73bc2e529d6637f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_forward_mean_curve.py",
+      "bytes": 1235,
+      "sha256": "e518a0995233e1d5156a02bc6d4ea88e6ff02d1f4778bac5c7221242f5cdd445"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_localization_outputs.py",
+      "bytes": 426,
+      "sha256": "8875b9fc193841dc1933872d4741e4441b3916558a651012d3601fa0933b160f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_mapping.py",
+      "bytes": 7694,
+      "sha256": "797010b0c3dfa098af203bd29c9392331560e6d57228071f065b36b8218fe05b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_publisher_discovery.py",
+      "bytes": 2950,
+      "sha256": "1bf4c8b0e974ee98adb182430f100a9a2de5a61a9ef87cfa90072ac0777aafa8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/test_static_points_report.py",
+      "bytes": 3065,
+      "sha256": "2b069d0acc333e274dd830dc3416be81f90adb1aeabaf069416230b03b386fbf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/auto_2m_guard_smoke.py",
+      "bytes": 4156,
+      "sha256": "5638ec6a087b464cd05f0565ec27297d0d5d1aa2c86411056a3f559c9022589d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/auto_2m_series.py",
+      "bytes": 3964,
+      "sha256": "842f3e0e0266e62399a4b6c7f2e2231ee0de715dcd8f8e0a5c118959876b1c76"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/auto_2m_trial.py",
+      "bytes": 31862,
+      "sha256": "81ef7817f4b3d67e20d5103f58be8da2b6b6713e2a43b347a2e0f2b76f9f1894"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/forward_trials_report.py",
+      "bytes": 13251,
+      "sha256": "f276425ca5851ff3408a6e6d489f0b8d62a67e00232290a1f9752959086d340a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/native_launch_smoke.py",
+      "bytes": 4891,
+      "sha256": "353b28b88c8030f19f880aa9d3d7e3ec2369827987c4b582f6fe1f0aefe147e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/software_smoke.py",
+      "bytes": 9426,
+      "sha256": "92310fd532acb432a2c849714e33f7780ab31cc42af1407753a9625dd894c18a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/source_audit.py",
+      "bytes": 3104,
+      "sha256": "a3af2ceca6d50fa3b7ac38f3e5e14729eab111273599032daaf3e42914e19082"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/static_points_report.py",
+      "bytes": 15305,
+      "sha256": "d500130f12d1e59d4dbe9ed6bb6e665813ec191be8102db153255715c4e117e9"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/verify_protected.py",
+      "bytes": 1535,
+      "sha256": "438cd1e17f38c30619a045c020d347de2151c77add64b8d69b317ed7035b8fdb"
+    }
+  ]
+}

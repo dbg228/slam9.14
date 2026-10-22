@@ -1,0 +1,34 @@
+{
+  "request_ros_ns": 1792343902569817023,
+  "service": "/inspection_route/follow",
+  "offset_distance_m": 0.6,
+  "readiness": {
+    "status": {
+      "run_id": "20261018_relocated_01",
+      "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+      "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792343815180080675",
+      "mode": "localization",
+      "context": "localization",
+      "map_basis": "native_fastlio_mapping_world",
+      "frozen": true,
+      "fault": null,
+      "reason": "mocap_initialized_local_odometry",
+      "pairs": 31,
+      "native_stamp_ns": 1792343902498767375,
+      "source_mode": "mocap_initial_then_lio",
+      "motion_commands_published": false,
+      "ndt_used": false
+    },
+    "base_age_s": 0.071049648,
+    "mocap_age_s": 0.0021263140000000002,
+    "mocap_stamp_ns": 1792343902567690709,
+    "z_up_cos": 0.9997375922423801,
+    "mode": "EXTERNAL",
+    "base_stamp_ns": 1792343902498767375,
+    "cmd": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

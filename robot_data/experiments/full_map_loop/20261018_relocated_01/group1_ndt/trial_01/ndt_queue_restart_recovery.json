@@ -1,0 +1,8 @@
+{
+  "ready": false,
+  "seed_source": "saved_original_NDT_own_pose_not_mocap",
+  "raw_tf_samples": 103,
+  "raw_tf_age_min_s": 0.049912335,
+  "raw_tf_age_max_s": 0.308772942,
+  "no_goals_sent": true
+}

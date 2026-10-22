@@ -1,0 +1,10 @@
+group: calib_03
+frame: map
+reference_point: base_link_origin
+unit: metre
+xyz_m:
+- null
+- null
+- null
+method: null
+independently_measured: null

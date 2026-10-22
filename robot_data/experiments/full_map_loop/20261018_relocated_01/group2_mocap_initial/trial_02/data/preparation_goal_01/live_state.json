@@ -1,0 +1,12 @@
+{
+  "elapsed_s": 24.0,
+  "paired_mocap_samples": 186,
+  "mode": "EXTERNAL",
+  "route": "START: 已选 | END: 已选\nNav2: 控制器已就绪\n紫线路程 START→END: 47.76 m\n到 START（直线）: 0.27 m\nSTART 后到 END（紫线）: 47.76 m\n可保存后点击“开始路线”。",
+  "terminal": {
+    "status": 4,
+    "receive_ros_ns": 1792320645309953392
+  },
+  "native_age_s": 0.094725529,
+  "mocap_age_s": 0.010237743
+}

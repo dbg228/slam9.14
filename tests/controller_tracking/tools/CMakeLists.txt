@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(tracking_timestamp_probe)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(tf2_msgs REQUIRED)
+add_executable(timestamp_probe timestamp_probe.cpp)
+ament_target_dependencies(timestamp_probe rclcpp tf2_msgs)

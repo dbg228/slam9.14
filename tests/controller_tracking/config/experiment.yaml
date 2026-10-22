@@ -1,0 +1,68 @@
+schema: 2
+# Paths resolve relative to this file. Production files are read, never overwritten.
+production_nav: ../../../robot_data/config/navigation.yaml
+mocap_config: ../../../robot_data/config/mocap_tracker0.yaml
+frame: tracking_world
+base_frame: base_link
+calibration:
+  id: null                 # REQUIRED: camera calibration version/date supplied by operator
+  level_verified: false    # REQUIRED: measured ground plane / axes verification
+  world_level_rotation_xyzw: null # REQUIRED: measured world -> level rotation; identity only if verified
+timing:
+  source: ubuntu_receiver_clock # Existing VRPN setting, not camera exposure time
+  camera_latency_s: null    # Unmeasured; never guessed or corrected automatically
+  camera_latency_verified: false
+  max_age_s: 0.15
+  max_gap_s: 0.05
+  velocity_window_s: 0.10   # trailing fit, pose and speed at window midpoint (~50 ms delay)
+  expected_hz: 100.0
+  validity_wait_s: 0.04
+site:
+  stable_mocap_bounds: null # [xmin,xmax,ymin,ymax] in frozen tracking_world, m
+  clear_floor_bounds: null
+  marker_visibility_verified: false
+  stopping_margin_verified: false
+  physical_stop_verified: false
+geometry:
+  kind: line               # line, left_arc, right_arc; dimensions below are preview examples
+  length: 1.0
+  radius: 0.8
+  angle_deg: 60.0
+  transition_length: 0.20
+  lead: 0.20
+  tail: 0.20
+  ds: 0.01
+  body_length: 0.90        # conservative existing Nav2 footprint (nominal body ~0.85 x 0.60)
+  body_width: 0.71
+  sweep_margin: 0.03
+  stop_margin: 0.50        # reserved space beyond endpoint; never a commanded straight
+speed_requirement:
+  upper_bound_mps: 0.30    # checked against production MPPI, no automatic tuning
+  constant_target_mps: null
+  constant_tolerance_mps: null
+execution:
+  timeout_s: 60.0
+  start_position_tolerance_m: 0.08
+  start_yaw_tolerance_rad: 0.12
+  command_timeout_s: 0.20
+  lease_timeout_s: 0.30
+wheel_feedback:
+  velocity_units_verified: false # 0x606C conversion requires physical/manual verification
+  turn_rate_limit_rad_s: null    # no guessed saturation thresholds
+  roll_rate_limit_rad_s: null
+topics:
+  raw_mocap: /vrpn_mocap/Tracker0/pose
+  mocap: /mocap/Tracker0/pose
+  validity: /mocap/Tracker0/diagnostics
+  state: /tracking/state
+  base_pose: /tracking/base_pose
+  state_status: /tracking/state_status
+  controller_cmd: /tracking/controller_cmd
+  smoothed_cmd: /tracking/smoothed_cmd
+  gate_cmd: /nav/cmd_vel
+  final_cmd: /reference_velocity
+  wheel_ref: /omni_velocity_controller/diagnostics/ref_vel
+  wheel_cmd: /omni_velocity_controller/diagnostics/joint_vel
+  wheel_angle: /omni_velocity_controller/diagnostics/fai
+  joints: /joint_states
+  mode: /teleop/mode

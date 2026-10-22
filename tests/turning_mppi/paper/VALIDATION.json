@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-10-18T19:37:24.738127+00:00",
+  "scope": "Synthetic fixed-route inspection; obstacles excluded; no physical FAST-LIO/NDT validation",
+  "closed_loop_trials": 98,
+  "main_trials": 72,
+  "historical_route_simulations": 2,
+  "initial_error_trials": 24,
+  "main_plus_route_raw_samples": 41589,
+  "trial_phase_rows": 444,
+  "lag_diagnostics": 888,
+  "figure_groups": 27,
+  "graphics_assets": 81,
+  "publication_table_groups": 7,
+  "tests": {
+    "controller_and_analysis_semantic_tests_passed": 73,
+    "independent_table_numeric_cells_checked": 296
+  },
+  "checks": {
+    "csv_inventory": true,
+    "supplement_finite_and_initial_timestamp": true,
+    "core_and_spectral_graphic_hashes": true,
+    "local_markdown_links": true,
+    "latex_structure_only": true
+  },
+  "not_performed": [
+    "LaTeX compilation: no LaTeX engine installed",
+    "Real-robot/FAST-LIO/NDT closed-loop tests",
+    "Rate-independent mechanical hysteresis tests",
+    "Population-wide significance or full-controller stability proof"
+  ],
+  "environment_collected_during_assembly": {
+    "cpu": "Intel(R) Core(TM) i7-10710U CPU @ 1.10GHz",
+    "available_logical_cpus": 12,
+    "python": "3.10.12",
+    "numpy": "1.21.5",
+    "scipy": "1.8.0",
+    "matplotlib": "3.5.1",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "note": "Compute trials recorded perf_counter wall time; CPU clocks/load were not logged at each step."
+  },
+  "analysis_code_sha256": {
+    "paper_models.py": "a90a03d18205c8d43ba5db2724c6c0db577ee272749ee0d8174f5d0f1b28b055",
+    "paper_writeup.py": "c5c5f420d373d11c410638f2a32961fc168c30f23f68bef743d0d8743950fd98",
+    "paper_figures.py": "ae70bb8b7947b26aedae56ad4a4cc928daeacd623536128030021322749a18f4",
+    "paper_supplement.py": "5943b33c2f0f77ea7b65af4bfa3726399746ae6ca29f951d9572d3b5f7cffded",
+    "paper_metrics.py": "ccd47650c29c3053fa7f9e67f181239707eb827cf1c13e18260bc721aeb7b95d",
+    "paper_package.py": "55fbbb4173474d5d67639df737d4102780f033bbb0ad09f73c91f10691f02d4b",
+    "paper_spectrum.py": "6ddec67ec4d24dd72b9c26a24f76fc7e63b4c31fb3e48b412bbdb27a6f3d8a8e"
+  },
+  "critical_interpretation": "Reduced tracking error and faster finite-horizon recovery coexist with higher angular command activity/angular jerk; planar jerk decreases."
+}

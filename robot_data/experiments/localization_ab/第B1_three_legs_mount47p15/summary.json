@@ -1,0 +1,22 @@
+{
+  "group": "B",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 16.87878311668866,
+      "p95_mm": 33.08470655801414,
+      "max_mm": 35.251879691326884,
+      "yaw_rmse_deg": 0.1593752709418505,
+      "endpoint_mm": 8.779199769205912,
+      "max_pose_jump_mm": 35.42321276039592,
+      "max_error_jump_mm": 30.813492953095935,
+      "trigger_m": 2.000726821020234,
+      "parked_m": 2.0092168341804264,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15/01_forward"
+    }
+  ]
+}

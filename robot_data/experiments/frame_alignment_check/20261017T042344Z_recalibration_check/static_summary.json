@@ -1,0 +1,98 @@
+{
+  "status": "candidate_frozen_pending_independent_spatial_validation",
+  "map_from_mocap": {
+    "yaw_rad": -0.7502022510225682,
+    "tx_m": 2.4666764118733164,
+    "ty_m": -2.7545588861144625,
+    "method": "explicit_initial_static_window"
+  },
+  "mocap_from_map": {
+    "yaw_rad": 0.7502022510225682,
+    "tx_m": -3.6825212735336335,
+    "ty_m": 0.33335303798914717,
+    "method": "explicit_initial_static_window"
+  },
+  "windows": [
+    {
+      "window": "point01_attempt03",
+      "training": false,
+      "samples": 51,
+      "duration_s": 5.000216484069824,
+      "mocap_static_spread": {
+        "samples": 51,
+        "center_x_m": -1.0723240266036214,
+        "center_y_m": -0.10420341645036452,
+        "mean_yaw_rad": 0.02603879770969257,
+        "max_xy_radius_m": 0.00014748501935747332,
+        "max_yaw_deviation_rad": 0.00011363569026450263
+      },
+      "map_static_spread": {
+        "samples": 51,
+        "center_x_m": 1.6203390879093456,
+        "center_y_m": -2.112111471360653,
+        "mean_yaw_rad": -0.7238761846454259,
+        "max_xy_radius_m": 0.03388264799774264,
+        "max_yaw_deviation_rad": 0.002521164738524817
+      },
+      "passes_30mm_static_radius": false,
+      "frozen_candidate_xy_rmse_mm": 29.394849876445377,
+      "frozen_candidate_yaw_rmse_deg": 0.08441878057044849
+    },
+    {
+      "window": "point01_repeat01",
+      "training": true,
+      "samples": 52,
+      "duration_s": 5.099446535110474,
+      "mocap_static_spread": {
+        "samples": 52,
+        "center_x_m": -1.0723255700121526,
+        "center_y_m": -0.1042003115721577,
+        "mean_yaw_rad": 0.026021830974658273,
+        "max_xy_radius_m": 0.00010792075172236905,
+        "max_yaw_deviation_rad": 9.563908835616768e-05
+      },
+      "map_static_spread": {
+        "samples": 52,
+        "center_x_m": 1.6111731878410183,
+        "center_y_m": -2.09968938254603,
+        "mean_yaw_rad": -0.724180420046145,
+        "max_xy_radius_m": 0.015857341909245114,
+        "max_yaw_deviation_rad": 0.0012939646593413956
+      },
+      "passes_30mm_static_radius": true,
+      "frozen_candidate_xy_rmse_mm": 12.069375545047468,
+      "frozen_candidate_yaw_rmse_deg": 0.03434051457089461
+    },
+    {
+      "window": "point01_repeat02",
+      "training": false,
+      "samples": 52,
+      "duration_s": 5.099914073944092,
+      "mocap_static_spread": {
+        "samples": 52,
+        "center_x_m": -1.072328365120655,
+        "center_y_m": -0.10419970250268397,
+        "mean_yaw_rad": 0.026018595512390004,
+        "max_xy_radius_m": 0.00018656819008529643,
+        "max_yaw_deviation_rad": 0.0001480882267215003
+      },
+      "map_static_spread": {
+        "samples": 52,
+        "center_x_m": 1.6245729086135177,
+        "center_y_m": -2.1095855436893527,
+        "mean_yaw_rad": -0.7244384847687735,
+        "max_xy_radius_m": 0.031647425807237686,
+        "max_yaw_deviation_rad": 0.003042268864857367
+      },
+      "passes_30mm_static_radius": false,
+      "frozen_candidate_xy_rmse_mm": 28.568388509755813,
+      "frozen_candidate_yaw_rmse_deg": 0.1201259360094995
+    }
+  ],
+  "training_policy": "first window satisfying predeclared static quality gate among fixed equal-duration captures; no selection by tracking error; all failures retained",
+  "absolute_calibration_validated": false,
+  "camera_timing_verified": false,
+  "calibration_id": null,
+  "scale_and_ground_verified": false,
+  "software_transform_tests_passed": 3
+}

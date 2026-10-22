@@ -1,0 +1,37 @@
+{
+  "group": "B",
+  "plan": [
+    "forward",
+    "reverse",
+    "forward"
+  ],
+  "status": "completed",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "forward",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/01_forward",
+      "status": "completed",
+      "carried_forward_from_previous_series": true
+    },
+    {
+      "trial": 2,
+      "direction": "reverse",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/02_reverse",
+      "status": "completed"
+    },
+    {
+      "trial": 3,
+      "direction": "forward",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/03_forward",
+      "status": "completed"
+    }
+  ],
+  "route_clear_confirmed": true,
+  "safety_limits_relaxed": false,
+  "mocap_feedback_to_localization": false,
+  "timing_verified": false,
+  "fastlio_restart_between_trials": false,
+  "continuation_of": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15",
+  "operator_reconfirmed_route_after_stop": true
+}

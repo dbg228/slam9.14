@@ -1,0 +1,184 @@
+method: mean_of_synchronous_static_T_M_B_times_inverse_T_F_B
+pairs: 32
+duration_s: 3.100146055
+static_spread:
+  T_M_B:
+    mean_xyz_m:
+    - -0.4192487993824955
+    - 4.752528020478039
+    - 0.24151023575321193
+    mean_rotation_matrix:
+    - - 0.9934869876779181
+      - 0.11294811016872029
+      - -0.01504425883753107
+    - - -0.112995376032749
+      - 0.9935927888577717
+      - -0.002326999151895326
+    - - 0.014685036938109967
+      - 0.004011775062226414
+      - 0.9998841209615125
+    std_xyz_m:
+    - 0.00010701635019456706
+    - 0.00018815275841202255
+    - 5.5937752299195415e-05
+    maximum_radius_m: 0.0005025719330169255
+    maximum_orientation_deviation_deg: 0.5406666277036288
+  T_F_B:
+    mean_xyz_m:
+    - -0.4563115126188535
+    - 0.0675940670792769
+    - -0.14569482697452274
+    mean_rotation_matrix:
+    - - 0.6797600186764586
+      - 0.7334346007458801
+      - 5.86319925563461e-05
+    - - -0.7334343850266208
+      - 0.6797597527548817
+      - 0.0008254666820891876
+    - - 0.0005655701576434162
+      - -0.0006041219666366171
+      - 0.9999996575834641
+    std_xyz_m:
+    - 0.0009123177838001615
+    - 0.0006619200335679353
+    - 0.0011385295647816942
+    maximum_radius_m: 0.0028066669807765366
+    maximum_orientation_deviation_deg: 0.027684762075380984
+position_residual_m:
+  n: 32
+  rmse: 0.0016026728473373174
+  p95_abs: 0.0024557823766800046
+  max_abs: 0.0027754906797032484
+  mean: 0.0014657685075645408
+  std: 0.0006481380546028161
+ndt_used: false
+scale_fitted: false
+frozen: true
+transform_refit: false
+run_id: 20261018_relocated_01
+data_kind: real_mapping_pending_collection
+inputs_sha256: ba7e9bfab7000f34c7285a3a553284b459f5048d09e6de5e35682a06daa90bf7
+camera_world_id: 20261018_relocated_shared_world_01
+raw_sha256: acd655f7f1e285cdd0b6506629dfe1c72556ff22472cc57e734916ee11a1b3ca
+pairs_sha256: 79b6000c673f344397b3b8a41177630ca2e383a305018b37b3a1491ea56798cc
+raw_normalized_check:
+  matched_samples: 279
+  normalized_samples: 279
+  coverage: 1.0
+  scale_to_m: 0.001
+  mismatched_stamp_ns: []
+  note: xyz_m in raw internal records retains native units until this explicit scale
+    check
+clock:
+  mocap_source: ubuntu_receiver_clock
+  fastlio_source: lidar_end_time
+  offset_s: 0.0
+  offset_verified: false
+  camera_latency_s: null
+  scope: static timestamp pairing, not exposure synchronization certification
+reference_point: base_link
+motion_commands_published: false
+map_basis: native_fastlio_mapping_world
+T_mocap_map:
+  parent: mocap_world
+  child: map
+  equation: p_mocap_world = T_mocap_world_map * p_map
+  matrix:
+  - - 0.7581719163790546
+    - -0.6518923425887891
+    - -0.01455056315791571
+    - -0.0313425973698747
+  - - 0.651925440050488
+    - 0.7582771745401035
+    - -0.00299118479103333
+    - 4.998318071620265
+  - - 0.012983290379894707
+    - -0.007218049984445141
+    - 0.9998896608753057
+    - 0.3936015124456767
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - -0.0313425973698747
+  - 4.998318071620265
+  - 0.3936015124456767
+  quaternion_xyzw:
+  - -0.0011270496490329795
+  - -0.007341615723795177
+  - 0.3476494534571235
+  - 0.9375951620761575
+  scale: 1.0
+T_map_mocap:
+  parent: map
+  child: mocap_world
+  equation: p_map = T_map_mocap_world * p_mocap_world
+  matrix:
+  - - 0.7581719163790546
+    - 0.651925440050488
+    - 0.012983290379894707
+    - -3.2398778739711807
+  - - -0.6518923425887891
+    - 0.7582771745401035
+    - -0.007218049984445141
+    - -3.8077014686324318
+  - - -0.01455056315791571
+    - -0.00299118479103333
+    - 0.9998896608753057
+    - -0.37906324224530097
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - -3.2398778739711807
+  - -3.8077014686324318
+  - -0.37906324224530097
+  quaternion_xyzw:
+  - 0.0011270496490329795
+  - 0.007341615723795177
+  - -0.3476494534571235
+  - 0.9375951620761575
+  scale: 1.0
+T_map_F0:
+  parent: map
+  child: F0
+  equation: p_map = T_map_F0 * p_F0
+  matrix:
+  - - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 1.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 0.0
+    - 1.0
+    - 0.0
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.0
+  - 0.0
+  - 0.0
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  scale: 1.0
+map_origin_in_mocap_m:
+- -0.0313425973698747
+- 4.998318071620265
+- 0.3936015124456767
+mocap_origin_in_map_m:
+- -3.2398778739711807
+- -3.8077014686324318
+- -0.37906324224530097
+PCD_coordinates_changed: false
+extrinsics_sha256: 3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99

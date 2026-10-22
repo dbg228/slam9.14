@@ -1,0 +1,32 @@
+{
+  "inputs_unchanged": true,
+  "run_id": "20261017_native_01",
+  "M_axes_confirmed": true,
+  "clock_offset_verified": false,
+  "camera_latency_s": null,
+  "map_basis": "native_fastlio_mapping_world",
+  "ndt_used": false,
+  "PCD_conversion_required": false,
+  "products": {
+    "native_pcd": {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd",
+      "exists": false
+    },
+    "map_yaml": {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.yaml",
+      "exists": false
+    },
+    "map_image": {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.pgm",
+      "exists": false
+    },
+    "transform": {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/calibration.yaml",
+      "exists": false
+    },
+    "initialization": {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/initialization/raw.jsonl",
+      "exists": false
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source_directory": "/home/zkam/test_nav/robot_data/experiments/20261018_162302_mppi",
+  "result": "succeeded",
+  "from_original_inspection_executor": true,
+  "files_sha256": {
+    "speed_profile.svg": "1205e72f0d7c5e992cbe70d7861b538744086f43828d34523a706332706d99ab",
+    "trajectory.svg": "635c3b0658795c9feb33fd76a6a175b76b95095dcd24fe22ef6aae6db96c337c",
+    "cross_track_error.svg": "42104aefa40144ee19583852c2d5a7ba87dc792c3a34c52f74f81b6c5e7f53d7"
+  }
+}

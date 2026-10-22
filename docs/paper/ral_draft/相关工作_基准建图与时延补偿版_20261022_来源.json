@@ -1,0 +1,515 @@
+{
+  "title": "相关工作（三主题精简稿）",
+  "subtitle": "高精度定位与外部约束、几何路径规划、预测跟踪控制",
+  "date": "2026-10-22",
+  "sections": [
+    {
+      "title": "A. 高精度定位与外部参考约束",
+      "paragraphs": [
+        "高精度室内作业要求机器人位姿与固定任务位置具有明确的空间关系。已有激光定位研究主要改进运动估计与地图表达：KISS-ICP结合运动补偿和自适应对应阈值构建点到点配准流程[@kissicp]，FAST-LIO2通过原始点直接配准和迭代卡尔曼滤波实现紧耦合估计[@fastlio2]；LIO-GVM利用高斯分布差异改善数据关联[@liogvm]，LocNDF通过连续距离场支持地图定位[@locndf]。FAST-LIVO2进一步融合视觉、激光与惯性观测[@fastlivo2]，Wheel-Legged SLAM则引入轮腿运动学和重力约束[@wheelslam]。这些方法改善机载估计，但将其用于固定位置上的作业，还需要建立与外部任务基准的关系。",
+        "GNSS等外部定位观测能够将局部估计关联至固定参考。GVINS联合GNSS伪距、多普勒与视觉惯性观测，并建立局部坐标与全球参考的转换[@gvins]；GLIO联合GNSS、LiDAR和IMU观测，通过两阶段优化组织局部估计与全局约束[@glio]。在GNSS不可用的场景，MR-ULINS引入UWB测距，并处理系统测距误差与异常观测[@mrulins]。这些研究表明，外部约束的利用需要同时考虑坐标关系、观测质量和覆盖条件。对于仅在局部具备外部参考的室内场景，地图基准的建立及离开、重返覆盖区后的定位关系仍需明确设计。",
+        "动态定位还需要处理观测时序。FF-LINS在相对测量与IMU预积分联合优化中估计LiDAR–IMU外参和时间延迟参数[@fflins]；Li等将相机–IMU时间偏移纳入状态估计[@timecalib2024]；MoCap2GT联合外部位姿与IMU观测进行时空标定和评测参考轨迹估计[@mocap2gt]。另有AMR研究利用外部测量学习到达偏差，并修正下发目标[@mocapcalib]。这些方法分别作用于内部观测标定、参考轨迹生成和目标补偿，与在线定位关系的更新具有不同的作用对象。",
+        "本文围绕固定基准下的室内导航，将动捕观测用于确定并冻结地图坐标基准，使环境地图、机器人位姿与作业路径具有可追溯的空间关系。在此基础上，拟构建时延感知外部位姿补偿模型，研究观测时间关联、运动传播及补偿增益设计，以对齐后的外部残差补偿FAST-LIO累计位姿误差，并使更新对应导航使用的状态时刻。研究重点由坐标基准延伸至动态观测的使用，其具体模型与导航收益尚待实现和验证。"
+      ]
+    },
+    {
+      "title": "B. 几何约束下的作业路径规划",
+      "paragraphs": [
+        "地图中的作业几何需要转化为可执行的路径。Becoy等从二维导航地图提取形态学骨架，生成兴趣点和访问序列[@skeletoncpp]；Ramesh等通过覆盖线组织与子回路合并研究栅格区域覆盖，并给出相应条件下的路径长度近似保证[@mlcapprox]；Yang等结合多边形偏置、区域分解和作业方向搜索生成覆盖路径[@yangcpp]。这些方法分别关注环境遍历、覆盖效率与区域几何处理。",
+        "沿设备或区域边界作业时，参考路径需要进一步表达与目标边界的指定间距。本文以二维地图上选定的边界点构成多边形，通过可调距离外偏置与采样生成路径，将边界形状和作业间距转化为明确的运动参考。其任务目标是沿指定边界保持作业位置关系，定位基准与实际跟踪共同影响这一关系的实现。"
+      ]
+    },
+    {
+      "title": "C. 预测轨迹跟踪与执行响应补偿",
+      "paragraphs": [
+        "定位和路径规划的结果需要通过底盘响应转化为实际运动。MPPI以控制采样、滚动预测和轨迹代价加权更新处理非线性控制问题[@mppi]。RMPPI将跟踪反馈纳入增广预测与重要性采样[@rmppi]，SVG-MPPI利用Stein变分方法引导控制采样[@svgmppi]。近期，Feedback-MPPI通过轨迹与代价敏感度构造局部反馈，使完整优化更新之间能够执行快速修正[@feedbackmppi]；PRMPPI通过在线参数学习处理模型不确定性[@prmppi]；CLIS-MPPI则联合采样执行延迟下的初始状态与控制序列，本文按其2026年预印本引用[@clismppi]。这些工作从反馈、采样、参数和执行时刻等环节改善预测控制。",
+        "本文控制原型以曲率跟踪器生成动作提议，搜索输入残差序列，并将指令限幅、待执行队列和一阶响应纳入运动预测，重点处理转弯过程中的执行失配。与前述定位补偿相衔接，研究分别关注导航位姿对应的状态时刻与控制指令形成实际运动的过程，从而在统一任务路径下评价定位和执行环节对跟踪误差的影响。"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "key": "kissicp",
+      "type": "article",
+      "authors": "I. Vizzo, T. Guadagnino, B. Mersch, L. Wiesmann, J. Behley, and C. Stachniss",
+      "bib_authors": "Ignacio Vizzo and Tiziano Guadagnino and Benedikt Mersch and Louis Wiesmann and Jens Behley and Cyrill Stachniss",
+      "title": "KISS-ICP: In Defense of Point-to-Point ICP—Simple, Accurate, and Robust Registration If Done the Right Way",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2023,
+      "volume": "8",
+      "number": "2",
+      "pages": "1029–1036",
+      "doi": "10.1109/LRA.2023.3236571",
+      "url": "https://doi.org/10.1109/LRA.2023.3236571",
+      "sources": [
+        "https://github.com/PRBonn/kiss-icp"
+      ],
+      "scope": "方法依据book/RA-L.pdf的作者接收稿；2023年正式卷期、页码与DOI核对作者官方仓库引用条目。未以2022年接收日期作为正式发表年份。"
+    },
+    {
+      "key": "fastlio2",
+      "type": "article",
+      "authors": "W. Xu, Y. Cai, D. He, J. Lin, and F. Zhang",
+      "bib_authors": "Wei Xu and Yixi Cai and Dongjiao He and Jiarong Lin and Fu Zhang",
+      "title": "FAST-LIO2: Fast Direct LiDAR-Inertial Odometry",
+      "venue": "IEEE Transactions on Robotics",
+      "year": 2022,
+      "volume": "38",
+      "number": "4",
+      "pages": "2053–2073",
+      "doi": "10.1109/TRO.2022.3141876",
+      "url": "https://doi.org/10.1109/TRO.2022.3141876",
+      "sources": [
+        "https://arxiv.org/html/2107.06829v1",
+        "https://doi.org/10.1109/TRO.2022.3141876"
+      ],
+      "scope": "已读原始预印本摘要、系统与估计方法相关内容；正式题录由IEEE出版记录核对。机器人实际分支与配置需另行绑定。"
+    },
+    {
+      "key": "liogvm",
+      "type": "article",
+      "authors": "X. Ji, S. Yuan, P. Yin, and L. Xie",
+      "bib_authors": "Xingyu Ji and ShengHai Yuan and Pengyu Yin and Lihua Xie",
+      "title": "LIO-GVM: An Accurate, Tightly-Coupled Lidar-Inertial Odometry With Gaussian Voxel Map",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2024,
+      "volume": "9",
+      "number": "3",
+      "pages": "2200–2207",
+      "doi": "10.1109/LRA.2024.3354616",
+      "url": "https://doi.org/10.1109/LRA.2024.3354616",
+      "sources": [],
+      "scope": "依据book正式PDF的摘要、引言及高斯关联、残差与地图维护相关方法段；题录读取原始PDF。"
+    },
+    {
+      "key": "locndf",
+      "type": "article",
+      "authors": "L. Wiesmann, T. Guadagnino, I. Vizzo, N. Zimmerman, Y. Pan, H. Kuang, J. Behley, and C. Stachniss",
+      "bib_authors": "Louis Wiesmann and Tiziano Guadagnino and Ignacio Vizzo and Nicky Zimmerman and Yue Pan and Haofei Kuang and Jens Behley and Cyrill Stachniss",
+      "title": "LocNDF: Neural Distance Field Mapping for Robot Localization",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2023,
+      "volume": "8",
+      "number": "8",
+      "pages": "4999–5006",
+      "doi": "10.1109/LRA.2023.3291274",
+      "url": "https://doi.org/10.1109/LRA.2023.3291274",
+      "sources": [
+        "https://www.ipb.uni-bonn.de/people/louis-wiesmann/index.html"
+      ],
+      "scope": "方法依据book作者接收稿；正式卷期、页码和DOI核对作者实验室主页的BibTeX。未声称本项目已使用神经距离场。"
+    },
+    {
+      "key": "fastlivo2",
+      "type": "article",
+      "authors": "C. Zheng, W. Xu, Z. Zou, T. Hua, C. Yuan, D. He, B. Zhou, Z. Liu, J. Lin, F. Zhu, Y. Ren, R. Wang, F. Meng, and F. Zhang",
+      "bib_authors": "Chunran Zheng and Wei Xu and Zuhao Zou and Tong Hua and Chongjian Yuan and Dongjiao He and Bingyang Zhou and Zheng Liu and Jiarong Lin and Fangcheng Zhu and Yunfan Ren and Rong Wang and Fanle Meng and Fu Zhang",
+      "title": "FAST-LIVO2: Fast, Direct LiDAR–Inertial–Visual Odometry",
+      "venue": "IEEE Transactions on Robotics",
+      "year": 2025,
+      "volume": "41",
+      "pages": "326–346",
+      "doi": "10.1109/TRO.2024.3502198",
+      "url": "https://doi.org/10.1109/TRO.2024.3502198",
+      "sources": [
+        "https://arxiv.org/html/2408.14035v2",
+        "https://ieeexplore.ieee.org/document/10757429/",
+        "https://github.com/hku-mars/FAST-LIVO2"
+      ],
+      "scope": "已读原始全文中的摘要、系统及视觉/激光更新相关段；作者顺序核对原始版本，卷41及页码核对IEEE记录。按2025年正式卷年引用，在线发表日期为2024-11-19。"
+    },
+    {
+      "key": "wheelslam",
+      "type": "article",
+      "authors": "Y. Wen, Y. Li, Q. Shang, C. Jiang, H. Hou, H. Liu, Y. Zhang, and L. Han",
+      "bib_authors": "Yan Wen and Ying Li and Qingyi Shang and Chaoyang Jiang and Hongyu Hou and Hui Liu and Yifan Zhang and Lijin Han",
+      "title": "Wheel-Legged SLAM: Indoor LiDAR-Inertial SLAM Integrating Kinematic Model of Wheel-Legged Robots",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2025,
+      "volume": "10",
+      "number": "2",
+      "pages": "1273–1280",
+      "doi": "10.1109/LRA.2024.3521184",
+      "url": "https://doi.org/10.1109/LRA.2024.3521184",
+      "sources": [],
+      "scope": "依据book正式PDF第三、四节；已核对垂直修正和重力重估因子及平地条件。该文内部因子优化与本项目外部坐标变换更新不同。"
+    },
+    {
+      "key": "gvins",
+      "type": "article",
+      "authors": "S. Cao, X. Lu, and S. Shen",
+      "bib_authors": "Shaozu Cao and Xiuyuan Lu and Shaojie Shen",
+      "title": "GVINS: Tightly Coupled GNSS–Visual–Inertial Fusion for Smooth and Consistent State Estimation",
+      "venue": "IEEE Transactions on Robotics",
+      "year": 2022,
+      "volume": "38",
+      "number": "4",
+      "pages": "2004–2021",
+      "doi": "10.1109/TRO.2021.3133730",
+      "url": "https://doi.org/10.1109/TRO.2021.3133730",
+      "sources": [
+        "https://arxiv.org/html/2103.07899v3",
+        "https://github.com/HKUST-Aerial-Robotics/GVINS",
+        "https://researchportal.hkust.edu.hk/en/publications/gvins-tightly-coupled-gnss-visual-inertial-fusion-for-smooth-and-/"
+      ],
+      "scope": "本轮查阅原始全文第六节观测因子、第七节初始化与相关坐标关系；正式作者、卷期页码和DOI核对作者所在机构HKUST出版记录。仅描述GNSS与局部估计的融合机制，不移用其性能或漂移结论。"
+    },
+    {
+      "key": "glio",
+      "type": "article",
+      "authors": "X. Liu, W. Wen, and L.-T. Hsu",
+      "bib_authors": "Xikun Liu and Weisong Wen and Li-Ta Hsu",
+      "title": "GLIO: Tightly-Coupled GNSS/LiDAR/IMU Integration for Continuous and Drift-Free State Estimation of Intelligent Vehicles in Urban Areas",
+      "venue": "IEEE Transactions on Intelligent Vehicles",
+      "year": 2024,
+      "volume": "9",
+      "number": "1",
+      "pages": "1412–1422",
+      "doi": "10.1109/TIV.2023.3323648",
+      "url": "https://doi.org/10.1109/TIV.2023.3323648",
+      "sources": [
+        "https://polyu-taslab.github.io/publications/2024-liu-glio-tightlycoupled-gnsslidarimu-2/",
+        "https://polyu-taslab.github.io/publications/papers/GLIO_Tightly-Coupled_GNSS_LiDAR_IMU_Integration_for_Continuous_and_Drift-Free_State_Estimation_of_Intelligent_Vehicles_in_Urban_Areas.pdf"
+      ],
+      "scope": "本轮取得作者实验室提供的11页正式PDF，查阅首页题录、摘要及引言中GNSS观测质量、两阶段优化相关内容；正式卷年为2024，2023为在线发表年。只引用观测类型与优化组织，不将题名中的“Drift-Free”作为本项目结论。"
+    },
+    {
+      "key": "mrulins",
+      "type": "article",
+      "authors": "T. Zhang, M. Yuan, L. Wei, Y. Wang, H. Tang, and X. Niu",
+      "bib_authors": "Tisheng Zhang and Man Yuan and Linfu Wei and Yan Wang and Hailiang Tang and Xiaoji Niu",
+      "title": "MR-ULINS: A Tightly-Coupled UWB-LiDAR-Inertial Estimator With Multi-Epoch Outlier Rejection",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2024,
+      "volume": "9",
+      "number": "12",
+      "pages": "11786–11793",
+      "doi": "10.1109/LRA.2024.3498780",
+      "url": "https://doi.org/10.1109/LRA.2024.3498780",
+      "sources": [
+        "https://i2nav.cn/ueditor/jsp/upload/file/20241126/1732622538933063283.pdf"
+      ],
+      "scope": "本轮核对作者团队原始PDF的搜索索引所返回的首页、摘要及末页结论，包含作者、卷期页码和DOI；直接打开PDF超时，未阅读全文。正文只使用摘要明确列出的UWB/帧间LiDAR/IMU融合、系统测距误差估计与多历元剔除，不引用公式或实验数值。"
+    },
+    {
+      "key": "fflins",
+      "type": "article",
+      "authors": "H. Tang, T. Zhang, X. Niu, L. Wang, L. Wei, and J. Liu",
+      "bib_authors": "Hailiang Tang and Tisheng Zhang and Xiaoji Niu and Liqiang Wang and Linfu Wei and Jingnan Liu",
+      "title": "FF-LINS: A Consistent Frame-to-Frame Solid-State-LiDAR-Inertial State Estimator",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2023,
+      "volume": "8",
+      "number": "12",
+      "pages": "8525–8532",
+      "doi": "10.1109/LRA.2023.3329625",
+      "url": "https://doi.org/10.1109/LRA.2023.3329625",
+      "sources": [],
+      "scope": "依据book正式PDF的引言、关联与测量模型相关内容；一致性指状态估计的一致性。该文对自建地图的讨论不能直接证明固定外部地图NDT存在同一种问题。"
+    },
+    {
+      "key": "timecalib2024",
+      "type": "article",
+      "authors": "S. Li, J. Nie, C. Guo, Y. Yang, and L. Mei",
+      "bib_authors": "Shuaiyong Li and Jiawei Nie and Chengchun Guo and Yang Yang and Lin Mei",
+      "title": "A novel online time calibration framework via double-stage EKF for visual-inertial odometry",
+      "venue": "Robotica",
+      "year": 2024,
+      "volume": "42",
+      "number": "11",
+      "pages": "3675–3691",
+      "doi": "10.1017/S0263574724001589",
+      "url": "https://doi.org/10.1017/S0263574724001589",
+      "sources": [
+        "https://www.cambridge.org/core/journals/robotica/article/abs/novel-online-time-calibration-framework-via-doublestage-ekf-for-visualinertial-odometry/926E37A6CD22DA654EEE116DDB936096"
+      ],
+      "scope": "本轮核对Cambridge出版社原始摘要、作者、卷期页码与DOI，未阅读全文。正文仅使用摘要明确描述的双阶段滤波与相机–IMU时间偏移状态估计；不能据此认定已处理本项目FAST-LIO输出滞后。"
+    },
+    {
+      "key": "mocap2gt",
+      "type": "article",
+      "authors": "Z. Shu, S. Bei, J. Dai, L. Li, and Z. Chen",
+      "bib_authors": "Zichao Shu and Shitao Bei and Jicheng Dai and Lijun Li and Zetao Chen",
+      "title": "MoCap2GT: A High-Precision Ground Truth Estimator for SLAM Benchmarking Based on Motion Capture and IMU Fusion",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2026,
+      "volume": "11",
+      "number": "2",
+      "pages": "1538–1545",
+      "doi": "10.1109/LRA.2025.3643287",
+      "url": "https://doi.org/10.1109/LRA.2025.3643287",
+      "sources": [
+        "https://arxiv.org/html/2507.12920v1",
+        "https://ieeexplore.ieee.org/abstract/document/11297812/references"
+      ],
+      "scope": "已读原始全文的问题定义和方法相关段；正式卷期、页码及DOI核对IEEE记录。期刊版逐字差异未核对；本稿只描述两版摘要一致的机制。其任务是生成评测参考，不是证明本项目的动捕误差为零。"
+    },
+    {
+      "key": "mocapcalib",
+      "type": "proceedings",
+      "authors": "Andrae Vincent, Johannes Mäule, and Fabian Behrendt",
+      "bib_authors": "{Andrae Vincent} and Johannes M{\"a}ule and Fabian Behrendt",
+      "title": "AI-Based Calibration by Using a Motion Capture System for Autonomous Mobile Robots",
+      "venue": "IFAC-PapersOnLine",
+      "year": 2025,
+      "volume": "59",
+      "number": "10",
+      "pages": "903–908",
+      "doi": "10.1016/j.ifacol.2025.09.153",
+      "url": "https://doi.org/10.1016/j.ifacol.2025.09.153",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S2405896325009140",
+        "https://publica-rest.fraunhofer.de/server/api/core/bitstreams/d5ab4695-b0de-4cb2-bb84-f2965b364efc/content"
+      ],
+      "scope": "已读Fraunhofer机构库六页原始全文中的第三至第五节；实际机制为离线训练误差预测模型并修正下发目标，不能概括为在线估计器融合。首作者保留PDF原始署名“Andrae Vincent”，不擅自重排；机构记录亦写作“Vincent, Andrae”，投稿前建议再核对姓名字段。属于IFAC会议论文集条目。"
+    },
+    {
+      "key": "skeletoncpp",
+      "type": "article",
+      "authors": "A. J. Becoy, K. Khomenko, L. Peternel, and R. T. Rajan",
+      "bib_authors": "Alexander James Becoy and Kseniia Khomenko and Luka Peternel and Raj Thilak Rajan",
+      "title": "Autonomous navigation of quadrupeds using coverage path planning with morphological skeleton maps",
+      "venue": "Frontiers in Robotics and AI",
+      "year": 2025,
+      "volume": "12",
+      "article": "1601862",
+      "doi": "10.3389/frobt.2025.1601862",
+      "url": "https://doi.org/10.3389/frobt.2025.1601862",
+      "sources": [
+        "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1601862/full"
+      ],
+      "scope": "已读原始全文第三节地图读取、骨架、兴趣点排序与状态机相关内容，并查看实验设置。该文兴趣点遍历不等同于本项目指定边距的边界路径。"
+    },
+    {
+      "key": "mlcapprox",
+      "type": "article",
+      "authors": "M. Ramesh, F. Imeson, B. Fidan, and S. L. Smith",
+      "bib_authors": "Megnath Ramesh and Frank Imeson and Baris Fidan and Stephen L. Smith",
+      "title": "Minimum-Length Coverage Path Planning for Grid Environments With Approximation Guarantees",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2025,
+      "volume": "10",
+      "number": "10",
+      "pages": "10674–10681",
+      "doi": "10.1109/LRA.2025.3604732",
+      "url": "https://doi.org/10.1109/LRA.2025.3604732",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/11146610/",
+        "https://www.megnath.com/publications/"
+      ],
+      "scope": "核实范围仅为IEEE原始出版记录、摘要与作者主页题录，未取得并阅读全文及证明。正文仅使用摘要明确列出的覆盖线、子回路合并和有条件近似保证，不转引证明或实验数字。"
+    },
+    {
+      "key": "yangcpp",
+      "type": "article",
+      "authors": "T. Yang, X. Du, B. Zhang, X. Wang, Z. Zhang, and C. Wu",
+      "bib_authors": "Tao Yang and Xintong Du and Bo Zhang and Xu Wang and Zhenpeng Zhang and Chundu Wu",
+      "title": "Coverage Path Planning Based on Region Segmentation and Path Orientation Optimization",
+      "venue": "Agriculture",
+      "year": 2025,
+      "volume": "15",
+      "number": "14",
+      "article": "1479",
+      "doi": "10.3390/agriculture15141479",
+      "url": "https://doi.org/10.3390/agriculture15141479",
+      "sources": [
+        "https://www.mdpi.com/2077-0472/15/14/1479"
+      ],
+      "scope": "核对出版社原始索引返回的摘要、几何预处理和分区规划相关全文片段及官方引用条目；直接打开HTML遇到限流。未阅读完整PDF，未引用其性能数字或将其安全表述移用于本项目。"
+    },
+    {
+      "key": "mppi",
+      "type": "article",
+      "authors": "G. Williams, P. Drews, B. Goldfain, J. M. Rehg, and E. A. Theodorou",
+      "bib_authors": "Grady Williams and Paul Drews and Brian Goldfain and James M. Rehg and Evangelos A. Theodorou",
+      "title": "Information-Theoretic Model Predictive Control: Theory and Applications to Autonomous Driving",
+      "venue": "IEEE Transactions on Robotics",
+      "year": 2018,
+      "volume": "34",
+      "number": "6",
+      "pages": "1603–1622",
+      "doi": "10.1109/TRO.2018.2865891",
+      "url": "https://doi.org/10.1109/TRO.2018.2865891",
+      "sources": [
+        "https://arxiv.org/html/1707.02342v1",
+        "https://experts.illinois.edu/en/publications/information-theoretic-model-predictive-control-theory-and-applica/"
+      ],
+      "scope": "已读原始预印本采样控制算法相关内容；正式题录核对作者所在机构出版记录。保留该基础文献用于控制框架来源，不将其理论结论移用于本项目修改后的原型。"
+    },
+    {
+      "key": "rmppi",
+      "type": "article",
+      "authors": "M. Gandhi, B. Vlahov, J. Gibson, G. Williams, and E. A. Theodorou",
+      "bib_authors": "Manan Gandhi and Bogdan Vlahov and Jason Gibson and Grady Williams and Evangelos A. Theodorou",
+      "title": "Robust Model Predictive Path Integral Control: Analysis and Performance Guarantees",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2021,
+      "doi": "10.1109/LRA.2021.3057563",
+      "url": "https://doi.org/10.1109/LRA.2021.3057563",
+      "sources": [
+        "https://arxiv.org/html/2102.09027v1",
+        "https://arxiv.org/abs/2102.09027v1"
+      ],
+      "scope": "已读原始全文第三节增广预测与重要性采样。作者arXiv记录确认RA-L及正式DOI；本轮未从原始出版页核对卷期页码，因此参考文献不填该字段。"
+    },
+    {
+      "key": "svgmppi",
+      "type": "inproceedings",
+      "authors": "K. Honda, N. Akai, K. Suzuki, M. Aoki, H. Hosogaya, H. Okuda, and T. Suzuki",
+      "bib_authors": "Kohei Honda and Naoki Akai and Kosuke Suzuki and Mizuho Aoki and Hirotaka Hosogaya and Hiroyuki Okuda and Tatsuya Suzuki",
+      "title": "Stein Variational Guided Model Predictive Path Integral Control: Proposal and Experiments with Fast Maneuvering Vehicles",
+      "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+      "year": 2024,
+      "doi": "10.1109/ICRA57147.2024.10611021",
+      "url": "https://doi.org/10.1109/ICRA57147.2024.10611021",
+      "sources": [
+        "https://arxiv.org/html/2309.11040v3",
+        "https://ieeexplore.ieee.org/abstract/document/10611021"
+      ],
+      "scope": "已读原始全文第三、四节相关方法；正式会议名称、年份与DOI核对IEEE原始记录。按ICRA会议论文引用，不写成RA-L期刊论文。会议页码本轮未核对，不填。"
+    },
+    {
+      "key": "feedbackmppi",
+      "type": "article",
+      "authors": "T. Belvedere, M. Ziegltrum, G. Turrisi, and V. Modugno",
+      "bib_authors": "Tommaso Belvedere and Michael Ziegltrum and Giulio Turrisi and Valerio Modugno",
+      "title": "Feedback-MPPI: Fast Sampling-Based MPC via Rollout Differentiation—Adios Low-Level Controllers",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2026,
+      "volume": "11",
+      "number": "1",
+      "pages": "1–8",
+      "doi": "10.1109/LRA.2025.3630871",
+      "url": "https://doi.org/10.1109/LRA.2025.3630871",
+      "sources": [
+        "https://discovery.ucl.ac.uk/id/eprint/10218402/1/RA_L_FeedbackMPPI_Final.pdf",
+        "https://doi.org/10.1109/LRA.2025.3630871"
+      ],
+      "scope": "已读UCL机构库八页作者接收稿的第二节局部敏感度与反馈增益；正式卷期、页码和DOI核对IEEE出版记录。按2026年卷期引用，2025年接收/在线发表不混作卷年。"
+    },
+    {
+      "key": "prmppi",
+      "type": "article",
+      "authors": "M. Vahs, J. Choi, N. Schmid, J. Tumova, and C. Fan",
+      "bib_authors": "Matti Vahs and Jaeyoun Choi and Niklas Schmid and Jana Tumova and Chuchu Fan",
+      "title": "Parameter-Robust MPPI for Safe Online Learning of Unknown Parameters",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2026,
+      "volume": "11",
+      "number": "4",
+      "pages": "3931–3938",
+      "doi": "10.1109/LRA.2026.3662531",
+      "url": "https://doi.org/10.1109/LRA.2026.3662531",
+      "sources": [
+        "https://arxiv.org/html/2601.02948v1",
+        "https://ieeexplore.ieee.org/abstract/document/11373877",
+        "https://www.kth.se/rpl/publications"
+      ],
+      "scope": "已读原始全文参数表示与在线估计相关段；正式卷期页码核对IEEE及作者机构记录。正文不转引其安全保证到本项目。"
+    },
+    {
+      "key": "clismppi",
+      "type": "misc",
+      "authors": "Z. Liu and X. Chen",
+      "bib_authors": "Zidong Liu and Xu Chen",
+      "title": "CLIS-MPPI: Closed-Loop Model Predictive Path Integral Control With Initial-State Sampling Under Execution Delay",
+      "venue": "arXiv preprint arXiv:2610.21239v1",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2610.21239v1",
+      "sources": [
+        "https://arxiv.org/html/2610.21239v1"
+      ],
+      "scope": "已读原始全文第二节及算法1；首发2026-10-15。未核实正式会议录或期刊出版记录，明确按预印本引用。"
+    }
+  ],
+  "notes": [
+    {
+      "title": "1. 稿件状态与证据口径",
+      "paragraphs": [
+        "本文件为另行生成的相关工作研究稿，保留上一版文件。正文已使用的机载估计、坐标管理、几何生成及控制原型描述以现有材料为基础；时延感知外部位姿补偿模型、补偿增益及其性能收益依据用户本轮计划录入，明确为拟建立、待实现与验证的内容。",
+        "基准建图体现地图与外部参考之间的可追溯关系，不能仅凭冻结原点或坐标变换推导点云几何更准确、建图全域无漂移或独立绝对定位达到某一数值。精度结论应由未参与基准建立的独立位置或时段检验。",
+        "正文包含22项参考文献，其中19项期刊论文、2项会议/会议论文集条目及1项预印本；15项发表于2024—2026年。另有3项评测类文献保留为补充阅读。文献核实截止2026-10-22，未进行穷尽性新颖性检索。"
+      ]
+    },
+    {
+      "title": "2. 三主题压缩的实质性修改",
+      "paragraphs": [
+        "原有“激光惯性定位”“外部定位约束”“异步观测补偿”合并为A节“高精度定位与外部参考约束”，内部按机载估计、外部基准、观测时序和本文研究对象递进。几何路径与控制分别作为B、C两节。三个主题用于组织文献，不对应三个已经证实的独立创新点。",
+        "删除重复的应用意义、方法预告和跨节总结，压缩单篇论文介绍；保留22项正文引用及全部来源核实说明，重新按首次出现顺序编号。正文技术含义和结论强度不扩大。",
+        "时延感知补偿模型和增益设计仍按拟研究内容标注；固定基准的精度、FAST-LIO内部积分状态是否更新以及导航收益，继续依据具体实现和独立实验确定。"
+      ]
+    },
+    {
+      "title": "3. 补偿模型需要区分的时间与更新对象",
+      "paragraphs": [
+        "传感器时间偏移：不同观测流的时钟、时间戳定义与采样时刻之间的偏差；它影响观测配对，应通过独立标定或明确的估计机制处理。",
+        "定位输出滞后：位姿表示的状态时刻与导航消费该位姿的时刻之间的时间差。历史位姿不能因更换发布时间戳就成为当前状态；是否传播、如何传播及传播误差需要单独建立模型。",
+        "执行延迟：指令从生成到实际影响底盘运动的延迟，属于控制预测与执行过程。它与观测时间偏移、定位输出滞后不是同一个参数。",
+        "补偿对象和增益：需确定更新的是外部地图变换、当前车体位姿，还是FAST-LIO内部状态；需明确残差、增益来源、观测质量条件、更新连续性与生效区间。固定增益不能未经证据称为自适应增益。"
+      ]
+    },
+    {
+      "title": "4. 待核实信息与审稿问题",
+      "paragraphs": [
+        "待核实：冻结的是地图原点还是包含方向的完整坐标关系；点云存储坐标系和冻结时刻；刚体到车体的安装外参；动捕与LIO的状态时间、接收时间和发布时间。",
+        "待核实：动态时延是否已独立测量；补偿模型是否已编码；增益是固定、优化获得还是由协方差计算；局部观测失效与恢复时采用何种更新规则；控制器是否已完成实车验证。",
+        "审稿问题：固定基准、时间关联、状态传播和补偿增益各自贡献多少收益？建议以无补偿、仅基准锚定、时间对齐、位姿补偿及完整模型的匹配实验逐步检验，避免将收益都归因于新模型。",
+        "审稿问题：同一动捕同时用于锚定、补偿和评价时，相关性如何处理？动捕覆盖区外以何种独立参考验证导航精度？局部误差下降能否在离站后的留出位置保持？",
+        "审稿问题：与GNSS/UWB辅助估计、已有时间标定及外部目标补偿相比，新增机制是什么？相关工作中的问题组织提供研究动机，创新成立仍需具体模型、代码和实验支持。"
+      ]
+    }
+  ],
+  "revision": "将原五小节按研究问题收束为三个主题，保留补偿模型的研究计划状态。",
+  "reading_archive": [
+    {
+      "key": "frosi2023",
+      "type": "article",
+      "authors": "M. Frosi, R. Bertoglio, and M. Matteucci",
+      "bib_authors": "Matteo Frosi and Riccardo Bertoglio and Matteo Matteucci",
+      "title": "On the precision of 6 DoF IMU-LiDAR based localization in GNSS-denied scenarios",
+      "venue": "Frontiers in Robotics and AI",
+      "year": 2023,
+      "volume": "10",
+      "article": "1064930",
+      "doi": "10.3389/frobt.2023.1064930",
+      "url": "https://doi.org/10.3389/frobt.2023.1064930",
+      "sources": [
+        "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1064930/full"
+      ],
+      "scope": "已读原始全文第三节及局部OptiTrack覆盖、两次轨迹、停点与时间配对相关实验段。该文使用自定义重定位误差，本稿未将其数值与本项目RMSE直接比较。"
+    },
+    {
+      "key": "cavers",
+      "type": "article",
+      "authors": "G. Franchini, D. Rodríguez-Martínez, A. Martínez-Petersen, C. J. Pérez-del-Pulgar, and M. Chiaberge",
+      "bib_authors": "Giacomo Franchini and David Rodríguez-Martínez and Alfonso Martínez-Petersen and Carlos J. Pérez-del-Pulgar and Marcello Chiaberge",
+      "title": "CAVERS: Multimodal SLAM Data From a Natural Karstic Cave With Ground Truth Motion Capture",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2026,
+      "volume": "11",
+      "number": "10",
+      "pages": "11514–11521",
+      "doi": "10.1109/LRA.2026.3726391",
+      "url": "https://doi.org/10.1109/LRA.2026.3726391",
+      "sources": [],
+      "scope": "依据book正式PDF第二节及局限段。有效动捕参考只覆盖部分序列，其他算法轨迹不能混称独立真值；标定误差也不能替代独立位姿不确定度。"
+    },
+    {
+      "key": "lioreproducibility",
+      "type": "article",
+      "authors": "H. Huang, M. Zhang, J. Hu, and X. Guan",
+      "bib_authors": "Hongqian Huang and Meng Zhang and Jianchen Hu and Xiaohong Guan",
+      "title": "Unveiling Non-Reproducibility in LiDAR-Inertial Odometry",
+      "venue": "IEEE Robotics and Automation Letters",
+      "year": 2026,
+      "volume": "11",
+      "number": "1",
+      "pages": "994–1001",
+      "doi": "10.1109/LRA.2025.3636030",
+      "url": "https://doi.org/10.1109/LRA.2025.3636030",
+      "sources": [],
+      "scope": "依据book正式PDF摘要、实现干预与重复运行相关内容。只支持记录运行条件和重复性的重要性，不用于归因本项目中任何未诊断的误差。"
+    }
+  ],
+  "status_note": "研究设计状态：时延感知观测补偿模型及补偿增益尚待建立与验证；本稿不包含该模型的实验结论。"
+}

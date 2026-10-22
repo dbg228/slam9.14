@@ -1,0 +1,150 @@
+{
+  "ready": true,
+  "errors": [],
+  "mode": "EXTERNAL",
+  "watchdog_s": 0.25,
+  "source": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792229600181062723",
+    "mode": "localization",
+    "context": "localization",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "mocap_initialized_local_odometry",
+    "pairs": 31,
+    "native_stamp_ns": 1792230327131293058,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "mocap_samples": 363,
+  "native_samples": 32,
+  "hardware": {
+    "log_file": "/home/zkam/.ros/log/ros2_control_node_3738_1792198375356.log",
+    "process_pid": 3738,
+    "read_scope": "full current process log rechecked before this segment",
+    "ready": true,
+    "last_open_offset": 20845,
+    "last_restore_offset": 20926,
+    "last_reset_offset": 14807,
+    "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+  }
+}
+Guard: old_or_invalid_request
+{
+  "data_kind": "real_2m_dynamic_localization_test",
+  "state": {
+    "group": "A",
+    "direction": -1,
+    "state": "ABORTED",
+    "reason": "velocity_guard_failure",
+    "displacement_m": 0.0,
+    "path_length_m": 0.0,
+    "mocap_stamp_ns": 1792230331422403150,
+    "ros_stamp_ns": 1792230336451539816,
+    "request_linear_x": 0.0,
+    "request_angular_z": 0.0,
+    "duplicates": 0
+  },
+  "guard_during_trial": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "old_or_invalid_request",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792230331454381912
+  },
+  "guard_after_intentional_disarm": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "old_or_invalid_request",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792230336753771424
+  },
+  "events": [
+    {
+      "event": "stop_command",
+      "steady_s": 32031.776365965,
+      "reason": "velocity_guard_failure",
+      "displacement_m": 0.0,
+      "path_length_m": 0.0,
+      "mocap_stamp_ns": 1792230331422403150,
+      "group": "A",
+      "ros_stamp_ns": 1792230331451431762,
+      "event_id": 0
+    }
+  ],
+  "motion_started": false,
+  "reference_coverage": null,
+  "XY_error_m": {
+    "n": 0,
+    "rmse": null,
+    "p95_abs": null,
+    "max_abs": null,
+    "mean": null,
+    "std": null
+  },
+  "yaw_error_deg": {
+    "n": 0,
+    "rmse": null,
+    "p95_abs": null,
+    "max_abs": null,
+    "mean": null,
+    "std": null
+  },
+  "phases": {
+    "pre_motion": {
+      "total": 130,
+      "XY_error_m": {
+        "n": 118,
+        "rmse": 0.011975584968346685,
+        "p95_abs": 0.012930295095232866,
+        "max_abs": 0.013290747390193277,
+        "mean": 0.011956978743592563,
+        "std": 0.000667304023190849
+      }
+    },
+    "motion": {
+      "total": 0,
+      "XY_error_m": {
+        "n": 0,
+        "rmse": null,
+        "p95_abs": null,
+        "max_abs": null,
+        "mean": null,
+        "std": null
+      }
+    },
+    "post_stop": {
+      "total": 0,
+      "XY_error_m": {
+        "n": 0,
+        "rmse": null,
+        "p95_abs": null,
+        "max_abs": null,
+        "mean": null,
+        "std": null
+      }
+    },
+    "cleanup": {
+      "total": 0,
+      "XY_error_m": {
+        "n": 0,
+        "rmse": null,
+        "p95_abs": null,
+        "max_abs": null,
+        "mean": null,
+        "std": null
+      }
+    }
+  },
+  "evaluation_window": "motion_start through stop_command+5s; pre-motion and cleanup retained separately",
+  "stale_native_samples_retained_for_offline_analysis": true,
+  "timing_verified": false,
+  "matching": "nearest within 25ms; no interpolation, extrapolation, zero-fill or alignment fit",
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "initialization_sha256": "6324b7a5439685c35bac4a7a4c1864e9aa06d22fcf7ebe7ea6885f0d9212e80d"
+}

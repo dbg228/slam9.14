@@ -1,0 +1,11 @@
+{
+  "start_ns": 1792311426466115189,
+  "end_ns": 1792311783321916928,
+  "first_command_ns": 1792311426466115189,
+  "last_nonzero_command_ns": 1792311782319644136,
+  "zero_command_ns": 1792311782321916928,
+  "navigation_terminal_ns": 1792311782033557803,
+  "command_threshold": 0.0001,
+  "settling_margin_s": 1.0,
+  "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+}

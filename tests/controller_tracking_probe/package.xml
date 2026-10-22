@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>controller_tracking_probe</name><version>0.2.0</version>
+  <description>Experiment-only transparent delegation to unchanged Nav2 MPPI with input/timing telemetry.</description>
+  <maintainer email="zkam@example.com">zkam</maintainer><license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nav2_core</depend><depend>pluginlib</depend><depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend><depend>nav_msgs</depend><depend>std_msgs</depend>
+  <depend>geometry_msgs</depend><exec_depend>nav2_mppi_controller</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

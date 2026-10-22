@@ -1,0 +1,180 @@
+{
+  "real_acquisition": true,
+  "data_kind": "real_first_mapping",
+  "stage": "native_map_saved_grid_generated_and_verified",
+  "ros_time_ns": 1792225938788117852,
+  "live_status": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/initialization",
+    "mode": "mapping",
+    "context": "mapping",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "calibrated_native_mapping",
+    "pairs": 32,
+    "native_stamp_ns": 1792225938731978654,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "native_last": {
+    "stamp_ns": 1792225938731978654,
+    "frame": "camera_init",
+    "child": "body",
+    "age_s": 0.052233273000000004
+  },
+  "live_parameters": {
+    "map_file_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd",
+    "pcd_save.pcd_save_en": true,
+    "common.lid_topic": "/livox/lidar",
+    "common.imu_topic": "/livox/imu"
+  },
+  "critical_static_TF": [
+    {
+      "parent": "map",
+      "child": "camera_init",
+      "translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "nodes": [
+    "_ros2cli_daemon_0_0177b0dc2a2743978d5461f596ddc504",
+    "anchored_fastlio",
+    "arbitrator_controller",
+    "client",
+    "controller_manager",
+    "initial_anchor",
+    "joint_state_broadcaster",
+    "joy_node",
+    "livox_lidar_publisher",
+    "mocap_tracker0_normalizer",
+    "omni_velocity_controller",
+    "real_mapping_runtime_verification",
+    "robot_state_publisher",
+    "rviz",
+    "teleop_node",
+    "transform_listener_impl_5d37bfd22f70"
+  ],
+  "PCD_exists": true,
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "no_NDT_nodes": true,
+  "manual_motion_only": true,
+  "PCD_saved": true,
+  "save_verification": {
+    "data_kind": "real_first_mapping",
+    "stage": "native_map_saved",
+    "saved_verified_at_utc": "2026-10-17T08:36:52.899040+00:00",
+    "user_reported_mapping_complete_and_stationary": true,
+    "native_save_receipt": {
+      "run_id": "20261017_native_01",
+      "data_kind": "real_mapping_pending_collection",
+      "frame": "map=native_F0",
+      "transform_count": 0,
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd",
+      "sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51",
+      "bytes": 48961437,
+      "points": 1530037,
+      "service": "/anchored_mapping/save_native",
+      "service_message": "Map saved.",
+      "native_parameters_verified": true,
+      "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+      "source": "native FAST-LIO map_publish_callback accumulated world scans; no NDT, no loop-optimized merge"
+    },
+    "calibration_unchanged": true,
+    "pcd_finite_points": 1530037,
+    "bounds_m": [
+      [
+        -16.77027130126953,
+        -23.90520668029785,
+        -2.0860953330993652
+      ],
+      [
+        17.8780517578125,
+        25.260540008544922,
+        4.253505706787109
+      ]
+    ],
+    "grid_generated": true,
+    "mapper_stop_requested": false,
+    "note": "Frozen configuration data_kind contains pending_collection from preparation; this is a real sensor acquisition, not a software fixture. Original frozen inputs are not relabeled."
+  },
+  "runtime_snapshot_note": "live_status/native_last/nodes/ros_time_ns above describe the earlier initialization verification, not a fresh post-save snapshot",
+  "grid_generated": true,
+  "grid_verified_at_utc": "2026-10-17T08:39:28.860098+00:00",
+  "grid_projection": {
+    "frame": "map=native_F0",
+    "pcd_sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51",
+    "yaml_sha256": "fb591c3f47c6225bac51ed87adb16038749c531421f03f607fb199fc3cc82722",
+    "image_sha256": "9309d69813fb429c40bb34170d3bb047be21413c6e7069d7ddd08e14aa1112ee",
+    "point_coordinates_changed": false,
+    "PCD_XYZ_transform_count": 0,
+    "T_map_F0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "yaml_origin": [
+      -16.65,
+      -16.95,
+      0.0
+    ],
+    "resolution_m": 0.05,
+    "width": 557,
+    "height": 593,
+    "xy_bounds_m": [
+      [
+        -16.65,
+        -16.95
+      ],
+      [
+        11.200000000000003,
+        12.700000000000003
+      ]
+    ],
+    "slice_heights_changed_for_mocap": false,
+    "post_3D_transform": "identity",
+    "origin_source": "new native point cloud bounds; old map origin not copied"
+  },
+  "latest_static_validation": {
+    "batch": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation_sessions/20261017T085200Z_three_static_points",
+    "complete": true,
+    "independent_points": 3,
+    "paired_samples": 95,
+    "XY_RMSE_m": 0.007784793962162626,
+    "3D_RMSE_m": 0.016317017237903686,
+    "independent_world_calibration_validation": false,
+    "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792227126754706699"
+  }
+}

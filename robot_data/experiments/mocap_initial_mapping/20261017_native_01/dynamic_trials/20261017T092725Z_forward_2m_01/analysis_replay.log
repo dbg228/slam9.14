@@ -1,0 +1,146 @@
+{
+  "data_kind": "real_2m_dynamic_localization_test",
+  "state": {
+    "group": "A",
+    "direction": 1,
+    "state": "ABORTED",
+    "reason": "mocap_stale",
+    "displacement_m": 0.2012228057438651,
+    "path_length_m": 0.20177131166073067,
+    "mocap_stamp_ns": 1792229722101629186,
+    "ros_stamp_ns": 1792229727341005550,
+    "request_linear_x": 0.0,
+    "request_angular_z": 0.0,
+    "duplicates": 0
+  },
+  "guard_during_trial": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "request_recorder_mocap_localization_or_mode_not_ready",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792229722418826437
+  },
+  "guard_after_intentional_disarm": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "request_recorder_mocap_localization_or_mode_not_ready",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792229727458699906
+  },
+  "events": [
+    {
+      "event": "motion_start",
+      "steady_s": 31420.35369699,
+      "start_base_pose": {
+        "stamp_ns": 1792229720011681136,
+        "valid": true,
+        "x": -1.1010060715011931,
+        "y": -0.14539369097638025,
+        "z": 0.20860183289841885,
+        "qx": 0.0,
+        "qy": 0.0,
+        "qz": 0.030646191288602704,
+        "qw": 0.9995302951684368
+      },
+      "direction": 1,
+      "group": "A",
+      "ros_stamp_ns": 1792229720025211641,
+      "event_id": 0
+    },
+    {
+      "event": "stop_command",
+      "steady_s": 31422.6537992,
+      "reason": "mocap_stale",
+      "displacement_m": 0.2012228057438651,
+      "path_length_m": 0.20177131166073067,
+      "mocap_stamp_ns": 1792229722101629186,
+      "group": "A",
+      "ros_stamp_ns": 1792229722320910912,
+      "event_id": 1
+    }
+  ],
+  "motion_started": true,
+  "reference_coverage": 0.9315068493150684,
+  "XY_error_m": {
+    "n": 68,
+    "rmse": 0.008724065046515777,
+    "p95_abs": 0.009607614925696966,
+    "max_abs": 0.02018450082816122,
+    "mean": 0.008586556903059216,
+    "std": 0.0015428387752336337
+  },
+  "yaw_error_deg": {
+    "n": 68,
+    "rmse": 0.0401563039262153,
+    "p95_abs": 0.05421146683346196,
+    "max_abs": 0.07111875704153636,
+    "mean": 0.03806257810005219,
+    "std": 0.012797222096689669
+  },
+  "phases": {
+    "pre_motion": {
+      "total": 80,
+      "XY_error_m": {
+        "n": 77,
+        "rmse": 0.008110739563938894,
+        "p95_abs": 0.008874314921783488,
+        "max_abs": 0.009566324162359129,
+        "mean": 0.008093132652187597,
+        "std": 0.0005341349531145164
+      }
+    },
+    "motion": {
+      "total": 23,
+      "XY_error_m": {
+        "n": 21,
+        "rmse": 0.00836085518176647,
+        "p95_abs": 0.009631886439878229,
+        "max_abs": 0.009681706655549231,
+        "mean": 0.008322754980581474,
+        "std": 0.0007972759269396722
+      }
+    },
+    "post_stop": {
+      "total": 50,
+      "XY_error_m": {
+        "n": 47,
+        "rmse": 0.00888155063236469,
+        "p95_abs": 0.009408469684911222,
+        "max_abs": 0.02018450082816122,
+        "mean": 0.008704425847145016,
+        "std": 0.0017649114161371918
+      }
+    },
+    "cleanup": {
+      "total": 10,
+      "XY_error_m": {
+        "n": 6,
+        "rmse": 0.008719646366058134,
+        "p95_abs": 0.009246393942776258,
+        "max_abs": 0.00937207619318304,
+        "mean": 0.008712513991261469,
+        "std": 0.0003526084247206119
+      }
+    }
+  },
+  "evaluation_window": "motion_start through stop_command+5s; pre-motion and cleanup retained separately",
+  "stale_native_samples_retained_for_offline_analysis": true,
+  "timing_verified": false,
+  "matching": "nearest within 25ms; no interpolation, extrapolation, zero-fill or alignment fit",
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "initialization_sha256": "6324b7a5439685c35bac4a7a4c1864e9aa06d22fcf7ebe7ea6885f0d9212e80d",
+  "motion_duration_s": 2.295699271,
+  "post_stop_2_to_5s_XY_error_m": {
+    "n": 30,
+    "rmse": 0.008378242192273429,
+    "p95_abs": 0.00919518647348661,
+    "max_abs": 0.009408288015452546,
+    "mean": 0.008364412903014245,
+    "std": 0.00048118501668224827
+  },
+  "stopped_displacement_m": 0.2368005528739258,
+  "analysis_tool_sha256": "a98652deccbdcee486b0f677b7f94a32b6263aca23445040303b91fe5296217f",
+  "raw_sha256": "3947a0464e2474046162adc14c26b5c0b41fba671c6fbb162a68615e761300cc"
+}

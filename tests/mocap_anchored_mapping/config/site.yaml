@@ -1,0 +1,45 @@
+schema: 2
+project_root: /home/zkam/test_nav
+fastlio_config: /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml
+fastlio_binary: /home/zkam/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+fastlio_source: /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/src/laserMapping.cpp
+mocap_config: /home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml
+urdf: /home/zkam/test_nav/robot_data/urdf/robot.urdf
+native_body_joint: imu_joint
+native_body_frame: body
+native_world_frame: camera_init
+map_frame: map
+base_frame: base_link
+M_from_mocap_world:
+  axes_confirmed: true
+  translation_m:
+  - 0.0
+  - 0.0
+  - 0.0
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  provenance: User confirmed 2026-10-17 right-handed, Z-up, retain current mocap origin;
+    identity is the chosen M definition, not old-map calibration.
+body_mount_confirmed: true
+body_mount_provenance: Existing user-confirmed 2026-10-16 base_link->imu_link joint;
+  body=IMU checked against native source. No second lidar->IMU correction is applied.
+camera_calibration_external_id: null
+camera_latency_s: null
+clock_offset_mocap_minus_lio_s: 0.0
+clock_offset_verified: false
+initialization:
+  duration_s: 3.0
+  minimum_pairs: 25
+  maximum_pair_skew_s: 0.025
+  maximum_pair_gap_s: 0.15
+  maximum_age_s: 0.25
+  maximum_static_radius_m: 0.02
+  maximum_static_rotation_deg: 2.0
+  maximum_command_age_s: 0.25
+  maximum_command_abs: 0.0001
+  minimum_raw_normalized_coverage: 0.9
+  timeout_s: 45.0
+map_basis: native_fastlio_mapping_world

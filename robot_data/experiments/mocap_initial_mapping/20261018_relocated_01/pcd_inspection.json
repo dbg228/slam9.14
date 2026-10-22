@@ -1,0 +1,18 @@
+{
+  "frame": "map=native_F0",
+  "points": 3188533,
+  "bounds_m": [
+    [
+      -25.868736267089844,
+      -26.728580474853516,
+      -2.049394369125366
+    ],
+    [
+      22.33368492126465,
+      28.497692108154297,
+      4.686865329742432
+    ]
+  ],
+  "point_coordinates_changed": false,
+  "projection": "Uses the original native-frame slice heights and denoising switches"
+}

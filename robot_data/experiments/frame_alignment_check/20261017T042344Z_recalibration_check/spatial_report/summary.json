@@ -1,0 +1,298 @@
+{
+  "status": "completed_with_insufficient_qualified_coverage",
+  "acquisition_complete": true,
+  "transform_refit": false,
+  "transform_content_sha256": "487e6df57e88cd1dd8d2cfa96855a558dee1da5e47e6ffdfa907c20a3e31c078",
+  "transform_file_sha256": "c0307212293c539bb0df1f43061b7b5d7006ab5f59a175d84de0037a635aee0e",
+  "attempts": [
+    {
+      "capture": "point02_attempt01.json",
+      "static_quality_passed": true,
+      "quality_failure": null,
+      "capture_complete": true,
+      "rejections": {
+        "mocap_timestamp_outside_recording": 2,
+        "unpaired_pose_or_validity": 1
+      },
+      "samples": 52,
+      "residuals_are_diagnostic_only": false,
+      "xy_m": {
+        "n": 52,
+        "rmse": 0.024083515721958392,
+        "p95_abs": 0.029773854402231577,
+        "max_abs": 0.03065670143613747,
+        "mean": 0.02321145920107217,
+        "std": 0.00642214070904548
+      },
+      "yaw_rad": {
+        "n": 52,
+        "rmse": 0.0010199052601042645,
+        "p95_abs": 0.0016515475104243503,
+        "max_abs": 0.002194451960451538,
+        "mean": 0.0007441705081043227,
+        "std": 0.000697436014596394
+      },
+      "static_spread": {
+        "mocap": {
+          "samples": 52,
+          "center_x_m": -0.6000078355739483,
+          "center_y_m": -0.08567506640540454,
+          "mean_yaw_rad": 0.03065072028690511,
+          "max_xy_radius_m": 9.820800758423759e-05,
+          "max_yaw_deviation_rad": 7.07555580490328e-05
+        },
+        "map": {
+          "samples": 52,
+          "center_x_m": 1.98360799319345,
+          "center_y_m": -2.4237753594594635,
+          "mean_yaw_rad": -0.7202957012388289,
+          "max_xy_radius_m": 0.015815979140194208,
+          "max_yaw_deviation_rad": 0.001464621212842854
+        }
+      },
+      "mocap_center": [
+        -0.6000078355739483,
+        -0.08567506640540454
+      ],
+      "distance_from_training_m": 0.4726808933872051,
+      "max_matched_sample_gap_s": 0.100640535,
+      "source_age_definition": "legacy: age of latest local TF in receive buffer; not a per-sample latency measurement"
+    },
+    {
+      "capture": "point03_attempt01.json",
+      "static_quality_passed": false,
+      "quality_failure": "Capture includes duplicate/backward/long-gap timestamps; recapture a continuous static window",
+      "capture_complete": true,
+      "rejections": {
+        "mocap_timestamp_outside_recording": 3,
+        "no_synchronous_map_tf": 9,
+        "stale_local_tf": 12
+      },
+      "samples": 42,
+      "residuals_are_diagnostic_only": true,
+      "xy_m": {
+        "n": 42,
+        "rmse": 0.013900373462184408,
+        "p95_abs": 0.02230288731110973,
+        "max_abs": 0.02406606233933868,
+        "mean": 0.01163240584844609,
+        "std": 0.007609698848524674
+      },
+      "yaw_rad": {
+        "n": 42,
+        "rmse": 0.006231433484529793,
+        "p95_abs": 0.007641656153711945,
+        "max_abs": 0.007764030752410944,
+        "mean": -0.006095670973808228,
+        "std": 0.0012936609490863372
+      },
+      "static_spread": {
+        "mocap": {
+          "samples": 42,
+          "center_x_m": 0.01582149901926729,
+          "center_y_m": -0.25824613655606893,
+          "mean_yaw_rad": 0.0379400505900204,
+          "max_xy_radius_m": 0.00012602257433582824,
+          "max_yaw_deviation_rad": 0.0001282040301498269
+        },
+        "map": {
+          "samples": 42,
+          "center_x_m": 2.3108420785790704,
+          "center_y_m": -2.9607542664390185,
+          "mean_yaw_rad": -0.7061665294195874,
+          "max_xy_radius_m": 0.013427687969231732,
+          "max_yaw_deviation_rad": 0.0018618837066673999
+        }
+      },
+      "mocap_center": [
+        0.01582149901926729,
+        -0.25824613655606893
+      ],
+      "distance_from_training_m": 1.0989968880923382,
+      "max_matched_sample_gap_s": 0.300308942,
+      "source_age_definition": "legacy: age of latest local TF in receive buffer; not a per-sample latency measurement"
+    },
+    {
+      "capture": "point03_attempt02.json",
+      "static_quality_passed": true,
+      "quality_failure": null,
+      "capture_complete": true,
+      "rejections": {
+        "no_fresh_mocap_at_local_time": 11,
+        "insufficient_mocap_samples": 4,
+        "no_synchronous_map_tf": 10,
+        "unpaired_pose_or_validity": 29,
+        "mocap_timestamp_outside_recording": 4,
+        "out_of_order_or_stale_measurement": 1,
+        "stale_local_tf": 4
+      },
+      "samples": 48,
+      "residuals_are_diagnostic_only": false,
+      "xy_m": {
+        "n": 48,
+        "rmse": 0.02035484137950623,
+        "p95_abs": 0.026629724818753222,
+        "max_abs": 0.027143932378533766,
+        "mean": 0.019434577789646943,
+        "std": 0.006051177878977038
+      },
+      "yaw_rad": {
+        "n": 48,
+        "rmse": 0.0037569655842355264,
+        "p95_abs": 0.00500763669772728,
+        "max_abs": 0.0051158209649634365,
+        "mean": -0.0035611210988051104,
+        "std": 0.0011971662043238917
+      },
+      "static_spread": {
+        "mocap": {
+          "samples": 48,
+          "center_x_m": 0.01581995219079489,
+          "center_y_m": -0.25824795852072063,
+          "mean_yaw_rad": 0.03794241716846638,
+          "max_xy_radius_m": 0.00020976363214592655,
+          "max_yaw_deviation_rad": 0.00016787488870621814
+        },
+        "map": {
+          "samples": 48,
+          "center_x_m": 2.3161822904517564,
+          "center_y_m": -2.9504710273170143,
+          "mean_yaw_rad": -0.7086987126685673,
+          "max_xy_radius_m": 0.01746594177918555,
+          "max_yaw_deviation_rad": 0.0017655449506409624
+        }
+      },
+      "mocap_center": [
+        0.01581995219079489,
+        -0.25824795852072063
+      ],
+      "distance_from_training_m": 1.098995611920591,
+      "max_matched_sample_gap_s": 0.20010662,
+      "source_age_definition": "processing ROS time minus this matched local measurement stamp; not latest TF header"
+    },
+    {
+      "capture": "point04_attempt01.json",
+      "static_quality_passed": false,
+      "quality_failure": "Capture includes duplicate/backward/long-gap timestamps; recapture a continuous static window",
+      "capture_complete": true,
+      "rejections": {
+        "map_not_initialized": 1,
+        "stale_local_tf": 17
+      },
+      "samples": 40,
+      "residuals_are_diagnostic_only": true,
+      "xy_m": {
+        "n": 40,
+        "rmse": 0.008862420988359347,
+        "p95_abs": 0.014227219176459652,
+        "max_abs": 0.014643326415761337,
+        "mean": 0.008289615431987113,
+        "std": 0.003134450791553977
+      },
+      "yaw_rad": {
+        "n": 40,
+        "rmse": 0.0022783719039528856,
+        "p95_abs": 0.0032933157141677876,
+        "max_abs": 0.003537844584722505,
+        "mean": -0.0022160799497691675,
+        "std": 0.0005291202027450678
+      },
+      "static_spread": {
+        "mocap": {
+          "samples": 40,
+          "center_x_m": 0.586045124680711,
+          "center_y_m": 0.07004919518851227,
+          "mean_yaw_rad": 0.05322752755738183,
+          "max_xy_radius_m": 5.055685558906762e-05,
+          "max_yaw_deviation_rad": 8.845937421401995e-05
+        },
+        "map": {
+          "samples": 40,
+          "center_x_m": 2.949828313850142,
+          "center_y_m": -3.101600660341558,
+          "mean_yaw_rad": -0.6947586435437041,
+          "max_xy_radius_m": 0.011100403618064907,
+          "max_yaw_deviation_rad": 0.001353667608661957
+        }
+      },
+      "mocap_center": [
+        0.586045124680711,
+        0.07004919518851227
+      ],
+      "distance_from_training_m": 1.667500000486485,
+      "max_matched_sample_gap_s": 0.40011930500000004,
+      "source_age_definition": "processing ROS time minus this matched local measurement stamp; not latest TF header"
+    },
+    {
+      "capture": "point04_attempt02.json",
+      "static_quality_passed": false,
+      "quality_failure": "Capture includes duplicate/backward/long-gap timestamps; recapture a continuous static window",
+      "capture_complete": true,
+      "rejections": {
+        "no_fresh_mocap_at_local_time": 20,
+        "map_not_initialized": 11,
+        "unpaired_pose_or_validity": 6,
+        "stale_local_tf": 15
+      },
+      "samples": 36,
+      "residuals_are_diagnostic_only": true,
+      "xy_m": {
+        "n": 36,
+        "rmse": 0.009001563635833269,
+        "p95_abs": 0.014162251891001124,
+        "max_abs": 0.020928937529650887,
+        "mean": 0.007179186042105197,
+        "std": 0.0054302334814258025
+      },
+      "yaw_rad": {
+        "n": 36,
+        "rmse": 0.002583921985123644,
+        "p95_abs": 0.003912735829573855,
+        "max_abs": 0.005300731564923167,
+        "mean": -0.002366955054932951,
+        "std": 0.0010364249095485226
+      },
+      "static_spread": {
+        "mocap": {
+          "samples": 36,
+          "center_x_m": 0.5860546047649119,
+          "center_y_m": 0.07004972029713587,
+          "mean_yaw_rad": 0.0532209467082299,
+          "max_xy_radius_m": 4.220986312778366e-05,
+          "max_yaw_deviation_rad": 9.093462233938227e-05
+        },
+        "map": {
+          "samples": 36,
+          "center_x_m": 2.944382000951668,
+          "center_y_m": -3.104704323223247,
+          "mean_yaw_rad": -0.6946143494103257,
+          "max_xy_radius_m": 0.023021056456449848,
+          "max_yaw_deviation_rad": 0.002915380466535278
+        }
+      },
+      "mocap_center": [
+        0.5860546047649119,
+        0.07004972029713587
+      ],
+      "distance_from_training_m": 1.6675094835412652,
+      "max_matched_sample_gap_s": 0.400446892,
+      "source_age_definition": "processing ROS time minus this matched local measurement stamp; not latest TF header"
+    }
+  ],
+  "attempt_count": 5,
+  "quality_passed_count": 2,
+  "sufficient_noncollinear_coverage": false,
+  "heldout_rank": 1,
+  "all_observed_position_rank": 2,
+  "quality_passed_pooled_descriptive_xy_m": {
+    "n": 100,
+    "rmse": 0.0223714454561219,
+    "p95_abs": 0.02945323855288071,
+    "max_abs": 0.03065670143613747,
+    "mean": 0.021398556123588063,
+    "std": 0.006525593277387829
+  },
+  "precision_acceptance_threshold": null,
+  "absolute_calibration_validated": false,
+  "caveat": "Residuals include FAST-LIO/NDT map estimate errors; no independent surveyed map truth. Pooled samples are descriptive, not independent repeats."
+}

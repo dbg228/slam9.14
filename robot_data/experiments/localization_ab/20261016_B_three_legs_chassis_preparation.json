@@ -1,0 +1,40 @@
+{
+  "applied": true,
+  "actions": [
+    {
+      "service": "/arbitrator_controller/get_parameters",
+      "result": "rcl_interfaces.srv.GetParameters_Response(values=[rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=100.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])])"
+    },
+    {
+      "service": "/controller_manager/switch_controller",
+      "result": "controller_manager_msgs.srv.SwitchController_Response(ok=True)"
+    },
+    {
+      "service": "/arbitrator_controller/set_parameters",
+      "result": "rcl_interfaces.srv.SetParameters_Response(results=[rcl_interfaces.msg.SetParametersResult(successful=True, reason='')])"
+    },
+    {
+      "service": "/controller_manager/configure_controller",
+      "result": "controller_manager_msgs.srv.ConfigureController_Response(ok=True)"
+    },
+    {
+      "service": "/controller_manager/switch_controller",
+      "result": "controller_manager_msgs.srv.SwitchController_Response(ok=True)"
+    },
+    {
+      "service": "/arbitrator_controller/get_parameters",
+      "result": "rcl_interfaces.srv.GetParameters_Response(values=[rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.25, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])])"
+    },
+    {
+      "service": "/controller_manager/list_controllers",
+      "result": "controller_manager_msgs.srv.ListControllers_Response(controller=[controller_manager_msgs.msg.ControllerState(name='joint_state_broadcaster', state='active', type='joint_state_broadcaster/JointStateBroadcaster', claimed_interfaces=[], required_command_interfaces=[], required_state_interfaces=['wheel_1_roll/position', 'wheel_1_roll/velocity', 'wheel_1_turn/homing_done', 'wheel_1_turn/position', 'wheel_1_turn/velocity', 'wheel_2_roll/position', 'wheel_2_roll/velocity', 'wheel_2_turn/homing_done', 'wheel_2_turn/position', 'wheel_2_turn/velocity', 'wheel_3_roll/position', 'wheel_3_roll/velocity', 'wheel_3_turn/homing_done', 'wheel_3_turn/position', 'wheel_3_turn/velocity', 'wheel_4_roll/position', 'wheel_4_roll/velocity', 'wheel_4_turn/homing_done', 'wheel_4_turn/position', 'wheel_4_turn/velocity'], is_chainable=False, is_chained=False, reference_interfaces=[], chain_connections=[]), controller_manager_msgs.msg.ControllerState(name='arbitrator_controller', state='active', type='omnibot_control::ArbitratorController', claimed_interfaces=['wheel_1_turn/homing_trigger', 'wheel_2_turn/homing_trigger', 'wheel_3_turn/homing_trigger', 'wheel_4_turn/homing_trigger', 'homing_reset/reset'], required_command_interfaces=['wheel_1_turn/homing_trigger', 'wheel_2_turn/homing_trigger', 'wheel_3_turn/homing_trigger', 'wheel_4_turn/homing_trigger', 'homing_reset/reset'], required_state_interfaces=['wheel_1_turn/homing_done', 'wheel_2_turn/homing_done', 'wheel_3_turn/homing_done', 'wheel_4_turn/homing_done'], is_chainable=True, is_chained=False, reference_interfaces=['target_vx', 'target_vy', 'target_w'], chain_connections=[]), controller_manager_msgs.msg.ControllerState(name='omni_velocity_controller', state='active', type='omnibot_control::OmniVelocityController', claimed_interfaces=['wheel_1_turn/velocity', 'wheel_1_roll/velocity', 'wheel_2_turn/velocity', 'wheel_2_roll/velocity', 'wheel_3_turn/velocity', 'wheel_3_roll/velocity', 'wheel_4_turn/velocity', 'wheel_4_roll/velocity'], required_command_interfaces=['wheel_1_turn/velocity', 'wheel_1_roll/velocity', 'wheel_2_turn/velocity', 'wheel_2_roll/velocity', 'wheel_3_turn/velocity', 'wheel_3_roll/velocity', 'wheel_4_turn/velocity', 'wheel_4_roll/velocity'], required_state_interfaces=['wheel_1_turn/position', 'wheel_2_turn/position', 'wheel_3_turn/position', 'wheel_4_turn/position'], is_chainable=True, is_chained=False, reference_interfaces=['target_vx', 'target_vy', 'target_w'], chain_connections=[])])"
+    }
+  ],
+  "status": "prepared",
+  "prior_watchdog_s": 100.0,
+  "teleop_pids_stopped": [
+    26852
+  ],
+  "new_watchdog_s": 0.25,
+  "controllers": "controller_manager_msgs.srv.ListControllers_Response(controller=[controller_manager_msgs.msg.ControllerState(name='joint_state_broadcaster', state='active', type='joint_state_broadcaster/JointStateBroadcaster', claimed_interfaces=[], required_command_interfaces=[], required_state_interfaces=['wheel_1_roll/position', 'wheel_1_roll/velocity', 'wheel_1_turn/homing_done', 'wheel_1_turn/position', 'wheel_1_turn/velocity', 'wheel_2_roll/position', 'wheel_2_roll/velocity', 'wheel_2_turn/homing_done', 'wheel_2_turn/position', 'wheel_2_turn/velocity', 'wheel_3_roll/position', 'wheel_3_roll/velocity', 'wheel_3_turn/homing_done', 'wheel_3_turn/position', 'wheel_3_turn/velocity', 'wheel_4_roll/position', 'wheel_4_roll/velocity', 'wheel_4_turn/homing_done', 'wheel_4_turn/position', 'wheel_4_turn/velocity'], is_chainable=False, is_chained=False, reference_interfaces=[], chain_connections=[]), controller_manager_msgs.msg.ControllerState(name='arbitrator_controller', state='active', type='omnibot_control::ArbitratorController', claimed_interfaces=['wheel_1_turn/homing_trigger', 'wheel_2_turn/homing_trigger', 'wheel_3_turn/homing_trigger', 'wheel_4_turn/homing_trigger', 'homing_reset/reset'], required_command_interfaces=['wheel_1_turn/homing_trigger', 'wheel_2_turn/homing_trigger', 'wheel_3_turn/homing_trigger', 'wheel_4_turn/homing_trigger', 'homing_reset/reset'], required_state_interfaces=['wheel_1_turn/homing_done', 'wheel_2_turn/homing_done', 'wheel_3_turn/homing_done', 'wheel_4_turn/homing_done'], is_chainable=True, is_chained=False, reference_interfaces=['target_vx', 'target_vy', 'target_w'], chain_connections=[]), controller_manager_msgs.msg.ControllerState(name='omni_velocity_controller', state='active', type='omnibot_control::OmniVelocityController', claimed_interfaces=['wheel_1_turn/velocity', 'wheel_1_roll/velocity', 'wheel_2_turn/velocity', 'wheel_2_roll/velocity', 'wheel_3_turn/velocity', 'wheel_3_roll/velocity', 'wheel_4_turn/velocity', 'wheel_4_roll/velocity'], required_command_interfaces=['wheel_1_turn/velocity', 'wheel_1_roll/velocity', 'wheel_2_turn/velocity', 'wheel_2_roll/velocity', 'wheel_3_turn/velocity', 'wheel_3_roll/velocity', 'wheel_4_turn/velocity', 'wheel_4_roll/velocity'], required_state_interfaces=['wheel_1_turn/position', 'wheel_2_turn/position', 'wheel_3_turn/position', 'wheel_4_turn/position'], is_chainable=True, is_chained=False, reference_interfaces=['target_vx', 'target_vy', 'target_w'], chain_connections=[])])"
+}

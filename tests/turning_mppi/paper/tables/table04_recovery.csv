@@ -1,0 +1,9 @@
+Condition,Controller,First-window events,Observed first-window range [s],Last-exit events,Observed last-exit range [s],Observation-end range [s]
+nominal,Native MPPI,2/3,17.25–17.30,0/3,not observed,22.00–23.50
+nominal,Preview tracker,3/3,14.50–14.55,3/3,14.50–14.55,17.85–17.85
+nominal,Ideal-dynamics ablation,3/3,16.85–18.75,3/3,16.85–18.75,19.45–22.65
+nominal,Guided MPC,3/3,5.10–5.35,3/3,5.10–5.35,18.25–18.40
+heldout,Native MPPI,0/3,not observed,0/3,not observed,22.05–24.20
+heldout,Preview tracker,0/3,not observed,0/3,not observed,17.90–17.90
+heldout,Ideal-dynamics ablation,0/3,not observed,0/3,not observed,24.95–26.20
+heldout,Guided MPC,3/3,5.00–5.35,3/3,5.00–5.35,18.45–18.50

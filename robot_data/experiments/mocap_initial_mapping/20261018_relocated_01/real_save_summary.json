@@ -1,0 +1,122 @@
+{
+  "status": "new_map_saved_grid_generated_and_archived",
+  "data_kind": "real_manual_mapping",
+  "completed_utc": "2026-10-18T09:45:43.474626+00:00",
+  "user_confirmed_mapping_complete": true,
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "native_pcd": {
+    "run_id": "20261018_relocated_01",
+    "data_kind": "real_mapping_pending_collection",
+    "frame": "map=native_F0",
+    "transform_count": 0,
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/raw/native_F.pcd",
+    "sha256": "d9c64f4b9b001c6cf7a10785626c9265308970e11060099d4ec9ded2f32c0b0c",
+    "bytes": 102033309,
+    "points": 3188533,
+    "service": "/anchored_mapping/save_native",
+    "service_message": "Map saved.",
+    "native_parameters_verified": true,
+    "calibration_sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608",
+    "source": "native FAST-LIO map_publish_callback accumulated world scans; no NDT, no loop-optimized merge"
+  },
+  "pcd_inspection": {
+    "frame": "map=native_F0",
+    "points": 3188533,
+    "bounds_m": [
+      [
+        -25.868736267089844,
+        -26.728580474853516,
+        -2.049394369125366
+      ],
+      [
+        22.33368492126465,
+        28.497692108154297,
+        4.686865329742432
+      ]
+    ],
+    "point_coordinates_changed": false,
+    "projection": "Uses the original native-frame slice heights and denoising switches"
+  },
+  "projection": {
+    "frame": "map=native_F0",
+    "pcd_sha256": "d9c64f4b9b001c6cf7a10785626c9265308970e11060099d4ec9ded2f32c0b0c",
+    "yaml_sha256": "89629b59137b3b075cc52b945671a1aea0e61e9bf22dec2cf89730fa78fa6625",
+    "image_sha256": "e207d5402ff16be9fe5ef5683cb1f538f1df55a1ef91201a8ccf8872a76ae514",
+    "point_coordinates_changed": false,
+    "PCD_XYZ_transform_count": 0,
+    "T_map_F0": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "yaml_origin": [
+      -17.55,
+      -14.95,
+      0.0
+    ],
+    "resolution_m": 0.05,
+    "width": 576,
+    "height": 541,
+    "xy_bounds_m": [
+      [
+        -17.55,
+        -14.95
+      ],
+      [
+        11.25,
+        12.100000000000001
+      ]
+    ],
+    "slice_heights_changed_for_mocap": false,
+    "post_3D_transform": "identity",
+    "origin_source": "new native point cloud bounds; old map origin not copied"
+  },
+  "camera_world_id": "20261018_relocated_shared_world_01",
+  "calibration_sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608",
+  "map_origin_in_mocap_m": [
+    -0.0313425973698747,
+    4.998318071620265,
+    0.3936015124456767
+  ],
+  "body_mounts_unchanged_from_yesterday": true,
+  "PCD_transformed_to_mocap": false,
+  "map_basis": "map=first native FAST-LIO world; frozen MOCAP map relationship stored separately",
+  "ndt_used_for_mapping": false,
+  "automatic_motion_goals_sent": false,
+  "mapper_stopped_after_explicit_save": true,
+  "recorder_closed": true,
+  "raw_bag": "mapping_bag",
+  "integrity_checks": {
+    "saved_pcd_hash_verified": true,
+    "calibration_frozen": true,
+    "legacy_pcd_unchanged": true,
+    "yesterday_native_pcd_unchanged": true,
+    "bag_checks": {
+      "mapping_bag_0.db3": "ok"
+    },
+    "recorded_messages": 503226
+  },
+  "localization_trials_group2_group3_not_started": true,
+  "independent_accuracy_validation_complete": false
+}

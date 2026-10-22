@@ -1,0 +1,35 @@
+schema_version: 1
+mocap:
+  server: 192.168.1.168
+  port: 3883
+  tracker: Tracker0
+  world_frame: mocap_world
+  raw_position_unit: millimetres_verified_manual_1m_2026-10-15
+  position_scale_to_m: 0.001
+  use_vrpn_timestamps: false
+  timestamp_source: ubuntu_receiver_clock
+  update_frequency_hz: 100.0
+  refresh_frequency_hz: 1.0
+normalizer:
+  input_topic: /vrpn_mocap/Tracker0/pose
+  output_topic: /mocap/Tracker0/pose
+  diagnostics_topic: /mocap/Tracker0/diagnostics
+  expected_input_frame: mocap_world
+  output_frame: mocap_world
+  stale_after_seconds: 0.5
+rigid_body_to_base_link:
+  measured: true
+  translation_m:
+  - 0.0
+  - 0.0
+  - -0.18
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  notes: 'User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above
+    the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This
+    is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation
+    path must apply it before comparing against map->base_link; this passive receiver
+    never publishes a base_link pose or TF.'

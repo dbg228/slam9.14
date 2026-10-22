@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="860" viewBox="0 0 1120 860">
+<rect width="100%" height="100%" fill="white"/>
+<text x="100" y="42" font-family="sans-serif" font-size="24">Cross-track error: group2_mocap_initial</text>
+<text x="100" y="70" font-family="sans-serif" font-size="16">result=succeeded</text>
+<line x1="110.000" y1="730.000" x2="1010.000" y2="730.000" stroke="#333" stroke-width="2"/>
+<line x1="110.000" y1="110.000" x2="110.000" y2="730.000" stroke="#333" stroke-width="2"/>
+<polyline fill="none" stroke="#e53935" stroke-width="3" points="153.679,448.262 174.086,460.270 192.522,467.811 217.500,463.552 243.946,442.212 263.924,408.515 290.343,389.902 324.717,357.964 357.673,324.095 382.744,264.604 424.883,218.140 458.311,168.198 482.814,172.263 516.571,166.364 539.145,176.293 569.821,181.840 594.711,178.850 624.041,173.582 658.975,177.710 728.718,200.100 750.290,216.541 770.004,235.561 792.301,235.277 814.718,228.488 837.232,234.342 860.511,259.278 891.792,274.253 921.047,275.656 948.499,285.389 977.302,283.207 1010.000,293.091 "/>
+<text x="870.000" y="772.000" font-family="sans-serif" font-size="18">time (s), max=3.016</text>
+<text x="110.000" y="98.000" font-family="sans-serif" font-size="18">error (m), max=0.040</text>
+</svg>

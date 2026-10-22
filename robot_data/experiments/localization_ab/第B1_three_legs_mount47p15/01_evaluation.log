@@ -1,0 +1,105 @@
+[INFO] [1792088917.530162844] [rosbag2_storage]: Opened database 'robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15/01_forward/bag/bag_0.db3' for READ_ONLY.
+{
+  "group": "B",
+  "reference_independent": true,
+  "timing_verified": false,
+  "result_label": "relative localization error",
+  "dynamic_accuracy_status": "provisional_time_offset_unverified",
+  "time_offset_s": 0.0,
+  "alignment": {
+    "yaw_rad": -0.729306353200825,
+    "tx_m": 2.4636611518465767,
+    "ty_m": -2.761999410885962,
+    "method": "explicit_initial_static_window",
+    "samples": 30,
+    "static_spread": {
+      "mocap": {
+        "samples": 30,
+        "center_x_m": -0.8968547731975233,
+        "center_y_m": -0.16082923772471916,
+        "mean_yaw_rad": 0.04517053719247002,
+        "max_xy_radius_m": 9.191312329897304e-05,
+        "max_yaw_deviation_rad": 8.655463992476159e-05
+      },
+      "fastlio": {
+        "samples": 30,
+        "center_x_m": 1.6877642545681373,
+        "center_y_m": -2.2842981101676285,
+        "mean_yaw_rad": -0.6841358160081329,
+        "max_xy_radius_m": 0.021568748633906325,
+        "max_yaw_deviation_rad": 0.001256937679957382
+      }
+    },
+    "excluded_from_metrics": true
+  },
+  "all_motion_and_5s_stop": {
+    "samples": 248,
+    "xy_m": {
+      "samples": 248,
+      "mean": 0.014728538682209177,
+      "std": 0.00826066725676019,
+      "rmse": 0.01687878311668866,
+      "p95_absolute": 0.03308470655801414,
+      "max_absolute": 0.035251879691326884
+    },
+    "yaw_deg": {
+      "samples": 248,
+      "mean": 0.06376118013520274,
+      "std": 0.14636039549282395,
+      "rmse": 0.1593752709418505,
+      "p95_absolute": 0.36333541542674536,
+      "max_absolute": 0.3870711896209333
+    }
+  },
+  "moving_only": {
+    "samples": 198,
+    "xy_m": {
+      "samples": 198,
+      "mean": 0.01567181579580906,
+      "std": 0.008949822323605097,
+      "rmse": 0.018036091260125266,
+      "p95_absolute": 0.03345735645708378,
+      "max_absolute": 0.035251879691326884
+    },
+    "yaw_deg": {
+      "samples": 198,
+      "mean": 0.09619439638998659,
+      "std": 0.14090459886394546,
+      "rmse": 0.17031498646717178,
+      "p95_absolute": 0.3644142535307925,
+      "max_absolute": 0.3870711896209333
+    }
+  },
+  "endpoint": {
+    "samples": 30,
+    "xy_error_m": 0.008779199769205912,
+    "yaw_error_deg": -0.019996089322790248,
+    "physical_displacement_m": 2.0092168341804264,
+    "overshoot_m": 0.009216834180426403,
+    "mean_ex_m": 0.007158355766536258,
+    "mean_ey_m": 0.005082547718154965,
+    "reference_max_radius_m": 0.00020653612609549895,
+    "reference_stationary": true
+  },
+  "requested_samples": 248,
+  "valid_samples": 248,
+  "coverage": 1.0,
+  "max_adjacent_pose_translation_m": 0.03542321276039592,
+  "max_adjacent_pose_yaw_deg": 0.47731339863430633,
+  "max_adjacent_error_jump_m": 0.030813492953095933,
+  "stop_reason": "target_reached",
+  "trigger_displacement_m": 2.000726821020234,
+  "complete_5s_tail": true,
+  "definitions": {
+    "scoring": "native estimate measurement stamps; no resampling repeated low-frequency NDT as raw matches",
+    "estimate": "A: local base pose; B: held NDT map->odom composed with local base; C: held mocap correction composed with local base",
+    "alignment": "one fixed SE(2) from 3s stationary window ending .5s before motion; window excluded; no trajectory refit or scale",
+    "endpoint": "norm of mean ex/ey during 2 to 5 seconds after stop command; includes braking overshoot",
+    "pose_jump": "maximum consecutive estimate displacement at <=.25s over entire scoring interval, even when reference is missing; includes real motion",
+    "error_jump": "maximum consecutive change of estimate-reference error, compensating actual reference movement",
+    "distance_axis": "mocap planar base origin displacement from start; sampled path distance also provided"
+  },
+  "trial_status": "completed",
+  "direction": "forward",
+  "diagnostics_invalid_count": 0
+}

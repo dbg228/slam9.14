@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "language": "English",
+  "units": "SI; radians, not degrees",
+  "evidence": "Synthetic closed-loop traces; FAST-LIO/NDT was not executed; no obstacles in this analysis.",
+  "primary_endpoint": "Per-trial turn lateral_rmse_m, descriptive paired comparison of full versus native.",
+  "timing": {
+    "state": "Raw state and error are post-step at t; first observed state is t=0.05 s.",
+    "command": "cmd_v/cmd_w on row i were issued at t[i]-dt and held for the next control interval.",
+    "initial_missing": "No t=0 state sample is inserted. Time integrals omit [0, first_t]. Missing interval is reported.",
+    "derivative": "First differences are evaluated at interval midpoints; second differences at means of consecutive midpoints. Exported on the right endpoint row with explicit evaluation times."
+  },
+  "phases": {
+    "rule": "Geometry only; curvature k=gradient(unwrapped path yaw, path arc length), dk=gradient(k,s), interpolated at measured true path progress.",
+    "line": "abs(k)<=0.15 m^-1",
+    "turn": "abs(k)>0.15 m^-1",
+    "entry": "turn and sign(k)*dk>0.4 m^-2",
+    "exit": "turn and sign(k)*dk<-0.4 m^-2",
+    "apex": "turn and abs(sign(k)*dk)<=0.4 m^-2",
+    "channel_alignment": "A phase row groups state endpoint samples at t and the command that produced that interval, issued at t-dt. Command phase bins therefore follow the resulting state interval, not an invented command-time state. Lag analysis separately uses the exact command issue clock.",
+    "caveat": "On the unsmoothed historical polyline, derivative-defined phases can alternate rapidly; these are geometric bins, not independently observed steering events."
+  },
+  "errors": {
+    "rmse": "sqrt(mean(e_i^2)); sample weighted, one statistic per trial/phase.",
+    "mae": "mean(abs(e_i))",
+    "signed_mean": "mean(e_i)",
+    "sd": "Sample standard deviation, ddof=1; undefined for fewer than 2 observations.",
+    "p95_abs": "95th percentile abs(e), NumPy linear quantile interpolation.",
+    "max_abs": "max(abs(e_i))",
+    "iae": "sum of trapezoids of abs(e) dt, observed contiguous intervals only.",
+    "itae": "sum of trapezoids of t*abs(e) dt; t is mission time from actual experiment origin 0. Phase ITAE uses the same mission origin, not a reset clock.",
+    "ise": "sum of trapezoids of e^2 dt",
+    "time_rmse": "sqrt(ISE / covered observed phase duration)",
+    "distance_rmse": "sqrt(sum(0.5*(e_i^2+e_(i+1)^2)*ds_i)/sum(ds_i)); ds is Euclidean displacement between adjacent true x,y samples.",
+    "distance_mae": "Trapezoidal abs(e) weighted by the same true Euclidean displacement.",
+    "phase_integration": "Both adjacent endpoints must belong to the phase, and 0<dt<=1.5*nominal_dt. Never concatenate separated phase segments. Boundary fragments are omitted explicitly."
+  },
+  "smoothness": {
+    "separation": "cmd channels describe requested commands; body channels describe simulated executed velocities after smoothing, delay and first-order dynamics.",
+    "delta_rms": "RMS of adjacent velocity increments; no inferred pre-first-command jump.",
+    "total_variation": "sum(abs(delta velocity)) across valid, contiguous selected intervals.",
+    "tv_per_s": "total variation / covered observed duration",
+    "rate_or_accel": "First finite difference delta velocity/delta time. cmd uses rate; body uses accel. RMS, P95 abs and max abs supplied.",
+    "planar_accel_and_jerk": "world_accel/jerk differentiate sampled world velocity v*[cos(yaw),sin(yaw)] and report vector norms; these include turning/centripetal effects. body_v acceleration/jerk describe longitudinal speed only; body_w describes rotation.",
+    "jerk": "Second finite difference of velocity using interval-midpoint timestamps; all three samples must be in phase. For command channels, this is second command derivative, not executed mechanical jerk.",
+    "bandwidth_caveat": "Unfiltered 20 Hz sampled traces, Nyquist 10 Hz; differentiation amplifies noise and P95/max depend on sample rate and any preprocessing. No claim about unobserved continuous-time maxima or hardware comfort.",
+    "normalization_caveat": "TV depends on duration. Compare both TV/time and equal-route trials; each method can have a different completion time."
+  },
+  "lag": {
+    "reference": "reference target angular velocity = manifest.controller.speed * interpolated path curvature at state timestamp t. Also export body_v*k as a separate kinematic diagnostic.",
+    "definition": "For each lag L in [-1,+1] s at 0.05 s steps, Pearson correlation(reference(t), response(t+L)); response uses its own physical timestamp and linear interpolation within observed support only. Per-lag demeaning and variance normalization.",
+    "positive_lag": "Response trails the curvature reference. Negative lag indicates anticipatory association.",
+    "eligibility": "At least 3 pairs and at least 70% of reference-phase samples must overlap. No interpolation across a detected sampling gap.",
+    "reliable_heuristic": "At least 30 pairs; reference/response SD each >=0.01 rad/s; peak corr >=0.6; optimum not on window boundary; connected corr>=peak-0.05 width <=0.75 s. Thresholds are analysis diagnostics, not calibrated confidence levels.",
+    "limitations": "Closed-loop association with a path-dependent reference; NOT causal transport-delay identification, NOT material/mechanical hysteresis and NOT proof of model validity. Low-excitation phases can be unidentifiable. Selected maxima are optimistic descriptive statistics."
+  },
+  "model_reproduction": {
+    "definition": "Replay the same synthetic Plant with saved command sequence, saved path initial pose, manifest Config and saved true_plant parameters. Derived smoother, delayed command and body states are explicitly marked reproduced.",
+    "interpretation": "Reproduction error checks provenance/timing and data integrity only. It is NOT independent predictive validation, hardware parameter estimation or real FAST-LIO/NDT data."
+  },
+  "statistics": {
+    "unit": "One completed or failed trial is the experimental unit. Never treat correlated time samples as independent replicates.",
+    "scenario_groups": "3 seeded repeats per scenario/condition/method; historical route has 1 repeat per method. Mean, SD, min and max are descriptive.",
+    "aggregate": "9 trials = 3 fixed scenarios x 3 reused noise seeds, not 9 IID route samples. Fixed-scenario pooled summaries are descriptive.",
+    "pairing": "full-native matched on dataset, scenario, condition and noise seed; report failures and undefined metrics without replacing them by zero.",
+    "failures": "Incomplete trials retain observed partial-horizon metrics with completion/failure/coverage fields. Such metrics do not establish successful route tracking and should not be compared as if every trial completed.",
+    "small_n": "No confidence intervals are reported: n=3 is too small for dependable coverage and scenarios are fixed. No population-wide significance claim.",
+    "signflip": "Optional exploratory two-sided exact signflip diagnostic, flipping entire seed blocks together across scenarios. At 3 blocks the smallest attainable two-sided p is 0.25. Symmetry/exchangeability is not established; this is not a confirmatory test.",
+    "multiplicity": "Holm adjustment over ALL signflip diagnostics in paired_summary.csv; family size is explicit. Native implementation UB/nonrepeatability threats are documented in the manuscript."
+  },
+  "missingness": "Empty CSV cells and JSON null mean undefined/missing. Infinity clearance means no obstacles, is exported blank with not_applicable_no_obstacles status; it is not a numeric measurement. Expected missing NPZ/failed trials remain in per-trial output.",
+  "outputs": {
+    "trial_metrics.csv": "Wide trial x phase metrics, including all failures and missing observations.",
+    "samples/*.csv": "All original raw time samples and explicitly named derived quantities; no decimation.",
+    "phase_lags.csv": "Lag diagnostics per trial x phase x response; unreliable cases retained.",
+    "lag_curves.csv": "Full normalized correlation scan over prescribed lag window.",
+    "model_parameters.csv": "Assumed synthetic true plant and controller prediction parameters for every trial.",
+    "path_profiles.csv": "All stored reference path points, arc lengths, curvature and curvature gradients, once per dataset/scenario; no smoothing or decimation.",
+    "grouped_metrics.csv": "Long descriptive group table with metric, mean, SD, minimum, maximum and valid trial count.",
+    "paired_differences.csv": "Matched full/native per-trial differences.",
+    "paired_summary.csv": "Matched group descriptive effect sizes and exploratory seed-block diagnostics.",
+    "provenance.json": "Input checksums, source checksums, inventory and missingness counts."
+  }
+}

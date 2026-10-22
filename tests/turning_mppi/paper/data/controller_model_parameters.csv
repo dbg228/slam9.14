@@ -1,0 +1,28 @@
+component,parameter,value,unit,status
+controller_assumption,dt,0.05,s,fixed experimental setting; not hardware calibration
+controller_assumption,steps,50,steps,fixed experimental setting; not hardware calibration
+controller_assumption,samples,1000,trajectories,fixed experimental setting; not hardware calibration
+controller_assumption,speed,0.2,m/s,fixed experimental setting; not hardware calibration
+controller_assumption,vmax,0.2,m/s,fixed experimental setting; not hardware calibration
+controller_assumption,wmax,0.45,rad/s,fixed experimental setting; not hardware calibration
+controller_assumption,accel_v,0.45,m/s^2,fixed experimental setting; not hardware calibration
+controller_assumption,accel_w,0.8,rad/s^2,fixed experimental setting; not hardware calibration
+controller_assumption,tau_v,0.12,s,fixed experimental setting; not hardware calibration
+controller_assumption,tau_w,0.25,s,fixed experimental setting; not hardware calibration
+controller_assumption,delay,0.1,s,fixed experimental setting; not hardware calibration
+controller_assumption,temperature,0.2,composite cost units,fixed experimental setting; not hardware calibration
+controller_assumption,noise_v,0.05,m/s,fixed experimental setting; not hardware calibration
+controller_assumption,noise_w,0.12,rad/s,fixed experimental setting; not hardware calibration
+controller_assumption,lateral_gain,1.5,rad/(m*s),fixed experimental setting; not hardware calibration
+controller_assumption,heading_gain,2.0,1/s,fixed experimental setting; not hardware calibration
+controller_assumption,half_length,0.48,m,fixed experimental setting; not hardware calibration
+controller_assumption,half_width,0.385,m,fixed experimental setting; not hardware calibration
+controller_assumption,clearance,0.04,m,fixed experimental setting; not hardware calibration
+synthetic_plant_nominal,tau_v_s,0.12,s,assumed plant truth
+synthetic_plant_nominal,tau_w_s,0.25,s,assumed plant truth
+synthetic_plant_nominal,delay_s,0.1,s,assumed plant truth
+synthetic_plant_nominal,yaw_bias_radps,0.0,rad/s,assumed plant truth
+synthetic_plant_heldout,tau_v_s,0.12,s,assumed plant truth
+synthetic_plant_heldout,tau_w_s,0.38,s,assumed plant truth
+synthetic_plant_heldout,delay_s,0.15,s,assumed plant truth
+synthetic_plant_heldout,yaw_bias_radps,0.008,rad/s,assumed plant truth

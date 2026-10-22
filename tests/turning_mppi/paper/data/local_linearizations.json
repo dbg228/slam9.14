@@ -1,0 +1,214 @@
+[
+  {
+    "condition": "nominal",
+    "state": [
+      "e_y_m",
+      "e_psi_rad",
+      "w_radps"
+    ],
+    "A_continuous": [
+      [
+        0.0,
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -4.0
+      ]
+    ],
+    "B_continuous": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        4.0
+      ]
+    ],
+    "E_curvature": [
+      0,
+      -0.2,
+      0
+    ],
+    "E_yaw_bias": [
+      0,
+      0,
+      4.0
+    ],
+    "A_discrete_ZOH": [
+      [
+        1.0,
+        0.010000000000000002,
+        0.0002341344134747732
+      ],
+      [
+        0.0,
+        1.0,
+        0.04531731173050454
+      ],
+      [
+        0.0,
+        0.0,
+        0.8187307530779818
+      ]
+    ],
+    "B_discrete_ZOH": [
+      [
+        1.5865586525226785e-05
+      ],
+      [
+        0.004682688269495462
+      ],
+      [
+        0.1812692469220181
+      ]
+    ],
+    "guide_A_closed_loop_delay_free": [
+      [
+        0.0,
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -6.0,
+        -8.0,
+        -4.0
+      ]
+    ],
+    "guide_eigenvalues_real_imag": [
+      [
+        -0.16269679559702346,
+        0.0
+      ],
+      [
+        -1.9186516022014874,
+        1.922097576679993
+      ],
+      [
+        -1.9186516022014874,
+        -1.922097576679993
+      ]
+    ],
+    "scope": "Local fixed-speed straight-path tracking GUIDE only: no smoother, delay, residual optimizer, constraints or state noise. Not a full-controller stability result."
+  },
+  {
+    "condition": "heldout",
+    "state": [
+      "e_y_m",
+      "e_psi_rad",
+      "w_radps"
+    ],
+    "A_continuous": [
+      [
+        0.0,
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -2.6315789473684212
+      ]
+    ],
+    "B_continuous": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        2.6315789473684212
+      ]
+    ],
+    "E_curvature": [
+      0,
+      -0.2,
+      0
+    ],
+    "E_yaw_bias": [
+      0,
+      0,
+      2.6315789473684212
+    ],
+    "A_discrete_ZOH": [
+      [
+        1.0,
+        0.010000000000000002,
+        0.00023938648814031434
+      ],
+      [
+        0.0,
+        1.0,
+        0.04685017778762744
+      ],
+      [
+        0.0,
+        0.0,
+        0.8767100584536119
+      ]
+    ],
+    "B_discrete_ZOH": [
+      [
+        1.0613511859685667e-05
+      ],
+      [
+        0.0031498222123725575
+      ],
+      [
+        0.12328994154638803
+      ]
+    ],
+    "guide_A_closed_loop_delay_free": [
+      [
+        0.0,
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -3.947368421052632,
+        -5.2631578947368425,
+        -2.6315789473684212
+      ]
+    ],
+    "guide_eigenvalues_real_imag": [
+      [
+        -0.16236844089849,
+        0.0
+      ],
+      [
+        -1.2346052532349652,
+        1.8270155727950905
+      ],
+      [
+        -1.2346052532349652,
+        -1.8270155727950905
+      ]
+    ],
+    "scope": "Local fixed-speed straight-path tracking GUIDE only: no smoother, delay, residual optimizer, constraints or state noise. Not a full-controller stability result."
+  }
+]

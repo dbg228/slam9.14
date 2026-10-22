@@ -1,0 +1,101 @@
+{
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "export_csv": false,
+  "export_log_files": false,
+  "result_formats": [
+    "png",
+    "svg"
+  ],
+  "mocap_feedback": "initialization_only",
+  "checkpoint_corrections": false,
+  "wheel_feedback_topic": "/joint_states",
+  "wheel_command_topic": "/omni_velocity_controller/diagnostics/joint_vel",
+  "wheel_names": [
+    "wheel_1_roll",
+    "wheel_2_roll",
+    "wheel_3_roll",
+    "wheel_4_roll"
+  ],
+  "velocity_units_verified": false,
+  "wheel_unit": "Target rad/s; feedback reported interface values, physical scale unverified.",
+  "initial_window_policy": "Original anchored validate, first qualifying >=3-second static window with >=25 synchronized source-time pairs; no refit.",
+  "endpoint_window_policy": "First complete fixed 15-second window from final zero command +4 through +19 seconds; missing intervals are retained. Separate original static validation also recorded.",
+  "runtime_environment": {
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OMP_THREAD_LIMIT": "3"
+  },
+  "completion_policy": "Visit the immutable combined approach, START and inspection path in order before usual END tolerances can report success.",
+  "completion_checker": "inspection_geometry_tools::OrderedRouteGoalChecker",
+  "recording_policy": "Record native base pose plus frozen map/odom, original actual/reference paths, mocap validity and wheel data. High-rate joint-only TF is omitted; full pose information remains reconstructible.",
+  "ordered_route_completion_required": true,
+  "distance_window_policy": "Same motion-boundary definition as baseline: first nonzero final chassis command through first zero after last arrival nonzero plus 1 s; continuous native base_link source stamps; report gaps and do not bridge intervals >0.5 s.",
+  "experiment_display_name": "第2轮测试版2",
+  "experiment_label": "group2_test2",
+  "trial": "trial_01",
+  "offset_distance_m": 0.6,
+  "source_completed_trial": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial/trial_02",
+  "previous_test_preserved": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test/trial_01",
+  "measurements": [
+    "initial_static",
+    "middle_static",
+    "endpoint_static"
+  ],
+  "middle_measurement_policy": "Original static validation during one brief middle hold, no pose correction; moving comparisons remain diagnostic.",
+  "middle_pause_policy": "Original Nav2 velocity_smoother parameter services temporarily hold zero, restore saved limits after static sampling, keep the same full-route goal.",
+  "controller_speed_changed": false,
+  "controller_frequency_changed": false,
+  "figure_package_name": "group2_test2_result_figures.zip",
+  "figure_title": "Group 2 test v2",
+  "middle_hold_target_map_xy": [
+    -4.838783801123819,
+    -5.702412939231394
+  ],
+  "middle_hold_radius_m": 0.17,
+  "middle_target_policy": "Parking trigger on the original generated 0.60 m path, nearest prior mid-camera coverage center; prior data only choose a stopping location and are never used as current truth.",
+  "monitor_note": "Latest-state monitor is capped; full original streams remain recorded in the bag.",
+  "created_ns": 1792342732670893757,
+  "stage": "complete_with_native_recording_gap",
+  "formal_departure_started": true,
+  "operator_external_confirmed": true,
+  "operator_reported_stationary": true,
+  "prior_attempt_deleted_at_user_request": true,
+  "deleted_previous_attempt_bytes": 724036121,
+  "display_profile_note": "Run without RViz during measurement, restore original scene afterwards.",
+  "recorded_wheel_feedback_topic": "/experiment/group2_test2/joint_states_sample",
+  "recorded_wheel_command_topic": "/experiment/group2_test2/wheel_target_sample",
+  "wheel_recording_maximum_hz": 20.0,
+  "wheel_recording_policy": "User requested only partial wheel samples sufficient for curves; official topic_tools throttle retains selected original messages, no interpolation or fabricated values.",
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792343815180080675",
+  "initialization_pairs": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792343815180080675/pairs.json",
+  "runtime_note": "Frozen estimator, map, controller and sensor parameters unchanged. Initial-only acquisition consumers are released after freezing; unchanged zero command journal heartbeat is sampled at 20 Hz and every command change remains recorded and checked.",
+  "initialization_load_note": "Frozen initial-only bridge releases acquisition-only mocap and command consumers; native pose and TF ownership audits remain active.",
+  "initial_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792343858656581872",
+  "recording_directories": [
+    "bag",
+    "bag_resume"
+  ],
+  "recording_interruption": {
+    "cause": "Recorder SQLite database locked during concurrent read-only inspection; recorder aborted. Original navigation and static validator recorders continued.",
+    "resumed": true,
+    "route_restarted": false,
+    "missing_native_stream_is_not_interpolated": true,
+    "tracking_source": "Original executor retained actual_path contains its complete sampled map trajectory.",
+    "first_segment_end_from_departure_s": 30.346260864,
+    "resumed_native_stream_from_departure_s": 263.051014786
+  },
+  "navigation_terminal_status": 4,
+  "checks": {
+    "unit_tests": "53 passed",
+    "frozen_navigation_sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452",
+    "bag_sqlite_quick_check": [
+      "ok",
+      "ok"
+    ]
+  },
+  "recording_stopped": true,
+  "figures_exported": true,
+  "result_package": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test2/trial_01/group2_test2_result_figures.zip",
+  "previous_records_sha256_verified": true,
+  "rviz_restored": true,
+  "result_limits": "Complete original map trajectory and initial/middle/endpoint static measurements retained. Native LIO odometry recording missing between roughly 30 and 263 s; no full native LIO travel total is reported. Wheel curves show measured portions only."
+}

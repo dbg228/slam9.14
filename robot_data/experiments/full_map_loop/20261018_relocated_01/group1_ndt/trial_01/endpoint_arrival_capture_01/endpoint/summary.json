@@ -1,0 +1,272 @@
+{
+  "quality_passed": false,
+  "failures": [
+    "insufficient_ndt_mocap_pairs",
+    "long_ndt_gap"
+  ],
+  "rejection_counts": {},
+  "estimator_instability_warnings": [],
+  "valid_mocap_samples": 446,
+  "mocap_span_s": 4.979527648,
+  "maximum_mocap_gap_s": 0.070041331,
+  "matched_pairs": [
+    {
+      "ndt_stamp_ns": 1792311786576745986,
+      "mocap_stamp_ns": 1792311786578988716,
+      "skew_s": 0.00224273,
+      "match_id": 527,
+      "map_xyz_m": [
+        2.532890558242798,
+        -2.8574798107147217,
+        -0.06013178825378418
+      ],
+      "ndt_receive_age_s": 2.779488354,
+      "mocap_xyz_m": [
+        0.004066359145337091,
+        4.698798053983444,
+        0.24697952166392315
+      ],
+      "map_rotation": [
+        [
+          0.6561885757741265,
+          0.7545238686203565,
+          -0.010501652522089188
+        ],
+        [
+          -0.754585567815479,
+          0.6560387031350845,
+          -0.014623297624941037
+        ],
+        [
+          -0.004144136594590698,
+          0.017520036273012754,
+          0.9998379240961396
+        ]
+      ],
+      "mocap_rotation": [
+        [
+          0.9939790643227802,
+          0.10885812318263667,
+          -0.012471114832459478
+        ],
+        [
+          -0.10883133141463834,
+          0.994056260816307,
+          0.0028092053003116154
+        ],
+        [
+          0.012702794595192093,
+          -0.0014350432244529246,
+          0.9999182864916595
+        ]
+      ],
+      "accepted": true,
+      "stage": "accepted"
+    },
+    {
+      "ndt_stamp_ns": 1792311789077317476,
+      "mocap_stamp_ns": 1792311789049080392,
+      "skew_s": 0.028237084000000003,
+      "match_id": 528,
+      "map_xyz_m": [
+        2.5389351844787598,
+        -2.8622708320617676,
+        -0.06070359796285629
+      ],
+      "ndt_receive_age_s": 2.349779546,
+      "mocap_xyz_m": [
+        0.003967086344332468,
+        4.69864703402535,
+        0.2472800960270556
+      ],
+      "map_rotation": [
+        [
+          0.6561526052080353,
+          0.7545567692801994,
+          -0.010384633461805126
+        ],
+        [
+          -0.7546139047099937,
+          0.655993244078006,
+          -0.015189422054519418
+        ],
+        [
+          -0.0046490318395210235,
+          0.017802967658272127,
+          0.9998307060925433
+        ]
+      ],
+      "mocap_rotation": [
+        [
+          0.9941421197972055,
+          0.10741497502714288,
+          -0.011977845592471026
+        ],
+        [
+          -0.10739737762497496,
+          0.9942139475703201,
+          0.0021046937827751315
+        ],
+        [
+          0.012134616779994953,
+          -0.0008059755325038158,
+          0.999926048005073
+        ]
+      ],
+      "accepted": true,
+      "stage": "accepted"
+    }
+  ],
+  "pair_count": 2,
+  "maximum_command_abs": 0.0,
+  "mocap_xyz_m": [
+    0.004016722744834779,
+    4.698722544004397,
+    0.24712980884548938
+  ],
+  "map_xyz_m": [
+    2.535912871360779,
+    -2.8598753213882446,
+    -0.060417693108320236
+  ],
+  "mocap_base_rotation_matrix": [
+    [
+      0.9940828550349434,
+      0.10793542762764866,
+      -0.012215596113739548
+    ],
+    [
+      -0.10791150158486444,
+      0.9941570962336774,
+      0.0026030432045804353
+    ],
+    [
+      0.012425182142618497,
+      -0.0012694373012016036,
+      0.9999219986467254
+    ]
+  ],
+  "mocap_static": {
+    "mean_xyz_m": [
+      0.00401667168119539,
+      4.698422143967521,
+      0.24722787356235998
+    ],
+    "mean_rotation_matrix": [
+      [
+        0.9940828550349434,
+        0.10793542762764866,
+        -0.012215596113739548
+      ],
+      [
+        -0.10791150158486444,
+        0.9941570962336774,
+        0.0026030432045804353
+      ],
+      [
+        0.012425182142618497,
+        -0.0012694373012016036,
+        0.9999219986467254
+      ]
+    ],
+    "std_xyz_m": [
+      5.4499746128774373e-05,
+      0.00023543516679480094,
+      0.00012987300641419895
+    ],
+    "maximum_radius_m": 0.0007141152813834773,
+    "maximum_orientation_deviation_deg": 0.2073824159817429
+  },
+  "map_static": {
+    "mean_xyz_m": [
+      2.535912871360779,
+      -2.8598753213882446,
+      -0.060417693108320236
+    ],
+    "mean_rotation_matrix": [
+      [
+        0.6561705980882239,
+        0.7545403150532459,
+        -0.010443139560980693
+      ],
+      [
+        -0.7545997722400657,
+        0.6560159938422327,
+        -0.014906359663813845
+      ],
+      [
+        -0.0043965827391012485,
+        0.017661505670110222,
+        0.9998343569200263
+      ]
+    ],
+    "std_xyz_m": [
+      0.003022313117980957,
+      0.0023955106735229492,
+      0.0002859048545360565
+    ],
+    "maximum_radius_m": 0.003867116439406684,
+    "maximum_orientation_deviation_deg": 0.016636232857931733
+  },
+  "map_provenance": {
+    "source": "ndt",
+    "method": "Current original NDT final_map_to_base_at_cloud; three separately parked calibration placements; initial and endpoint are not fitted",
+    "independently_measured": false,
+    "ndt_pose_field": "final_map_to_base_at_cloud",
+    "topic": "/static_localization/ndt_match_diagnostic",
+    "stamp_meaning": "input cloud measurement time, not publication time"
+  },
+  "raw_marker_positions_available": false,
+  "mocap_point_method": "Tracker0 world pose * separately measured Tracker0->base_link; not individual marker coordinates",
+  "camera_native_visibility_available": false,
+  "interpolation_used": false,
+  "clock_offset_s": 0.0,
+  "clock_offset_verified": false,
+  "camera_latency_s": null,
+  "group": "endpoint",
+  "evaluation_only": true,
+  "transform_refitted": false,
+  "no_motion_published": true,
+  "inputs_sha256": "8512217154193d080fbd3583c7d4ee3438edc934368ba1d55eafcc1c9ded63c1",
+  "raw_sha256": "a8fa02acd35c26a9788cfad846201fee24b6d99f228ab99959083e60c57ba464",
+  "calibration_sha256_at_capture": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "data_kind": "real_measurement_from_recorded_bag",
+  "raw_normalized_check": {
+    "matched_samples": 446,
+    "normalized_samples": 446,
+    "coverage": 1.0,
+    "scale_to_m": 0.001,
+    "mismatched_stamp_ns": [],
+    "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+  },
+  "invalid_events": {},
+  "observed_messages_in_window": {
+    "/vrpn_mocap/Tracker0/pose": 449,
+    "/mocap/Tracker0/pose": 446,
+    "/mocap/Tracker0/diagnostics": 446,
+    "/static_localization/ndt_match_diagnostic": 2,
+    "/reference_velocity": 2014
+  },
+  "ndt_age_policy": "same_timestamp_valid_static_history",
+  "source_age_limit_s": 2.0,
+  "ndt_source_age_limit_s": null,
+  "source_window_ns": [
+    1792311786076745986,
+    1792311791076745986
+  ],
+  "motion_interval": {
+    "start_ns": 1792311426466115189,
+    "end_ns": 1792311783321916928,
+    "first_command_ns": 1792311426466115189,
+    "last_nonzero_command_ns": 1792311782319644136,
+    "zero_command_ns": 1792311782321916928,
+    "navigation_terminal_ns": 1792311782033557803,
+    "command_threshold": 0.0001,
+    "settling_margin_s": 1.0,
+    "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+  },
+  "time_from_navigation_terminal_to_window_start_s": 4.043188183,
+  "extraction_policy": "First NDT source stamp after recorded final command stop plus original warmup; fixed five-second source-time window centered by cadence, never selected by residual or fitness",
+  "source_bag_manifest": "source_bag_manifest.json",
+  "publisher_identity_note": "Bag messages do not encode publisher identity; live trial source audits retained separately"
+}

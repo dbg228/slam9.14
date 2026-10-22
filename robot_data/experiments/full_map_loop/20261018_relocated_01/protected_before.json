@@ -1,0 +1,170 @@
+{
+  "robot_data/maps/map.pgm.bak_20260918_000953": {
+    "bytes": 339654,
+    "sha256": "d85a17ef03ef12fb377ee9ca0be15974fae675ad46e8c311d6883f07b573ba71"
+  },
+  "robot_data/maps/map.pgm.bak_20260915_130541": {
+    "bytes": 322066,
+    "sha256": "f66e83ebe048f090ca766955d91609ac771bc2e47efa646f4e0d2420f4c03280"
+  },
+  "robot_data/maps/map.pgm.bak_20260916_202741": {
+    "bytes": 339654,
+    "sha256": "d85a17ef03ef12fb377ee9ca0be15974fae675ad46e8c311d6883f07b573ba71"
+  },
+  "robot_data/maps/map.yaml.bak_20260916_202023": {
+    "bytes": 137,
+    "sha256": "8d6f347da2dfa7d1110df798d4c08fb69365af8a9b77758b9ccecaa0e87b9229"
+  },
+  "robot_data/maps/map.yaml.bak_20260915_130541": {
+    "bytes": 137,
+    "sha256": "8d6f347da2dfa7d1110df798d4c08fb69365af8a9b77758b9ccecaa0e87b9229"
+  },
+  "robot_data/maps/map.pgm.bak_20260916_202023": {
+    "bytes": 322066,
+    "sha256": "cc204eed5ee588b0d79d2ed701cd7bbbb0d18ba34956ff98d5c811335ae1ac08"
+  },
+  "robot_data/maps/map.yaml.bak_20260918_000953": {
+    "bytes": 138,
+    "sha256": "3487b24b5cd22d11d993630363959fbe20a645d9eec6da6a5daf8e12fd34fbb0"
+  },
+  "robot_data/maps/map.yaml": {
+    "bytes": 138,
+    "sha256": "92c911f7cc9313732cb3da4653f25946438087263d9205f88a6d648fa673f325"
+  },
+  "robot_data/maps/map.yaml.bak_20260916_202741": {
+    "bytes": 138,
+    "sha256": "3487b24b5cd22d11d993630363959fbe20a645d9eec6da6a5daf8e12fd34fbb0"
+  },
+  "robot_data/maps/map.yaml.bak_20260915_131424": {
+    "bytes": 137,
+    "sha256": "8d6f347da2dfa7d1110df798d4c08fb69365af8a9b77758b9ccecaa0e87b9229"
+  },
+  "robot_data/maps/map.pgm": {
+    "bytes": 386630,
+    "sha256": "d50082bf3876ea7ec212aff5818a5c63ab2c59c0af99f363c2c3940830213a35"
+  },
+  "robot_data/maps/map.pgm.bak_20260915_131424": {
+    "bytes": 322066,
+    "sha256": "7654d54db47514bb5d67b47d06517ae8168b0fd0fbe6858694f7cf2b20e38a60"
+  },
+  "robot_data/maps/pcd_to_2d_debug/01_height_filtered.pcd": {
+    "bytes": 3481370,
+    "sha256": "aeb95d22208bef8f6805cc57bbff8e398f3d77859b89687d9cb6dc45ae7cb1e5"
+  },
+  "robot_data/maps/pcd_to_2d_debug/03_radius_filtered.pcd": {
+    "bytes": 1810009,
+    "sha256": "934ce11307b2be11427569f2660e4b7893c27605c47e52a41f65c61a593ec90c"
+  },
+  "robot_data/maps/pcd_to_2d_debug/04_raw_projection.png": {
+    "bytes": 12984,
+    "sha256": "5281cfd89fa051db360e70db7335227a596ad9cbe0f37003fade0c1c4de2ca3e"
+  },
+  "robot_data/maps/pcd_to_2d_debug/02_voxel_filtered.pcd": {
+    "bytes": 1850708,
+    "sha256": "0ad05da8ad75ad738389f313e1f2fb8ff9ec3c2cf515a715668ba384bb5ba0a9"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05c_closed.png": {
+    "bytes": 9935,
+    "sha256": "46c5cf72e042187cd420efd0a50d5caec8815cdecc81c571308495c6eb85b362"
+  },
+  "robot_data/maps/pcd_to_2d_debug/06_component_filtered.png": {
+    "bytes": 10034,
+    "sha256": "7020b80fe05476c1b1b964f38fb8d8bdc1eed508e13c2c746cbff6973636e1cd"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05b_vertical_filtered.png": {
+    "bytes": 10603,
+    "sha256": "7aaa8e4d0f907a195ef74454d0b903a3153e6db4bcdefee0a9aa481d56ae2dd3"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05e_closed.png": {
+    "bytes": 10633,
+    "sha256": "ce6ee0b98e601b87962c0be1add8d095d714e9fc1ca6b5fb358f1130be9cd071"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05_point_count_filtered.png": {
+    "bytes": 11459,
+    "sha256": "f7b2a0ef5e397288c43c78d25c17bc85b6098bfcbd8c9bd19056b4ed83a854db"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05c_multi_height_evidence.png": {
+    "bytes": 12531,
+    "sha256": "1190fe3e31f90252980d81966c0786a96f4d818e166cd232e0ce2233420354bd"
+  },
+  "robot_data/maps/pcd_to_2d_debug/05d_line_bridged.png": {
+    "bytes": 10941,
+    "sha256": "d7c76454258f0815de36a30bf241e5ffd16c5b75f76d3fa6b2fa93195dab8d9a"
+  },
+  "robot_data/maps/data/3lou_scans_view_preview.png": {
+    "bytes": 263168,
+    "sha256": "6f5f9bbdf49d812f14889315e6345ceb5340c46295eb1d90a2146eabdd843a48"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260911_210549": {
+    "bytes": 3553115,
+    "sha256": "7fa340f0ec5c3a6a88a0c0118949414ceea65ce7d5c8c56ff368ad050bb2cb6e"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260916_202008": {
+    "bytes": 69796221,
+    "sha256": "26caf8718055338022bfe21034f6a1ffd8e3111fdf69c2082d5a6c95de6b3c37"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260914_231446": {
+    "bytes": 69796221,
+    "sha256": "26caf8718055338022bfe21034f6a1ffd8e3111fdf69c2082d5a6c95de6b3c37"
+  },
+  "robot_data/maps/data/3lou_scans.pcd": {
+    "bytes": 85655345,
+    "sha256": "1d5ae950b7e42cc1d1f0a3c950c1965e16d0eea1ae18f7f0b83eb2f31c452f13"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260917_235844": {
+    "bytes": 63297949,
+    "sha256": "b543d09dada25e9127f189ab7f7e5d6dcb51e9fecdbbfec8c0c0bb10aa9a3fec"
+  },
+  "robot_data/maps/data/scans.pcd.mistake_20260912_190537": {
+    "bytes": 238967,
+    "sha256": "0f1b3b9a71e51d9658e11d78d017d0fe9f14aa7492c23b790d367e3da5a5f222"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260915_001311": {
+    "bytes": 120227773,
+    "sha256": "2f37914c85626aa41afb191c668da9de6e1b01d27075f0f75206fbbc07f4aecb"
+  },
+  "robot_data/maps/data/times.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "robot_data/maps/data/3lou_scans_view.pcd": {
+    "bytes": 5600190,
+    "sha256": "064407c9aa585523cc72f2cf097dcf7048f6616a5c7e84391c1ff2ec98536521"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260912_190537": {
+    "bytes": 69796221,
+    "sha256": "26caf8718055338022bfe21034f6a1ffd8e3111fdf69c2082d5a6c95de6b3c37"
+  },
+  "robot_data/maps/data/scans.pcd.bak_20260914_233113": {
+    "bytes": 1339353,
+    "sha256": "9434f8ba2aa9580959a11039d09f1aef3f5acd149a1acc8a262308402e786511"
+  },
+  "robot_data/maps/data/scans.pcd": {
+    "bytes": 71288669,
+    "sha256": "04601e746b0e200ab8a6223e4094edc324eca75cfc6623151e96eceaed2a18c6"
+  },
+  "robot_data/experiments/mocap_initial_mapping/20261017_native_01/calibration.lock.json": {
+    "bytes": 83,
+    "sha256": "a7bff983bca83b239f270a61e4577105e4bd6a4de6ecdb86426504f639e952d3"
+  },
+  "robot_data/experiments/mocap_initial_mapping/20261017_native_01/calibration.yaml": {
+    "bytes": 4426,
+    "sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82"
+  },
+  "robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd": {
+    "bytes": 48961437,
+    "sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51"
+  },
+  "robot_data/config/navigation.yaml": {
+    "bytes": 22599,
+    "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+  },
+  "localization.sh": {
+    "bytes": 3094,
+    "sha256": "0a721d5fcc185d36d05aec327bf2fd970b7a0b8b1da17b869c34a6d4b7130ad5"
+  },
+  "README.md": {
+    "bytes": 18317,
+    "sha256": "36b1fb638d680764bd0524cdcba7ea70a5b3222a348b5eb2b032000d1f4b98c8"
+  }
+}

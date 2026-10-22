@@ -1,0 +1,15 @@
+{
+  "ros_now_ns": 1792315624035520790,
+  "command_samples": 2029,
+  "maximum_command": 6.648670940975145e-48,
+  "mode": "MANUAL",
+  "mocap_samples": 0,
+  "latest_mocap": null,
+  "mocap_max_radius_m": null,
+  "diagnostics_latest": null,
+  "action_status": {
+    "/follow_path/_action/status": [
+      4
+    ]
+  }
+}

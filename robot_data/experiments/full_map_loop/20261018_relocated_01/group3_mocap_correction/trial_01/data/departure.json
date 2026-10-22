@@ -1,0 +1,83 @@
+{
+  "request_ros_ns": 1792346320573213268,
+  "service": "/inspection_route/follow",
+  "offset_distance_m": 0.6,
+  "readiness": {
+    "mocap_stamp_ns": 1792346320562933762,
+    "z_up_cos": 0.9998055175254356,
+    "base_age_s": 0.07406847600000001,
+    "mocap_age_s": 0.010279506,
+    "cmd": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mode": "EXTERNAL",
+    "base_stamp_ns": 1792346320499144792,
+    "status": {
+      "run_id": "20261018_relocated_01",
+      "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+      "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564",
+      "active_capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564",
+      "mode": "checkpoints",
+      "context": "localization",
+      "map_basis": "native_fastlio_mapping_world",
+      "frozen": true,
+      "fault": null,
+      "reason": "mocap_initialized_local_odometry",
+      "pairs": 32,
+      "native_stamp_ns": 1792346320499144792,
+      "source_mode": "mocap_initial_then_lio_with_static_checkpoints",
+      "motion_commands_published": false,
+      "ndt_used": false,
+      "checkpoint_corrections": true,
+      "active_checkpoint": null,
+      "completed_checkpoints": [],
+      "last_checkpoint": null,
+      "map_odom_version": 0,
+      "T_map_odom": {
+        "parent": "map",
+        "child": "odom",
+        "equation": "p_map = T_map_odom * p_odom",
+        "matrix": [
+          [
+            0.9997646719949428,
+            -0.020502823756083366,
+            -0.00708765468044442,
+            -0.06200204779104723
+          ],
+          [
+            0.020453296996306165,
+            0.9997663669273537,
+            -0.0069910087153930624,
+            -0.19585382119051253
+          ],
+          [
+            0.00722933418947342,
+            0.006844397629073035,
+            0.9999504442462497,
+            0.005344174153794012
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_m": [
+          -0.06200204779104723,
+          -0.19585382119051253,
+          0.005344174153794012
+        ],
+        "quaternion_xyzw": [
+          0.003459075792010098,
+          -0.0035794792275269383,
+          0.010239693891310861,
+          0.999935183295466
+        ],
+        "scale": 1.0
+      }
+    }
+  }
+}

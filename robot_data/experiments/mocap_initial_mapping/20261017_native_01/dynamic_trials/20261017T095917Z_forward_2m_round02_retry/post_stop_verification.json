@@ -1,0 +1,17 @@
+{
+  "samples": 481,
+  "final_commands_all_zero": true,
+  "nav_publishers": [],
+  "first": {
+    "receive_ros_ns": 1792231264343933665,
+    "linear_x": 0.0,
+    "linear_y": 0.0,
+    "angular_z": 0.0
+  },
+  "last": {
+    "receive_ros_ns": 1792231265465948348,
+    "linear_x": 0.0,
+    "linear_y": 0.0,
+    "angular_z": 0.0
+  }
+}

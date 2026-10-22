@@ -1,0 +1,20 @@
+/tf_static:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 100
+/tracking/tf_static:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 100
+/tracking/reference_path:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1
+/tracking/received_plan:
+  reliability: reliable
+  durability: transient_local
+  history: keep_last
+  depth: 1

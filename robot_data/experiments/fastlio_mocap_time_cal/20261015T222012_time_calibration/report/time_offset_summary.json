@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "purpose": "Fixed time offset from independent calibration motion only; no position-error minimization or spatial trajectory fitting is performed.",
+  "input": {
+    "bag": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/bag",
+    "mocap_topic": "/mocap/Tracker0/pose",
+    "tf_topic": "/tf",
+    "odom_topic": "/odom",
+    "fastlio_pose_source": "tf_exact_transform_stamp",
+    "fastlio": {
+      "samples": 838,
+      "start_stamp_ns": 1792074013887819290,
+      "end_stamp_ns": 1792074097587061643,
+      "duration_seconds": 83.699242353
+    },
+    "tracker0_raw": {
+      "samples": 3085,
+      "start_stamp_ns": 1792074013842991239,
+      "end_stamp_ns": 1792074048103014245,
+      "duration_seconds": 34.260023006
+    },
+    "mocap_base_link": {
+      "samples": 3085,
+      "start_stamp_ns": 1792074013842991239,
+      "end_stamp_ns": 1792074048103014245,
+      "duration_seconds": 34.260023006
+    },
+    "bag_audit": {
+      "available_topics": {
+        "/cloud_registered": "sensor_msgs/msg/PointCloud2",
+        "/mocap/Tracker0/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+        "/mocap/Tracker0/pose": "geometry_msgs/msg/PoseStamped",
+        "/odom": "nav_msgs/msg/Odometry",
+        "/tf": "tf2_msgs/msg/TFMessage",
+        "/tf_lio_raw": "tf2_msgs/msg/TFMessage",
+        "/vrpn_mocap/Tracker0/pose": "geometry_msgs/msg/PoseStamped",
+        "/tf_static": "tf2_msgs/msg/TFMessage"
+      },
+      "bag_record_time_start_ns": 1792074013851137724,
+      "bag_record_time_end_ns": 1792074097634607013,
+      "read_message_counts": {
+        "/mocap/Tracker0/pose": 3085,
+        "/odom": 4190,
+        "/tf": 2504
+      },
+      "fastlio_pose_source": "tf_exact_transform_stamp",
+      "mocap_audit": {
+        "input_samples": 3085,
+        "usable_unique_samples": 3085,
+        "exact_duplicates_ignored": 0,
+        "conflicting_duplicates_ignored": 0,
+        "invalid_or_zero_stamp_ignored": 0
+      },
+      "tf_audit": {
+        "input_samples": 838,
+        "usable_unique_samples": 838,
+        "exact_duplicates_ignored": 0,
+        "conflicting_duplicates_ignored": 0,
+        "invalid_or_zero_stamp_ignored": 0
+      },
+      "odom_audit": {
+        "input_samples": 4190,
+        "usable_unique_samples": 4190,
+        "exact_duplicates_ignored": 0,
+        "conflicting_duplicates_ignored": 0,
+        "invalid_or_zero_stamp_ignored": 0
+      }
+    }
+  },
+  "tracker0_to_base_link": {
+    "config_file": "/home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml",
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "notes": "User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation path must apply it before comparing against map->base_link; this passive receiver never publishes a base_link pose or TF."
+  },
+  "kinematic_estimator": {
+    "median_radius_seconds": 0.1,
+    "derivative_half_window_seconds": 0.25,
+    "signal_definition": "planar speed magnitude and signed yaw rate; both invariant to a fixed planar world-frame alignment",
+    "outlier_handling": "centred time median plus robust local derivative; no missing sample is extrapolated"
+  },
+  "search_options": {
+    "search_min_seconds": -0.3,
+    "search_max_seconds": 0.3,
+    "search_step_seconds": 0.001,
+    "max_interpolation_gap_seconds": 0.1,
+    "linear_activity_threshold_mps": 0.015,
+    "yaw_activity_threshold_radps": 0.015,
+    "minimum_active_samples": 20,
+    "near_best_correlation_drop": 0.01
+  },
+  "offset_search": {
+    "sign_convention": "For each FAST-LIO transform stamped t, positive offset d evaluates the corresponding mocap kinematics at header timestamp t+d.",
+    "best_offset_seconds": 0.017000000000000293,
+    "best_offset_milliseconds": 17.00000000000029,
+    "best_combined_correlation": 0.9418214519503099,
+    "best_linear_speed_correlation": 0.9666161391914937,
+    "best_signed_yaw_rate_correlation": 0.9170267647091259,
+    "best_channels_used": 2,
+    "zero_offset_combined_correlation": 0.9290486646787708,
+    "correlation_gain_over_zero": 0.012772787271539077,
+    "near_best_interval_seconds": [
+      0.010000000000000286,
+      0.09100000000000036
+    ],
+    "near_best_interval_milliseconds": [
+      10.000000000000286,
+      91.00000000000036
+    ],
+    "near_best_definition": "candidate combined correlation >= best - 0.01; this is a sensitivity interval, not a statistical confidence interval",
+    "usable_candidates": 601,
+    "total_candidates": 601
+  },
+  "limitations": [
+    "Mocap poses end at their last valid header timestamp. The tool does not repeat or extrapolate a stale pose.",
+    "The selected offset is for offline matching of this receiver-clock dataset. It is not a verified camera exposure-time latency.",
+    "This tool does not use position error, estimate a map/world transform, or control the robot."
+  ],
+  "output_files": [
+    "time_offset_summary.json",
+    "time_offset_report.md",
+    "time_offset_candidates.csv",
+    "kinematic_signals.csv",
+    "time_offset_correlation.svg",
+    "time_offset_correlation.png",
+    "kinematic_signals_at_best_offset.svg",
+    "kinematic_signals_at_best_offset.png"
+  ]
+}

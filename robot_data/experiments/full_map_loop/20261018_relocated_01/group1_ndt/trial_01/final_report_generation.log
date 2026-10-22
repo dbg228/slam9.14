@@ -1,0 +1,7 @@
+{
+  "output": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/final_report",
+  "status": "endpoint_completed",
+  "initial_xy_rmse_m": 0.011846938627679571,
+  "endpoint_xy_rmse_m": 0.01299072805190989,
+  "estimated_travel_m": 63.739144843642144
+}

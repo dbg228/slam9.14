@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "group": "A",
+  "execute_requested": false,
+  "onsite_route_clear_confirmed": false,
+  "protocol": {
+    "speed_mps": 0.15,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "read_only_preflight",
+  "control": "constant 0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "common_controller_sha256": "1982929cdea652243845652c644baabd9cfbc2ca292dd250b44db311edc31023",
+  "control_transport": {
+    "private_realtime_topics": "BEST_EFFORT / KEEP_LAST; watchdog limits unchanged",
+    "chassis_and_events": "original reliable delivery",
+    "nodes_sha256": "4104af51a401c6d619fc06d1fb030bab40cd79db9b2027395c94eef226b7e091",
+    "qos_sha256": "200c1c2e20b5f2c6c47f10061ffad42e667708800db855dbe007f0244c4cd726"
+  },
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 200,
+    "mocap_fresh": true,
+    "mocap_frame": "mocap_world",
+    "mocap_header_age_s": 0.012763767,
+    "mocap_base_pose": {
+      "stamp_ns": 1792083772873113143,
+      "valid": true,
+      "x": -0.9162917377332473,
+      "y": -0.20961257347575002,
+      "z": 0.2090137808421064,
+      "qx": -0.0009288609474683115,
+      "qy": -0.0005362967931644212,
+      "qz": -0.027531865238235944,
+      "qw": 0.9996203509330898
+    },
+    "fastlio_present": true,
+    "fastlio_node_count": 1,
+    "cmd_publishers": [],
+    "mode_publishers": [
+      "teleop_node"
+    ],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 100.0,
+    "wheel_homing_done": {
+      "wheel_2_turn": 0.0,
+      "wheel_1_turn": 0.0,
+      "wheel_3_turn": 0.0,
+      "wheel_4_turn": 0.0
+    },
+    "all_wheels_homed": false,
+    "chassis_driver_evidence": {
+      "process_pid": 18707,
+      "log_file": "/home/zkam/.ros/log/ros2_control_node_18707_1792083515553.log",
+      "ready": true,
+      "last_open_offset": 16903,
+      "last_restore_offset": 16984,
+      "last_reset_offset": 11088,
+      "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+    },
+    "chassis_states_fresh": true,
+    "chassis_homing_verified": true,
+    "local_pose_finite_fresh": false,
+    "local_xy_norm_m": 1.0723721643714685,
+    "ndt_present": false,
+    "free_disk_bytes": 17683841024,
+    "ready_to_arm": false,
+    "blocking_reasons": [
+      "Other mode publisher exists; teleop must be stopped for autonomous test",
+      "Chassis watchdog must be configured <=0.5 s before controller configure",
+      "Local odometry is missing, stale, invalid or diverged (>100m)"
+    ]
+  }
+}

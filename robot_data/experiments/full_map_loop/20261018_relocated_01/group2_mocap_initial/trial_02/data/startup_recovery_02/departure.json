@@ -1,0 +1,7 @@
+{
+  "request_ros_ns": 1792322142245244349,
+  "group": "group2_mocap_initial",
+  "mocap_correction": false,
+  "ordered_route_required": true,
+  "route_status_before": "START: 已选 | END: 已选\nNav2: 控制器已就绪\n紫线路程 START→END: 47.66 m\n到 START（直线）: 0.47 m\nSTART 后到 END（紫线）: 47.66 m\n可保存后点击“开始路线”。"
+}

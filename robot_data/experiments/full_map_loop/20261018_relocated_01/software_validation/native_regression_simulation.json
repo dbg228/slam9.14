@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "schema": 2,
+  "data_kind": "software_fixture",
+  "domain": "210",
+  "map_origin_direction_checked": true,
+  "PCD_bytes_unchanged": true,
+  "original_slice_heights_reused": true,
+  "mapping_global_TF_identity_checked": true,
+  "restart_global_TF_direction_checked": true,
+  "restart_map_odom_direction_checked": true,
+  "continued_after_mocap_loss": true,
+  "old_world_calibration_unchanged": true,
+  "heldout_no_refit": true,
+  "heldout_known_error_RMSE_m": 0.0500000000000004,
+  "native_reset_rejected": true,
+  "NDT_inputs_or_nodes_used": false,
+  "motion_commands_published_to_real_domain": false,
+  "run": "/tmp/test_nav_native_regression_01/software_fixture"
+}

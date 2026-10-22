@@ -1,0 +1,39 @@
+{
+  "status": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/initialization",
+    "mode": "mapping",
+    "context": "mapping",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "calibrated_native_mapping",
+    "pairs": 32,
+    "native_stamp_ns": 1792225843131426334,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "native_samples": 9,
+  "last_native": {
+    "stamp_ns": 1792225843131426334,
+    "age_s": 0.106293939,
+    "frame": "camera_init",
+    "child": "body"
+  },
+  "nodes": [
+    "_ros2cli_daemon_0_0177b0dc2a2743978d5461f596ddc504",
+    "anchored_fastlio",
+    "arbitrator_controller",
+    "client",
+    "controller_manager",
+    "initial_anchor",
+    "joint_state_broadcaster",
+    "joy_node",
+    "omni_velocity_controller",
+    "real_mapping_anchor_observer",
+    "robot_state_publisher",
+    "teleop_node"
+  ]
+}

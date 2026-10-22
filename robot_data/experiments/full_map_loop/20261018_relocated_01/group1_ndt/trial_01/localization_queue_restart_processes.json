@@ -1,0 +1,37 @@
+{
+  "11666": {
+    "ppid": 11646,
+    "start": "924821",
+    "cmd": "/home/zkam/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping --ros-args -r __node:=fastlio_static_odom --params-file /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/fastlio_no_accumulated_map_display.yaml --params-file /tmp/launch_params_clqiqqd9 -r /tf:=/tf_lio_raw "
+  },
+  "11668": {
+    "ppid": 11646,
+    "start": "924822",
+    "cmd": "/home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/static_map_localizer_node --ros-args -r __node:=static_map_localizer --params-file /tmp/launch_params_06cym7ch "
+  },
+  "11670": {
+    "ppid": 11646,
+    "start": "924822",
+    "cmd": "python3 /home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/map_to_odom_tf_broadcaster.py --ros-args -r __node:=static_map_tf_broadcaster "
+  },
+  "11613": {
+    "ppid": 11612,
+    "start": "924550",
+    "cmd": "bash ./localization.sh "
+  },
+  "11644": {
+    "ppid": 11613,
+    "start": "924732",
+    "cmd": "python3 /home/zkam/test_nav/lio_tf_to_base_tf.py --ros-args -p raw_tf_topic:=/tf_lio_raw -p raw_parent_frame:=camera_init -p raw_child_frame:=body -p odom_frame:=odom -p base_frame:=base_link -p sensor_x:=0.37 -p sensor_y:=0.28 -p sensor_z:=0.15 -p sensor_yaw:=0.8229227423153264 "
+  },
+  "11645": {
+    "ppid": 11613,
+    "start": "924732",
+    "cmd": "python3 /home/zkam/test_nav/tf_to_odom_bridge.py --ros-args -p odom_frame:=odom -p base_frame:=base_link -p odom_topic:=/odom -p publish_rate:=50.0 "
+  },
+  "11646": {
+    "ppid": 11613,
+    "start": "924732",
+    "cmd": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_fastlio_localization.launch.py fastlio_config:=/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/fastlio_no_accumulated_map_display.yaml map_pcd_path:=/home/zkam/test_nav/robot_data/maps/data/scans.pcd "
+  }
+}

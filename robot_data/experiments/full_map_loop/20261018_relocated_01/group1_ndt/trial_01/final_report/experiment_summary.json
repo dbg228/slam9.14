@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "data_kind": "real_robot_measurement",
+  "group": "group1_original_NDT",
+  "trial": "trial_01",
+  "navigation_result": "SUCCEEDED",
+  "navigation_goal_status": 4,
+  "generated_utc": "2026-10-18T08:51:44.885780+00:00",
+  "reference_length_m": 47.80025866780632,
+  "lio_estimated_travel_m": 63.739144843642144,
+  "motion_duration_s": 356.855801739,
+  "tracking_duration_s": 355.46341859300003,
+  "motion_interval": {
+    "start_ns": 1792311426466115189,
+    "end_ns": 1792311783321916928,
+    "first_command_ns": 1792311426466115189,
+    "last_nonzero_command_ns": 1792311782319644136,
+    "zero_command_ns": 1792311782321916928,
+    "navigation_terminal_ns": 1792311782033557803,
+    "command_threshold": 0.0001,
+    "settling_margin_s": 1.0,
+    "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+  },
+  "start_equals_end": false,
+  "user_allowed_noncoincident_endpoints": true,
+  "start_end_marker_separation_m": 0.795562291060608,
+  "initial": {
+    "samples": 3,
+    "xy_rmse_m": 0.011846938627679571,
+    "xy_max_m": 0.01651090431856136,
+    "yaw_rmse_deg": 0.7306032927181807
+  },
+  "endpoint": {
+    "samples": 3,
+    "xy_rmse_m": 0.01299072805190989,
+    "xy_max_m": 0.01981464569220211,
+    "yaw_rmse_deg": 1.0486794225944327,
+    "source_window_ns": [
+      1792311790976820468,
+      1792311795976820468
+    ],
+    "seconds_after_goal": [
+      8.943262665,
+      13.943262665
+    ],
+    "window_index": 1
+  },
+  "full_follow_path": {
+    "samples": 3548,
+    "path_distance_m": {
+      "n": 3548,
+      "rmse": 0.04267376467774969,
+      "p95_abs": 0.08470048691241383,
+      "max_abs": 0.12317932177499293,
+      "mean": 0.035943958895705515,
+      "std": 0.023001782771685103
+    },
+    "lateral_m": {
+      "n": 3548,
+      "rmse": 0.0426309634683187,
+      "p95_abs": 0.08470048691241383,
+      "max_abs": 0.12317932177499294,
+      "mean": 0.023128334166574647,
+      "std": 0.03581171882102811
+    },
+    "heading_error_deg": {
+      "n": 3548,
+      "rmse": 6.079459793054318,
+      "p95_abs": 7.817745414349821,
+      "max_abs": 60.637327008057106,
+      "mean": -0.6285093335583097,
+      "std": 6.046884106132194
+    }
+  },
+  "whole_run_vs_inspection_purple_path": {
+    "samples": 3548,
+    "path_distance_m": {
+      "n": 3548,
+      "rmse": 0.04851668387906555,
+      "p95_abs": 0.09572082090268234,
+      "max_abs": 0.21789743474840503,
+      "mean": 0.03833862819734018,
+      "std": 0.02973244360235618
+    },
+    "lateral_m": {
+      "n": 3548,
+      "rmse": 0.048507102512826174,
+      "p95_abs": 0.09572082090268236,
+      "max_abs": 0.217897434748405,
+      "mean": 0.025551854870308626,
+      "std": 0.04123156202324273
+    },
+    "heading_error_deg": {
+      "n": 3548,
+      "rmse": 3.9706847030472043,
+      "p95_abs": 7.8675852770582075,
+      "max_abs": 22.715918570613816,
+      "mean": -1.2459791588718607,
+      "std": 3.770129035811644
+    }
+  },
+  "registration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "registration_used_NDT": true,
+  "independent_absolute_accuracy_certified": false,
+  "transform_refitted": false,
+  "mocap_feedback": false,
+  "source_files_unchanged": {
+    "robot_data/maps/data/scans.pcd": true,
+    "robot_data/maps/map.yaml": true,
+    "robot_data/maps/map.pgm": true,
+    "robot_data/config/navigation.yaml": true,
+    "robot_data/config/mocap_tracker0.yaml": true,
+    "robot_data/config/mocap_world_session.yaml": true,
+    "robot_data/urdf/robot.urdf": true,
+    "localization.sh": true,
+    "navigation.sh": true,
+    "lio_tf_to_base_tf.py": true,
+    "src/static_map_localization/src/static_map_localizer_node.cpp": true
+  },
+  "previous_native_pcd_unchanged": true,
+  "initial_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_06/initial/summary.json",
+  "endpoint_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/endpoint_arrival_capture_02/endpoint/summary.json",
+  "formal_bag": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/formal_bag_01",
+  "software_tests_passed": 35,
+  "review": "review_01/review_report.md",
+  "stable_baseline_accuracy_established": false,
+  "physical_total_distance_m": null,
+  "metric_interpretation_review": "Short-window registered consistency only; raw LIO polyline is noise-sensitive and not an independently measured physical distance; see review_01",
+  "review_summary": "../review_01/review_summary.json"
+}

@@ -1,0 +1,37 @@
+{
+  "group": "A",
+  "sensor_mount": {
+    "transform": "T_base_link_sensor",
+    "translation_m": [0.37, 0.28, 0.15],
+    "yaw_deg": 47.15,
+    "yaw_rad": 0.8229227423153264,
+    "source": "User reports physical measurement before this trial; measurement record not supplied",
+    "prior_candidate_origin": "Same angle previously inferred diagnostically from run09; run09 is not independent validation",
+    "fixed_before_motion": true,
+    "test_trajectory_mount_refit": false,
+    "runtime_bridge_pid": 24859,
+    "runtime_fastlio_pid": 24862,
+    "verified_from_recorded_tf": true
+  },
+  "tracker_mount": {
+    "transform": "T_Tracker0_base_link",
+    "translation_m": [0.0, 0.0, -0.18],
+    "quaternion_xyzw": [0.0, 0.0, 0.0, 1.0]
+  },
+  "timing_verified": false,
+  "mocap_time_source": "Ubuntu receiver clock, not independently verified camera measurement time",
+  "mocap_offset_s": 0.0,
+  "chassis_pid": 24253,
+  "chassis_preparation": "../20261016_A_run10_mount47p15_chassis_preparation.json",
+  "external_watchdog_timeout_s": 0.25,
+  "safety_thresholds_relaxed": false,
+  "network_settings_changed": false,
+  "mocap_feedback_to_A_localization": false,
+  "post_run_position_check": {
+    "observation_s": 4.0,
+    "mocap_samples": 127,
+    "max_xy_displacement_m": 0.0000864829518189031,
+    "velocity_publishers": [],
+    "mode_publishers": []
+  }
+}

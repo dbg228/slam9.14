@@ -49,10 +49,11 @@ class LioTfToBaseTf(Node):
         self.declare_parameter("raw_child_frame", "base_link")
         self.declare_parameter("odom_frame", "odom")
         self.declare_parameter("base_frame", "base_link")
-        self.declare_parameter("sensor_x", 0.40)
-        self.declare_parameter("sensor_y", 0.30)
+        # User-measured base->sensor mount, 2026-10-16: forward/left, +47.15deg.
+        self.declare_parameter("sensor_x", 0.37)
+        self.declare_parameter("sensor_y", 0.28)
         self.declare_parameter("sensor_z", 0.15)
-        self.declare_parameter("sensor_yaw", 0.78539816340)
+        self.declare_parameter("sensor_yaw", 0.8229227423153264)
 
         self.raw_tf_topic = self.get_parameter("raw_tf_topic").value
         self.raw_parent_frame = self.get_parameter("raw_parent_frame").value

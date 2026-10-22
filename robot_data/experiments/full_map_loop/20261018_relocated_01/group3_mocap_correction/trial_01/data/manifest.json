@@ -1,0 +1,93 @@
+{
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "wheel_feedback_topic": "/joint_states",
+  "wheel_command_topic": "/omni_velocity_controller/diagnostics/joint_vel",
+  "wheel_names": [
+    "wheel_1_roll",
+    "wheel_2_roll",
+    "wheel_3_roll",
+    "wheel_4_roll"
+  ],
+  "wheel_unit": "Target rad/s; feedback reported interface values, physical scale unverified.",
+  "velocity_units_verified": false,
+  "initial_window_policy": "Original anchored validate, first qualifying >=3-second static window with >=25 synchronized source-time pairs; no refit.",
+  "endpoint_window_policy": "First complete fixed 15-second window from final zero command +4 through +19 seconds; missing intervals are retained. Separate original static validation also recorded.",
+  "runtime_environment": {
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OMP_THREAD_LIMIT": "3"
+  },
+  "distance_window_policy": "Same motion-boundary definition as baseline: first nonzero final chassis command through first zero after last arrival nonzero plus 1 s; continuous native base_link source stamps; report gaps and do not bridge intervals >0.5 s.",
+  "middle_hold_target_map_xy": [
+    -3.935854182155239,
+    -6.495089180394273
+  ],
+  "middle_hold_radius_m": 0.25,
+  "experiment_display_name": "第3组：中途动捕纠偏",
+  "experiment_label": "group3_middle",
+  "offset_distance_m": 0.6,
+  "trial": "trial_01",
+  "mocap_feedback": "initialization_and_middle_checkpoint",
+  "checkpoint_corrections": true,
+  "endpoint_policy": "Measure arrival error after middle correction; no endpoint correction in this requested run.",
+  "export_csv": false,
+  "export_log_files": false,
+  "result_formats": [
+    "png",
+    "svg"
+  ],
+  "figure_title": "Group 3 middle mocap correction",
+  "figure_package_name": "group3_middle_result_figures.zip",
+  "formal_departure_started": true,
+  "stage": "complete",
+  "recorded_wheel_feedback_topic": "/experiment/group3/joint_states_sample",
+  "recorded_wheel_command_topic": "/experiment/group3/wheel_target_sample",
+  "wheel_recording_maximum_hz": 20.0,
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564",
+  "initialization_pairs": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/pairs.json",
+  "command_guard_topic": "/experiment/group3/command_guard_sample",
+  "command_guard_sample_maximum_hz": 50.0,
+  "operator_external_confirmed": true,
+  "initial_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792346217960168639",
+  "route_pause_resume_smoke_test": "passed",
+  "middle_pause_recovery": "First planned hold lacked fresh mocap. No correction applied. Original route remains paused; all attempts retained. Resume only with fresh native pose and seek fresh mocap.",
+  "middle_correction_applied": true,
+  "valid_endpoint_result": true,
+  "operator_pause_ns": 1792347328176403138,
+  "pause_reason": "Operator requested to keep vehicle parked; original route remains paused. Recording ended gracefully. No automatic departure or restart.",
+  "continue_despite_native_delay": true,
+  "maximum_native_age_s": 3.0,
+  "continuation_speed_limit_mps": 0.1,
+  "bridge_recovery_preserves_native_estimator": true,
+  "recording_directories": [
+    "bag",
+    "bag_continued",
+    "bag_finish",
+    "bag_final_paths"
+  ],
+  "recorded_final_command_topic": "/experiment/group3/command_guard_sample",
+  "correction_map_odom_version": 1,
+  "operator_continuation_authorized": true,
+  "experimental_limitations": [
+    "Long stationary operator/debugging pause before middle correction",
+    "After middle correction operational native age allowance 3.0 s; continuation speed capped at 0.10 m/s and yaw rate 0.15 rad/s; frozen source navigation configuration unchanged",
+    "No endpoint mocap correction requested; measure arrival error only",
+    "Static recording split while parked; missing native odometry intervals are not bridged"
+  ],
+  "final_full_path_snapshot_required": true,
+  "recording_storage_policy": "Keep original full path once at endpoint; remaining native/mocap/command samples continue without repeated full-history Path payloads.",
+  "full_route_succeeded": true,
+  "completed_ros_ns": 1792348316434359752,
+  "result_package": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/group3_middle_result_figures.zip",
+  "result_package_images_only": true,
+  "completed_checks": {
+    "closed_bag_quick_check": "28 passed",
+    "software_tests": "60 passed",
+    "final_complete_trajectory_samples": 19266,
+    "previous_result_files_unchanged": 9,
+    "archive_crc": "passed",
+    "archive_image_files": 29,
+    "runtime_limits_restored": true,
+    "test_nodes_stopped": true
+  },
+  "export_completed_ns": 1792349099259888598
+}

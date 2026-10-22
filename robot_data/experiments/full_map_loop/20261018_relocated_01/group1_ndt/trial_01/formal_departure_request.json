@@ -1,0 +1,20 @@
+{
+  "request_ros_ns": 1792311426343318581,
+  "state": {
+    "mode": "EXTERNAL",
+    "route": "START: 已选 | END: 已选\nNav2: 控制器已就绪\n紫线路程 START→END: 47.00 m\n到 START（直线）: 0.79 m\nSTART 后到 END（紫线）: 47.00 m\n可保存后点击“开始路线”。",
+    "ready": true,
+    "command": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_06/initial/summary.json",
+  "registration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "user_authorization": [
+    "不重合也行，开始测试",
+    "已切 EXTERNAL，摇杆已回中"
+  ],
+  "execution_policy": "Original Nav2 execution checks; no additional TF age gate; no lidar or controller parameter changes"
+}

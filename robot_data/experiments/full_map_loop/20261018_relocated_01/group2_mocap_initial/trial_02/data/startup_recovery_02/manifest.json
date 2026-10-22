@@ -1,0 +1,51 @@
+{
+  "data_kind": "real_full_map_group2_retry_pending",
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "stage": "ordered_full_route_requested",
+  "trial": "trial_02",
+  "created_ros_ns": 1792320378128568225,
+  "export_csv": false,
+  "export_log_files": false,
+  "result_formats": [
+    "png",
+    "svg"
+  ],
+  "mocap_feedback": "initialization_only",
+  "checkpoint_corrections": false,
+  "measurements": [
+    "initial",
+    "middle",
+    "endpoint"
+  ],
+  "wheel_feedback_topic": "/joint_states",
+  "wheel_command_topic": "/omni_velocity_controller/diagnostics/joint_vel",
+  "wheel_names": [
+    "wheel_1_roll",
+    "wheel_2_roll",
+    "wheel_3_roll",
+    "wheel_4_roll"
+  ],
+  "velocity_units_verified": false,
+  "route_policy": "User selection in original inspection geometry interface",
+  "runtime_environment": {
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OMP_THREAD_LIMIT": "2"
+  },
+  "formal_departure_started": true,
+  "previous_trial_deleted_at_user_request": true,
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792321743962385066",
+  "operator_coverage_and_external_confirmed": true,
+  "initial_window_policy": "Original anchored validate, first qualifying >=3-second static window with >=25 synchronized source-time pairs; no refit.",
+  "middle_measurement_policy": "All valid paired samples inside midroute mocap coverage, no correction. Dynamic samples use receiver timestamps; exposure latency unverified.",
+  "endpoint_window_policy": "First complete fixed 15-second window from final zero command +4 through +19 seconds; missing intervals are retained. Separate original static validation also recorded.",
+  "wheel_unit": "Target rad/s; feedback reported interface values, physical scale unverified.",
+  "preparation_goal_excluded": true,
+  "preparation_reason": "Near-start END caused the original distance-only goal checker to complete after the approach; full inspection was not executed.",
+  "ordered_route_completion_required": true,
+  "completion_policy": "Visit the immutable combined approach, START and inspection path in order before usual END tolerances can report success.",
+  "initial_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792321926671275676",
+  "initial_xy_rmse_mm": 12.918936987171417,
+  "initial_pairs": 31,
+  "departure_request_ros_ns": 1792322142245244349,
+  "completion_checker": "inspection_geometry_tools::OrderedRouteGoalChecker"
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "data_kind": "software_fixture",
+  "domain": "209",
+  "checkpoint_order_enforced": true,
+  "moving_request_rejected": true,
+  "correction_held_outside_mocap": true,
+  "timeout_kept_previous_transform": true,
+  "retry_after_failed_capture": true,
+  "map_odom_dynamic_only": true,
+  "middle_before_XY_m": 0.05,
+  "end_before_XY_m": 0.15,
+  "heldout_current_correction_known_error_m": 0.02,
+  "old_calibration_PCD_and_initialization_unchanged": true,
+  "no_real_robot_commands": true
+}

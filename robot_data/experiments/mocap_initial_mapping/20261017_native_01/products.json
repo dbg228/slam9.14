@@ -1,0 +1,32 @@
+{
+  "native_pcd": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd",
+    "exists": true,
+    "bytes": 48961437,
+    "sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51"
+  },
+  "map_yaml": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.yaml",
+    "exists": true,
+    "bytes": 138,
+    "sha256": "fb591c3f47c6225bac51ed87adb16038749c531421f03f607fb199fc3cc82722"
+  },
+  "map_image": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.pgm",
+    "exists": true,
+    "bytes": 330353,
+    "sha256": "9309d69813fb429c40bb34170d3bb047be21413c6e7069d7ddd08e14aa1112ee"
+  },
+  "transform": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/calibration.yaml",
+    "exists": true,
+    "bytes": 4426,
+    "sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82"
+  },
+  "initialization": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/initialization/raw.jsonl",
+    "exists": true,
+    "bytes": 937555,
+    "sha256": "c3b508cb2a23bce4927d9018a105e499821fcc82912f0e675460c25787c13ba6"
+  }
+}

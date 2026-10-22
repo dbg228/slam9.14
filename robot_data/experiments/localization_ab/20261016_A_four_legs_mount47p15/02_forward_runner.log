@@ -1,0 +1,51 @@
+{
+  "nav2_absent": true,
+  "mocap_messages_received": 168,
+  "mocap_fresh": true,
+  "mocap_frame": "mocap_world",
+  "mocap_header_age_s": 0.016577858,
+  "mocap_base_pose": {
+    "stamp_ns": 1792087699910793105,
+    "valid": true,
+    "x": -0.940133989200668,
+    "y": -0.2445728781454077,
+    "z": 0.2087815432394094,
+    "qx": -0.0016504608450514336,
+    "qy": -0.0015536590622403845,
+    "qz": 0.004518215450714307,
+    "qw": 0.999987223844214
+  },
+  "fastlio_present": true,
+  "fastlio_node_count": 1,
+  "cmd_publishers": [],
+  "mode_publishers": [],
+  "cmd_subscribers": [
+    "arbitrator_controller"
+  ],
+  "external_watchdog_timeout_s": 0.25,
+  "wheel_homing_done": {
+    "wheel_2_turn": 0.0,
+    "wheel_1_turn": 0.0,
+    "wheel_3_turn": 0.0,
+    "wheel_4_turn": 0.0
+  },
+  "all_wheels_homed": false,
+  "chassis_driver_evidence": {
+    "process_pid": 24253,
+    "log_file": "/home/zkam/.ros/log/ros2_control_node_24253_1792086725566.log",
+    "ready": true,
+    "last_open_offset": 18285,
+    "last_restore_offset": 18366,
+    "last_reset_offset": 12277,
+    "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+  },
+  "chassis_states_fresh": true,
+  "chassis_homing_verified": true,
+  "local_pose_finite_fresh": true,
+  "local_xy_norm_m": 0.480144727944547,
+  "ndt_present": false,
+  "free_disk_bytes": 14875676672,
+  "ready_to_arm": true,
+  "blocking_reasons": []
+}
+Trial manifest: robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/02_forward/manifest.json

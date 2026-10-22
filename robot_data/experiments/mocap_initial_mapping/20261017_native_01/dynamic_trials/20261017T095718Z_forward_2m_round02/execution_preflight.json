@@ -1,0 +1,34 @@
+{
+  "ready": true,
+  "errors": [],
+  "mode": "EXTERNAL",
+  "watchdog_s": 0.25,
+  "source": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792229600181062723",
+    "mode": "localization",
+    "context": "localization",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "mocap_initialized_local_odometry",
+    "pairs": 31,
+    "native_stamp_ns": 1792231049231478214,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "mocap_samples": 362,
+  "native_samples": 40,
+  "hardware": {
+    "log_file": "/home/zkam/.ros/log/ros2_control_node_3738_1792198375356.log",
+    "process_pid": 3738,
+    "read_scope": "full current process log rechecked before this segment",
+    "ready": true,
+    "last_open_offset": 20845,
+    "last_restore_offset": 20926,
+    "last_reset_offset": 14807,
+    "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+  }
+}

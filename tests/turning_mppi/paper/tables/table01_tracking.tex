@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Main tracking experiment. Values are mean $\pm$ sample SD of per-trial statistics across three fixed routes and three reused seeds (9 conditional observations per controller/condition), not confidence intervals or 9 independent route draws. All 72 routes completed.}
+\label{tab:table01_tracking}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrr}
+\toprule
+\shortstack{Condition} & \shortstack{Controller} & \shortstack{Turn RMSE\\[mm]} & \shortstack{Turn P95\\[mm]} & \shortstack{Yaw RMSE\\[deg]} & \shortstack{Turn speed\\[m/s]} & \shortstack{Turn compute P95\\[ms]} \\
+\midrule
+nominal & Native MPPI & 4.182 $\pm$ 2.100 & 6.019 $\pm$ 2.710 & 0.545 $\pm$ 0.062 & 0.199 $\pm$ 0.001 & 8.92 $\pm$ 0.86 \\
+nominal & Preview tracker & 0.401 $\pm$ 0.122 & 0.688 $\pm$ 0.168 & 0.104 $\pm$ 0.018 & 0.200 $\pm$ 0.000 & 1.22 $\pm$ 0.10 \\
+nominal & Ideal-dynamics ablation & 2.442 $\pm$ 0.316 & 4.943 $\pm$ 0.338 & 1.585 $\pm$ 0.333 & 0.200 $\pm$ 0.000 & 26.75 $\pm$ 3.49 \\
+nominal & Guided MPC & 0.893 $\pm$ 0.127 & 1.594 $\pm$ 0.212 & 0.321 $\pm$ 0.041 & 0.200 $\pm$ 0.000 & 25.04 $\pm$ 3.27 \\
+heldout & Native MPPI & 5.731 $\pm$ 1.211 & 8.342 $\pm$ 1.531 & 1.004 $\pm$ 0.073 & 0.198 $\pm$ 0.001 & 8.91 $\pm$ 0.88 \\
+heldout & Preview tracker & 5.074 $\pm$ 2.312 & 8.154 $\pm$ 3.883 & 0.714 $\pm$ 0.045 & 0.200 $\pm$ 0.000 & 1.34 $\pm$ 0.17 \\
+heldout & Ideal-dynamics ablation & 8.613 $\pm$ 1.641 & 15.341 $\pm$ 3.348 & 4.376 $\pm$ 0.650 & 0.199 $\pm$ 0.001 & 26.46 $\pm$ 3.65 \\
+heldout & Guided MPC & 1.461 $\pm$ 0.125 & 2.516 $\pm$ 0.418 & 0.390 $\pm$ 0.071 & 0.200 $\pm$ 0.000 & 24.06 $\pm$ 1.95 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,29 @@
+{
+  "group": "B",
+  "plan": [
+    "forward",
+    "reverse",
+    "forward"
+  ],
+  "status": "aborted",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "forward",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15/01_forward",
+      "status": "completed"
+    },
+    {
+      "trial": 2,
+      "direction": "reverse",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15/02_reverse",
+      "status": "aborted"
+    }
+  ],
+  "route_clear_confirmed": true,
+  "safety_limits_relaxed": false,
+  "mocap_feedback_to_localization": false,
+  "timing_verified": false,
+  "fastlio_restart_between_trials": false,
+  "error": "Trial 2 stopped: Preflight blocked: Local odometry is missing, stale, invalid or diverged (>100m)"
+}

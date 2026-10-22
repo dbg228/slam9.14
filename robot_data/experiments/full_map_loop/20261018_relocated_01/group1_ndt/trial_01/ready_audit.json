@@ -1,0 +1,42 @@
+{
+  "ready": true,
+  "tf": {
+    "odom": {
+      "stamp_ns": 1792307599111720187,
+      "age_s": 0.0017630760000000001
+    },
+    "base_link": {
+      "stamp_ns": 1792307597477074623,
+      "age_s": 1.3716313770000002
+    }
+  },
+  "active_goals": [],
+  "latest_map_base": [
+    2.625482586191662,
+    -3.011064026340434,
+    -0.05801420398211124
+  ],
+  "mocap_samples": 0,
+  "mocap_max_age_s": null,
+  "mocap_max_gap_s": null,
+  "command_samples": 2310,
+  "maximum_command": 2.322298336644945e-112,
+  "diagnostics_tail": [],
+  "source_publishers": {
+    "/mocap/Tracker0/pose": [
+      "mocap_tracker0_normalizer"
+    ],
+    "/livox/lidar": [
+      "livox_lidar_publisher"
+    ],
+    "/tf": [
+      "robot_state_publisher",
+      "lio_tf_to_base_tf",
+      "static_map_tf_broadcaster"
+    ],
+    "/tf_static": [
+      "robot_state_publisher",
+      "static_map_localizer"
+    ]
+  }
+}

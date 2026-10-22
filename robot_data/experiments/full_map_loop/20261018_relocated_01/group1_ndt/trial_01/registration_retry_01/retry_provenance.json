@@ -1,0 +1,13 @@
+{
+  "reason": "calib_02 received no mocap messages; retry after restoring stream; failed capture retained unchanged",
+  "original_session": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration",
+  "failed_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration/calib_02/summary.json",
+  "reused_passed_group": "calib_01",
+  "copied_without_changes": true,
+  "source_frozen_inputs_sha256": "e4351a7d5ca9539f3f7d702bd9aa1f9a050f7ea2e91c0e89efb458c99b0077b6",
+  "source_calib_01_summary_sha256": "93e6aadf5f490711ef870cfd218611fa80824c7c5f8f14fe345cb31ba63880bd",
+  "source_calib_01_raw_sha256": "17ee179bcf6727e4dd2662ad76ad1f92ce525bca1c658956fc68ae988506271c",
+  "camera_world_changed": false,
+  "ndt_restarted": false,
+  "selection_on_residual": false
+}

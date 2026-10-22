@@ -1,0 +1,217 @@
+{
+  "input_report": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2_full",
+  "input_report_schema_version": 2,
+  "records_after_alignment_and_valid_reference": 54,
+  "unavailable_stage_records": {
+    "initial": 0,
+    "raw": 0,
+    "final": 0
+  },
+  "absolute_error": {
+    "initial": {
+      "samples": 54,
+      "metrics_available": true,
+      "ex_m": {
+        "mean": 0.007537785918164934,
+        "std_sample": 0.014641908258943239,
+        "rmse": 0.01634728089245701,
+        "p95_absolute": 0.03620266493265529,
+        "max_absolute": 0.043415064629344524
+      },
+      "ey_m": {
+        "mean": -0.0007190539288930061,
+        "std_sample": 0.014381418253296394,
+        "rmse": 0.014265767886788058,
+        "p95_absolute": 0.026666795347394454,
+        "max_absolute": 0.03633281917539377
+      },
+      "xy_m": {
+        "rmse": 0.021696675459079055,
+        "p95": 0.04395176053472351,
+        "max": 0.04871248586529541,
+        "mean": 0.017768602990708437
+      },
+      "yaw_deg": {
+        "mean": -0.11607316566805483,
+        "std_sample": 0.10153328955235484,
+        "rmse": 0.15359388367880597,
+        "p95_absolute": 0.2976581009792197,
+        "max_absolute": 0.35260040697055683
+      },
+      "weighting": "one pose per NDT input-cloud timestamp"
+    },
+    "raw": {
+      "samples": 54,
+      "metrics_available": true,
+      "ex_m": {
+        "mean": 0.007609141508278821,
+        "std_sample": 0.015501237853259726,
+        "rmse": 0.01713877547418223,
+        "p95_absolute": 0.03765967817229959,
+        "max_absolute": 0.04568760318062859
+      },
+      "ey_m": {
+        "mean": -0.0002407509379442937,
+        "std_sample": 0.013904237849950584,
+        "rmse": 0.013776996994941896,
+        "p95_absolute": 0.02556480460782632,
+        "max_absolute": 0.036776804319415435
+      },
+      "xy_m": {
+        "rmse": 0.02198961734439843,
+        "p95": 0.044844140517090327,
+        "max": 0.05062096179423808,
+        "mean": 0.01823981652708886
+      },
+      "yaw_deg": {
+        "mean": -0.12127367947377349,
+        "std_sample": 0.10339027516861382,
+        "rmse": 0.15874161307435572,
+        "p95_absolute": 0.2998842033278219,
+        "max_absolute": 0.3618928158922319
+      },
+      "weighting": "one pose per NDT input-cloud timestamp"
+    },
+    "final": {
+      "samples": 54,
+      "metrics_available": true,
+      "ex_m": {
+        "mean": 0.007609141508278821,
+        "std_sample": 0.015501237853259726,
+        "rmse": 0.01713877547418223,
+        "p95_absolute": 0.03765967817229959,
+        "max_absolute": 0.04568760318062859
+      },
+      "ey_m": {
+        "mean": -0.0002407509379442937,
+        "std_sample": 0.013904237849950584,
+        "rmse": 0.013776996994941896,
+        "p95_absolute": 0.02556480460782632,
+        "max_absolute": 0.036776804319415435
+      },
+      "xy_m": {
+        "rmse": 0.02198961734439843,
+        "p95": 0.044844140517090327,
+        "max": 0.05062096179423808,
+        "mean": 0.01823981652708886
+      },
+      "yaw_deg": {
+        "mean": -0.12127367947377349,
+        "std_sample": 0.10339027516861382,
+        "rmse": 0.15874161307435572,
+        "p95_absolute": 0.2998842033278219,
+        "max_absolute": 0.3618928158922319
+      },
+      "weighting": "one pose per NDT input-cloud timestamp"
+    }
+  },
+  "adjacent_frame_relative_motion": {
+    "initial": {
+      "pairs": 53,
+      "skipped_long_or_nonpositive_gap_pairs": 0,
+      "max_gap_seconds": 5.0,
+      "estimate_delta_position": {
+        "rmse_m": 0.025886636889085733,
+        "p95_m": 0.047881017840145985,
+        "max_m": 0.05721635208988187
+      },
+      "reference_delta_position": {
+        "rmse_m": 0.00014285624319868674,
+        "p95_m": 0.00026974132346980334,
+        "max_m": 0.00029994587495115117
+      },
+      "relative_delta_position_error": {
+        "rmse_m": 0.02587224837672438,
+        "p95_m": 0.04799882475765195,
+        "max_m": 0.057329489223671204
+      },
+      "relative_delta_yaw_error_deg": {
+        "mean": -0.0012580259887834933,
+        "std_sample": 0.10347536059626625,
+        "rmse": 0.10250224961958466,
+        "p95_absolute": 0.184691262062006,
+        "max_absolute": 0.3185849721286169
+      }
+    },
+    "raw": {
+      "pairs": 53,
+      "skipped_long_or_nonpositive_gap_pairs": 0,
+      "max_gap_seconds": 5.0,
+      "estimate_delta_position": {
+        "rmse_m": 0.027072685027444685,
+        "p95_m": 0.048544879783345055,
+        "max_m": 0.058196191016595906
+      },
+      "reference_delta_position": {
+        "rmse_m": 0.00014285624319868674,
+        "p95_m": 0.00026974132346980334,
+        "max_m": 0.00029994587495115117
+      },
+      "relative_delta_position_error": {
+        "rmse_m": 0.027083856793257866,
+        "p95_m": 0.04847172783571903,
+        "max_m": 0.05822629859075505
+      },
+      "relative_delta_yaw_error_deg": {
+        "mean": -0.00525960844229134,
+        "std_sample": 0.10842790108498,
+        "rmse": 0.10752883515362935,
+        "p95_absolute": 0.20579285711164913,
+        "max_absolute": 0.32918121447331145
+      }
+    },
+    "final": {
+      "pairs": 53,
+      "skipped_long_or_nonpositive_gap_pairs": 0,
+      "max_gap_seconds": 5.0,
+      "estimate_delta_position": {
+        "rmse_m": 0.027072685027444685,
+        "p95_m": 0.048544879783345055,
+        "max_m": 0.058196191016595906
+      },
+      "reference_delta_position": {
+        "rmse_m": 0.00014285624319868674,
+        "p95_m": 0.00026974132346980334,
+        "max_m": 0.00029994587495115117
+      },
+      "relative_delta_position_error": {
+        "rmse_m": 0.027083856793257866,
+        "p95_m": 0.04847172783571903,
+        "max_m": 0.05822629859075505
+      },
+      "relative_delta_yaw_error_deg": {
+        "mean": -0.00525960844229134,
+        "std_sample": 0.10842790108498,
+        "rmse": 0.10752883515362935,
+        "p95_absolute": 0.20579285711164913,
+        "max_absolute": 0.32918121447331145
+      }
+    }
+  },
+  "ndt_effect_raw_vs_initial": {
+    "samples": 54,
+    "available": true,
+    "raw_minus_initial_xy_error_m": {
+      "mean": 0.0004712135363804261,
+      "std_sample": 0.01592311398646475,
+      "rmse": 0.015782024999749154,
+      "p95_absolute": 0.033988146216369114,
+      "max_absolute": 0.045033734513430686
+    },
+    "raw_improves_xy_error_frames": 25,
+    "raw_worsens_xy_error_frames": 29,
+    "interpretation": "negative raw-minus-initial means NDT reduced that frame's XY error"
+  },
+  "important_time_semantics": "All absolute and relative metrics use only the input-cloud timestamp poses. T_init is never reconstructed from the V1 callback-time legacy field.",
+  "case_context": {
+    "requested_match_ids": [
+      185,
+      197,
+      205
+    ],
+    "missing_match_ids": [],
+    "half_window_frames": 4,
+    "rows_written": 27,
+    "csv": "case_context.csv"
+  }
+}

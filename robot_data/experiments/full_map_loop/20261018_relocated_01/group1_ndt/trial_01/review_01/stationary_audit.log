@@ -1,0 +1,4 @@
+predeparture_10s {"quality": false, "failures": ["nonzero_final_command"], "pairs": 5, "rmse_mm": 9.349135058203869, "mean_point_mm": 4.297691703390415, "raw_coverage": 1.0}
+arrival_0_15s {"quality": false, "failures": ["long_ndt_gap"], "pairs": 7, "rmse_mm": 31.735192532075388, "mean_point_mm": 6.871125111659744, "raw_coverage": 1.0}
+arrival_0_30s {"quality": false, "failures": ["long_ndt_gap"], "pairs": 15, "rmse_mm": 23.093977562377898, "mean_point_mm": 4.432643785847878, "raw_coverage": 1.0}
+arrival_0_60s {"quality": false, "failures": ["long_ndt_gap"], "pairs": 30, "rmse_mm": 18.854137887358846, "mean_point_mm": 4.366178348253261, "raw_coverage": 1.0}

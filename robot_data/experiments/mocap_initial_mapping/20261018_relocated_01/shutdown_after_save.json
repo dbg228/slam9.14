@@ -1,0 +1,6 @@
+{
+  "reason": "User completed manual map; explicit save receipt received; no auto navigation",
+  "mapper_shutdown": true,
+  "recorder_shutdown_requested": true,
+  "saved_receipt": "raw/native_receipt.json"
+}

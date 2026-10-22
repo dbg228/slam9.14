@@ -1,0 +1,38 @@
+{
+  "source": "held_out_static_capture",
+  "transform_sha256": "487e6df57e88cd1dd8d2cfa96855a558dee1da5e47e6ffdfa907c20a3e31c078",
+  "transform_refit": false,
+  "capture_results": [
+    {
+      "capture": "/home/zkam/test_nav/robot_data/experiments/frame_alignment_check/20261017T042344Z_recalibration_check/point02_attempt01.json",
+      "samples": 52,
+      "xy_m": {
+        "n": 52,
+        "rmse": 0.024083515721958392,
+        "p95_abs": 0.029773854402231577,
+        "max_abs": 0.03065670143613747,
+        "mean": 0.02321145920107217,
+        "std": 0.00642214070904548
+      },
+      "yaw_rad": {
+        "n": 52,
+        "rmse": 0.0010199052601042645,
+        "p95_abs": 0.0016515475104243503,
+        "max_abs": 0.002194451960451538,
+        "mean": 0.0007441705081043227,
+        "std": 0.000697436014596394
+      },
+      "map_center": [
+        1.9836079931934498,
+        -2.423775359459464
+      ],
+      "mocap_center": [
+        -0.6000078355739481,
+        -0.08567506640540454
+      ]
+    }
+  ],
+  "heldout_position_spread_rank": 0,
+  "sufficient_noncollinear_coverage": false,
+  "limitation": "Map observations come from FAST-LIO/NDT, not independently surveyed landmarks; metrics cannot prove absolute calibration or compensate scale/tilt"
+}

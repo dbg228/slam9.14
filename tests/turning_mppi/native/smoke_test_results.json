@@ -1,0 +1,66 @@
+{
+  "installed_package": "nav2_mppi_controller 1.1.20",
+  "config_sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452",
+  "libraries": {
+    "libmppi_controller.so": "fc259b61103fe1cc8ce6e5fa517460074aecf4b8d5c1075c50fad0ab0eaff88b",
+    "libmppi_critics.so": "cb4f73ca0ac36be85c37a7bb1eafcca94120d8300d7c290c52a35f89fe4f31ef"
+  },
+  "plugins": {
+    "InspectionStrict": {
+      "sequence_length": 512,
+      "observed_min_v": 0.032481495290994644,
+      "observed_max_v": 0.20227743685245514,
+      "observed_max_abs_w": 0.12944738566875458,
+      "finite_and_sanity_envelope": true,
+      "same_seed_exact_reproduction": false,
+      "same_seed_max_abs_difference": 0.11954144109040499,
+      "different_seed_changes_initial_command": true,
+      "seed_7_first_four_commands": [
+        [
+          0.032481495290994644,
+          0.017781490460038185
+        ],
+        [
+          0.057289622724056244,
+          0.041179951280355453
+        ],
+        [
+          0.059338975697755814,
+          0.040542423725128174
+        ],
+        [
+          0.0823742225766182,
+          0.06273277848958969
+        ]
+      ]
+    },
+    "FollowPath": {
+      "sequence_length": 512,
+      "observed_min_v": 0.021091971546411514,
+      "observed_max_v": 0.301117867231369,
+      "observed_max_abs_w": 0.04076111689209938,
+      "finite_and_sanity_envelope": true,
+      "same_seed_exact_reproduction": false,
+      "same_seed_max_abs_difference": 0.0010498333722352982,
+      "different_seed_changes_initial_command": true,
+      "seed_7_first_four_commands": [
+        [
+          0.021091971546411514,
+          0.017824573442339897
+        ],
+        [
+          0.04047225043177605,
+          0.0288379043340683
+        ],
+        [
+          0.06080704554915428,
+          0.0358332023024559
+        ],
+        [
+          0.07916130125522614,
+          0.040349751710891724
+        ]
+      ]
+    }
+  }
+}

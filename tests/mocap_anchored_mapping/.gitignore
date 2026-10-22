@@ -1,0 +1,5 @@
+.build/
+.install/
+.log/
+.validation/
+.pytest_cache/

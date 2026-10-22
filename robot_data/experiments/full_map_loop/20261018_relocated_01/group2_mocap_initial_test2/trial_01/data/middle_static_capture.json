@@ -1,0 +1,28 @@
+{
+  "pose_transform_changed": false,
+  "nav_goal_replaced": false,
+  "original_limits": {
+    "max_velocity": [
+      0.3,
+      0.0,
+      0.45
+    ],
+    "min_velocity": [
+      0.0,
+      0.0,
+      -0.45
+    ]
+  },
+  "hold_ros_ns": 1792344048979282756,
+  "request": {
+    "pose_ns": 1792344048933289740,
+    "receive_ros_ns": 1792344048936710836
+  },
+  "exit_code": 0,
+  "captures": [
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792344054902561970"
+  ],
+  "outcome": "static_measurement_saved_limits_restored",
+  "reason": null,
+  "resume_ros_ns": 1792344059670624091
+}

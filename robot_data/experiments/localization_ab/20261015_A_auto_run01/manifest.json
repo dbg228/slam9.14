@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "group": "A",
+  "execute_requested": true,
+  "onsite_route_clear_confirmed": true,
+  "protocol": {
+    "speed_mps": 0.15,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "aborted",
+  "control": "constant 0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "common_controller_sha256": "1982929cdea652243845652c644baabd9cfbc2ca292dd250b44db311edc31023",
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 200,
+    "mocap_fresh": true,
+    "mocap_frame": "mocap_world",
+    "mocap_header_age_s": 0.004316871,
+    "mocap_base_pose": {
+      "stamp_ns": 1792079326939546252,
+      "valid": true,
+      "x": -0.775352009349867,
+      "y": 0.04386204447649839,
+      "z": 0.2122573955326842,
+      "qx": -0.0016736797113483806,
+      "qy": 0.0015486711903805656,
+      "qz": -0.022200888406425572,
+      "qw": 0.9997509294658012
+    },
+    "fastlio_present": true,
+    "fastlio_node_count": 1,
+    "cmd_publishers": [],
+    "mode_publishers": [],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 0.25,
+    "wheel_homing_done": {
+      "wheel_2_turn": 0.0,
+      "wheel_1_turn": 0.0,
+      "wheel_3_turn": 0.0,
+      "wheel_4_turn": 0.0
+    },
+    "all_wheels_homed": false,
+    "chassis_driver_evidence": {
+      "process_pid": 5038,
+      "log_file": "/home/zkam/.ros/log/ros2_control_node_5038_1792073613749.log",
+      "ready": true,
+      "last_open_offset": 3921237,
+      "last_restore_offset": 3921318,
+      "last_reset_offset": 3915115,
+      "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+    },
+    "chassis_homing_verified": true,
+    "local_pose_finite_fresh": true,
+    "local_xy_norm_m": 0.5048579310982672,
+    "ndt_present": false,
+    "free_disk_bytes": 20809924608,
+    "ready_to_arm": true,
+    "blocking_reasons": []
+  },
+  "recorded_topics": [
+    "/mocap/Tracker0/pose",
+    "/vrpn_mocap/Tracker0/pose",
+    "/mocap/Tracker0/diagnostics",
+    "/tf",
+    "/tf_lio_raw",
+    "/tf_static",
+    "/odom",
+    "/cloud_registered",
+    "/nav/cmd_vel",
+    "/teleop/mode",
+    "/reference_velocity",
+    "/localization_ab/estimate/A",
+    "/localization_ab/request",
+    "/localization_ab/state",
+    "/localization_ab/events",
+    "/localization_ab/guard_status",
+    "/localization_ab/recorder_ready"
+  ],
+  "error": "Velocity guard aborted: request_recorder_or_mocap_stale"
+}

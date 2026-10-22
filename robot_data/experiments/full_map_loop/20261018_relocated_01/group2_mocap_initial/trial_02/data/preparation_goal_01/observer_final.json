@@ -1,0 +1,13 @@
+{
+  "route": "START: 已选 | END: 已选\nNav2: 控制器已就绪\n紫线路程 START→END: 47.76 m\n到 START（直线）: 0.27 m\nSTART 后到 END（紫线）: 47.76 m\n可保存后点击“开始路线”。",
+  "mode": "EXTERNAL",
+  "terminal": {
+    "status": 4,
+    "receive_ros_ns": 1792320645309953392
+  },
+  "last_mocap_ns": 1792320670291466665,
+  "native_stamp_ns": 1792320670177092313,
+  "action_status": 4,
+  "last_motion_ns": 1792320645603772118,
+  "first_zero_after_terminal_ns": 1792320645606050638
+}

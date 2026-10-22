@@ -1,0 +1,102 @@
+{
+  "data_kind": "real_2m_dynamic_localization_test",
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792231164028351227",
+  "localization_launch_pid": 35583,
+  "target_m": 2.0,
+  "route_clear_confirmed": true,
+  "manual_override_retained": true,
+  "world_transform_refit": false,
+  "timing_verified": false,
+  "protected_files": {
+    "calibration.yaml": {
+      "sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+      "bytes": 4426
+    },
+    "extrinsics.yaml": {
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99",
+      "bytes": 1146
+    },
+    "raw/native_F.pcd": {
+      "sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51",
+      "bytes": 48961437
+    },
+    "grid/map.yaml": {
+      "sha256": "fb591c3f47c6225bac51ed87adb16038749c531421f03f607fb199fc3cc82722",
+      "bytes": 138
+    },
+    "grid/map.pgm": {
+      "sha256": "9309d69813fb429c40bb34170d3bb047be21413c6e7069d7ddd08e14aa1112ee",
+      "bytes": 330353
+    },
+    "localizations/1792227126754706699/initialization.yaml": {
+      "sha256": "f1b8ad279df13a3f978a18f0ea0421330d4e503eb42cafb3d15511f816410eac",
+      "bytes": 3876
+    },
+    "localizations/1792229600181062723/initialization.yaml": {
+      "sha256": "6324b7a5439685c35bac4a7a4c1864e9aa06d22fcf7ebe7ea6885f0d9212e80d",
+      "bytes": 3872
+    },
+    "localizations/1792231164028351227/initialization.yaml": {
+      "sha256": "a1b420a5cae9125fdd757f4e9b0900a588d21fa14b821ad2c627daffa45066fc",
+      "bytes": 3872
+    }
+  },
+  "localization_output_overrides": {
+    "pcd_save.pcd_save_en": false,
+    "publish.map_en": false
+  },
+  "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T101420Z_forward_2m_round04_retry",
+  "direction": "forward",
+  "role": "forward_measurement",
+  "command_mps": 0.15,
+  "stage": "completed",
+  "round_number": 4,
+  "export_csv": false,
+  "first_completed_forward": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02",
+  "previous_completed_forward": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T100326Z_forward_2m_round03",
+  "operator_reset_confirmed": true,
+  "return_mode": "manual_only",
+  "guard_native_receive_watchdog_s": 0.5,
+  "initialization_change": "No restart or refit relative to rounds 2 and 3; same frozen local initialization.",
+  "previous_attempt": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T101338Z_forward_2m_round04",
+  "legacy_protocol": {
+    "speed_mps": 0.15,
+    "direction": 1,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "legacy_motion_core_sha256": "d6eb619e2d3908f5530b705041bfa4ce1ed772700405b52a0ff0e56bfb71a9f3",
+  "tool_sha256": "81ef7817f4b3d67e20d5103f58be8da2b6b6713e2a43b347a2e0f2b76f9f1894",
+  "guard_at_trial_end": {
+    "armed": true,
+    "moving": false,
+    "ready": true,
+    "latched_failure": "",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792232100108315912
+  },
+  "child_exit_codes": [
+    {
+      "pid": 36637,
+      "exit_code": 0
+    },
+    {
+      "pid": 36638,
+      "exit_code": 0
+    }
+  ],
+  "protected_files_unchanged": true,
+  "final_command_zero": false,
+  "post_stop_independent_verification": "post_stop_verification.json"
+}

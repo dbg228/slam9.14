@@ -1,0 +1,19 @@
+direction: T_Tracker0_base_link; p_Tracker0 = R * p_base_link + t
+source_path: /home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml
+source_sha256: fc3a86a254f6679205e3abf97f7f51310790b9ea28697aa590ba41b18d937758
+rigid_body_to_base_link:
+  measured: true
+  translation_m:
+  - 0.0
+  - 0.0
+  - -0.18
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  notes: 'User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above
+    the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This
+    is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation
+    path must apply it before comparing against map->base_link; this passive receiver
+    never publishes a base_link pose or TF.'

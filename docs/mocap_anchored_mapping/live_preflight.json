@@ -1,0 +1,41 @@
+{
+  "mode": "mapping",
+  "nodes": [
+    "_ros2cli_daemon_0_0177b0dc2a2743978d5461f596ddc504",
+    "anchored_workflow_preflight",
+    "arbitrator_controller",
+    "client",
+    "controller_manager",
+    "joint_state_broadcaster",
+    "joy_node",
+    "lio_tf_to_base_tf",
+    "livox_lidar_publisher",
+    "mocap_tracker0_normalizer",
+    "omni_velocity_controller",
+    "robot_state_publisher",
+    "rviz",
+    "static_map_localizer",
+    "static_map_tf_broadcaster",
+    "teleop_node",
+    "tf_to_odom_bridge",
+    "transform_listener_impl_5d37bfd22f70"
+  ],
+  "conflicting_nodes": [
+    "lio_tf_to_base_tf",
+    "static_map_localizer",
+    "static_map_tf_broadcaster",
+    "tf_to_odom_bridge"
+  ],
+  "observed_global_pose_tf": [
+    [
+      "map",
+      "odom"
+    ],
+    [
+      "odom",
+      "camera_init"
+    ]
+  ],
+  "passed": false,
+  "rule": "Stop old mapping/localization/navigation before switching; sensors/chassis/mocap may remain running"
+}

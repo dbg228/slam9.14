@@ -1,0 +1,21 @@
+{
+  "mode": "mapping",
+  "nodes": [
+    "anchored_workflow_preflight",
+    "arbitrator_controller",
+    "client",
+    "controller_manager",
+    "joint_state_broadcaster",
+    "joy_node",
+    "livox_lidar_publisher",
+    "livox_to_scan_fallback",
+    "mocap_tracker0_normalizer",
+    "omni_velocity_controller",
+    "robot_state_publisher",
+    "teleop_node"
+  ],
+  "conflicting_nodes": [],
+  "observed_global_pose_tf": [],
+  "passed": true,
+  "rule": "Stop old mapping/localization/navigation before switching; sensors/chassis/mocap may remain running"
+}

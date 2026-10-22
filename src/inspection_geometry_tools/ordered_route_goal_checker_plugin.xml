@@ -1,0 +1,7 @@
+<library path="inspection_ordered_route_goal_checker">
+  <class name="inspection_geometry_tools::OrderedRouteGoalChecker"
+         type="inspection_geometry_tools::OrderedRouteGoalChecker"
+         base_class_type="nav2_core::GoalChecker">
+    <description>Requires ordered traversal of the inspection path before the usual endpoint tolerance check.</description>
+  </class>
+</library>

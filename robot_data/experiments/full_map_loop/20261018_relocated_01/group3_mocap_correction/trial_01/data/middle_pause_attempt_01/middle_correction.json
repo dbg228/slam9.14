@@ -1,0 +1,19 @@
+{
+  "outcome": "failed",
+  "original_controller_used": true,
+  "original_correction_used": true,
+  "request": {
+    "pose_ns": 1792346472798438310,
+    "receive_ros_ns": 1792346472878965700,
+    "trigger_source": "planned_coverage_location_native_base_pose",
+    "map_xy": [
+      -4.729486756809771,
+      -5.8239651803097345
+    ]
+  },
+  "pause_ros_ns": 1792346472880421881,
+  "pause_response": "Pause requested; wait for FollowPath cancellation and a stationary chassis before correction.",
+  "reason": "validate_timeout",
+  "paused": true,
+  "ros_ns": 1792346498331676923
+}

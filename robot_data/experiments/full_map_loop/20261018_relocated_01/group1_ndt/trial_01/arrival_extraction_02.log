@@ -1,0 +1,22 @@
+{
+  "output": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/endpoint_arrival_capture_02",
+  "quality_passed": true,
+  "failures": [],
+  "pair_count": 3,
+  "raw_coverage": 1.0,
+  "source_window_ns": [
+    1792311790976820468,
+    1792311795976820468
+  ],
+  "motion_interval": {
+    "start_ns": 1792311426466115189,
+    "end_ns": 1792311783321916928,
+    "first_command_ns": 1792311426466115189,
+    "last_nonzero_command_ns": 1792311782319644136,
+    "zero_command_ns": 1792311782321916928,
+    "navigation_terminal_ns": 1792311782033557803,
+    "command_threshold": 0.0001,
+    "settling_margin_s": 1.0,
+    "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+  }
+}

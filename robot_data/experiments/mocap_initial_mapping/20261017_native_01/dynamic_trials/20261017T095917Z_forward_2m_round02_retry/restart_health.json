@@ -1,0 +1,24 @@
+{
+  "status": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792231164028351227",
+    "mode": "localization",
+    "context": "localization",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "mocap_initialized_local_odometry",
+    "pairs": 31,
+    "native_stamp_ns": 1792231180231389045,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "mode": "EXTERNAL",
+  "samples": 59,
+  "max_age_s": 0.059232289,
+  "max_receive_gap_s": 0.115729806,
+  "final_zero": true,
+  "nav_publishers": []
+}

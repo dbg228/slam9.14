@@ -1,0 +1,69 @@
+T_B_I:
+  parent: B
+  child: I
+  equation: p_B = T_B_I * p_I
+  matrix:
+  - - 0.6800813455659818
+    - -0.7331366608028572
+    - 0.0
+    - 0.37
+  - - 0.7331366608028572
+    - 0.6800813455659818
+    - 0.0
+    - 0.28
+  - - 0.0
+    - 0.0
+    - 1.0
+    - 0.15
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.37
+  - 0.28
+  - 0.15
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.3999491557898443
+  - 0.9165373275448147
+  scale: 1.0
+T_Tracker_B:
+  parent: Tracker
+  child: B
+  equation: p_Tracker = T_Tracker_B * p_B
+  matrix:
+  - - 1.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 1.0
+    - 0.0
+    - 0.0
+  - - 0.0
+    - 0.0
+    - 1.0
+    - -0.18
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.0
+  - 0.0
+  - -0.18
+  quaternion_xyzw:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  scale: 1.0
+sources:
+  urdf: /home/zkam/test_nav/robot_data/urdf/robot.urdf
+  urdf_sha256: 1006d2016badbb9ba38709b040b74c3bd724ef7b691ee7e1e18ed60d0b4a51d1
+  mocap: /home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml
+  mocap_sha256: fc3a86a254f6679205e3abf97f7f51310790b9ea28697aa590ba41b18d937758
+native_body_is_imu: true
+lidar_to_imu_applied_again: false

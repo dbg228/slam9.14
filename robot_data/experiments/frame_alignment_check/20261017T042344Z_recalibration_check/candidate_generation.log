@@ -1,0 +1,43 @@
+{
+  "status": "candidate_start_aligned_relative_not_independent_map_calibration",
+  "capture": "/home/zkam/test_nav/robot_data/experiments/frame_alignment_check/20261017T042344Z_recalibration_check/point01_repeat01.json",
+  "capture_sha256": "0a4c951e285abd5ae37acfc8014baed7b46caa3c4cb0b3dd7556d7284d6f7d3d",
+  "mount_sha256": "6b3f58b6796dd916850424324e4a48e741d5b5f1dd787044b07b91f5f49d7d5b",
+  "calibration_id": null,
+  "map_from_mocap": {
+    "yaw_rad": -0.7502022510225682,
+    "tx_m": 2.4666764118733164,
+    "ty_m": -2.7545588861144625,
+    "method": "explicit_initial_static_window"
+  },
+  "mocap_from_map": {
+    "yaw_rad": 0.7502022510225682,
+    "tx_m": -3.6825212735336335,
+    "ty_m": 0.33335303798914717,
+    "method": "explicit_initial_static_window"
+  },
+  "static_spread": {
+    "mocap": {
+      "samples": 52,
+      "center_x_m": -1.0723255700121526,
+      "center_y_m": -0.1042003115721577,
+      "mean_yaw_rad": 0.026021830974658273,
+      "max_xy_radius_m": 0.00010792075172236905,
+      "max_yaw_deviation_rad": 9.563908835616768e-05
+    },
+    "fastlio": {
+      "samples": 52,
+      "center_x_m": 1.6111731878410183,
+      "center_y_m": -2.09968938254603,
+      "mean_yaw_rad": -0.724180420046145,
+      "max_xy_radius_m": 0.015857341909245114,
+      "max_yaw_deviation_rad": 0.0012939646593413956
+    }
+  },
+  "source_frame": "mocap_world",
+  "target_frame": "map",
+  "reference_point": "base_link",
+  "ground_and_scale_independently_verified": false,
+  "camera_timing_verified": false,
+  "note": "Frozen once from this static window; map localization bias at start is absorbed; no TF is broadcast"
+}

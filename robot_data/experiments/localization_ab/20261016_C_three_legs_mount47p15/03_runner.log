@@ -1,0 +1,59 @@
+{
+  "initial_tf_acquisition_wait_s": 3.0000715860005585,
+  "nav2_absent": true,
+  "mocap_messages_received": 200,
+  "mocap_fresh": true,
+  "mocap_frame": "mocap_world",
+  "mocap_header_age_s": 0.004245347,
+  "mocap_base_pose": {
+    "stamp_ns": 1792090977813196596,
+    "valid": true,
+    "x": 0.8902213308148,
+    "y": 0.004806452949033064,
+    "z": 0.22709938377555242,
+    "qx": -0.0024466261025320405,
+    "qy": 0.0011274144156365692,
+    "qz": -0.022567920592783473,
+    "qw": 0.999741682594843
+  },
+  "fastlio_present": true,
+  "fastlio_node_count": 1,
+  "cmd_publishers": [],
+  "mode_publishers": [],
+  "cmd_subscribers": [
+    "arbitrator_controller"
+  ],
+  "external_watchdog_timeout_s": 0.25,
+  "wheel_homing_done": {
+    "wheel_2_turn": 0.0,
+    "wheel_1_turn": 0.0,
+    "wheel_3_turn": 0.0,
+    "wheel_4_turn": 0.0
+  },
+  "all_wheels_homed": false,
+  "chassis_driver_evidence": {
+    "process_pid": 26856,
+    "log_file": "/home/zkam/.ros/log/ros2_control_node_26856_1792088059314.log",
+    "ready": true,
+    "last_open_offset": 17773,
+    "last_restore_offset": 17854,
+    "last_reset_offset": 12045,
+    "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+  },
+  "chassis_states_fresh": true,
+  "chassis_homing_verified": true,
+  "local_pose_finite_fresh": true,
+  "local_pose_receive_age_s": 0.11790400199970463,
+  "local_pose_header_age_s": 0.173846035,
+  "local_xy_norm_m": 0.4665346919247397,
+  "ndt_present": false,
+  "ndt_initialized_ready": false,
+  "ndt_diagnostic_fresh": false,
+  "local_fastlio_processes": [
+    30900
+  ],
+  "free_disk_bytes": 11641597952,
+  "ready_to_arm": true,
+  "blocking_reasons": []
+}
+Trial manifest: robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/03_reverse/manifest.json

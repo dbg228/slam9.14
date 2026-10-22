@@ -1,3 +1,6 @@
+import fcntl
+import os
+
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.conditions import IfCondition
@@ -5,7 +8,27 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
+_LOCK_FD = None
+
+
+def _acquire_single_instance_lock():
+    """Fail before starting any node when an inspection launch already exists."""
+    global _LOCK_FD
+    if _LOCK_FD is not None:
+        return
+    _LOCK_FD = os.open('/tmp/test_nav_inspection_geometry.lock', os.O_CREAT | os.O_RDWR, 0o644)
+    try:
+        fcntl.flock(_LOCK_FD, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError as exc:
+        os.close(_LOCK_FD)
+        _LOCK_FD = None
+        raise RuntimeError(
+            'inspection_geometry_tools is already running; stop the existing '
+            'inspection launch instead of starting a second copy.') from exc
+
+
 def generate_launch_description():
+    _acquire_single_instance_lock()
     return LaunchDescription([
         DeclareLaunchArgument('map_topic', default_value='/map'),
         DeclareLaunchArgument('aligned_map_topic', default_value='/aligned_map'),
@@ -21,6 +44,8 @@ def generate_launch_description():
         DeclareLaunchArgument('close_radius', default_value='0.25'),
         DeclareLaunchArgument('experiment_label', default_value='mppi'),
         DeclareLaunchArgument('tracking_base_frame', default_value='base_link'),
+        DeclareLaunchArgument('controller_id', default_value='InspectionStrict'),
+        DeclareLaunchArgument('goal_checker_id', default_value='inspection_route_goal_checker'),
         DeclareLaunchArgument(
             'experiment_output_dir',
             default_value='/home/zkam/test_nav/robot_data/experiments'),
@@ -78,6 +103,9 @@ def generate_launch_description():
                 'experiment_label': LaunchConfiguration('experiment_label'),
                 'experiment_output_dir': LaunchConfiguration('experiment_output_dir'),
                 'tracking_base_frame': LaunchConfiguration('tracking_base_frame'),
+                # Do not rely on Nav2 Humble's empty-string defaults here.
+                'controller_id': LaunchConfiguration('controller_id'),
+                'goal_checker_id': LaunchConfiguration('goal_checker_id'),
             }],
         ),
         Node(

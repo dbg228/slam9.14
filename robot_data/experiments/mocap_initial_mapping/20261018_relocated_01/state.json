@@ -1,0 +1,14 @@
+{
+  "stage": "grid_written_check_projection_receipt",
+  "run_id": "20261018_relocated_01",
+  "products": {
+    "native_pcd": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/raw/native_F.pcd",
+    "map_yaml": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/grid/map.yaml",
+    "map_image": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/grid/map.pgm",
+    "transform": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/calibration.yaml",
+    "initialization": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/initialization/raw.jsonl"
+  },
+  "motion_commands_published": false,
+  "ndt_used_for_anchor": false,
+  "acquisition_failed": false
+}

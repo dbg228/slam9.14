@@ -1,0 +1,12 @@
+{
+  "extrinsics.yaml": {
+    "unchanged": true,
+    "old_sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99",
+    "new_sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+  },
+  "mocap.yaml": {
+    "unchanged": true,
+    "old_sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3",
+    "new_sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+  }
+}

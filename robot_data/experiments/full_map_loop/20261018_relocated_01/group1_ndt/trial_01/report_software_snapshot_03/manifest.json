@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-18T08:51:44.885780+00:00",
+  "data_kind": "report_code_snapshot_no_new_motion",
+  "software_test_log": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/report_software_tests_final.log",
+  "tests_passed": 35,
+  "files": {
+    "tests/full_map_loop/tracking_report.py": "a55a6645d88536c24bbc5de773b9cd7296fbcbe588070a4fcf3836abf93bc9ce",
+    "tests/full_map_loop/test_tracking_report.py": "068935a24a59e94b8b80910b7b3dd058adb00d6f94fbf4f9ff7e82785ac83b22",
+    "tests/full_map_loop/arrival_capture.py": "e4a21b694100724b8ba063dc402665ab5e8c34e9a40726facaaf8cdbfc0b7f1e",
+    "tests/full_map_loop/test_arrival_capture.py": "03ba75455e24423a77184d0fdfb07b9db52b6c14ab920dec019b466274821a6b",
+    "tests/full_map_loop/test_ndt_endpoint_report.py": "aaf747eb5a4ae3cc88c7e4cc0b4128cdbdb4f70c64c7b7a5b112420db2f84405",
+    "tests/full_map_loop/ndt_endpoint_report.py": "410ae715a5766c81ebf235385062dee5acbad0550ead31f49f796d099830a2c3",
+    "tests/controller_tracking/controller_tracking/world_capture.py": "22641661cde9a2affc13eb30f2c9692fffa65a4c7c614c07f3ee74a9e9657e32",
+    "tests/controller_tracking/controller_tracking/world_calibration.py": "0e507eb876a3621db3e9b40c1f13a220cabea55a804b0434d74b030c91a4ab98",
+    "tests/controller_tracking/controller_tracking/common.py": "3e8b903b9fa6ef0a2a1a3b32fb60d41a9452c3197c7d19761848d1e9d06dc52f",
+    "tests/controller_tracking/controller_tracking/state.py": "7b61e8c120ccb1f85dc4c692ca3dc15dddb31cfcbb8c980172b845d859615548",
+    "tests/controller_tracking/controller_tracking/feedback.py": "be442f2938980b6e158e1eabd1086782d8707f88a76f8615dd05390eda98a565",
+    "tests/controller_tracking/test/test_world_calibration.py": "6cae6067fe30961eb93666fc9984d88dd8094ff32ad8880e1122420a84f4a63d"
+  }
+}

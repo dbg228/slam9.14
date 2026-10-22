@@ -1,0 +1,62 @@
+{
+  "group": "C",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "reverse",
+      "status": "completed",
+      "xy_rmse_mm": 0.2678930739054459,
+      "p95_mm": 0.21314035732207284,
+      "max_mm": 3.1937015996363467,
+      "yaw_rmse_deg": 0.002025253921374729,
+      "endpoint_mm": 0.009385689294976492,
+      "max_pose_jump_mm": 14.56700000152208,
+      "max_error_jump_mm": 3.2813264680243703,
+      "trigger_m": 2.0011403209734278,
+      "parked_m": 2.0077185766877164,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "reference_independent": false,
+      "metric_label": "same-mocap consistency",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/01_reverse"
+    },
+    {
+      "trial": 2,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 0.347157662384703,
+      "p95_mm": 0.7212377709657155,
+      "max_mm": 2.5958608390900735,
+      "yaw_rmse_deg": 0.0032780054535247512,
+      "endpoint_mm": 0.008411663268865919,
+      "max_pose_jump_mm": 13.880539794489232,
+      "max_error_jump_mm": 2.682993472994661,
+      "trigger_m": 2.0007909655079192,
+      "parked_m": 2.0078819098203238,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "reference_independent": false,
+      "metric_label": "same-mocap consistency",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/02_forward"
+    },
+    {
+      "trial": 3,
+      "direction": "reverse",
+      "status": "completed",
+      "xy_rmse_mm": 0.3725294743296535,
+      "p95_mm": 0.7080139765988263,
+      "max_mm": 3.8043822075882345,
+      "yaw_rmse_deg": 0.002891056491442698,
+      "endpoint_mm": 0.015399868893441419,
+      "max_pose_jump_mm": 14.723141473747265,
+      "max_error_jump_mm": 3.842910534617144,
+      "trigger_m": 2.0009756359415385,
+      "parked_m": 2.0082080486707015,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "reference_independent": false,
+      "metric_label": "same-mocap consistency",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/03_reverse"
+    }
+  ]
+}

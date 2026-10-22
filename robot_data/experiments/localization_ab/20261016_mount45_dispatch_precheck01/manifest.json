@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "group": "A",
+  "execute_requested": false,
+  "onsite_route_clear_confirmed": false,
+  "protocol": {
+    "speed_mps": 0.15,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "read_only_preflight",
+  "control": "constant 0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "common_controller_sha256": "1982929cdea652243845652c644baabd9cfbc2ca292dd250b44db311edc31023",
+  "control_transport": {
+    "private_realtime_topics": "BEST_EFFORT / KEEP_LAST; watchdog limits unchanged",
+    "chassis_and_events": "original reliable delivery",
+    "nodes_sha256": "4104af51a401c6d619fc06d1fb030bab40cd79db9b2027395c94eef226b7e091",
+    "qos_sha256": "200c1c2e20b5f2c6c47f10061ffad42e667708800db855dbe007f0244c4cd726"
+  },
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 200,
+    "mocap_fresh": true,
+    "mocap_frame": "mocap_world",
+    "mocap_header_age_s": 0.00662345,
+    "mocap_base_pose": {
+      "stamp_ns": 1792085290531432353,
+      "valid": true,
+      "x": -0.9990134786688379,
+      "y": -0.2327492007223563,
+      "z": 0.2085194672188362,
+      "qx": -0.0026602097223671402,
+      "qy": 0.0008449252166688806,
+      "qz": -1.7986212316143765e-05,
+      "qw": 0.9999961045234663
+    },
+    "fastlio_present": true,
+    "fastlio_node_count": 1,
+    "cmd_publishers": [],
+    "mode_publishers": [],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 0.25,
+    "wheel_homing_done": {
+      "wheel_2_turn": 0.0,
+      "wheel_1_turn": 0.0,
+      "wheel_3_turn": 0.0,
+      "wheel_4_turn": 0.0
+    },
+    "all_wheels_homed": false,
+    "chassis_driver_evidence": {
+      "process_pid": 21660,
+      "log_file": "/home/zkam/.ros/log/ros2_control_node_21660_1792084891729.log",
+      "ready": true,
+      "last_open_offset": 17848,
+      "last_restore_offset": 17929,
+      "last_reset_offset": 11958,
+      "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+    },
+    "chassis_states_fresh": true,
+    "chassis_homing_verified": true,
+    "local_pose_finite_fresh": true,
+    "local_xy_norm_m": 0.46601963157890186,
+    "ndt_present": false,
+    "free_disk_bytes": 16524988416,
+    "ready_to_arm": true,
+    "blocking_reasons": []
+  }
+}

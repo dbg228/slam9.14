@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "group": "A",
+  "execute_requested": false,
+  "protocol": {
+    "speed_mps": 0.15,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "read_only_preflight",
+  "control": "constant 0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 0,
+    "mocap_fresh": false,
+    "fastlio_present": true,
+    "cmd_publishers": [],
+    "mode_publishers": [
+      "teleop_node"
+    ],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 100.0,
+    "ndt_present": false,
+    "free_disk_bytes": 21143339008,
+    "ready_to_arm": false,
+    "blocking_reasons": [
+      "No fresh mocap pose",
+      "mocap frame is not mocap_world",
+      "mocap timestamp age invalid",
+      "Other mode publisher exists; teleop must be stopped for autonomous test",
+      "Chassis watchdog must be configured <=0.5 s before controller configure"
+    ]
+  }
+}

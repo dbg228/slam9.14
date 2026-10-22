@@ -1,0 +1,34 @@
+{
+  "raw_mocap": {
+    "received": 1542,
+    "first_stamp_ns": 1792229709992855639,
+    "last_stamp_ns": 1792229728301344928,
+    "largest_header_gap_s": 0.530275053,
+    "receive_age_p95_s": 0.005615720749999996,
+    "max_receive_age_s": 0.055662606
+  },
+  "mocap": {
+    "received": 1527,
+    "first_stamp_ns": 1792229710161981166,
+    "last_stamp_ns": 1792229728301344928,
+    "largest_header_gap_s": 0.530194193,
+    "receive_age_p95_s": 0.007599432100000001,
+    "max_receive_age_s": 0.054700576
+  },
+  "validity": {
+    "received": 1598,
+    "first_stamp_ns": 1792229710082005323,
+    "last_stamp_ns": 1792229728301344928,
+    "largest_header_gap_s": 1792229722.6318235,
+    "receive_age_p95_s": 0.07568136629999989,
+    "max_receive_age_s": 1792229722.604455
+  },
+  "native": {
+    "received": 163,
+    "first_stamp_ns": 1792229712031921863,
+    "last_stamp_ns": 1792229728231820583,
+    "largest_header_gap_s": 0.10461640400000001,
+    "receive_age_p95_s": 0.12225226240000002,
+    "max_receive_age_s": 0.479956035
+  }
+}

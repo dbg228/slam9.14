@@ -1,0 +1,56 @@
+{
+  "group": "A",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 3.0136743344380115,
+      "p95_mm": 4.54092449037984,
+      "max_mm": 6.967560480806161,
+      "yaw_rmse_deg": 0.04913869059025431,
+      "endpoint_mm": 1.5618398540066891,
+      "max_pose_jump_mm": 22.850529843966203,
+      "max_error_jump_mm": 4.255565640983226,
+      "trigger_m": 2.000030340819315,
+      "parked_m": 2.007053167616151,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run10_mount47p15"
+    },
+    {
+      "trial": 2,
+      "direction": "reverse",
+      "status": "completed",
+      "xy_rmse_mm": 2.3686676579435972,
+      "p95_mm": 4.151745472757421,
+      "max_mm": 9.537131452571732,
+      "yaw_rmse_deg": 0.10097903374642528,
+      "endpoint_mm": 0.7828307797204921,
+      "max_pose_jump_mm": 21.260963911670494,
+      "max_error_jump_mm": 11.000517664307287,
+      "trigger_m": 2.000008650758938,
+      "parked_m": 2.007144098313012,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/01_reverse"
+    },
+    {
+      "trial": 3,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 3.38748914178578,
+      "p95_mm": 5.173963425863302,
+      "max_mm": 9.124469008787274,
+      "yaw_rmse_deg": 0.07678006617982103,
+      "endpoint_mm": 2.9425925702276143,
+      "max_pose_jump_mm": 22.55458176447038,
+      "max_error_jump_mm": 12.505390269082355,
+      "trigger_m": 2.000750214364877,
+      "parked_m": 2.007395031831547,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/02_forward"
+    }
+  ]
+}

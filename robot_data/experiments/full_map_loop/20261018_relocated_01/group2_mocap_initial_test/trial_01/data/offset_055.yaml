@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    corner_points: 16
+    direction_marker_spacing: 1.0
+    frame_id: map
+    offset_distance: 0.55
+    path_spacing: 0.1
+    reverse_path: false

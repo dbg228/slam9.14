@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-15T02:10:15.321726+00:00",
+  "alignment_mode": "start",
+  "measurement_time": "NDT input /cloud_registered header timestamp; never matching completion timestamp",
+  "time_offset_seconds": 0.0,
+  "mocap_interpolation_max_gap_seconds": 0.1,
+  "alignment_window_excluded_from_metrics": true,
+  "alignment_warmup_excluded_from_metrics": true,
+  "counts": {
+    "total_attempts": 57,
+    "reference_valid": 57,
+    "raw_pose_evaluable": 57,
+    "final_pose_evaluable": 57
+  },
+  "total_attempts": 57,
+  "attempted_ndt_registrations": 57,
+  "converged_attempts": 57,
+  "accepted_attempts": 57,
+  "failed_or_not_accepted_attempts": 0,
+  "reference_coverage_all_attempts": 1.0,
+  "reference_coverage_test_attempts": 1.0,
+  "raw_ndt_all_evaluable": {
+    "samples": 38,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -0.0010462041754963202,
+      "rmse": 0.016295414621723917,
+      "p95_absolute": 0.027924145143113872,
+      "max_absolute": 0.03671951457292688
+    },
+    "y_m": {
+      "mean": -0.003555960826703847,
+      "rmse": 0.015496626118095474,
+      "p95_absolute": 0.02904523751464604,
+      "max_absolute": 0.03923100558116355
+    },
+    "xy_m": {
+      "mean": 0.018876316997179954,
+      "rmse": 0.022487462256509348,
+      "p95_absolute": 0.045166876628862755,
+      "max_absolute": 0.047834452689861355
+    },
+    "yaw_deg": {
+      "mean": 0.03977844206792372,
+      "rmse": 0.10553611918056005,
+      "p95_absolute": 0.18834297668447358,
+      "max_absolute": 0.26249105201125983
+    }
+  },
+  "raw_ndt_accepted_evaluable": {
+    "samples": 38,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -0.0010462041754963202,
+      "rmse": 0.016295414621723917,
+      "p95_absolute": 0.027924145143113872,
+      "max_absolute": 0.03671951457292688
+    },
+    "y_m": {
+      "mean": -0.003555960826703847,
+      "rmse": 0.015496626118095474,
+      "p95_absolute": 0.02904523751464604,
+      "max_absolute": 0.03923100558116355
+    },
+    "xy_m": {
+      "mean": 0.018876316997179954,
+      "rmse": 0.022487462256509348,
+      "p95_absolute": 0.045166876628862755,
+      "max_absolute": 0.047834452689861355
+    },
+    "yaw_deg": {
+      "mean": 0.03977844206792372,
+      "rmse": 0.10553611918056005,
+      "p95_absolute": 0.18834297668447358,
+      "max_absolute": 0.26249105201125983
+    }
+  },
+  "final_map_base_all_evaluable": {
+    "samples": 38,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -0.0010462041754963202,
+      "rmse": 0.016295414621723917,
+      "p95_absolute": 0.027924145143113872,
+      "max_absolute": 0.03671951457292688
+    },
+    "y_m": {
+      "mean": -0.003555960826703847,
+      "rmse": 0.015496626118095474,
+      "p95_absolute": 0.02904523751464604,
+      "max_absolute": 0.03923100558116355
+    },
+    "xy_m": {
+      "mean": 0.018876316997179954,
+      "rmse": 0.022487462256509348,
+      "p95_absolute": 0.045166876628862755,
+      "max_absolute": 0.047834452689861355
+    },
+    "yaw_deg": {
+      "mean": 0.03977844206792372,
+      "rmse": 0.10553611918056005,
+      "p95_absolute": 0.18834297668447358,
+      "max_absolute": 0.26249105201125983
+    }
+  },
+  "final_map_base_accepted_evaluable": {
+    "samples": 38,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -0.0010462041754963202,
+      "rmse": 0.016295414621723917,
+      "p95_absolute": 0.027924145143113872,
+      "max_absolute": 0.03671951457292688
+    },
+    "y_m": {
+      "mean": -0.003555960826703847,
+      "rmse": 0.015496626118095474,
+      "p95_absolute": 0.02904523751464604,
+      "max_absolute": 0.03923100558116355
+    },
+    "xy_m": {
+      "mean": 0.018876316997179954,
+      "rmse": 0.022487462256509348,
+      "p95_absolute": 0.045166876628862755,
+      "max_absolute": 0.047834452689861355
+    },
+    "yaw_deg": {
+      "mean": 0.03977844206792372,
+      "rmse": 0.10553611918056005,
+      "p95_absolute": 0.18834297668447358,
+      "max_absolute": 0.26249105201125983
+    }
+  },
+  "fitness_vs_error_samples": 38,
+  "fitness_definition": "PCL NormalDistributionsTransform::getFitnessScore(): mean squared nearest-neighbor distance after the final transform; lower is better; not covariance or absolute error",
+  "score_lower_is_better": true,
+  "covariance": "No covariance is reported unless upstream diagnostics explicitly expose it; this node reports unavailable.",
+  "matching_duration_s": {
+    "samples": 57,
+    "mean": 0.02423536159649123,
+    "p95": 0.031557450599999995,
+    "max": 0.075808145
+  },
+  "start_alignment": {
+    "map_from_mocap_yaw_rad": -0.6929018986746359,
+    "translation_m": [
+      2.4574811763750364,
+      -2.745305756824823
+    ],
+    "mocap_to_base_yaw_rad": 0.0,
+    "start_stamp_ns": 1792029790116101026,
+    "end_stamp_ns": 1792029815116101026,
+    "metrics_exclusion_start_stamp_ns": 1792029778116101026,
+    "warmup_seconds": 12.0,
+    "samples": 13,
+    "rejected_during_alignment": {},
+    "limitation": "Initial fixed offset is absorbed; reports relative localization error after start alignment."
+  },
+  "mocap_topic": "/mocap/Tracker0/pose",
+  "mocap_reference_pose": "base_link pose derived offline from recorded Tracker rigid-body pose",
+  "tracker_to_base_applied": {
+    "config_file": "/home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml",
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "notes": "User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation path must apply it before comparing against map->base_link; this passive receiver never publishes a base_link pose or TF."
+  }
+}

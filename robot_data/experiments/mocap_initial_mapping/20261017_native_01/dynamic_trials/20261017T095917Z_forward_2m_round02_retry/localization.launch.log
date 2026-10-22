@@ -1,0 +1,793 @@
+[INFO] [launch]: All log files can be found below /home/zkam/.ros/log/2026-10-17-17-59-21-276043-OmniBot-35583
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [bwrap-1]: process started with pid [35648]
+[INFO] [initial_anchor-2]: process started with pid [35650]
+[INFO] [python3-3]: process started with pid [35653]
+[INFO] [map_server-4]: process started with pid [35655]
+[INFO] [lifecycle_manager-5]: process started with pid [35657]
+[bwrap-1] [INFO] [1792231164.618513360] [anchored_fastlio]: p_pre->lidar_type 1
+[bwrap-1] Multi thread started 
+[bwrap-1] ~~~~/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/ file opened
+[lifecycle_manager-5] [INFO] [1792231164.643705757] [anchored_map_lifecycle]: Creating
+[bwrap-1] [INFO] [1792231164.644619174] [anchored_fastlio]: Node init finished.
+[map_server-4] [INFO] [1792231164.648341252] [anchored_map_server]: 
+[map_server-4] 	anchored_map_server lifecycle node launched. 
+[map_server-4] 	Waiting on external lifecycle transitions to activate
+[map_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-4] [INFO] [1792231164.648541489] [anchored_map_server]: Creating
+[lifecycle_manager-5] [INFO] [1792231164.654478410] [anchored_map_lifecycle]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bwrap-1] IMU Initial Done
+[bwrap-1] [WARN] [1792231164.746892120] [anchored_fastlio]: No point, skip this scan!
+[bwrap-1] 
+[lifecycle_manager-5] [INFO] [1792231164.828633202] [anchored_map_lifecycle]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1792231164.828697930] [anchored_map_lifecycle]: [34m[1mConfiguring anchored_map_server[0m[0m
+[map_server-4] [INFO] [1792231164.831670028] [anchored_map_server]: Configuring
+[map_server-4] [INFO] [1792231164.831777362] [map_io]: Loading yaml file: /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.yaml
+[map_server-4] [INFO] [1792231164.832225764] [map_io]: resolution: 0.05
+[map_server-4] [INFO] [1792231164.832247772] [map_io]: origin[0]: -16.65
+[map_server-4] [INFO] [1792231164.832261089] [map_io]: origin[1]: -16.95
+[map_server-4] [INFO] [1792231164.832272322] [map_io]: origin[2]: 0
+[map_server-4] [INFO] [1792231164.832283967] [map_io]: free_thresh: 0.25
+[map_server-4] [INFO] [1792231164.832295200] [map_io]: occupied_thresh: 0.65
+[map_server-4] [INFO] [1792231164.832307236] [map_io]: mode: trinary
+[map_server-4] [INFO] [1792231164.832318197] [map_io]: negate: 0
+[map_server-4] [INFO] [1792231164.832639757] [map_io]: Loading image_file: /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.pgm
+[bwrap-1] [INFO] [1792231164.867113046] [anchored_fastlio]: Initialize the map kdtree
+[python3-3] [INFO] [1792231164.914218320] [tf_to_odom_bridge]: TF -> odom bridge: TF odom->base_link publishing /odom @ 50.0 Hz
+[map_server-4] [INFO] [1792231164.937042425] [map_io]: Read map /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/grid/map.pgm: 557 X 593 map @ 0.05 m/cell
+[lifecycle_manager-5] [INFO] [1792231164.945229402] [anchored_map_lifecycle]: [34m[1mActivating anchored_map_server[0m[0m
+[map_server-4] [INFO] [1792231164.945385459] [anchored_map_server]: Activating
+[map_server-4] [INFO] [1792231164.945890333] [anchored_map_server]: Creating bond (anchored_map_server) to lifecycle manager.
+[python3-3] [WARN] [1792231164.977252662] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.041646953] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[lifecycle_manager-5] [INFO] [1792231165.051308282] [anchored_map_lifecycle]: Server anchored_map_server connected with bond.
+[lifecycle_manager-5] [INFO] [1792231165.051377186] [anchored_map_lifecycle]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1792231165.051412980] [anchored_map_lifecycle]: [34m[1mCreating bond timer...[0m[0m
+[python3-3] [WARN] [1792231165.105157534] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.169471933] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.233256275] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.296124265] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.359709562] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.423758738] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.487355467] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.551831436] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.616744578] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.680389925] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.743925657] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.807093523] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.870382658] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.933807519] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231165.997562967] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.061236213] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.124620990] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.188081956] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.251742789] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.315468676] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.378493895] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.441591499] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.504778511] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.567719363] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.631661575] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.695221027] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.758695761] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.823698717] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.887120158] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231166.950597870] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.013796408] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.076579811] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.139663768] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.203089392] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.266078733] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.329242578] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.392507125] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.455920358] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.520125800] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.583252672] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.646269959] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.709555424] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.773563993] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.836625179] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.900309064] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231167.964741424] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.028126564] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.091779689] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.154958015] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.217853668] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.281102644] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.344301780] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.408006420] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.471188612] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.534918152] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.598106874] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.661304759] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.724228141] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.787499555] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.851200176] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.914684054] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231168.978038745] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.041766841] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.104776131] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.167992784] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.236461110] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.301694561] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.368536086] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.432433427] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.496162871] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.559574184] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.623166219] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.687123816] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.750936006] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.814733560] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.877894361] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231169.941536312] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.005042144] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.067984148] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.131608362] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.194520525] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.257719318] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.321372860] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.384523986] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.448684250] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.512559006] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.575496078] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.638552824] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.701988087] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.765365151] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.829752036] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.893111161] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231170.956204164] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.019719131] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.083016529] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.146322753] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.209621744] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.274549327] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.338604873] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.402185582] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.466164160] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.530872281] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.594686596] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.658114916] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.722740495] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.786763008] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.851096940] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.915376997] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231171.979768447] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.046414974] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.110855750] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.174030741] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.237512663] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.303092548] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.367383440] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.431387835] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.494333035] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.557274976] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.620766112] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.684034433] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.747934513] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.812031613] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.875613219] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231172.939454153] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.003198066] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.067415757] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.131456048] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.195052472] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.258257100] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.322016656] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.385216851] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.448906989] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.512620205] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.575679557] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.638765780] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.702945853] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.767159457] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.831282593] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.894480632] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231173.958128488] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.021677096] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.084959683] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.148737416] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.211829227] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.275533861] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.339198572] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.402723574] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[initial_anchor-2] [INFO] [1792231174.416493900] [native_base_bridge]: Static initialization saved. No NDT or continuous mocap correction. Manual operation only.
+[python3-3] [WARN] [1792231174.466557864] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[python3-3] [WARN] [1792231174.531341123] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.594520291] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.658135066] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.721688651] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.785041183] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.848139880] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.911444815] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231174.975056321] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.038621290] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.102315782] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.166953518] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.230838249] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.295020792] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.359289536] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.422805771] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.485605467] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.549126819] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.612791189] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.678624339] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.742846185] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.806038379] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.869533296] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.933411228] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231175.997288063] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.060810816] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.123951978] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.186991687] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.250289483] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.314597841] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.377610161] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.441056393] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.504610893] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.567860921] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.632035295] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.694962078] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.758004405] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.821778031] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.885539331] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231176.950171563] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231177.017298103] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [WARN] [1792231177.080865398] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[python3-3] [INFO] [1792231177.082771216] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.072, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231182.063482903] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.070, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231187.063000999] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.071, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231192.063533333] [tf_to_odom_bridge]: /odom: x=-0.462, y=+0.070, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231197.063002117] [tf_to_odom_bridge]: /odom: x=-0.462, y=+0.071, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231202.063256717] [tf_to_odom_bridge]: /odom: x=-0.462, y=+0.070, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231207.064083282] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.069, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231212.083869390] [tf_to_odom_bridge]: /odom: x=-0.462, y=+0.069, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231217.083645714] [tf_to_odom_bridge]: /odom: x=-0.361, y=-0.018, yaw=-0.819, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231222.084369475] [tf_to_odom_bridge]: /odom: x=-0.008, y=-0.378, yaw=-0.817, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231227.083563369] [tf_to_odom_bridge]: /odom: x=+0.350, y=-0.733, yaw=-0.814, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231232.083382955] [tf_to_odom_bridge]: /odom: x=+0.707, y=-1.082, yaw=-0.809, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231237.083360977] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231242.083203577] [tf_to_odom_bridge]: /odom: x=+0.972, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231247.083180262] [tf_to_odom_bridge]: /odom: x=+0.972, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231252.084105437] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231257.083496992] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231262.083504804] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231267.083770284] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231272.085101737] [tf_to_odom_bridge]: /odom: x=+0.972, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231277.084275571] [tf_to_odom_bridge]: /odom: x=+0.972, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231282.083642167] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231287.084020271] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231292.083015967] [tf_to_odom_bridge]: /odom: x=+0.972, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231297.083088419] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.338, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231302.083124231] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231307.083080378] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.341, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231312.082928385] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.339, yaw=-0.806, vx=-0.017, vy=-0.008, wz=-0.001
+[python3-3] [INFO] [1792231317.083343076] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231322.083717152] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.339, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231327.082937256] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231332.083573762] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231337.083037728] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231342.082732014] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.340, yaw=-0.806, vx=-0.000, vy=+0.022, wz=+0.006
+[python3-3] [INFO] [1792231347.082650215] [tf_to_odom_bridge]: /odom: x=+0.971, y=-1.340, yaw=-0.806, vx=+0.080, vy=+0.001, wz=+0.000
+[python3-3] [INFO] [1792231352.083139223] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.340, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231357.083032843] [tf_to_odom_bridge]: /odom: x=+0.970, y=-1.338, yaw=-0.806, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231362.082688663] [tf_to_odom_bridge]: /odom: x=+0.939, y=-1.310, yaw=-0.807, vx=-0.629, vy=-0.079, wz=-0.031
+[python3-3] [INFO] [1792231367.082665559] [tf_to_odom_bridge]: /odom: x=+0.288, y=-0.540, yaw=-0.827, vx=-1.032, vy=-0.010, wz=-0.029
+[python3-3] [INFO] [1792231372.083073638] [tf_to_odom_bridge]: /odom: x=-0.445, y=+0.107, yaw=-0.789, vx=-0.383, vy=-0.002, wz=-0.011
+[python3-3] [INFO] [1792231377.082792972] [tf_to_odom_bridge]: /odom: x=-0.465, y=+0.100, yaw=-0.743, vx=-0.455, vy=-0.005, wz=-0.066
+[python3-3] [INFO] [1792231382.082925471] [tf_to_odom_bridge]: /odom: x=-0.481, y=+0.112, yaw=-0.743, vx=-0.004, vy=-0.005, wz=+0.017
+[python3-3] [INFO] [1792231387.083327716] [tf_to_odom_bridge]: /odom: x=-0.482, y=+0.112, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231392.082782673] [tf_to_odom_bridge]: /odom: x=-0.483, y=+0.112, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231397.083009192] [tf_to_odom_bridge]: /odom: x=-0.482, y=+0.111, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231402.083352549] [tf_to_odom_bridge]: /odom: x=-0.483, y=+0.112, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231407.086305205] [tf_to_odom_bridge]: /odom: x=-0.481, y=+0.110, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231412.083568604] [tf_to_odom_bridge]: /odom: x=-0.482, y=+0.111, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231417.084163260] [tf_to_odom_bridge]: /odom: x=-0.482, y=+0.112, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231422.083413812] [tf_to_odom_bridge]: /odom: x=-0.385, y=+0.010, yaw=-0.728, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231427.084743975] [tf_to_odom_bridge]: /odom: x=+0.011, y=-0.315, yaw=-0.731, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231432.083557170] [tf_to_odom_bridge]: /odom: x=+0.396, y=-0.639, yaw=-0.726, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231437.083945715] [tf_to_odom_bridge]: /odom: x=+0.781, y=-0.963, yaw=-0.720, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231442.083426493] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.186, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231447.083150720] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231452.083269210] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231457.086858040] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231462.083623244] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.187, yaw=-0.716, vx=-0.022, vy=+0.010, wz=+0.004
+[python3-3] [INFO] [1792231467.084001013] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.187, yaw=-0.716, vx=+0.059, vy=+0.015, wz=+0.005
+[python3-3] [INFO] [1792231472.083042976] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.188, yaw=-0.716, vx=-0.009, vy=-0.020, wz=+0.004
+[python3-3] [INFO] [1792231477.083599473] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231482.083480428] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231487.083152282] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=+0.019, vy=+0.006, wz=-0.012
+[python3-3] [INFO] [1792231492.083071709] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231497.083445830] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231502.083785305] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231507.083235973] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231512.083487273] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.189, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231517.083603051] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231522.083043069] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231527.083577981] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.043, vy=-0.015, wz=+0.000
+[python3-3] [INFO] [1792231532.083268785] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231537.083717514] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231542.083443193] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231547.082911600] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231552.083152594] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231557.083186092] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231562.083018350] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.717, vx=-0.011, vy=+0.013, wz=-0.010
+[python3-3] [INFO] [1792231567.082929357] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231572.082795856] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231577.083134244] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231582.083356486] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231587.082721133] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.047, vy=-0.029, wz=-0.009
+[python3-3] [INFO] [1792231592.082798082] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231597.083245485] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231602.082804736] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231607.082778462] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=-0.046, vy=-0.028, wz=-0.007
+[python3-3] [INFO] [1792231612.083166613] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231617.083250629] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.716, vx=+0.008, vy=+0.061, wz=+0.000
+[python3-3] [INFO] [1792231622.082739555] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=-0.009, vy=+0.019, wz=+0.001
+[python3-3] [INFO] [1792231627.083318740] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.717, vx=+0.052, vy=-0.012, wz=-0.009
+[python3-3] [INFO] [1792231632.083004868] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231637.082744974] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231642.082852019] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=+0.043, vy=-0.011, wz=+0.017
+[python3-3] [INFO] [1792231647.083211618] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231652.082787069] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231657.082947476] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.186, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231662.083340358] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231667.082910343] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231672.083173197] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231677.083142705] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=+0.008, vy=+0.062, wz=+0.017
+[python3-3] [INFO] [1792231682.083170913] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231687.083436612] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.189, yaw=-0.717, vx=+0.031, vy=+0.030, wz=-0.004
+[python3-3] [INFO] [1792231692.083346506] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.189, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231697.082708898] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.716, vx=+0.026, vy=-0.000, wz=+0.021
+[python3-3] [INFO] [1792231702.082918255] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.053, vy=+0.006, wz=-0.011
+[python3-3] [INFO] [1792231707.083279301] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231712.082883681] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231717.082680325] [tf_to_odom_bridge]: /odom: x=+1.047, y=-1.186, yaw=-0.716, vx=-0.049, vy=-0.020, wz=+0.006
+[python3-3] [INFO] [1792231722.082668708] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.717, vx=+0.022, vy=+0.042, wz=+0.009
+[python3-3] [INFO] [1792231727.082930186] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.716, vx=-0.030, vy=+0.030, wz=+0.013
+[python3-3] [INFO] [1792231732.082798067] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231737.082806638] [tf_to_odom_bridge]: /odom: x=+1.051, y=-1.189, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231742.083159970] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231747.082899922] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.189, yaw=-0.717, vx=+0.060, vy=+0.001, wz=+0.011
+[python3-3] [INFO] [1792231752.082849010] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.186, yaw=-0.717, vx=-0.036, vy=+0.036, wz=-0.002
+[python3-3] [INFO] [1792231757.082646624] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=-0.019, vy=-0.026, wz=+0.007
+[python3-3] [INFO] [1792231762.082643094] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.717, vx=-0.051, vy=+0.041, wz=-0.011
+[python3-3] [INFO] [1792231767.083133581] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.717, vx=+0.029, vy=-0.030, wz=-0.012
+[python3-3] [INFO] [1792231772.082899908] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231777.083124876] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231782.082686294] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.027, vy=+0.018, wz=-0.011
+[python3-3] [INFO] [1792231787.083446966] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231792.083969221] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.086, vy=-0.018, wz=-0.016
+[python3-3] [INFO] [1792231797.083212814] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=-0.018, vy=+0.044, wz=-0.003
+[python3-3] [INFO] [1792231802.082891554] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=-0.037, vy=-0.014, wz=+0.013
+[python3-3] [INFO] [1792231807.082887739] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231812.082965590] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.189, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231817.083580549] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231822.083052199] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.007, vy=+0.006, wz=+0.020
+[python3-3] [INFO] [1792231827.083032443] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.716, vx=-0.018, vy=-0.042, wz=+0.003
+[python3-3] [INFO] [1792231832.082907499] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231837.083179541] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231842.082985294] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231847.083198595] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231852.082673995] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.051, vy=+0.005, wz=-0.024
+[python3-3] [INFO] [1792231857.082715415] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.187, yaw=-0.717, vx=-0.015, vy=+0.031, wz=+0.000
+[python3-3] [INFO] [1792231862.083011032] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231867.082836211] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231872.083153917] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231877.083486648] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=+0.018, vy=-0.034, wz=+0.016
+[python3-3] [INFO] [1792231882.082681612] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.002, vy=+0.012, wz=+0.001
+[python3-3] [INFO] [1792231887.082865905] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231892.082812207] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231897.082702031] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.717, vx=-0.064, vy=+0.015, wz=-0.006
+[python3-3] [INFO] [1792231902.082867304] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231907.082979085] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231912.083360908] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231917.082990518] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=-0.019, vy=+0.034, wz=-0.005
+[python3-3] [INFO] [1792231922.082937020] [tf_to_odom_bridge]: /odom: x=+1.050, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231927.082918527] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231932.083104530] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231937.083256171] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231942.082902158] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.716, vx=+0.007, vy=-0.002, wz=+0.019
+[python3-3] [INFO] [1792231947.082921559] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231952.082745095] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.187, yaw=-0.716, vx=+0.022, vy=+0.007, wz=+0.013
+[python3-3] [INFO] [1792231957.082693679] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.716, vx=+0.002, vy=+0.028, wz=+0.008
+[python3-3] [INFO] [1792231962.083198948] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231967.082820251] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.188, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231972.082910154] [tf_to_odom_bridge]: /odom: x=+1.048, y=-1.186, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231977.082941629] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.186, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231982.082974728] [tf_to_odom_bridge]: /odom: x=+1.047, y=-1.187, yaw=-0.717, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231987.082953510] [tf_to_odom_bridge]: /odom: x=+1.049, y=-1.189, yaw=-0.716, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792231992.082902913] [tf_to_odom_bridge]: /odom: x=+0.506, y=-0.677, yaw=-0.730, vx=-1.028, vy=-0.057, wz=-0.016
+[python3-3] [INFO] [1792231997.083236403] [tf_to_odom_bridge]: /odom: x=-0.406, y=+0.108, yaw=-0.743, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232002.082925006] [tf_to_odom_bridge]: /odom: x=-0.446, y=+0.147, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232007.083067421] [tf_to_odom_bridge]: /odom: x=-0.445, y=+0.147, yaw=-0.764, vx=-0.029, vy=+0.035, wz=-0.007
+[python3-3] [INFO] [1792232012.083180743] [tf_to_odom_bridge]: /odom: x=-0.446, y=+0.148, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232017.083170059] [tf_to_odom_bridge]: /odom: x=-0.446, y=+0.146, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232022.083293655] [tf_to_odom_bridge]: /odom: x=-0.448, y=+0.146, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232027.082850294] [tf_to_odom_bridge]: /odom: x=-0.448, y=+0.148, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232032.083150757] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.146, yaw=-0.764, vx=-0.037, vy=+0.007, wz=+0.012
+[python3-3] [INFO] [1792232037.082890448] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.147, yaw=-0.764, vx=+0.011, vy=+0.012, wz=-0.007
+[python3-3] [INFO] [1792232042.082939246] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.148, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232047.083406024] [tf_to_odom_bridge]: /odom: x=-0.446, y=+0.146, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232052.082828222] [tf_to_odom_bridge]: /odom: x=-0.446, y=+0.145, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232057.083305116] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.145, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232062.082899804] [tf_to_odom_bridge]: /odom: x=-0.448, y=+0.147, yaw=-0.764, vx=-0.003, vy=+0.015, wz=+0.002
+[python3-3] [INFO] [1792232067.083607689] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.145, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232072.083261297] [tf_to_odom_bridge]: /odom: x=-0.447, y=+0.147, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232077.083095828] [tf_to_odom_bridge]: /odom: x=-0.314, y=+0.022, yaw=-0.769, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232082.083387486] [tf_to_odom_bridge]: /odom: x=+0.059, y=-0.315, yaw=-0.771, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232087.083438591] [tf_to_odom_bridge]: /odom: x=+0.429, y=-0.655, yaw=-0.769, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232092.083517571] [tf_to_odom_bridge]: /odom: x=+0.801, y=-0.993, yaw=-0.765, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232097.083485903] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232102.083435553] [tf_to_odom_bridge]: /odom: x=+1.040, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232107.083579724] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232112.083176208] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232117.086788212] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232122.083725382] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.208, yaw=-0.763, vx=-0.030, vy=+0.011, wz=+0.011
+[python3-3] [INFO] [1792232127.082642283] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.039, vy=-0.015, wz=-0.012
+[python3-3] [INFO] [1792232132.082790668] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=-0.013, vy=-0.009, wz=+0.017
+[python3-3] [INFO] [1792232137.083144319] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232142.083434347] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232147.082878323] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.207, yaw=-0.763, vx=-0.008, vy=+0.046, wz=+0.008
+[python3-3] [INFO] [1792232152.083395069] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.206, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232157.083166950] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232162.082882193] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232167.083025375] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232172.083294461] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.207, yaw=-0.763, vx=-0.037, vy=-0.008, wz=-0.000
+[python3-3] [INFO] [1792232177.083000387] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232182.083074886] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232187.083669479] [tf_to_odom_bridge]: /odom: x=+1.037, y=-1.207, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232192.083122661] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232197.083423411] [tf_to_odom_bridge]: /odom: x=+1.037, y=-1.207, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232202.083572899] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232207.084300503] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.207, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232212.084004222] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.207, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232217.083494255] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.208, yaw=-0.763, vx=+0.007, vy=-0.005, wz=-0.005
+[python3-3] [INFO] [1792232222.084144648] [tf_to_odom_bridge]: /odom: x=+1.038, y=-1.209, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232227.083768018] [tf_to_odom_bridge]: /odom: x=+1.039, y=-1.208, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232232.083364842] [tf_to_odom_bridge]: /odom: x=+1.037, y=-1.207, yaw=-0.763, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232237.083388262] [tf_to_odom_bridge]: /odom: x=+0.510, y=-0.609, yaw=-0.779, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232242.083404641] [tf_to_odom_bridge]: /odom: x=-0.330, y=+0.127, yaw=-0.793, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232247.083892598] [tf_to_odom_bridge]: /odom: x=-0.348, y=+0.133, yaw=-0.793, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232252.085056779] [tf_to_odom_bridge]: /odom: x=-0.349, y=+0.134, yaw=-0.793, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232257.083216403] [tf_to_odom_bridge]: /odom: x=-0.348, y=+0.132, yaw=-0.794, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232262.083400255] [tf_to_odom_bridge]: /odom: x=-0.348, y=+0.132, yaw=-0.794, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232267.083323263] [tf_to_odom_bridge]: /odom: x=-0.349, y=+0.132, yaw=-0.794, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232272.086782231] [tf_to_odom_bridge]: /odom: x=-0.347, y=+0.134, yaw=-0.793, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232277.084325367] [tf_to_odom_bridge]: /odom: x=-0.347, y=+0.132, yaw=-0.793, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232282.084477514] [tf_to_odom_bridge]: /odom: x=-0.006, y=-0.193, yaw=-0.781, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232287.085956635] [tf_to_odom_bridge]: /odom: x=+0.361, y=-0.539, yaw=-0.774, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232292.083942417] [tf_to_odom_bridge]: /odom: x=+0.730, y=-0.878, yaw=-0.770, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232297.083489636] [tf_to_odom_bridge]: /odom: x=+1.101, y=-1.219, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232302.086637395] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232307.083022461] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232312.083045456] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232317.082614305] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.018, vy=+0.007, wz=-0.011
+[python3-3] [INFO] [1792232322.082779235] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232327.082905375] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232332.082773249] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.049, vy=+0.010, wz=+0.017
+[python3-3] [INFO] [1792232337.083017991] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.033, vy=+0.006, wz=+0.010
+[python3-3] [INFO] [1792232342.082795183] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.010, vy=-0.048, wz=+0.008
+[python3-3] [INFO] [1792232347.083316403] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232352.082923028] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.034, vy=-0.012, wz=+0.003
+[python3-3] [INFO] [1792232357.083457595] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232362.083293073] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232367.083139054] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=-0.011, vy=-0.023, wz=-0.006
+[python3-3] [INFO] [1792232372.083018743] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.062, vy=-0.002, wz=+0.016
+[python3-3] [INFO] [1792232377.083153667] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232382.083388780] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232387.082827081] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232392.089429549] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232397.082980951] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232402.082887226] [tf_to_odom_bridge]: /odom: x=+1.122, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232407.083054278] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232412.082942228] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.047, vy=-0.032, wz=+0.025
+[python3-3] [INFO] [1792232417.082841517] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232422.083069577] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232427.083148111] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232432.083222891] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232437.083034791] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.028, vy=-0.040, wz=-0.003
+[python3-3] [INFO] [1792232442.083050923] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232447.083364619] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232452.083155339] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232457.083259267] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232462.083011107] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232467.082838241] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232472.083877463] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.071, vy=+0.015, wz=-0.010
+[python3-3] [INFO] [1792232477.082800188] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232482.083896842] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232487.082752582] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232492.083274262] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232497.083660803] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.029, vy=-0.038, wz=+0.009
+[python3-3] [INFO] [1792232502.082790971] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232507.082860130] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=-0.046, vy=+0.006, wz=+0.005
+[python3-3] [INFO] [1792232512.083057837] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232517.082918658] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232522.082849127] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=-0.006, vy=+0.009, wz=-0.014
+[python3-3] [INFO] [1792232527.083297639] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232532.083315376] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.043, vy=-0.003, wz=+0.007
+[python3-3] [INFO] [1792232537.082781032] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232542.083167705] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232547.083109207] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232552.083103029] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232557.082730412] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232562.082912842] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232567.082841992] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.004, vy=-0.037, wz=-0.007
+[python3-3] [INFO] [1792232572.082788902] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.030, vy=-0.019, wz=-0.002
+[python3-3] [INFO] [1792232577.083245845] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232582.082851030] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.010, vy=-0.014, wz=+0.004
+[python3-3] [INFO] [1792232587.082685235] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=-0.007, vy=+0.016, wz=-0.000
+[python3-3] [INFO] [1792232592.082934730] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232597.082808083] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.067, vy=+0.021, wz=-0.018
+[python3-3] [INFO] [1792232602.082859980] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232607.083072080] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232612.083077324] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232617.083454387] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232622.083154431] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232627.082927765] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.018, vy=-0.001, wz=-0.008
+[python3-3] [INFO] [1792232632.083437537] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232637.083386967] [tf_to_odom_bridge]: /odom: x=+1.122, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232642.083632996] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232647.083099781] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232652.083087738] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232657.083461812] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232662.082844074] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232667.082867179] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232672.082781847] [tf_to_odom_bridge]: /odom: x=+1.122, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232677.082907592] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232682.083024334] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232687.082950742] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.009, vy=+0.003, wz=+0.010
+[python3-3] [INFO] [1792232692.082954619] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232697.082939798] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.029, vy=-0.002, wz=-0.010
+[python3-3] [INFO] [1792232702.083603573] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232707.083361735] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232712.082810960] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232717.082659139] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.016, vy=+0.021, wz=-0.006
+[python3-3] [INFO] [1792232722.082643406] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.010, vy=-0.020, wz=+0.003
+[python3-3] [INFO] [1792232727.082827790] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.033, vy=+0.012, wz=-0.026
+[python3-3] [INFO] [1792232732.082808030] [tf_to_odom_bridge]: /odom: x=+1.122, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232737.083392057] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232742.083122651] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.061, vy=-0.027, wz=+0.009
+[python3-3] [INFO] [1792232747.082646411] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232752.082804364] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.032, vy=+0.003, wz=-0.008
+[python3-3] [INFO] [1792232757.084378646] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232762.082678732] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.015, vy=+0.015, wz=-0.005
+[python3-3] [INFO] [1792232767.082764144] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232772.082858413] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232777.083155931] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232782.083332930] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232787.082847942] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232792.083055086] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232797.082797357] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.012, vy=-0.027, wz=-0.001
+[python3-3] [INFO] [1792232802.082828809] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.024, vy=+0.001, wz=+0.001
+[python3-3] [INFO] [1792232807.083213562] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232812.082722697] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232817.082858967] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232822.082840761] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.017, vy=+0.021, wz=-0.015
+[python3-3] [INFO] [1792232827.083357603] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232832.083999649] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.079, vy=+0.024, wz=+0.001
+[python3-3] [INFO] [1792232837.083097682] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.065, vy=+0.038, wz=+0.010
+[python3-3] [INFO] [1792232842.083505462] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232847.083153022] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232852.083101871] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232857.083791121] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232862.082933515] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232867.083290085] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232872.082730155] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=-0.007, vy=+0.028, wz=-0.010
+[python3-3] [INFO] [1792232877.083148477] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232882.083303353] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232887.082889102] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232892.082749637] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232897.082872890] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232902.082761966] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.005, vy=-0.026, wz=+0.011
+[python3-3] [INFO] [1792232907.083021371] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.021, vy=-0.001, wz=-0.003
+[python3-3] [INFO] [1792232912.082697116] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=-0.006, vy=+0.001, wz=-0.000
+[python3-3] [INFO] [1792232917.082583880] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.042, vy=-0.015, wz=-0.003
+[python3-3] [INFO] [1792232922.082800092] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232927.082700326] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.002, vy=+0.040, wz=+0.009
+[python3-3] [INFO] [1792232932.082634801] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.066, vy=-0.008, wz=+0.004
+[python3-3] [INFO] [1792232937.083360264] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232942.083257312] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232947.083022504] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232952.082826813] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232957.083448930] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232962.083273799] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232967.083043832] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232972.083770340] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232977.083634282] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232982.083411321] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232987.083264532] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232992.083076555] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792232997.083767823] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233002.083436459] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233007.083990151] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233012.083839828] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233017.083415803] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233022.083551429] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233027.083740375] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233032.084358805] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233037.083449508] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233042.083195324] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233047.083307707] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233052.083448119] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233057.083364419] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233062.084776313] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233067.082881006] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233072.083247894] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233077.083368884] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233082.083076039] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233087.083614056] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233092.083491893] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.012, vy=+0.048, wz=-0.006
+[python3-3] [INFO] [1792233097.083214389] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233102.082744542] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.004, vy=+0.006, wz=-0.013
+[python3-3] [INFO] [1792233107.082854400] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233112.082663155] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.073, vy=-0.014, wz=+0.011
+[python3-3] [INFO] [1792233117.083118073] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.234, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233122.082695018] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=-0.006, vy=-0.005, wz=-0.013
+[python3-3] [INFO] [1792233127.083000001] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233132.083069261] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233137.082668821] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.005, vy=-0.003, wz=+0.007
+[python3-3] [INFO] [1792233142.084130548] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233147.083866539] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.018, vy=-0.009, wz=-0.004
+[python3-3] [INFO] [1792233152.082760179] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233157.082796577] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233162.082991101] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233167.082879098] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233172.084036902] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233177.083693892] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233182.082880835] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=-0.046, vy=-0.025, wz=-0.017
+[python3-3] [INFO] [1792233187.083066429] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233192.083438839] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233197.084923735] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233202.082992762] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233207.083047984] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.017, vy=-0.035, wz=+0.014
+[python3-3] [INFO] [1792233212.082643387] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.044, vy=-0.013, wz=-0.000
+[python3-3] [INFO] [1792233217.083106439] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233222.084248175] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233227.083259771] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.033, vy=+0.018, wz=+0.011
+[python3-3] [INFO] [1792233232.082871921] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.031, vy=+0.003, wz=-0.003
+[python3-3] [INFO] [1792233237.084313288] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233242.083003990] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233247.082989690] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233252.082900273] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.002, vy=+0.042, wz=+0.008
+[python3-3] [INFO] [1792233257.083449939] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233262.083122827] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.002, vy=-0.005, wz=-0.001
+[python3-3] [INFO] [1792233267.083389217] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233272.082797717] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.015, vy=+0.042, wz=-0.008
+[python3-3] [INFO] [1792233277.082842258] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.050, vy=-0.015, wz=+0.010
+[python3-3] [INFO] [1792233282.082550190] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.006, vy=+0.001, wz=-0.003
+[python3-3] [INFO] [1792233287.082572123] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.067, vy=-0.015, wz=+0.013
+[python3-3] [INFO] [1792233292.082886817] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.020, vy=+0.005, wz=-0.003
+[python3-3] [INFO] [1792233297.082858546] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.036, vy=+0.023, wz=-0.004
+[python3-3] [INFO] [1792233302.082770893] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.032, vy=-0.021, wz=+0.005
+[python3-3] [INFO] [1792233307.083095752] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.037, vy=+0.002, wz=-0.001
+[python3-3] [INFO] [1792233312.082644622] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=-0.017, vy=-0.000, wz=-0.001
+[python3-3] [INFO] [1792233317.082669451] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.024, vy=-0.014, wz=-0.006
+[python3-3] [INFO] [1792233322.082658543] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.066, vy=+0.026, wz=-0.011
+[python3-3] [INFO] [1792233327.082592863] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.008, vy=-0.005, wz=-0.012
+[python3-3] [INFO] [1792233332.082848492] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233337.083026108] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233342.082797709] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.065, vy=+0.028, wz=-0.006
+[python3-3] [INFO] [1792233347.082685372] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.047, vy=-0.011, wz=-0.002
+[python3-3] [INFO] [1792233352.082685702] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=+0.021, vy=-0.009, wz=-0.001
+[python3-3] [INFO] [1792233357.082531186] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.066, vy=-0.017, wz=-0.001
+[python3-3] [INFO] [1792233362.082524378] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=+0.012, vy=-0.003, wz=-0.018
+[python3-3] [INFO] [1792233367.082794444] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.031, vy=+0.045, wz=+0.001
+[python3-3] [INFO] [1792233372.082788791] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.058, vy=+0.035, wz=+0.015
+[python3-3] [INFO] [1792233377.082992603] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.040, vy=+0.010, wz=-0.005
+[python3-3] [INFO] [1792233382.082614139] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.007, vy=-0.032, wz=+0.002
+[python3-3] [INFO] [1792233387.082562968] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.004, vy=+0.012, wz=-0.008
+[python3-3] [INFO] [1792233392.082893781] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.018, vy=+0.003, wz=+0.000
+[python3-3] [INFO] [1792233397.082885935] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.041, vy=-0.039, wz=+0.012
+[python3-3] [INFO] [1792233402.082637735] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.028, vy=+0.035, wz=+0.005
+[python3-3] [INFO] [1792233407.082784783] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233412.082668190] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.237, yaw=-0.764, vx=-0.039, vy=-0.001, wz=+0.002
+[python3-3] [INFO] [1792233417.082654184] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.034, vy=-0.007, wz=-0.026
+[python3-3] [INFO] [1792233422.082700517] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.029, vy=-0.020, wz=-0.008
+[python3-3] [INFO] [1792233427.082565663] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.024, vy=-0.008, wz=+0.012
+[python3-3] [INFO] [1792233432.082726307] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.006, vy=+0.028, wz=-0.000
+[python3-3] [INFO] [1792233437.082634222] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.043, vy=-0.004, wz=-0.008
+[python3-3] [INFO] [1792233442.082900920] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.014, vy=+0.004, wz=-0.004
+[python3-3] [INFO] [1792233447.083100565] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233452.082642802] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.018, vy=-0.015, wz=+0.001
+[python3-3] [INFO] [1792233457.082718180] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.040, vy=-0.041, wz=-0.001
+[python3-3] [INFO] [1792233462.082828112] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.017, vy=-0.007, wz=-0.011
+[python3-3] [INFO] [1792233467.082877942] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.026, vy=+0.019, wz=+0.005
+[python3-3] [INFO] [1792233472.082641551] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.014, vy=+0.016, wz=+0.000
+[python3-3] [INFO] [1792233477.082539784] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.014, vy=+0.053, wz=-0.006
+[python3-3] [INFO] [1792233482.083026531] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.011, vy=-0.010, wz=-0.000
+[python3-3] [INFO] [1792233487.082644199] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.021, vy=+0.017, wz=+0.004
+[python3-3] [INFO] [1792233492.084042890] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233497.082901021] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.024, vy=-0.015, wz=-0.005
+[python3-3] [INFO] [1792233502.082912756] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.030, vy=+0.015, wz=+0.007
+[python3-3] [INFO] [1792233507.082832798] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233512.082652000] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.023, vy=+0.015, wz=-0.007
+[python3-3] [INFO] [1792233517.082622569] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.066, vy=-0.045, wz=+0.021
+[python3-3] [INFO] [1792233522.082719916] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.061, vy=+0.003, wz=-0.010
+[python3-3] [INFO] [1792233527.082946771] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.048, vy=+0.054, wz=+0.001
+[python3-3] [INFO] [1792233532.082606442] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.010, vy=+0.029, wz=-0.011
+[python3-3] [INFO] [1792233537.082617509] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.041, vy=+0.043, wz=-0.021
+[python3-3] [INFO] [1792233542.082882365] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.028, vy=-0.020, wz=+0.006
+[python3-3] [INFO] [1792233547.082891235] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.031, vy=+0.017, wz=+0.002
+[python3-3] [INFO] [1792233552.082987489] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233557.082630092] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.020, vy=-0.010, wz=-0.016
+[python3-3] [INFO] [1792233562.082774049] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.047, vy=+0.031, wz=+0.014
+[python3-3] [INFO] [1792233567.082632892] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.029, vy=+0.008, wz=-0.015
+[python3-3] [INFO] [1792233572.082589054] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=-0.047, vy=-0.000, wz=+0.003
+[python3-3] [INFO] [1792233577.082863660] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.018, vy=-0.012, wz=-0.005
+[python3-3] [INFO] [1792233582.082889001] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.032, vy=-0.015, wz=+0.002
+[python3-3] [INFO] [1792233587.082610149] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.011, vy=-0.025, wz=-0.018
+[python3-3] [INFO] [1792233592.082611196] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.044, vy=+0.027, wz=-0.010
+[python3-3] [INFO] [1792233597.082678739] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.007, vy=+0.025, wz=+0.008
+[python3-3] [INFO] [1792233602.082802500] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233607.082548461] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.027, vy=-0.047, wz=+0.002
+[python3-3] [INFO] [1792233612.082661535] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.019, vy=-0.010, wz=-0.001
+[python3-3] [INFO] [1792233617.082670554] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.013, vy=-0.039, wz=+0.010
+[python3-3] [INFO] [1792233622.082941424] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.058, vy=+0.029, wz=+0.002
+[python3-3] [INFO] [1792233627.082644805] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=+0.026, vy=+0.033, wz=+0.004
+[python3-3] [INFO] [1792233632.082955269] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.024, vy=-0.019, wz=+0.001
+[python3-3] [INFO] [1792233637.082661547] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.007, vy=-0.022, wz=-0.007
+[python3-3] [INFO] [1792233642.082781272] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.005, vy=-0.035, wz=+0.013
+[python3-3] [INFO] [1792233647.082767959] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=-0.007, vy=-0.031, wz=-0.017
+[python3-3] [INFO] [1792233652.083285443] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.030, vy=+0.035, wz=-0.011
+[python3-3] [INFO] [1792233657.083163582] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.016, vy=+0.029, wz=+0.007
+[python3-3] [INFO] [1792233662.082899427] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.017, vy=-0.000, wz=-0.013
+[python3-3] [INFO] [1792233667.082652941] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.018, vy=-0.005, wz=+0.003
+[python3-3] [INFO] [1792233672.082776040] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.067, vy=-0.016, wz=+0.010
+[python3-3] [INFO] [1792233677.082951282] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233682.082680698] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.002, vy=-0.005, wz=-0.008
+[python3-3] [INFO] [1792233687.082709226] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.025, vy=+0.004, wz=-0.006
+[python3-3] [INFO] [1792233692.082752433] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.036, vy=+0.027, wz=+0.006
+[python3-3] [INFO] [1792233697.083105522] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.237, yaw=-0.764, vx=+0.023, vy=-0.007, wz=-0.002
+[python3-3] [INFO] [1792233702.082617804] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.030, vy=+0.003, wz=+0.022
+[python3-3] [INFO] [1792233707.082666596] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.002, vy=-0.035, wz=+0.007
+[python3-3] [INFO] [1792233712.084291766] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233717.082647857] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.014, vy=+0.019, wz=-0.001
+[python3-3] [INFO] [1792233722.082637718] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.041, vy=-0.000, wz=-0.014
+[python3-3] [INFO] [1792233727.083076253] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233732.082713402] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.064, vy=+0.010, wz=+0.004
+[python3-3] [INFO] [1792233737.082564835] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.012, vy=+0.035, wz=-0.005
+[python3-3] [INFO] [1792233742.082590590] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.017, vy=+0.016, wz=+0.025
+[python3-3] [INFO] [1792233747.083397517] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233752.083094571] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233757.082702273] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.017, vy=+0.047, wz=+0.005
+[python3-3] [INFO] [1792233762.082605957] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.011, vy=+0.020, wz=-0.010
+[python3-3] [INFO] [1792233767.082570737] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.054, vy=-0.045, wz=-0.013
+[python3-3] [INFO] [1792233772.082972158] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233777.083354114] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=-0.009, vy=-0.029, wz=-0.008
+[python3-3] [INFO] [1792233782.082767485] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233787.082930240] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=-0.003, vy=+0.026, wz=-0.007
+[python3-3] [INFO] [1792233792.082775176] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.234, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233797.083346896] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=-0.020, vy=-0.020, wz=+0.017
+[python3-3] [INFO] [1792233802.083369344] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233807.085425692] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.042, vy=+0.001, wz=-0.000
+[python3-3] [INFO] [1792233812.083882626] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.237, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233817.083787444] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.005, vy=-0.001, wz=+0.001
+[python3-3] [INFO] [1792233822.082956343] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=-0.019, vy=-0.014, wz=+0.015
+[python3-3] [INFO] [1792233827.082797733] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233832.082811850] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233837.082692119] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.004, vy=+0.004, wz=-0.001
+[python3-3] [INFO] [1792233842.082714001] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.003, vy=+0.003, wz=+0.002
+[python3-3] [INFO] [1792233847.083263082] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.030, vy=+0.003, wz=+0.011
+[python3-3] [INFO] [1792233852.083058123] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=+0.104, vy=+0.021, wz=+0.017
+[python3-3] [INFO] [1792233857.083032753] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233862.082575613] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=+0.000, vy=-0.045, wz=+0.003
+[python3-3] [INFO] [1792233867.083239994] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233872.082696211] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=-0.046, vy=-0.012, wz=+0.008
+[python3-3] [INFO] [1792233877.083413573] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233882.083075803] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=-0.016, vy=+0.034, wz=+0.010
+[python3-3] [INFO] [1792233887.083072782] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=+0.014, vy=-0.039, wz=-0.005
+[python3-3] [INFO] [1792233892.082730723] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.021, vy=+0.015, wz=-0.005
+[python3-3] [INFO] [1792233897.082530112] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.032, vy=-0.003, wz=-0.004
+[python3-3] [INFO] [1792233902.082821314] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=+0.017, vy=-0.009, wz=-0.003
+[python3-3] [INFO] [1792233907.082549997] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.235, yaw=-0.764, vx=-0.055, vy=+0.021, wz=+0.010
+[python3-3] [INFO] [1792233912.082550486] [tf_to_odom_bridge]: /odom: x=+1.118, y=-1.235, yaw=-0.764, vx=-0.046, vy=-0.029, wz=+0.012
+[python3-3] [INFO] [1792233917.083622184] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233922.082886579] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233927.082525824] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.235, yaw=-0.764, vx=-0.022, vy=+0.023, wz=-0.000
+[python3-3] [INFO] [1792233932.082877327] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.234, yaw=-0.764, vx=-0.064, vy=-0.004, wz=-0.002
+[python3-3] [INFO] [1792233937.082589846] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.023, vy=+0.000, wz=+0.006
+[python3-3] [INFO] [1792233942.082603839] [tf_to_odom_bridge]: /odom: x=+1.121, y=-1.236, yaw=-0.764, vx=-0.048, vy=+0.040, wz=-0.008
+[python3-3] [INFO] [1792233947.082663162] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.235, yaw=-0.764, vx=-0.009, vy=-0.012, wz=-0.007
+[python3-3] [INFO] [1792233952.083065014] [tf_to_odom_bridge]: /odom: x=+1.119, y=-1.236, yaw=-0.764, vx=+0.023, vy=+0.008, wz=-0.014
+[python3-3] [INFO] [1792233957.082862071] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000
+[python3-3] [INFO] [1792233962.082634285] [tf_to_odom_bridge]: /odom: x=+1.120, y=-1.236, yaw=-0.764, vx=+0.000, vy=+0.000, wz=+0.000

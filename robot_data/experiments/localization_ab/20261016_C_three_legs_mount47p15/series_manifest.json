@@ -1,0 +1,35 @@
+{
+  "group": "C",
+  "plan": [
+    "reverse",
+    "forward",
+    "reverse"
+  ],
+  "status": "completed",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "reverse",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/01_reverse",
+      "status": "completed"
+    },
+    {
+      "trial": 2,
+      "direction": "forward",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/02_forward",
+      "status": "completed"
+    },
+    {
+      "trial": 3,
+      "direction": "reverse",
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/03_reverse",
+      "status": "completed"
+    }
+  ],
+  "route_clear_confirmed": true,
+  "safety_limits_relaxed": false,
+  "mocap_feedback_to_localization": true,
+  "reference_independent": false,
+  "timing_verified": false,
+  "fastlio_restart_between_trials": false
+}

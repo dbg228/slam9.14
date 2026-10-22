@@ -1,0 +1,8 @@
+{
+  "purpose": "Identify source of midroute vs endpoint error without changing formal results or pose transforms",
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792343815180080675",
+  "static_before_rotation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792345150554065817",
+  "operator_rotated_in_place_approximately_180_degrees": true,
+  "transform_refit_applied": false,
+  "formal_result_modified": false
+}

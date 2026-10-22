@@ -1,0 +1,167 @@
+{
+  "quality_passed": false,
+  "failures": [
+    "insufficient_ndt_mocap_pairs"
+  ],
+  "rejection_counts": {
+    "stale_ndt_measurement": 3
+  },
+  "estimator_instability_warnings": [],
+  "valid_mocap_samples": 841,
+  "mocap_span_s": 9.36073908,
+  "maximum_mocap_gap_s": 0.049704045,
+  "matched_pairs": [],
+  "pair_count": 0,
+  "maximum_command_abs": 0.0,
+  "mocap_xyz_m": [
+    0.004043573686353644,
+    4.698321714790026,
+    0.24714589829842404
+  ],
+  "map_xyz_m": null,
+  "mocap_base_rotation_matrix": [
+    [
+      0.9940837183822981,
+      0.1079209066881529,
+      -0.012273497742280717
+    ],
+    [
+      -0.10789357479795508,
+      0.9941583082830853,
+      0.0028695973634164096
+    ],
+    [
+      0.012511489301471793,
+      -0.0015283884705951656,
+      0.9999205601767276
+    ]
+  ],
+  "mocap_static": {
+    "mean_xyz_m": [
+      0.004043573686353644,
+      4.698321714790026,
+      0.24714589829842404
+    ],
+    "mean_rotation_matrix": [
+      [
+        0.9940837183822981,
+        0.1079209066881529,
+        -0.012273497742280717
+      ],
+      [
+        -0.10789357479795508,
+        0.9941583082830853,
+        0.0028695973634164096
+      ],
+      [
+        0.012511489301471793,
+        -0.0015283884705951656,
+        0.9999205601767276
+      ]
+    ],
+    "std_xyz_m": [
+      4.523881112589127e-05,
+      0.00020644046247440484,
+      0.00013580718827563962
+    ],
+    "maximum_radius_m": 0.0006217127901778429,
+    "maximum_orientation_deviation_deg": 0.5333959686603348
+  },
+  "map_static": null,
+  "map_provenance": {
+    "source": "ndt",
+    "method": "Current original NDT final_map_to_base_at_cloud; three separately parked calibration placements; initial and endpoint are not fitted",
+    "independently_measured": false,
+    "ndt_pose_field": "final_map_to_base_at_cloud",
+    "topic": "/static_localization/ndt_match_diagnostic",
+    "stamp_meaning": "input cloud measurement time, not publication time"
+  },
+  "raw_marker_positions_available": false,
+  "mocap_point_method": "Tracker0 world pose * separately measured Tracker0->base_link; not individual marker coordinates",
+  "camera_native_visibility_available": false,
+  "interpolation_used": false,
+  "clock_offset_s": 0.0,
+  "clock_offset_verified": false,
+  "camera_latency_s": null,
+  "retained_mocap_warmup": true,
+  "ndt_capture_phase": {
+    "trigger_match_id": 718,
+    "trigger_cloud_stamp_ns": 1792312167877618312,
+    "period_s": 2.0,
+    "lead_s": 0.5,
+    "begin_after_start_s": 5.877792478000629,
+    "selection": "fixed cadence only; no residual or fitness selection"
+  },
+  "source_age_limit_s": 2.0,
+  "ndt_source_age_limit_s": 3.0,
+  "source_age_note": "Measured timestamps are unchanged. Warmup reference history is used only for static pairing; this is not a claim of real-time control freshness.",
+  "raw_normalized_check": {
+    "matched_samples": 841,
+    "normalized_samples": 841,
+    "coverage": 1.0,
+    "scale_to_m": 0.001,
+    "mismatched_stamp_ns": [],
+    "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+  },
+  "publisher_graph": {
+    "/vrpn_mocap/Tracker0/pose": [
+      {
+        "node_name": "client",
+        "node_namespace": "/vrpn_mocap",
+        "topic_type": "geometry_msgs/msg/PoseStamped"
+      }
+    ],
+    "/mocap/Tracker0/pose": [
+      {
+        "node_name": "mocap_tracker0_normalizer",
+        "node_namespace": "/",
+        "topic_type": "geometry_msgs/msg/PoseStamped"
+      }
+    ],
+    "/mocap/Tracker0/diagnostics": [
+      {
+        "node_name": "mocap_tracker0_normalizer",
+        "node_namespace": "/",
+        "topic_type": "diagnostic_msgs/msg/DiagnosticArray"
+      }
+    ],
+    "/reference_velocity": [
+      {
+        "node_name": "arbitrator_controller",
+        "node_namespace": "/",
+        "topic_type": "geometry_msgs/msg/Twist"
+      }
+    ],
+    "/static_localization/ndt_match_diagnostic": [
+      {
+        "node_name": "static_map_localizer",
+        "node_namespace": "/",
+        "topic_type": "static_map_localization/msg/NdtMatchDiagnostic"
+      }
+    ],
+    "/static_localization/ready": [
+      {
+        "node_name": "static_map_localizer",
+        "node_namespace": "/",
+        "topic_type": "std_msgs/msg/Bool"
+      }
+    ]
+  },
+  "map_ready_at_end": true,
+  "observed_messages_in_window": {
+    "/mocap/Tracker0/diagnostics": 448,
+    "/reference_velocity": 1937,
+    "/vrpn_mocap/Tracker0/pose": 448,
+    "/mocap/Tracker0/pose": 447,
+    "/static_localization/ndt_match_diagnostic": 3
+  },
+  "group": "endpoint",
+  "inputs_sha256": "860f85ba3695210631632dfbf058930d5c43f161229b310fb282f8982a175ae9",
+  "raw_sha256": "dbf9816d5f328660214a8df4d619b4150d8d7c5f028849023038ecf5713c8d7d",
+  "data_kind": "real_measurement",
+  "invalid_events": {},
+  "no_motion_published": true,
+  "calibration_sha256_at_capture": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "evaluation_only": true,
+  "transform_refitted": false
+}

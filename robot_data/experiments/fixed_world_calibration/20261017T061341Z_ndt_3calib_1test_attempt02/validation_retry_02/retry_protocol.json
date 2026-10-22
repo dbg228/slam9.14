@@ -1,0 +1,10 @@
+{
+  "reason": "Original holdout failed predeclared acquisition quality, not a residual threshold",
+  "previous_holdout": "test_04",
+  "maximum_additional_same_placement_capture_attempts": 1,
+  "chosen_rule": "Use first data-quality-qualified window; retain all failures, never use residuals to select a window or refit",
+  "calibration_sha256": "939920cefbf169cedb9cd5cb4f9be5d6ff689770c2cba3dc8b7b9a849871c3b7",
+  "training_unchanged": true,
+  "files_shared_by_relative_symlink": true,
+  "physical_placement_must_remain_unchanged": true
+}

@@ -1,0 +1,6 @@
+{
+  "exit_code": null,
+  "captures": [],
+  "trigger_policy": "No endpoint measurement for an aborted or canceled route",
+  "reason": "route_did_not_succeed"
+}

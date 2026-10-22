@@ -1,0 +1,14 @@
+{
+  "data_kind": "software_fixture_validation_not_real_motion",
+  "all_report_tests_passed": 35,
+  "all_report_test_log": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/report_software_tests_final.log",
+  "no_goals_sent_by_test": true,
+  "scope": [
+    "Frozen registration and localization scoring",
+    "Arrival timing from final commands and successful action",
+    "Native TF lever arm and same-stamp recovery with mismatch rejection",
+    "Tracking projection and exported images and CSV",
+    "Static history pairing and raw normalized validity"
+  ],
+  "real_result": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/final_report/experiment_report.md"
+}

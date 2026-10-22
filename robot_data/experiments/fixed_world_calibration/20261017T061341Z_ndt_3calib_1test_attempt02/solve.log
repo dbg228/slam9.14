@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "protocol": "three_training_placements_one_holdout",
+  "data_kind": "real_measurement",
+  "source_frame": "mocap_world",
+  "target_frame": "map",
+  "reference_point": "base_link_origin",
+  "calibration_id": "operator_reported_20261017_recalibration__20261017T061341Z_ndt_3calib_1test",
+  "map_reference_id": "fixed_scans_pcd__new_localization_for_20261017T061341Z_ndt_3calib_1test",
+  "inputs_sha256": "6d4daf16756ab796c0d73d4059fb5125c8ab16b5b545ff3b8831ab2260c365e6",
+  "training_groups": [
+    "calib_01",
+    "calib_02",
+    "calib_03"
+  ],
+  "training_point_count": 3,
+  "holdout_group": "test_04",
+  "holdout_used": false,
+  "transform_refit": false,
+  "map_from_mocap": {
+    "equation": "p_map = R * p_mocap_world + t",
+    "parent_frame": "map",
+    "child_frame": "mocap_world",
+    "rotation_matrix": [
+      [
+        0.7429652185249583,
+        0.6673286922595877,
+        -0.05172137420128453
+      ],
+      [
+        -0.667116923328036,
+        0.7445731304434688,
+        0.023787896732349528
+      ],
+      [
+        0.05438469151789346,
+        0.01683062413345973,
+        0.9983782025964818
+      ]
+    ],
+    "translation_m": [
+      2.486333591514922,
+      -2.7524534595343986,
+      -0.27138499639202396
+    ],
+    "homogeneous_matrix": [
+      [
+        0.7429652185249583,
+        0.6673286922595877,
+        -0.05172137420128453,
+        2.486333591514922
+      ],
+      [
+        -0.667116923328036,
+        0.7445731304434688,
+        0.023787896732349528,
+        -2.7524534595343986
+      ],
+      [
+        0.05438469151789346,
+        0.01683062413345973,
+        0.9983782025964818,
+        -0.27138499639202396
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 1.0
+  },
+  "mocap_from_map": {
+    "equation": "p_mocap_world = R * p_map + t",
+    "parent_frame": "mocap_world",
+    "child_frame": "map",
+    "rotation_matrix": [
+      [
+        0.7429652185249583,
+        -0.667116923328036,
+        0.05438469151789346
+      ],
+      [
+        0.6673286922595877,
+        0.7445731304434688,
+        0.01683062413345973
+      ],
+      [
+        -0.05172137420128453,
+        0.023787896732349528,
+        0.9983782025964818
+      ]
+    ],
+    "translation_m": [
+      -3.6687084743626603,
+      0.39476872348848036,
+      0.46501653364149104
+    ],
+    "homogeneous_matrix": [
+      [
+        0.7429652185249583,
+        -0.667116923328036,
+        0.05438469151789346,
+        -3.6687084743626603
+      ],
+      [
+        0.6673286922595877,
+        0.7445731304434688,
+        0.01683062413345973,
+        0.39476872348848036
+      ],
+      [
+        -0.05172137420128453,
+        0.023787896732349528,
+        0.9983782025964818,
+        0.46501653364149104
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scale": 1.0
+  },
+  "origins": {
+    "mocap_origin_in_map_m": [
+      2.486333591514922,
+      -2.7524534595343986,
+      -0.27138499639202396
+    ],
+    "map_origin_in_mocap_m": [
+      -3.6687084743626603,
+      0.39476872348848036,
+      0.46501653364149104
+    ]
+  },
+  "checks": {
+    "mocap": {
+      "edge_lengths_m": [
+        0.6988971024721324,
+        1.1805915508806517,
+        0.5897751230767186
+      ],
+      "minimum_altitude_m": 0.25719625987072026,
+      "centered_singular_values_m": [
+        0.836314496771734,
+        0.20962065191134222,
+        1.5559301891702305e-17
+      ]
+    },
+    "map": {
+      "edge_lengths_m": [
+        0.678268905107929,
+        1.181756931231555,
+        0.5972083941215341
+      ],
+      "minimum_altitude_m": 0.23937907252272642,
+      "centered_singular_values_m": [
+        0.8364353694979703,
+        0.19526361336898285,
+        1.3793450558177728e-17
+      ]
+    },
+    "cross_covariance_singular_values": [
+      0.6994341125400965,
+      0.040936489144427025,
+      1.3477694124551323e-19
+    ],
+    "edge_length_difference_map_minus_mocap_m": [
+      -0.020628197364203404,
+      0.0011653803509033,
+      0.007433271044815504
+    ]
+  },
+  "errors": {
+    "error_sign": "transformed_mocap_minus_map",
+    "points": [
+      {
+        "group": "calib_01",
+        "mocap_xyz_m": [
+          -1.1108400795208804,
+          -0.17301548788380305,
+          0.2083302379568618
+        ],
+        "map_xyz_m": [
+          1.5428908665974934,
+          -2.1318606535593667,
+          -0.12629832327365875
+        ],
+        "predicted_map_xyz_m": [
+          1.5347847236224468,
+          -2.1352601886170617,
+          -0.1267172815704497
+        ],
+        "error_xyz_m": [
+          -0.008106142975046637,
+          -0.003399535057694969,
+          -0.00041895829679095
+        ],
+        "error_3d_m": 0.008800109010395556,
+        "error_xy_m": 0.008790130405198496
+      },
+      {
+        "group": "calib_02",
+        "mocap_xyz_m": [
+          -0.48664643484641085,
+          0.14129337366705902,
+          0.2153582776939094
+        ],
+        "map_xyz_m": [
+          2.1926945050557456,
+          -2.3210193316141763,
+          -0.08132128914197286
+        ],
+        "predicted_map_xyz_m": [
+          2.2079227129110994,
+          -2.3174772171586633,
+          -0.08046404676637064
+        ],
+        "error_xyz_m": [
+          0.015228207855353837,
+          0.0035421144555130013,
+          0.0008572423756022102
+        ],
+        "error_3d_m": 0.015658216813939658,
+        "error_xy_m": 0.015634733425991455
+      },
+      {
+        "group": "calib_03",
+        "mocap_xyz_m": [
+          0.0649710512100335,
+          -0.06737519233166116,
+          0.21856365457733984
+        ],
+        "map_xyz_m": [
+          2.4854610761006675,
+          -2.840620756149292,
+          -0.05033805966377258
+        ],
+        "predicted_map_xyz_m": [
+          2.4783390112203603,
+          -2.8407633355471096,
+          -0.05077634374258391
+        ],
+        "error_xyz_m": [
+          -0.0071220648803071995,
+          -0.00014257939781758822,
+          -0.0004382840788113296
+        ],
+        "error_3d_m": 0.007136962237375697,
+        "error_xy_m": 0.007123491913660549
+      }
+    ],
+    "x_m": {
+      "n": 3,
+      "rmse": 0.010775460958076048,
+      "p95_abs": 0.014516001367323117,
+      "max_abs": 0.015228207855353837,
+      "mean": 0.0,
+      "std": 0.010775460958076048
+    },
+    "y_m": {
+      "n": 3,
+      "rmse": 0.0028357093356650245,
+      "p95_abs": 0.003527856515731198,
+      "max_abs": 0.0035421144555130013,
+      "mean": 1.4802973661668753e-16,
+      "std": 0.0028357093356650245
+    },
+    "z_m": {
+      "n": 3,
+      "rmse": 0.0006062132404574016,
+      "p95_abs": 0.000815346545923122,
+      "max_abs": 0.0008572423756022102,
+      "mean": -2.312964634635743e-17,
+      "std": 0.0006062132404574016
+    },
+    "distance_3d_m": {
+      "n": 3,
+      "rmse": 0.011158821657697769,
+      "p95_abs": 0.014972406033585246,
+      "max_abs": 0.015658216813939658,
+      "mean": 0.01053176268723697,
+      "std": 0.0036879907114888318
+    },
+    "distance_xy_m": {
+      "n": 3,
+      "rmse": 0.011142342944614428,
+      "p95_abs": 0.014950273123912158,
+      "max_abs": 0.015634733425991455,
+      "mean": 0.010516118581616834,
+      "std": 0.003682805489402352
+    }
+  },
+  "training_hashes": {
+    "calib_01": {
+      "summary.json": "c6ad2fd85191ea83e1dc3161bd5d2033bab0bcc977d05ac238fe502fcb378cec",
+      "raw.jsonl": "ad2a331a977292736d68ddd72f13f566476c56066cfe716e07a7052ae7e0f36f"
+    },
+    "calib_02": {
+      "summary.json": "53c0879bf5d594ca17255090eb5bd4cecc1bdd15271152c579ccea2db4da481c",
+      "raw.jsonl": "43b42d71aa8fb067283bc4e979198f0113143d1a3011ed5461213576ca838d45"
+    },
+    "calib_03": {
+      "summary.json": "456dcc6466fe6c3a8d822069589c9815548141a7873838f5421cba4cf0fa5847",
+      "raw.jsonl": "37ba4cadb362a5772632a599ee66a42a7065ff8925476067a251fff1245979ca"
+    }
+  },
+  "body_extrinsic_file": "body_extrinsic.yaml",
+  "body_extrinsic_sha256": "bda405f83b9d95e5148ace156e8886b6a38e77806729b37503146270c916169d",
+  "map_provenance": {
+    "calib_01": {
+      "source": "ndt",
+      "method": "NDT final_map_to_base_at_cloud, retaining rejected-match final correction; actual base_frame=base_link, map_frame=map",
+      "independently_measured": false,
+      "ndt_pose_field": "final_map_to_base_at_cloud",
+      "topic": "/static_localization/ndt_match_diagnostic",
+      "stamp_meaning": "input cloud measurement time, not publication time"
+    },
+    "calib_02": {
+      "source": "ndt",
+      "method": "NDT final_map_to_base_at_cloud, retaining rejected-match final correction; actual base_frame=base_link, map_frame=map",
+      "independently_measured": false,
+      "ndt_pose_field": "final_map_to_base_at_cloud",
+      "topic": "/static_localization/ndt_match_diagnostic",
+      "stamp_meaning": "input cloud measurement time, not publication time"
+    },
+    "calib_03": {
+      "source": "ndt",
+      "method": "NDT final_map_to_base_at_cloud, retaining rejected-match final correction; actual base_frame=base_link, map_frame=map",
+      "independently_measured": false,
+      "ndt_pose_field": "final_map_to_base_at_cloud",
+      "topic": "/static_localization/ndt_match_diagnostic",
+      "stamp_meaning": "input cloud measurement time, not publication time"
+    }
+  },
+  "interpretation": "地图参照来自 NDT/FAST-LIO：残差保留定位链、动捕、安装外参及时间配对的综合影响；不能将其全部归因于世界外参，也不能作为独立地图真值精度。全局固定偏差可能被标定吸收，独立验证保留其未被固定变换解释的变化；后续方法比较必须沿用本变换，不分别重标定。",
+  "tf_published": false,
+  "absolute_accuracy_certified": false
+}

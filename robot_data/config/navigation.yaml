@@ -77,6 +77,10 @@ controller_server:
     progress_checker_plugins: ["progress_checker"]  # 进度检测插件列表
     goal_checker_plugins: ["goal_checker", "start_goal_checker"]
     controller_plugins: ["FollowPath", "InspectionStrict"]
+    # Nav2 Humble 会把未设置的 current_* 当成空字符串，而不是自动选择
+    # 第一个插件。这样 RViz Nav2 Goal 会在真正开始控制前直接 abort。
+    current_controller: "FollowPath"
+    current_goal_checker: "goal_checker"
 
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"   # 简单进度检测器
@@ -129,7 +133,7 @@ controller_server:
       visualize: false                       # 先关闭采样轨迹可视化，降低负载
       reset_period: 1.0                      # 控制序列重置周期
       regenerate_noises: false               # 使用稳定噪声序列，减少控制输出抖动
-      transform_tolerance: 0.2               # TF容忍度
+      transform_tolerance: 0.5               # 与 costmap 一致，容忍 LiDAR/里程计的短暂时间差
       prune_distance: 1.5                    # 路径裁剪距离，避免追踪过远历史路径
 
       TrajectoryVisualizer:
@@ -226,7 +230,7 @@ controller_server:
       visualize: false
       reset_period: 1.0
       regenerate_noises: false
-      transform_tolerance: 0.2
+      transform_tolerance: 0.5
       prune_distance: 1.5
       # END 只要求保持末段紫线切线方向；不为终点 Pose 的精确 yaw 额外扭头。
       critics: ["ConstraintCritic", "GoalCritic", "PathAlignCritic", "PathFollowCritic", "PathAngleCritic"]

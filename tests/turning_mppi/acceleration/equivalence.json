@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "random_fixture_cases": 72,
+  "absolute_max_error": {
+    "cost": 0.0,
+    "commands": 0.0,
+    "clearance": 0.0
+  },
+  "backend": {
+    "backend": "cpp_equivalent_rollout_ctypes",
+    "ros": false,
+    "source": "/home/zkam/test_nav/tests/turning_mppi/acceleration/rollout.cpp",
+    "source_sha256": "b79ce5b8521597e9198a781a8e1ae3fff85f4ae5e31fc909c28eaa93c19f0e7a",
+    "library": "/home/zkam/test_nav/tests/turning_mppi/acceleration/libguided_rollout.so",
+    "library_sha256": "562dcd6e848b86ba5b2dc72441ae1c2c3f5e76d7918a9e368a405b5dd820d459",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-shared",
+      "-fPIC",
+      "-ffp-contract=off"
+    ]
+  },
+  "numpy_version": "1.21.5",
+  "warm_start_command_comparison_calls": 16,
+  "maximum_command_error": 3.608224830031759e-16,
+  "timing_1000_by_50": {
+    "numpy": {
+      "median_ms": 47.56468600135122,
+      "p95_ms": 50.909138401038945,
+      "calls": 5
+    },
+    "cpp": {
+      "median_ms": 14.086884000789723,
+      "p95_ms": 15.274119799869368,
+      "calls": 15
+    }
+  },
+  "compiler": "g++ -O3 -std=c++17 -shared -fPIC -ffp-contract=off",
+  "evidence": "Numerical equivalence and isolated runtime; no ROS or hardware"
+}

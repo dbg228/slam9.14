@@ -1,0 +1,34 @@
+{
+  "tf_ages_s": {
+    "map->odom": 0.0009438990000000001,
+    "odom->base_link": 1.401914163
+  },
+  "command": [
+    8.4e-323,
+    8.4e-323,
+    0.0,
+    0.0,
+    0.0,
+    -8.4e-323
+  ],
+  "mode": "MANUAL",
+  "ndt_ready": true,
+  "latest_base": {
+    "valid": true,
+    "xyz": [
+      2.864783490894225,
+      -2.933968182756139,
+      -0.07380373151338585
+    ],
+    "stamp_ns": 1792310144677050352
+  },
+  "current_base": {
+    "valid": false,
+    "error": "Lookup would require extrapolation into the future.  Requested time 1792310146.381969 but the latest data is at time 1792310144.677050, when looking up transform from frame [base_link] to frame [map]"
+  },
+  "scan_at_measurement": {
+    "valid": false,
+    "error": "Lookup would require extrapolation into the future.  Requested time 1792310146.287700 but the latest data is at time 1792310144.677050, when looking up transform from frame [livox_frame] to frame [map]"
+  },
+  "ros_now_ns": 1792310146382577201
+}

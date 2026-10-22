@@ -1,0 +1,40 @@
+{
+  "data_kind": "real_first_mapping",
+  "pairs": 32,
+  "duration_s": 3.099941969,
+  "map_basis": "native_fastlio_mapping_world",
+  "map_origin_in_mocap_m": [
+    -0.31746913890529094,
+    0.09182060208542647,
+    0.3587069107361626
+  ],
+  "mocap_origin_in_map_m": [
+    0.15278060863118187,
+    -0.2934377708184794,
+    -0.35838622353244315
+  ],
+  "position_residual_m": {
+    "n": 32,
+    "rmse": 0.0021740788277658384,
+    "p95_abs": 0.0040898585611692136,
+    "max_abs": 0.004511667803605201,
+    "mean": 0.0019299016327260635,
+    "std": 0.0010010486688173338
+  },
+  "raw_normalized_check": {
+    "matched_samples": 280,
+    "normalized_samples": 280,
+    "coverage": 1.0,
+    "scale_to_m": 0.001,
+    "mismatched_stamp_ns": [],
+    "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+  },
+  "ndt_used": false,
+  "PCD_coordinates_changed": false,
+  "real_initial_anchor_completed": true,
+  "raw_record": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/initialization/raw.jsonl",
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "PCD_saved": true,
+  "configured_data_kind_label": "real_mapping_pending_collection",
+  "save_receipt": "raw/native_receipt.json"
+}

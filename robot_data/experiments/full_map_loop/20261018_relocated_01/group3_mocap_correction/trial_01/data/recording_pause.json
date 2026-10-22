@@ -1,0 +1,5 @@
+{
+  "request_ns": 1792347256914804358,
+  "reason": "Pause stationary recording briefly to test whether bag traffic causes native processing backlog",
+  "vehicle_motion": false
+}

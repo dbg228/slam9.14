@@ -1,0 +1,8 @@
+Synthetic noisy output-error identification: step training (seed 303), independent multisine validation (seed 304), observation SD 0.002 m/s and 0.003 rad/s. Time-constant SD spans five noise draws and is not a confidence interval. Known synthetic reset and exact smoother input are used.
+
+|Condition|Axis|Assumed tau [s]|Estimated tau [s]|Tau SD, 5 noise draws [s]|Selected D [s]|Gain|Bias|Validation observed RMSE|Validation latent RMSE|Output unit|
+|---|---|---|---|---|---|---|---|---|---|---|
+|nominal|v|0.120|0.119127|0.000417|0.10|1.000837|-0.000118|0.001975|0.000040|m/s|
+|nominal|w|0.250|0.250363|0.001472|0.10|1.000972|-0.000072|0.002990|0.000114|rad/s|
+|heldout|v|0.120|0.118563|0.000720|0.15|1.000811|-0.000115|0.001976|0.000049|m/s|
+|heldout|w|0.380|0.380436|0.001825|0.15|1.000993|0.007927|0.002990|0.000111|rad/s|

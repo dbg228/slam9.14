@@ -1,0 +1,171 @@
+{
+  "old_multisite_capture": {
+    "file": "robot_data/config/mocap_to_map.session_20260917T094222759121Z.yaml",
+    "keys": [
+      "schema_version",
+      "model",
+      "frames",
+      "mocap_topic",
+      "parameters",
+      "points",
+      "captures"
+    ],
+    "point_count": 6,
+    "sample_counts": [
+      449,
+      450,
+      450,
+      443,
+      450,
+      444
+    ],
+    "validated_final_transform_present": false
+  },
+  "abc": {
+    "A": {
+      "report": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第A1组/report/summary.json",
+      "alignment": {
+        "yaw_rad": -0.8180901297718846,
+        "tx_m": 0.34860868797414285,
+        "ty_m": -0.4644619729947772,
+        "method": "explicit_initial_static_window",
+        "samples": 30,
+        "static_spread": {
+          "mocap": {
+            "samples": 30,
+            "center_x_m": -0.9403165704552877,
+            "center_y_m": -0.23060082554720787,
+            "mean_yaw_rad": -0.005403568387599165,
+            "max_xy_radius_m": 9.655663643674585e-05,
+            "max_yaw_deviation_rad": 0.00010369138923512801
+          },
+          "fastlio": {
+            "samples": 30,
+            "center_x_m": -0.4625091616239375,
+            "center_y_m": 0.06417762775343933,
+            "mean_yaw_rad": -0.8234936981594918,
+            "max_xy_radius_m": 0.0015871462682030902,
+            "max_yaw_deviation_rad": 0.00034495903978526426
+          }
+        },
+        "excluded_from_metrics": true
+      },
+      "estimate_frame": null,
+      "definitions": {
+        "scoring": "native estimate measurement stamps; no resampling repeated low-frequency NDT as raw matches",
+        "estimate": "A: local base pose; B: held NDT map->odom composed with local base; C: held mocap correction composed with local base",
+        "alignment": "one fixed SE(2) from 3s stationary window ending .5s before motion; window excluded; no trajectory refit or scale",
+        "endpoint": "norm of mean ex/ey during 2 to 5 seconds after stop command; includes braking overshoot",
+        "pose_jump": "maximum consecutive estimate displacement at <=.25s over entire scoring interval, even when reference is missing; includes real motion",
+        "error_jump": "maximum consecutive change of estimate-reference error, compensating actual reference movement",
+        "distance_axis": "mocap planar base origin displacement from start; sampled path distance also provided"
+      }
+    },
+    "B": {
+      "report": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/01_forward/report/summary.json",
+      "alignment": {
+        "yaw_rad": -0.729306353200825,
+        "tx_m": 2.4636611518465767,
+        "ty_m": -2.761999410885962,
+        "method": "explicit_initial_static_window",
+        "samples": 30,
+        "static_spread": {
+          "mocap": {
+            "samples": 30,
+            "center_x_m": -0.8968547731975233,
+            "center_y_m": -0.16082923772471916,
+            "mean_yaw_rad": 0.04517053719247002,
+            "max_xy_radius_m": 9.191312329897304e-05,
+            "max_yaw_deviation_rad": 8.655463992476159e-05
+          },
+          "fastlio": {
+            "samples": 30,
+            "center_x_m": 1.6877642545681373,
+            "center_y_m": -2.2842981101676285,
+            "mean_yaw_rad": -0.6841358160081329,
+            "max_xy_radius_m": 0.021568748633906325,
+            "max_yaw_deviation_rad": 0.001256937679957382
+          }
+        },
+        "excluded_from_metrics": true
+      },
+      "estimate_frame": null,
+      "definitions": {
+        "scoring": "native estimate measurement stamps; no resampling repeated low-frequency NDT as raw matches",
+        "estimate": "A: local base pose; B: held NDT map->odom composed with local base; C: held mocap correction composed with local base",
+        "alignment": "one fixed SE(2) from 3s stationary window ending .5s before motion; window excluded; no trajectory refit or scale",
+        "endpoint": "norm of mean ex/ey during 2 to 5 seconds after stop command; includes braking overshoot",
+        "pose_jump": "maximum consecutive estimate displacement at <=.25s over entire scoring interval, even when reference is missing; includes real motion",
+        "error_jump": "maximum consecutive change of estimate-reference error, compensating actual reference movement",
+        "distance_axis": "mocap planar base origin displacement from start; sampled path distance also provided"
+      }
+    },
+    "C": {
+      "report": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/01_reverse/report/summary.json",
+      "alignment": {
+        "yaw_rad": 1.2932888305193306e-06,
+        "tx_m": 1.0666336260792656e-06,
+        "ty_m": 1.1482508920974965e-06,
+        "method": "explicit_initial_static_window",
+        "samples": 30,
+        "static_spread": {
+          "mocap": {
+            "samples": 30,
+            "center_x_m": 0.8895509750900891,
+            "center_y_m": -0.0029611416432933526,
+            "mean_yaw_rad": -0.024767673199255574,
+            "max_xy_radius_m": 0.00022290755041856527,
+            "max_yaw_deviation_rad": 0.00038460360072712155
+          },
+          "fastlio": {
+            "samples": 30,
+            "center_x_m": 0.8895520455525825,
+            "center_y_m": -0.0029588429460585186,
+            "mean_yaw_rad": -0.0247663799104587,
+            "max_xy_radius_m": 0.0002815336415286535,
+            "max_yaw_deviation_rad": 0.0004100716660419071
+          }
+        },
+        "excluded_from_metrics": true
+      },
+      "estimate_frame": null,
+      "definitions": {
+        "scoring": "native estimate measurement stamps; no resampling repeated low-frequency NDT as raw matches",
+        "estimate": "A: local base pose; B: held NDT map->odom composed with local base; C: held mocap correction composed with local base",
+        "alignment": "one fixed SE(2) from 3s stationary window ending .5s before motion; window excluded; no trajectory refit or scale",
+        "endpoint": "norm of mean ex/ey during 2 to 5 seconds after stop command; includes braking overshoot",
+        "pose_jump": "maximum consecutive estimate displacement at <=.25s over entire scoring interval, even when reference is missing; includes real motion",
+        "error_jump": "maximum consecutive change of estimate-reference error, compensating actual reference movement",
+        "distance_axis": "mocap planar base origin displacement from start; sampled path distance also provided"
+      }
+    }
+  },
+  "ndt_example": {
+    "source": "historical only; do not apply after camera recalibration",
+    "forward_map_from_mocap": {
+      "map_from_mocap_yaw_rad": -0.6924751883972758,
+      "translation_m": [
+        2.4709050106091253,
+        -2.7506049448477987
+      ],
+      "mocap_to_base_yaw_rad": 0.0,
+      "start_stamp_ns": 1792038333215970277,
+      "end_stamp_ns": 1792038358215970277,
+      "metrics_exclusion_start_stamp_ns": 1792038333215970277,
+      "warmup_seconds": 0.0,
+      "samples": 13,
+      "rejected_during_alignment": {
+        "alignment_mocap_timestamp_outside_recording": 2
+      },
+      "limitation": "Initial fixed offset is absorbed; reports relative localization error after start alignment."
+    },
+    "inverse_mocap_from_map": {
+      "yaw_rad": 0.6924751883972758,
+      "translation_m": [
+        -3.6578845760602103,
+        0.5395178980305089
+      ]
+    },
+    "inverse_roundtrip_numeric_error_m": 1.1102230246251565e-16
+  }
+}

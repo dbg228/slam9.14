@@ -1,0 +1,55 @@
+{
+  "frame": "map=native_F0",
+  "pcd_sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51",
+  "yaml_sha256": "fb591c3f47c6225bac51ed87adb16038749c531421f03f607fb199fc3cc82722",
+  "image_sha256": "9309d69813fb429c40bb34170d3bb047be21413c6e7069d7ddd08e14aa1112ee",
+  "point_coordinates_changed": false,
+  "PCD_XYZ_transform_count": 0,
+  "T_map_F0": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "yaml_origin": [
+    -16.65,
+    -16.95,
+    0.0
+  ],
+  "resolution_m": 0.05,
+  "width": 557,
+  "height": 593,
+  "xy_bounds_m": [
+    [
+      -16.65,
+      -16.95
+    ],
+    [
+      11.200000000000003,
+      12.700000000000003
+    ]
+  ],
+  "slice_heights_changed_for_mocap": false,
+  "post_3D_transform": "identity",
+  "origin_source": "new native point cloud bounds; old map origin not copied"
+}

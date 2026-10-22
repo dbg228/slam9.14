@@ -1,0 +1,17 @@
+{
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+  "pid": 29450,
+  "pgid": 29450,
+  "command": [
+    "/home/zkam/test_nav/mapping_modes.sh",
+    "anchored",
+    "mapping",
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01"
+  ],
+  "mode": "real_first_mapping",
+  "old_map_loaded": false,
+  "ndt_started": false,
+  "motion_commands_published": false,
+  "log": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/real_mapping.launch.log",
+  "start_unix_ns": 1792225829723562362
+}

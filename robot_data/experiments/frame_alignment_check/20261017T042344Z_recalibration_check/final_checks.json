@@ -1,0 +1,14 @@
+{
+  "protected_content_checks": {
+    "localization.sh": true,
+    "navigation.sh": true,
+    "robot_data/config/navigation.yaml": true,
+    "robot_data/config/mocap_tracker0.yaml": true,
+    "src/static_map_localization/src/static_map_localizer_node.cpp": true,
+    "fastlio_mocap_trajectory_evaluation_core.py": true,
+    "ndt_match_evaluation_core.py": true
+  },
+  "new_tests_passed": 4,
+  "no_autonomous_motion_commands": true,
+  "candidate_file_unchanged": true
+}

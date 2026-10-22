@@ -1,0 +1,45 @@
+[INFO] [launch]: All log files can be found below /tmp/test_nav_group1_ros_logs/2026-10-18-15-13-09-221293-OmniBot-11193
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_alignment_node-1]: process started with pid [11195]
+[INFO] [feature_snap_node-2]: process started with pid [11197]
+[INFO] [polygon_editor_node-3]: process started with pid [11199]
+[INFO] [polygon_offset_node-4]: process started with pid [11201]
+[INFO] [inspection_path_executor_node-5]: process started with pid [11203]
+[map_alignment_node-1] [INFO] [1792307591.184943357] [map_alignment_node]: Detected 6499 boundary cells: theta_map=-0.75320 rad, correction=0.75320 rad, grid=0.100 m
+[polygon_editor_node-3] [INFO] [1792309590.287984427] [polygon_editor_node]: Polygon auto-closed by clicking near P1.
+[polygon_offset_node-4] [INFO] [1792309590.290091525] [polygon_offset_node]: Published 0.90 m outward offset with 487 path poses.
+[inspection_path_executor_node-5] [INFO] [1792309604.364550769] [inspection_path_executor_node]: START saved on inspection path at pose 346.
+[inspection_path_executor_node-5] [INFO] [1792309607.860974659] [inspection_path_executor_node]: MIDDLE saved on inspection path at pose 86.
+[inspection_path_executor_node-5] [INFO] [1792309618.295219047] [inspection_path_executor_node]: END saved on inspection path at pose 333.
+[inspection_path_executor_node-5] [INFO] [1792309623.188538822] [inspection_path_executor_node]: START/END saved to /home/zkam/test_nav/robot_data/inspection_route_selection.txt
+[inspection_path_executor_node-5] [INFO] [1792309663.347120562] [inspection_path_executor_node]: START/END saved to /home/zkam/test_nav/robot_data/inspection_route_selection.txt
+[inspection_path_executor_node-5] [INFO] [1792310139.600906913] [inspection_path_executor_node]: START saved on inspection path at pose 342.
+[inspection_path_executor_node-5] [INFO] [1792310147.634294358] [inspection_path_executor_node]: START saved on inspection path at pose 340.
+[inspection_path_executor_node-5] [INFO] [1792310164.847618469] [inspection_path_executor_node]: START saved on inspection path at pose 340.
+[inspection_path_executor_node-5] [INFO] [1792310173.674886627] [inspection_path_executor_node]: START saved on inspection path at pose 338.
+[inspection_path_executor_node-5] [INFO] [1792310177.001788080] [inspection_path_executor_node]: START saved on inspection path at pose 340.
+[inspection_path_executor_node-5] [INFO] [1792310182.508489402] [inspection_path_executor_node]: START saved on inspection path at pose 341.
+[inspection_path_executor_node-5] [INFO] [1792311039.814357145] [inspection_path_executor_node]: START/END saved to /home/zkam/test_nav/robot_data/inspection_route_selection.txt
+[inspection_path_executor_node-5] [INFO] [1792311426.341627315] [inspection_path_executor_node]: START/END saved to /home/zkam/test_nav/robot_data/inspection_route_selection.txt
+[inspection_path_executor_node-5] [INFO] [1792311426.355905237] [inspection_path_executor_node]: Computing one static path to START (no replanning while moving).
+[inspection_path_executor_node-5] [INFO] [1792311426.389888374] [inspection_path_executor_node]: Following one fixed combined path (510 poses): global path joins purple path at START; no replanning, stop, or START goal search.
+[inspection_path_executor_node-5] [INFO] [1792311426.397199941] [inspection_path_executor_node]: Tracking experiment started: label=mppi, reference=47.80 m.
+[inspection_path_executor_node-5] [INFO] [1792311426.397257055] [inspection_path_executor_node]: Nav2 accepted 510-pose inspection route.
+[inspection_path_executor_node-5] [INFO] [1792311782.026964877] [inspection_path_executor_node]: Inspection FollowPath route completed.
+[inspection_path_executor_node-5] [INFO] [1792311782.269056126] [inspection_path_executor_node]: Tracking experiment exported: /home/zkam/test_nav/robot_data/experiments/20261018_162302_mppi (result=succeeded, RMSE=0.043 m, MAE=0.036 m, max=0.123 m).
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [inspection_path_executor_node-5]: sending signal 'SIGINT' to process[inspection_path_executor_node-5]
+[INFO] [polygon_offset_node-4]: sending signal 'SIGINT' to process[polygon_offset_node-4]
+[INFO] [polygon_editor_node-3]: sending signal 'SIGINT' to process[polygon_editor_node-3]
+[INFO] [feature_snap_node-2]: sending signal 'SIGINT' to process[feature_snap_node-2]
+[INFO] [map_alignment_node-1]: sending signal 'SIGINT' to process[map_alignment_node-1]
+[inspection_path_executor_node-5] [INFO] [1792315662.935399559] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[polygon_offset_node-4] [INFO] [1792315662.936899515] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[feature_snap_node-2] [INFO] [1792315662.942222018] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[polygon_editor_node-3] [INFO] [1792315662.944807667] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_alignment_node-1] [INFO] [1792315662.947151245] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [feature_snap_node-2]: process has finished cleanly [pid 11197]
+[INFO] [polygon_offset_node-4]: process has finished cleanly [pid 11201]
+[INFO] [map_alignment_node-1]: process has finished cleanly [pid 11195]
+[INFO] [polygon_editor_node-3]: process has finished cleanly [pid 11199]
+[INFO] [inspection_path_executor_node-5]: process has finished cleanly [pid 11203]

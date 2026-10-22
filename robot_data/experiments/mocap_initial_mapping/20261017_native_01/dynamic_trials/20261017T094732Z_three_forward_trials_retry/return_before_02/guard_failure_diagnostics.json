@@ -1,0 +1,42 @@
+{
+  "first_failure_ros_ns": 1792230471881881758,
+  "last_received_before_failure": {
+    "native": {
+      "receive_gap_s": 0.004148099000000001,
+      "header_age_at_failure_s": 0.150543019
+    },
+    "mocap": {
+      "receive_gap_s": 0.020616901,
+      "header_age_at_failure_s": 0.02307226
+    },
+    "status": {
+      "receive_gap_s": 0.047331217,
+      "source": {
+        "run_id": "20261017_native_01",
+        "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+        "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792229600181062723",
+        "mode": "localization",
+        "context": "localization",
+        "map_basis": "native_fastlio_mapping_world",
+        "frozen": true,
+        "fault": null,
+        "reason": "mocap_initialized_local_odometry",
+        "pairs": 31,
+        "native_stamp_ns": 1792230471631296634,
+        "source_mode": "mocap_initial_then_lio",
+        "motion_commands_published": false,
+        "ndt_used": false
+      }
+    },
+    "mode": {
+      "receive_gap_s": 0.013881880000000001
+    }
+  },
+  "/localization_ab/request": {
+    "receive_gap_s": 0.001745725,
+    "header_age_at_failure_s": 0.001932656
+  },
+  "/localization_ab/recorder_ready": {
+    "receive_gap_s": 0.051770149
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "behavior": "Ordered approach/START/full inspection traversal required before normal END tolerance is eligible",
+  "unit_tests": 4,
+  "python_navigation_checks": 5,
+  "isolated_controller_configure": {
+    "domain": 210,
+    "checker": "inspection_geometry_tools::OrderedRouteGoalChecker",
+    "configured": true,
+    "motion_activated": false
+  },
+  "frozen_navigation_parameters_sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452",
+  "files_sha256": {
+    "src/inspection_geometry_tools/src/ordered_route_goal_checker.cpp": "8316847f355579c9354082ed24d74d7b316885795c3bf83708ac3c7a97b9ac7f",
+    "src/inspection_geometry_tools/include/inspection_geometry_tools/ordered_path_progress.hpp": "030029ef8b8a8c47bcb71780a37551c82eff85ec8c3253863105bee42ac81e59",
+    "src/inspection_geometry_tools/src/inspection_path_executor_node.cpp": "eee7b815807ad30430a015f88d6f927b17d25159c85afa26fc6828578869db3b",
+    "mapping_modes.sh": "27bfd7397816d4953d8dab2527a36883820c695ee0dcc83ea845300b41300897",
+    "navigation.sh": "8699ea704c6946b89fd31c1507572ccb80cf343fd2649a1bd8809aa3d7ad309c"
+  },
+  "real_full_loop_validation": "passed",
+  "live_navigation_controller_loaded": true,
+  "live_full_route_started": true,
+  "live_validation_evidence": {
+    "trial": "robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial/trial_02",
+    "navigation_controller_pid": 35898,
+    "private_checker_loaded": true,
+    "reference_path_length_m": 48.12167949387335,
+    "middle_reference_s_m": 20.96606786198918,
+    "action_result_status": 4,
+    "full_route_duration_s": 354.583491158
+  }
+}

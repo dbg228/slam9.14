@@ -1,0 +1,39 @@
+{
+  "status": "anchor_frozen_mapping_running_waiting_manual_map_coverage",
+  "data_kind": "real_robot_static_initialization_and_live_mapping",
+  "timestamp_utc": "2026-10-18T09:34:01.563245+00:00",
+  "camera_world_id": "20261018_relocated_shared_world_01",
+  "calibration_sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608",
+  "pairs": 32,
+  "duration_s": 3.100146055,
+  "map_origin_in_mocap_m": [
+    -0.0313425973698747,
+    4.998318071620265,
+    0.3936015124456767
+  ],
+  "initial_fit_residual_m": {
+    "n": 32,
+    "rmse": 0.0016026728473373174,
+    "p95_abs": 0.0024557823766800046,
+    "max_abs": 0.0027754906797032484,
+    "mean": 0.0014657685075645408,
+    "std": 0.0006481380546028161
+  },
+  "fit_residual_is_independent_accuracy": false,
+  "body_extrinsics_unchanged_from_yesterday": true,
+  "lidar_imu_extrinsics_unchanged": true,
+  "ndt_used": false,
+  "motion_goals_sent": false,
+  "mapping_started": true,
+  "pcd_saved": false,
+  "map_basis": "first FAST-LIO native world; map=F0; fixed T_mocap_map stored, points not transformed",
+  "native_source_age_s": 0.133361361,
+  "recording": "mapping_bag",
+  "rviz": "mapping_view.rviz",
+  "pending": [
+    "Manual full map coverage",
+    "User stops robot after mapping",
+    "Save native PCD while mapping process is still running",
+    "Inspect PCD and project new occupancy grid"
+  ]
+}

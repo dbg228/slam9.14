@@ -1,0 +1,9 @@
+{
+  "result": "30 passed",
+  "files": [
+    "tests/mocap_anchored_mapping/test/test_auto_2m_safety.py",
+    "tests/mocap_anchored_mapping/test/test_localization_outputs.py",
+    "src/localization_ab_test/test/test_protocol.py"
+  ],
+  "source": "pytest run in this session before restarting localization"
+}

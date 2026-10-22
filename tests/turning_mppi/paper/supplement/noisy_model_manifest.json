@@ -1,0 +1,32 @@
+{
+  "source_sha256": "5943b33c2f0f77ea7b65af4bfa3726399746ae6ca29f951d9572d3b5f7cffded",
+  "evidence": "synthetic_closed_loop_not_fastlio_ndt_not_hardware_identification",
+  "separate_extension": "Added after 24 frozen convergence trials; no changes to controller or convergence run settings",
+  "convergence_source_archive": "convergence_protocol_source.py",
+  "convergence_source_archive_sha256": "d6680e97d44d144e20517c75371ee5a717658d27543076e8dff95646f57a2f44",
+  "noise_sigma_v_mps": 0.002,
+  "noise_sigma_w_radps": 0.003,
+  "noise_seeds": [
+    [
+      303,
+      304
+    ],
+    [
+      305,
+      306
+    ],
+    [
+      307,
+      308
+    ],
+    [
+      309,
+      310
+    ],
+    [
+      311,
+      312
+    ]
+  ],
+  "noise_inputs": "same latent step/multisine plant data; independent Gaussian observation draws"
+}

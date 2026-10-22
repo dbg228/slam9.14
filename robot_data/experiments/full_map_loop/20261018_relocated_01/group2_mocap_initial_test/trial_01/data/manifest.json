@@ -1,0 +1,75 @@
+{
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "export_csv": false,
+  "export_log_files": false,
+  "result_formats": [
+    "png",
+    "svg"
+  ],
+  "mocap_feedback": "initialization_only",
+  "checkpoint_corrections": false,
+  "measurements": [
+    "initial",
+    "middle",
+    "endpoint"
+  ],
+  "wheel_feedback_topic": "/joint_states",
+  "wheel_command_topic": "/omni_velocity_controller/diagnostics/joint_vel",
+  "wheel_names": [
+    "wheel_1_roll",
+    "wheel_2_roll",
+    "wheel_3_roll",
+    "wheel_4_roll"
+  ],
+  "velocity_units_verified": false,
+  "wheel_unit": "Target rad/s; feedback reported interface values, physical scale unverified.",
+  "initial_window_policy": "Original anchored validate, first qualifying >=3-second static window with >=25 synchronized source-time pairs; no refit.",
+  "middle_measurement_policy": "All valid paired samples inside midroute mocap coverage, no correction. Dynamic samples use receiver timestamps; exposure latency unverified.",
+  "endpoint_window_policy": "First complete fixed 15-second window from final zero command +4 through +19 seconds; missing intervals are retained. Separate original static validation also recorded.",
+  "runtime_environment": {
+    "OMP_WAIT_POLICY": "PASSIVE",
+    "OMP_THREAD_LIMIT": "3"
+  },
+  "completion_policy": "Visit the immutable combined approach, START and inspection path in order before usual END tolerances can report success.",
+  "completion_checker": "inspection_geometry_tools::OrderedRouteGoalChecker",
+  "recording_policy": "Record native base pose plus frozen map/odom, original actual/reference paths, mocap validity and wheel data. High-rate joint-only TF is omitted; full pose information remains reconstructible.",
+  "ordered_route_completion_required": true,
+  "distance_window_policy": "Same motion-boundary definition as baseline: first nonzero final chassis command through first zero after last arrival nonzero plus 1 s; continuous native base_link source stamps; report gaps and do not bridge intervals >0.5 s.",
+  "experiment_display_name": "第2轮测试版",
+  "trial": "trial_01",
+  "source_completed_trial": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial/trial_02",
+  "stage": "completed",
+  "created_ns": 1792336733207877902,
+  "offset_distance_m": 0.55,
+  "experiment_label": "group2_test",
+  "formal_departure_started": true,
+  "previous_test_version_deleted_at_user_request": true,
+  "deleted_previous_test_data_bytes": 141554981,
+  "completed_group2_preserved": true,
+  "operator_on_site": true,
+  "operator_confirmed_previous_actual_corridor_clear": true,
+  "controller_speed_changed": false,
+  "controller_frequency_changed": false,
+  "localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792336777957474258",
+  "initialization_pairs": 31,
+  "initial_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792336881279729973",
+  "operator_external_confirmed": true,
+  "mocap_receiver_reconnects": [
+    {
+      "host_ns": 1792337163336495493,
+      "reason": "No new mocap poses at middle coverage; receiver reconnect only; frozen map/odom unchanged"
+    }
+  ],
+  "navigation_success": true,
+  "endpoint_static_available": true,
+  "middle_measurement_available": true,
+  "middle_measurement_kind": "moving_receiver_time_comparison",
+  "lio_distance_complete": false,
+  "results_summary": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test/trial_01/data/results_summary.json",
+  "figure_package": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test/trial_01/group2_test_result_figures.zip",
+  "formal_group2_hashes_verified": true,
+  "measurement_quality_status": "endpoint_reference_suspect_requires_retest",
+  "endpoint_static_valid_for_localization_accuracy": false,
+  "endpoint_static_exclusion_reason": "Near-inverted Tracker0 orientation, confirmed in raw VRPN; independent of small ground slope.",
+  "review": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test/trial_01/data/localization_review.json"
+}

@@ -1,0 +1,97 @@
+{
+  "data_kind": "real_static_validation",
+  "planned_points": 3,
+  "completed_independent_points": 3,
+  "complete": true,
+  "initialization_samples_excluded": true,
+  "fit_performed": false,
+  "transform_updated": false,
+  "independent_world_calibration_validation": false,
+  "scope": "LIO pose after mocap restart initialization, compared to subsequent independent static mocap samples; not PCD global relocalization or independent world-transform calibration",
+  "reference_point": "base_link",
+  "failures": [
+    {
+      "path": "failures/tf_discovery_attempt01",
+      "reason": "foreign_global_TF_publisher:('_NODE_NAMESPACE_UNKNOWN_', '_NODE_NAME_UNKNOWN_')",
+      "source_capture": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation/1792227159145152919"
+    },
+    {
+      "path": "failures/native_discovery_attempt02",
+      "reason": "competing_or_wrong_native_publisher",
+      "source_capture": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation/1792227339756498527",
+      "subsequent_check": "No foreign native publisher; startup DDS identity discovery. Acquisition-only graph discovery wait added before retry."
+    },
+    {
+      "path": "failures/point03_no_mocap_attempt03",
+      "source_capture": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation/1792227446574115775",
+      "reason": "initialization_timeout_no_fallback",
+      "evidence": "0 raw/normalized mocap messages in the acquisition window; native FAST-LIO remained present",
+      "counted_in_precision_statistics": false
+    }
+  ],
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "initialization_sha256": "f1b8ad279df13a3f978a18f0ea0421330d4e503eb42cafb3d15511f816410eac",
+  "capture_attempts": 7,
+  "successful_windows": 4,
+  "excluded_windows": 1,
+  "pooled_sample_statistics": {
+    "error_xy_m": {
+      "n": 95,
+      "rmse": 0.007784793962162626,
+      "p95_abs": 0.009268941979981574,
+      "max_abs": 0.00977956096227549,
+      "mean": 0.007714917715214491,
+      "std": 0.0010407024938921207
+    },
+    "error_3d_m": {
+      "n": 95,
+      "rmse": 0.016317017237903686,
+      "p95_abs": 0.020867505678837966,
+      "max_abs": 0.021611037710661456,
+      "mean": 0.015964331143760536,
+      "std": 0.003374193633211266
+    },
+    "yaw_error_deg": {
+      "n": 95,
+      "rmse": 0.02911548542659826,
+      "p95_abs": 0.04988072974635428,
+      "max_abs": 0.056973477362536724,
+      "mean": 0.010604132685577335,
+      "std": 0.027115749327892937
+    },
+    "orientation_error_deg": {
+      "n": 95,
+      "rmse": 0.18274587920049354,
+      "p95_abs": 0.23056283720313564,
+      "max_abs": 0.24900437631894728,
+      "mean": 0.1773425232165898,
+      "std": 0.044109928858871245
+    }
+  },
+  "equal_weight_position_mean_3d_error_m": {
+    "n": 3,
+    "rmse": 0.01622585673502258,
+    "p95_abs": 0.019707509953546053,
+    "max_abs": 0.02018814198524267,
+    "mean": 0.015879834135441296,
+    "std": 0.0033330608479820944
+  },
+  "pairwise_position_distances_m": [
+    {
+      "a": "point_01",
+      "b": "point_02",
+      "distance_m": 1.0917965600334754
+    },
+    {
+      "a": "point_01",
+      "b": "point_03",
+      "distance_m": 0.7918711420075136
+    },
+    {
+      "a": "point_02",
+      "b": "point_03",
+      "distance_m": 0.9115728723213886
+    }
+  ],
+  "third_point_distance_to_first_two_line_XY_m": 0.6498364357465197
+}

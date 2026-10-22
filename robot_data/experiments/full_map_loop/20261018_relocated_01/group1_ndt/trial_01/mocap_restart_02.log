@@ -1,0 +1,18 @@
+[mocap-tracker0] client: project-local Humble vrpn_mocap binary
+[mocap-tracker0] server: 192.168.1.168:3883; rigid body: Tracker0
+[mocap-tracker0] raw: /vrpn_mocap/Tracker0/pose; normalized: /mocap/Tracker0/pose
+[mocap-tracker0] use_vrpn_timestamps=false; no TF or base_link pose is published.
+check_vrpn_cookie(): VRPN Note: minor version number doesn't match: (prefer 'vrpn: ver. 07.35', got 'vrpn: ver. 07.34  0').  This is not normally a problem.
+[INFO] [1792308882.113228298] [vrpn_mocap.client]: Created new tracker Tracker0
+[INFO] [1792308882.186835615] [mocap_tracker0_normalizer]: Passive mocap normalizer: /vrpn_mocap/Tracker0/pose -> /mocap/Tracker0/pose; frame=mocap_world; scale=0.001; raw unit=millimetres_verified_manual_1m_2026-10-15; timestamp source=ubuntu_receiver_clock. No TF, map alignment, rigid-body->base_link transform, NDT, or Nav2 data is published.
+[INFO] [1792308998.066428324] [vrpn_mocap.client]: Creating sensor 0
+[ERROR] [1792309002.369080249] [mocap_tracker0_normalizer]: Mocap stream stale for 0.595 s; no old pose is republished.
+[ERROR] [1792309011.119216995] [mocap_tracker0_normalizer]: Mocap stream stale for 0.665 s; no old pose is republished.
+[ERROR] [1792309040.871136183] [mocap_tracker0_normalizer]: Mocap stream stale for 0.515 s; no old pose is republished.
+[ERROR] [1792309064.869432566] [mocap_tracker0_normalizer]: Mocap stream stale for 0.554 s; no old pose is republished.
+[ERROR] [1792309077.869187816] [mocap_tracker0_normalizer]: Mocap stream stale for 0.534 s; no old pose is republished.
+[ERROR] [1792309107.869066788] [mocap_tracker0_normalizer]: Mocap stream stale for 0.703 s; no old pose is republished.
+[ERROR] [1792310752.619378293] [mocap_tracker0_normalizer]: Mocap stream stale for 0.744 s; no old pose is republished.
+[INFO] [1792310994.678785300] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+vrpn_Connection::~vrpn_Connection: Connection was deleted while 2 references still remain.
+[INFO] [1792310994.680116227] [vrpn_mocap.client]: Destroyed new tracker Tracker0

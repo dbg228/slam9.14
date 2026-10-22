@@ -1,0 +1,262 @@
+schema_version: 1
+protocol: three_training_placements_one_holdout
+data_kind: real_measurement
+source_frame: mocap_world
+target_frame: map
+reference_point: base_link_origin
+calibration_id: 20261018_relocated_shared_world_01__group1_ndt_registration
+map_reference_id: preserved_original_NDT_scans_pcd
+inputs_sha256: e4351a7d5ca9539f3f7d702bd9aa1f9a050f7ea2e91c0e89efb458c99b0077b6
+training_groups:
+- calib_01
+- calib_02
+- calib_03
+training_point_count: 3
+holdout_group: test_04
+holdout_used: false
+transform_refit: false
+map_from_mocap:
+  equation: p_map = R * p_mocap_world + t
+  parent_frame: map
+  child_frame: mocap_world
+  rotation_matrix:
+  - - 0.7464715916609767
+    - 0.6647672040383422
+    - -0.029406245564053385
+  - - -0.6649051891454927
+    - 0.7469018386044279
+    - 0.006223579092600824
+  - - 0.026100810150744527
+    - 0.014906640277744005
+    - 0.9995481678163912
+  translation_m:
+  - -0.6061349773337206
+  - -6.363875018649525
+  - -0.40322170066362417
+  homogeneous_matrix:
+  - - 0.7464715916609767
+    - 0.6647672040383422
+    - -0.029406245564053385
+    - -0.6061349773337206
+  - - -0.6649051891454927
+    - 0.7469018386044279
+    - 0.006223579092600824
+    - -6.363875018649525
+  - - 0.026100810150744527
+    - 0.014906640277744005
+    - 0.9995481678163912
+    - -0.40322170066362417
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  scale: 1.0
+mocap_from_map:
+  equation: p_mocap_world = R * p_map + t
+  parent_frame: mocap_world
+  child_frame: map
+  rotation_matrix:
+  - - 0.7464715916609767
+    - -0.6649051891454927
+    - 0.026100810150744527
+  - - 0.6647672040383422
+    - 0.7469018386044279
+    - 0.014906640277744005
+  - - -0.029406245564053385
+    - 0.006223579092600824
+    - 0.9995481678163912
+  translation_m:
+  - -3.7683865686240643
+  - 5.162139287074073
+  - 0.4248214376476894
+  homogeneous_matrix:
+  - - 0.7464715916609767
+    - -0.6649051891454927
+    - 0.026100810150744527
+    - -3.7683865686240643
+  - - 0.6647672040383422
+    - 0.7469018386044279
+    - 0.014906640277744005
+    - 5.162139287074073
+  - - -0.029406245564053385
+    - 0.006223579092600824
+    - 0.9995481678163912
+    - 0.4248214376476894
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  scale: 1.0
+origins:
+  mocap_origin_in_map_m:
+  - -0.6061349773337206
+  - -6.363875018649525
+  - -0.40322170066362417
+  map_origin_in_mocap_m:
+  - -3.7683865686240643
+  - 5.162139287074073
+  - 0.4248214376476894
+checks:
+  mocap:
+    edge_lengths_m:
+    - 0.7585672236627821
+    - 1.1862853212779394
+    - 0.608722471930077
+    minimum_altitude_m: 0.33720675429814534
+    centered_singular_values_m:
+    - 0.8421417701453937
+    - 0.27424554755229674
+    - 1.029136436575312e-17
+  map:
+    edge_lengths_m:
+    - 0.7549554568021338
+    - 1.181766692628842
+    - 0.6010042952511401
+    minimum_altitude_m: 0.32960291086112403
+    centered_singular_values_m:
+    - 0.8390965613168672
+    - 0.26800951651709204
+    - 2.24735343985049e-17
+  cross_covariance_singular_values:
+  - 0.7066370459970502
+  - 0.07350054324118553
+  - 5.4056305050372145e-20
+  edge_length_difference_map_minus_mocap_m:
+  - -0.0036117668606482356
+  - -0.004518628649097467
+  - -0.007718176678936928
+errors:
+  error_sign: transformed_mocap_minus_map
+  points:
+  - group: calib_01
+    mocap_xyz_m:
+    - -0.8527380478390779
+    - 4.729588372946105
+    - 0.23591520456525464
+    map_xyz_m:
+    - 1.8948433796564739
+    - -2.265368938446045
+    - -0.11912845820188522
+    predicted_map_xyz_m:
+    - 1.8944581533238636
+    - -2.262878577129195
+    - -0.11916797153805092
+    error_xyz_m:
+    - -0.00038522633261028894
+    - 0.002490361316850098
+    - -3.951333616569741e-05
+    error_3d_m: 0.002520289689606072
+    error_xy_m: 0.0025199799236898155
+  - group: calib_02
+    mocap_xyz_m:
+    - -0.13631528370034873
+    - 4.480370832881545
+    - 0.2432140786875818
+    map_xyz_m:
+    - 2.267066558202108
+    - -2.921804110209147
+    - -0.09675632417201996
+    predicted_map_xyz_m:
+    - 2.2633611145818437
+    - -2.925327404393298
+    - -0.09688817694814639
+    error_xyz_m:
+    - -0.0037054436202641483
+    - -0.0035232941841512044
+    - -0.00013185277612642876
+    error_3d_m: 0.005114811774210487
+    error_xy_m: 0.00511311200063425
+  - group: calib_03
+    mocap_xyz_m:
+    - 0.3240477796027497
+    - 4.878526649654666
+    - 0.2522053716190534
+    map_xyz_m:
+    - 2.8673349221547446
+    - -2.93501885732015
+    - -0.07012129823366801
+    predicted_map_xyz_m:
+    - 2.8714255921076193
+    - -2.9339859244528483
+    - -0.06994993212137585
+    error_xyz_m:
+    - 0.004090669952874659
+    - 0.0010329328673015503
+    - 0.0001713661122921678
+    error_3d_m: 0.0042225463071641385
+    error_xy_m: 0.004219067547658294
+  x_m:
+    n: 3
+    rmse: 0.003194385304125778
+    p95_abs: 0.004052147319613608
+    max_abs: 0.004090669952874659
+    mean: 7.401486830834377e-17
+    std: 0.003194385304125778
+  y_m:
+    n: 3
+    rmse: 0.0025614092283278264
+    p95_abs: 0.003420000897421094
+    max_abs: 0.0035232941841512044
+    mean: 1.4802973661668753e-16
+    std: 0.0025614092283278264
+  z_m:
+    n: 3
+    rmse: 0.0001269025909235392
+    p95_abs: 0.0001674147786755939
+    max_abs: 0.0001713661122921678
+    mean: 1.3877787807814457e-17
+    std: 0.0001269025909235392
+  distance_3d_m:
+    n: 3
+    rmse: 0.004096464203891058
+    p95_abs: 0.005025585227505852
+    max_abs: 0.005114811774210487
+    mean: 0.003952549256993566
+    std: 0.001076277540786024
+  distance_xy_m:
+    n: 3
+    rmse: 0.004094498101865196
+    p95_abs: 0.005023707555336654
+    max_abs: 0.00511311200063425
+    mean: 0.00395071982399412
+    std: 0.0010755127049354484
+training_hashes:
+  calib_01:
+    summary.json: 93e6aadf5f490711ef870cfd218611fa80824c7c5f8f14fe345cb31ba63880bd
+    raw.jsonl: 17ee179bcf6727e4dd2662ad76ad1f92ce525bca1c658956fc68ae988506271c
+  calib_02:
+    summary.json: d20ecfd29f78792516d465cdd484215db4576ab8dd8ed8338083a138565a60e0
+    raw.jsonl: d5a28638106f1449a0bbd3321e5806f6c2c04bd93d614efc08bfae361c3f0d8e
+  calib_03:
+    summary.json: 9c1fbcd72f2f397b94191099430d4707443558d5d350ba069d70796970819b6a
+    raw.jsonl: c74f87b5b311ddd262130d0def56b808f65dafac739e42953eb8bac0bb6412fc
+body_extrinsic_file: body_extrinsic.yaml
+body_extrinsic_sha256: bda405f83b9d95e5148ace156e8886b6a38e77806729b37503146270c916169d
+map_provenance:
+  calib_01:
+    source: ndt
+    method: Current original NDT final_map_to_base_at_cloud; three separately parked
+      calibration placements; initial and endpoint are not fitted
+    independently_measured: false
+    ndt_pose_field: final_map_to_base_at_cloud
+    topic: /static_localization/ndt_match_diagnostic
+    stamp_meaning: input cloud measurement time, not publication time
+  calib_02:
+    source: ndt
+    method: Current original NDT final_map_to_base_at_cloud; three separately parked
+      calibration placements; initial and endpoint are not fitted
+    independently_measured: false
+    ndt_pose_field: final_map_to_base_at_cloud
+    topic: /static_localization/ndt_match_diagnostic
+    stamp_meaning: input cloud measurement time, not publication time
+  calib_03:
+    source: ndt
+    method: Current original NDT final_map_to_base_at_cloud; three separately parked
+      calibration placements; initial and endpoint are not fitted
+    independently_measured: false
+    ndt_pose_field: final_map_to_base_at_cloud
+    topic: /static_localization/ndt_match_diagnostic
+    stamp_meaning: input cloud measurement time, not publication time
+interpretation: 地图参照来自 NDT/FAST-LIO：残差保留定位链、动捕、安装外参及时间配对的综合影响；不能将其全部归因于世界外参，也不能作为独立地图真值精度。全局固定偏差可能被标定吸收，独立验证保留其未被固定变换解释的变化；后续方法比较必须沿用本变换，不分别重标定。
+tf_published: false
+absolute_accuracy_certified: false

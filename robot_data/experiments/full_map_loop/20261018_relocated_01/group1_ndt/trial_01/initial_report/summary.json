@@ -1,0 +1,88 @@
+{
+  "status": "initial_only_endpoint_pending",
+  "reference": "current map/mocap fixed registration; NDT participated in registration",
+  "independent_absolute_accuracy_certified": false,
+  "calibration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "transform_refitted": false,
+  "initial": {
+    "samples": 3,
+    "rows": [
+      {
+        "stamp_ns": 1792309416576966762,
+        "time_s": 0.0,
+        "ex_m": 0.004694536897464463,
+        "ey_m": 0.01114822686816419,
+        "ez_m": 0.02502046542089792,
+        "xy_m": 0.01209634816734841,
+        "distance_3d_m": 0.02779110161299947,
+        "yaw_deg": -1.1995039252451776,
+        "match_id": 735
+      },
+      {
+        "stamp_ns": 1792309418577043294,
+        "time_s": 2.000076532,
+        "ex_m": 0.0005591693597950531,
+        "ey_m": -0.001746631420992184,
+        "ez_m": 0.015607206222761238,
+        "xy_m": 0.0018339552049411636,
+        "distance_3d_m": 0.015714588056119316,
+        "yaw_deg": -1.1709668644632107,
+        "match_id": 736
+      },
+      {
+        "stamp_ns": 1792309420679750919,
+        "time_s": 4.102784157,
+        "ex_m": 0.0035005098015292724,
+        "ey_m": 0.00802367576450802,
+        "ez_m": 0.00723028822543903,
+        "xy_m": 0.008754024311398495,
+        "distance_3d_m": 0.011353854388157274,
+        "yaw_deg": -1.0725981642335414,
+        "match_id": 737
+      }
+    ],
+    "xy_m": {
+      "n": 3,
+      "rmse": 0.008685581391478637,
+      "p95_abs": 0.011762115781753417,
+      "max_abs": 0.01209634816734841,
+      "mean": 0.007561442561229356,
+      "std": 0.004273629663556402
+    },
+    "distance_3d_m": {
+      "n": 3,
+      "rmse": 0.019563602395818853,
+      "p95_abs": 0.02658345025731145,
+      "max_abs": 0.02779110161299947,
+      "mean": 0.018286514685758686,
+      "std": 0.006952547687662498
+    },
+    "yaw_deg": {
+      "n": 3,
+      "rmse": 1.1489763395107484,
+      "p95_abs": 1.1966502191669808,
+      "max_abs": 1.1995039252451776,
+      "mean": -1.1476896513139767,
+      "std": 0.05436076730806137
+    },
+    "mean_error_xyz_m": [
+      0.002918072019596263,
+      0.005808423737226676,
+      0.015952653289699397
+    ],
+    "transform_refitted": false
+  },
+  "endpoint": null,
+  "distance": null,
+  "location_coverage": {
+    "initial": {
+      "nearest_training_group": "calib_03",
+      "separation_m": 0.00030174626276536847,
+      "spatially_held_out": false,
+      "separation_threshold_m": 0.1,
+      "evaluation_data_used_for_fitting": false
+    }
+  },
+  "initial_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_02/initial/summary.json",
+  "endpoint_capture": null
+}

@@ -1,0 +1,6 @@
+{
+  "request_ros_ns": 1792336984863821325,
+  "service": "/inspection_route/follow",
+  "offset_distance_m": 0.55,
+  "operator_confirmed_external": true
+}

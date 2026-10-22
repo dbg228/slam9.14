@@ -1,0 +1,1 @@
+[INFO] [1792307366.606660136] [livox_to_scan_fallback]: Livox fallback scan: /livox/lidar -> /scan, frame=livox_frame, z=[-0.15, 0.2], range=[0.5, 20.0], bins=1085, stamp_offset=0.000s

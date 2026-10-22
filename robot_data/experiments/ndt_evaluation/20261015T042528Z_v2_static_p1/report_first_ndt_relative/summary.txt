@@ -1,0 +1,28 @@
+Total scheduled attempts: 69
+NDT registrations entered: 69
+Converged registrations: 69
+Accepted attempts: 69
+Reference coverage (all/test): 97.1% / 97.1%
+PCL ndt.align duration: {"samples": 69, "mean": 0.016304807391304348, "p95": 0.021939919199999998, "max": 0.066913861, "definition": "PCL NormalDistributionsTransform::align() only; excludes post-alignment diagnostics"}
+
+Metrics use the first time-matched converged raw NDT output as zero relative origin; the baseline is included and history before it is not assessed.
+A missing reference, raw NDT result, or final pose is counted and never replaced by zero.
+Initial FAST-LIO, raw NDT, and final poses use the SAME mocap→map alignment transform.
+Matching completion time is not used as the measurement time.
+
+initial_fastlio_all_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.006766200406343428, "rmse": 0.015717209817817587, "p95_absolute": 0.03683589456318232, "max_absolute": 0.04447944219483668}, "y_m": {"mean": 0.011637947644315146, "rmse": 0.01804308528673721, "p95_absolute": 0.031690632157384664, "max_absolute": 0.04821457423560793}, "xy_m": {"mean": 0.02156680503581973, "rmse": 0.02392871937905943, "p95_absolute": 0.04100068047394965, "max_absolute": 0.049989373180090925}, "yaw_deg": {"mean": -0.2185793027864783, "rmse": 0.2440066480198871, "p95_absolute": 0.4088938892313869, "max_absolute": 0.4794350562682686}}
+initial_fastlio_accepted_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.006766200406343428, "rmse": 0.015717209817817587, "p95_absolute": 0.03683589456318232, "max_absolute": 0.04447944219483668}, "y_m": {"mean": 0.011637947644315146, "rmse": 0.01804308528673721, "p95_absolute": 0.031690632157384664, "max_absolute": 0.04821457423560793}, "xy_m": {"mean": 0.02156680503581973, "rmse": 0.02392871937905943, "p95_absolute": 0.04100068047394965, "max_absolute": 0.049989373180090925}, "yaw_deg": {"mean": -0.2185793027864783, "rmse": 0.2440066480198871, "p95_absolute": 0.4088938892313869, "max_absolute": 0.4794350562682686}}
+raw_ndt_all_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.007196830620522167, "rmse": 0.016442067083625264, "p95_absolute": 0.03770901435226532, "max_absolute": 0.046751598747951206}, "y_m": {"mean": 0.011687602761520866, "rmse": 0.01807758587297499, "p95_absolute": 0.03131463618988728, "max_absolute": 0.04865836119722711}, "xy_m": {"mean": 0.0220594625249033, "rmse": 0.024436462120716623, "p95_absolute": 0.04173143716093537, "max_absolute": 0.05105400474998928}, "yaw_deg": {"mean": -0.2245776178082781, "rmse": 0.2493816583380287, "p95_absolute": 0.4204653239468021, "max_absolute": 0.4887274651899437}}
+raw_ndt_accepted_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.007196830620522167, "rmse": 0.016442067083625264, "p95_absolute": 0.03770901435226532, "max_absolute": 0.046751598747951206}, "y_m": {"mean": 0.011687602761520866, "rmse": 0.01807758587297499, "p95_absolute": 0.03131463618988728, "max_absolute": 0.04865836119722711}, "xy_m": {"mean": 0.0220594625249033, "rmse": 0.024436462120716623, "p95_absolute": 0.04173143716093537, "max_absolute": 0.05105400474998928}, "yaw_deg": {"mean": -0.2245776178082781, "rmse": 0.2493816583380287, "p95_absolute": 0.4204653239468021, "max_absolute": 0.4887274651899437}}
+final_map_base_all_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.007196830620522167, "rmse": 0.016442067083625264, "p95_absolute": 0.03770901435226532, "max_absolute": 0.046751598747951206}, "y_m": {"mean": 0.011687602761520866, "rmse": 0.01807758587297499, "p95_absolute": 0.03131463618988728, "max_absolute": 0.04865836119722711}, "xy_m": {"mean": 0.0220594625249033, "rmse": 0.024436462120716623, "p95_absolute": 0.04173143716093537, "max_absolute": 0.05105400474998928}, "yaw_deg": {"mean": -0.2245776178082781, "rmse": 0.2493816583380287, "p95_absolute": 0.4204653239468021, "max_absolute": 0.4887274651899437}}
+final_map_base_accepted_evaluable: {"samples": 67, "metrics_available": true, "weighting": "one record per NDT input-cloud timestamp", "x_m": {"mean": 0.007196830620522167, "rmse": 0.016442067083625264, "p95_absolute": 0.03770901435226532, "max_absolute": 0.046751598747951206}, "y_m": {"mean": 0.011687602761520866, "rmse": 0.01807758587297499, "p95_absolute": 0.03131463618988728, "max_absolute": 0.04865836119722711}, "xy_m": {"mean": 0.0220594625249033, "rmse": 0.024436462120716623, "p95_absolute": 0.04173143716093537, "max_absolute": 0.05105400474998928}, "yaw_deg": {"mean": -0.2245776178082781, "rmse": 0.2493816583380287, "p95_absolute": 0.4204653239468021, "max_absolute": 0.4887274651899437}}
+
+Rejection / unmatched counts:
+{
+  "total_attempts": 69,
+  "mocap_timestamp_outside_recording": 2,
+  "reference_valid": 67,
+  "initial_fastlio_pose_evaluable": 67,
+  "raw_pose_evaluable": 67,
+  "final_pose_evaluable": 67
+}

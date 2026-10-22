@@ -1,0 +1,89 @@
+{
+  "purpose": "Offline cross-group audit; original trials and packages unchanged",
+  "sources_sha256": {
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial/trial_02/data/results_summary.json": "415673a496988b7e168233a6e972a3de5b31e1421e86473951690be5a3b6b227",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test/trial_01/data/results_summary.json": "c34e9f044bd3359617d9d49cad5786960ded67507e6997e32eed73f571c5b7f3",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group2_mocap_initial_test2/trial_01/data/results_summary.json": "c4733ac22a64310078846acbf722971051210013144f413e908511a7e5512211",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/results_summary.json": "91e95d9acf1cae17e0c9e4e78a535f5b63ef9e8c201581a9d9001d2dd30b18eb",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/tracking_analysis/summary.json": "027d5806eedb765348671a4b96b39ffba408d91ab117b2c8907ffece207c4195"
+  },
+  "saved_summary_values": {
+    "group2_formal": {
+      "initial_xy_rmse_mm": 5.651354719605591,
+      "endpoint_xy_rmse_mm": 13.360148196068675,
+      "reference_length_m": 48.12167949387329,
+      "duration_s": 354.583491158,
+      "tracking_rmse_mm": 41.85287793960234,
+      "lio_raw_polyline_m": 47.57448860659885,
+      "lio_1s_sample_polyline_m": 47.495551069569274,
+      "lio_gap_count": 1
+    },
+    "group2_offset_055": {
+      "initial_xy_rmse_mm": 4.46316538110495,
+      "endpoint_xy_rmse_mm": 14.385281968185078,
+      "endpoint_reference_suspect": true,
+      "reference_length_m": 45.77220470747595,
+      "duration_s": 339.34146331700003,
+      "tracking_rmse_mm": 53.759632531541335,
+      "lio_observed_segments_m": 45.309910727655556,
+      "lio_1s_sample_polyline_m": 45.09557529933835,
+      "lio_gap_count": 1
+    },
+    "group2_offset_060": {
+      "initial_xy_rmse_mm": 4.0763296091297,
+      "middle_static_xy_rmse_mm": 181.97816263667522,
+      "endpoint_xy_rmse_mm": 10.439789404346188,
+      "endpoint_reference_suspect": false,
+      "reference_length_m": 46.245572590093914,
+      "duration_s": 354.02188589300005,
+      "tracking_rmse_mm": 49.93180488081861,
+      "lio_observed_segments_m": 15.928389499691106,
+      "lio_1s_sample_polyline_m": 15.886644308132963,
+      "lio_gap_count": 1
+    },
+    "group3": {
+      "initial_xy_rmse_mm": 7.859035118976987,
+      "middle_static_xy_rmse_mm": 218.36742223083675,
+      "endpoint_xy_rmse_mm": 176.94507223104782,
+      "endpoint_reference_suspect": false,
+      "reference_length_m": 46.196395679474776,
+      "duration_s": 1927.995471289,
+      "tracking_rmse_mm": 85.42528521718499,
+      "active_route_tracking_rmse_mm": 155.93242793018584,
+      "lio_observed_segments_m": 79.1924927265385,
+      "lio_active_route_observed_m": 61.517155176976324,
+      "lio_1s_sample_polyline_m": 49.842497030058176,
+      "lio_gap_count": 1
+    }
+  },
+  "group3_stale_cached_pose_run": {
+    "samples": 11540,
+    "seconds": 1153.9879037360001,
+    "start_s": 160.268738222,
+    "end_s": 1314.256641958
+  },
+  "group3_timestamp_definition": "inspection node polling time; latest map->base_link TF source time is not retained in this Path",
+  "group3_middle_pause_excluded_s": 1382.9721245790001,
+  "group2_060_position_baseline_diagnostic": {
+    "mocap_initial_to_middle_m": 7.1548370420008,
+    "native_initial_to_middle_m": 7.236671961734298,
+    "position_baseline_angle_difference_deg": -1.2828072042051233,
+    "baseline_length_difference_mm": 81.834919733498,
+    "meaning": "Two-point diagnostic only, not a new calibration or proof of a unique root cause."
+  },
+  "conclusions": {
+    "valid_algorithm_ranking": false,
+    "independent_global_absolute_accuracy_certified": false,
+    "all_numbers_are_arithmetic_errors": false,
+    "group3_global_transform_changes_endpoint_residual": true,
+    "middle_2mm_is_spatial_holdout": false,
+    "root_cause_of_original_middle_bias_uniquely_identified": false
+  },
+  "required_interpretations": [
+    "Use separate labels for NDT-assisted registration consistency, mocap initialization residual, independent spatial validation, map-estimated path deviation, and motion-capture localization residual.",
+    "Do not interpret raw or decimated LIO polyline length as independently measured physical distance.",
+    "Group 3 H0 endpoint calculation reuses actual H1-driven recorded poses; it is not an actual no-correction rerun.",
+    "Group 3 cached-TF pose repetitions are recorded internal estimates, not fresh independent localization observations.",
+    "The <90-degree orientation check does not certify absolute localization accuracy."
+  ]
+}

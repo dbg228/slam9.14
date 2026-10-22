@@ -1,0 +1,145 @@
+method: mean_of_synchronous_static_T_M_B_times_inverse_T_F_B
+pairs: 32
+duration_s: 3.098927021
+static_spread:
+  T_M_B:
+    mean_xyz_m:
+    - -0.08857597550742705
+    - 4.743937697860638
+    - 0.24561287075669808
+    mean_rotation_matrix:
+    - - 0.9980868713499734
+      - -0.060365943740422284
+      - -0.013362263099852674
+    - - 0.06031778846566316
+      - 0.9981712965458929
+      - -0.0039783346393653385
+    - - 0.013577983408187666
+      - 0.0031647414143078922
+      - 0.9999028066659016
+    std_xyz_m:
+    - 5.3884853678852415e-05
+    - 0.00014513412719668946
+    - 5.3610048711225656e-05
+    maximum_radius_m: 0.0004984222254346413
+    maximum_orientation_deviation_deg: 0.23236965158262154
+  T_F_B:
+    mean_xyz_m:
+    - -0.46035797501860054
+    - 0.07296820924693052
+    - -0.14847823695298382
+    mean_rotation_matrix:
+    - - 0.6798898479378074
+      - 0.7333114425156293
+      - 0.0020305040633751825
+    - - -0.7333138468044176
+      - 0.6798897812211177
+      - 0.0008291417292743408
+    - - -0.0007724998458729648
+      - -0.002052721789901457
+      - 0.9999975947857277
+    std_xyz_m:
+    - 0.0006385514928387805
+    - 0.0007255154841832394
+    - 0.0009630866739402077
+    maximum_radius_m: 0.0027321033963870656
+    maximum_orientation_deviation_deg: 0.02717802400675499
+position_residual_m:
+  n: 32
+  rmse: 0.0013730782188121232
+  p95_abs: 0.0021007784560175265
+  max_abs: 0.0026529666048230667
+  mean: 0.0012594628461303585
+  std: 0.0005468977365042665
+ndt_used: false
+scale_fitted: false
+frozen: true
+transform_refit: false
+run_id: 20261018_relocated_01
+data_kind: real_mapping_pending_collection
+inputs_sha256: ba7e9bfab7000f34c7285a3a553284b459f5048d09e6de5e35682a06daa90bf7
+camera_world_id: 20261018_relocated_shared_world_01
+raw_sha256: e59c03c35bf45057cd445ab0ac20c2a9e9da996a454e9afd4cf19820174b498b
+pairs_sha256: 745f34400af4a599e2de519c82a8f40a59b3d3d451e6a54c1528443dce189529
+raw_normalized_check:
+  matched_samples: 278
+  normalized_samples: 278
+  coverage: 1.0
+  scale_to_m: 0.001
+  mismatched_stamp_ns: []
+  note: xyz_m in raw internal records retains native units until this explicit scale
+    check
+clock:
+  mocap_source: ubuntu_receiver_clock
+  fastlio_source: lidar_end_time
+  offset_s: 0.0
+  offset_verified: false
+  camera_latency_s: null
+  scope: static timestamp pairing, not exposure synchronization certification
+reference_point: base_link
+motion_commands_published: false
+T_map_odom:
+  parent: map
+  child: odom
+  equation: p_map = T_map_odom * p_odom
+  matrix:
+  - - 0.9850009558102389
+    - -0.17254146946037457
+    - -0.0015994903472878984
+    - 0.25465387012150176
+  - - 0.1725368272707509
+    - 0.9849993937741429
+    - -0.002690260194953111
+    - -0.14735706853192587
+  - - 0.002039678469694172
+    - 0.0023739378736359756
+    - 0.9999951020533628
+    - 0.0028648155912318063
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.25465387012150176
+  - -0.14735706853192587
+  - 0.0028648155912318063
+  quaternion_xyzw:
+  - 0.001270824804563713
+  - -0.0009132237598092363
+  - 0.08659496588858528
+  - 0.9962423715690051
+  scale: 1.0
+T_mocap_odom:
+  parent: mocap_world
+  child: odom
+  equation: p_mocap_world = T_mocap_world_odom * p_odom
+  matrix:
+  - - 0.6342949473190874
+    - -0.7729642009445568
+    - -0.014009420531205907
+    - 0.2577480752755851
+  - - 0.7729718183985039
+    - 0.6344112829429972
+    - -0.0060738814882889125
+    - 5.052587337192058
+  - - 0.013582627403717129
+    - -0.006976254924078579
+    - 0.9998834152540228
+    - 0.40083588776403983
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.2577480752755851
+  - 5.052587337192058
+  - 0.40083588776403983
+  quaternion_xyzw:
+  - -0.00024956064881062736
+  - -0.0076308644642530815
+  - 0.42754449621996615
+  - 0.9039620630198073
+  scale: 1.0
+calibration_sha256: f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608
+initialization_only: true
+continuous_mocap_correction: false

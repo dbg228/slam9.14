@@ -1,0 +1,16 @@
+{
+  "outcome": "failed",
+  "original_controller_used": true,
+  "original_correction_used": true,
+  "request": {
+    "pose_ns": 1792347677184537777,
+    "receive_ros_ns": 1792347677210581144,
+    "trigger_source": "fresh_mocap_at_already_paused_original_route"
+  },
+  "pause_ros_ns": 1792347677215649611,
+  "pause_response": "Original route already paused; verified canceled goal and fresh zero command",
+  "before_validation_missing_reason": "validate_timeout",
+  "reason": "correct_failed_2",
+  "paused": true,
+  "ros_ns": 1792347708807471415
+}

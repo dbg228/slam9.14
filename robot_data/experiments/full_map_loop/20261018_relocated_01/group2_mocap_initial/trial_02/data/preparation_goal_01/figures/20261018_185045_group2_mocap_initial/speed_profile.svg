@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="860" viewBox="0 0 1120 860">
+<rect width="100%" height="100%" fill="white"/>
+<text x="100" y="42" font-family="sans-serif" font-size="24">Estimated speed: group2_mocap_initial</text>
+<text x="100" y="70" font-family="sans-serif" font-size="16">result=succeeded</text>
+<line x1="110.000" y1="730.000" x2="1010.000" y2="730.000" stroke="#333" stroke-width="2"/>
+<line x1="110.000" y1="110.000" x2="110.000" y2="730.000" stroke="#333" stroke-width="2"/>
+<polyline fill="none" stroke="#1976d2" stroke-width="3" points="153.679,730.000 174.086,706.961 192.522,684.807 217.500,720.544 243.946,696.594 263.924,547.700 290.343,543.839 324.717,564.619 357.673,510.639 382.744,428.858 424.883,559.692 458.311,518.714 482.814,479.136 516.571,517.746 539.145,408.856 569.821,529.610 594.711,448.628 624.041,519.303 658.975,549.713 728.718,636.796 750.290,392.045 770.004,481.659 792.301,718.359 814.718,166.364 837.232,456.651 860.511,483.307 891.792,562.508 921.047,519.830 948.499,579.126 977.302,570.304 1010.000,551.574 "/>
+<text x="870.000" y="772.000" font-family="sans-serif" font-size="18">time (s), max=3.016</text>
+<text x="110.000" y="98.000" font-family="sans-serif" font-size="18">speed (m/s), max=0.305</text>
+</svg>

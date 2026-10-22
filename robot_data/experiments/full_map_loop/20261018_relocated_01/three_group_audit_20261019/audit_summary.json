@@ -1,0 +1,390 @@
+{
+  "audit_scope": "Group 3 saved-pose transform comparison, attached to the three-group review",
+  "data_kind": "real_recorded_static_pose_pairs_offline_audit",
+  "transform_refitted": false,
+  "original_trial_files_modified": false,
+  "formula": {
+    "frames": "F=T_F_B is native odom -> base_link; M=T_M_B is mocap world -> base_link; C=T_map_mocap",
+    "errors": "e_k(i) = translation(Hk @ F_i) - translation(C @ M_i), k in {0,1}",
+    "xy_rmse": "1000 * sqrt(mean(e_x^2 + e_y^2)) [mm]",
+    "relative_update": "D = H1 @ inverse(H0) = [A,b]",
+    "middle_pivot_decomposition": "p1 = p0 + d_middle + (A-I) @ (p0-p_middle), where d_middle=(A-I)@p_middle+b",
+    "direction": "atan2(mean e_y, mean e_x), degrees in map XY"
+  },
+  "transforms": {
+    "H0_map_odom": [
+      [
+        0.9997646719949428,
+        -0.020502823756083366,
+        -0.00708765468044442,
+        -0.06200204779104723
+      ],
+      [
+        0.020453296996306165,
+        0.9997663669273537,
+        -0.0069910087153930624,
+        -0.19585382119051253
+      ],
+      [
+        0.00722933418947342,
+        0.006844397629073035,
+        0.9999504442462497,
+        0.005344174153794012
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "H1_map_odom": [
+      [
+        0.9996796578987627,
+        -0.018192315750452867,
+        0.01759605725860333,
+        -0.14634856766484328
+      ],
+      [
+        0.018153212354787174,
+        0.999832385448234,
+        0.002379472650582916,
+        -0.011017035870813263
+      ],
+      [
+        -0.017636396021131637,
+        -0.002059285441291939,
+        0.9998423460120384,
+        -0.12650784568355283
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "D_H1_times_inverse_H0": [
+      [
+        0.9996926843451355,
+        0.0021356653306935803,
+        0.02469768815930085,
+        -0.08407928460463485
+      ],
+      [
+        -0.002367311669398681,
+        0.9999534496655841,
+        0.009353840781179061,
+        0.18463090153342235
+      ],
+      [
+        -0.024676561800193002,
+        -0.009409433324861471,
+        0.9996512041018237,
+        -0.13522302664728864
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_magnitude_deg": 1.518827833582871,
+    "rotation_vector_deg": [
+      -0.5375911670070112,
+      1.4146337417346064,
+      -0.1290158981212135
+    ],
+    "euler_xyz_roll_pitch_yaw_deg": [
+      -0.5392929992601196,
+      1.4140063745988622,
+      -0.1356784100158156
+    ],
+    "translation_at_map_origin_xyz_mm": [
+      -84.07928460463485,
+      184.63090153342236,
+      -135.22302664728863
+    ],
+    "translation_at_map_origin_xy_mm": 202.87408878580695,
+    "translation_at_map_origin_3d_mm": 243.80968569013993
+  },
+  "comparisons": {
+    "initial": {
+      "samples": 31,
+      "source_first_ns": 1792346218596508026,
+      "source_last_ns": 1792346221598436594,
+      "H0": {
+        "xy_rmse_mm": 7.859035118976987,
+        "xyz_mean_error_mm": [
+          -1.3321582300529884,
+          -7.684439646621224,
+          12.156945740680072
+        ],
+        "xy_mean_error_direction_deg": -99.83492981908664
+      },
+      "H1": {
+        "xy_rmse_mm": 197.99201204441792,
+        "xyz_mean_error_mm": [
+          -88.8864950731812,
+          176.915466540641,
+          -108.92588305228466
+        ],
+        "xy_mean_error_direction_deg": 116.67603036802753
+      },
+      "coordinate_change_xyz_mean_mm": [
+        -87.55433684312821,
+        184.59990618726223,
+        -121.08282879296472
+      ]
+    },
+    "middle_before": {
+      "samples": 31,
+      "source_first_ns": 1792347823198160171,
+      "source_last_ns": 1792347826198938369,
+      "H0": {
+        "xy_rmse_mm": 218.36742223083675,
+        "xyz_mean_error_mm": [
+          99.88046395456104,
+          -194.17210204918334,
+          -36.73778766693531
+        ],
+        "xy_mean_error_direction_deg": -62.779098823343574
+      },
+      "H1": {
+        "xy_rmse_mm": 2.324580732148129,
+        "xyz_mean_error_mm": [
+          -0.3126669622523414,
+          0.037304297108615145,
+          0.20973110742367543
+        ],
+        "xy_mean_error_direction_deg": 173.1962023083188
+      },
+      "coordinate_change_xyz_mean_mm": [
+        -100.19313091681337,
+        194.20940634629193,
+        36.947518774359004
+      ]
+    },
+    "middle_fit": {
+      "samples": 31,
+      "source_first_ns": 1792347834699131727,
+      "source_last_ns": 1792347837699182033,
+      "H0": {
+        "xy_rmse_mm": 218.5423694227532,
+        "xyz_mean_error_mm": [
+          100.19854009051811,
+          -194.20753858737805,
+          -36.94010094200113
+        ],
+        "xy_mean_error_direction_deg": -62.70919000106828
+      },
+      "H1": {
+        "xy_rmse_mm": 2.1090617505659117,
+        "xyz_mean_error_mm": [
+          0.00010531263411149527,
+          -0.0008027103628962098,
+          0.00023711202701461086
+        ],
+        "xy_mean_error_direction_deg": -82.52569407511962
+      },
+      "coordinate_change_xyz_mean_mm": [
+        -100.198434777884,
+        194.20673587701515,
+        36.94033805402815
+      ]
+    },
+    "middle_after_same_station": {
+      "samples": 32,
+      "source_first_ns": 1792347850698353528,
+      "source_last_ns": 1792347853798209190,
+      "H0": {
+        "xy_rmse_mm": 218.9695122914911,
+        "xyz_mean_error_mm": [
+          100.20453918674502,
+          -194.68325019031158,
+          -36.443834260620676
+        ],
+        "xy_mean_error_direction_deg": -62.76487072304123
+      },
+      "H1": {
+        "xy_rmse_mm": 2.307621089426393,
+        "xyz_mean_error_mm": [
+          0.017616152567095922,
+          -0.47174853059256394,
+          0.5007918330487962
+        ],
+        "xy_mean_error_direction_deg": -87.86144022039409
+      },
+      "coordinate_change_xyz_mean_mm": [
+        -100.18692303417792,
+        194.211501659719,
+        36.94462609366948
+      ]
+    },
+    "endpoint": {
+      "samples": 31,
+      "source_first_ns": 1792348261098356246,
+      "source_last_ns": 1792348264098424911,
+      "H0": {
+        "xy_rmse_mm": 27.384030971026966,
+        "xyz_mean_error_mm": [
+          13.72100494469657,
+          -23.605597906860982,
+          18.515610786496786
+        ],
+        "xy_mean_error_direction_deg": -59.83224871958093
+      },
+      "H1": {
+        "xy_rmse_mm": 176.94507223104782,
+        "xyz_mean_error_mm": [
+          -74.23904516365157,
+          160.60405387445954,
+          -105.15572986933954
+        ],
+        "xy_mean_error_direction_deg": 114.80868779483461
+      },
+      "coordinate_change_xyz_mean_mm": [
+        -87.96005010834814,
+        184.2096517813205,
+        -123.67134065583632
+      ]
+    }
+  },
+  "middle_pivot_endpoint_decomposition": {
+    "middle_mean_old_map_xyz_m": [
+      -4.763038909599081,
+      -5.797851180368632,
+      -0.21057180748737142
+    ],
+    "middle_coordinate_change_xyz_mm": [
+      -100.19843477788282,
+      194.20673587701566,
+      36.94033805402816
+    ],
+    "endpoint_minus_middle_old_map_xyz_m": [
+      4.442363158390568,
+      5.415911875626069,
+      0.08247805109115464
+    ],
+    "endpoint_distance_from_middle_m": 7.0052476404824615,
+    "endpoint_rotation_term_xyz_mm": [
+      12.238384669535614,
+      -9.997084095693692,
+      -160.61167870986452
+    ],
+    "endpoint_rotation_term_xy_mm": 15.802523524294978,
+    "endpoint_full_coordinate_change_xyz_mm": [
+      -87.96005010834811,
+      184.20965178132056,
+      -123.67134065583635
+    ],
+    "endpoint_full_coordinate_change_xy_mm": 204.13271718286242
+  },
+  "heldout_after_scope": {
+    "fit_after_source_stamp_overlap": 0,
+    "seconds_from_fit_end_to_after_start": 12.999171495,
+    "mean_mocap_station_movement_xyz_mm": [
+      0.04920716543568848,
+      -0.03279921584065093,
+      0.016805533391617278
+    ],
+    "mean_mocap_station_movement_3d_mm": 0.061478123284251174,
+    "interpretation": "Different samples and a different time window at the same station. Demonstrates local temporal holdout residual; not spatial holdout absolute accuracy."
+  },
+  "reference_quality": {
+    "independent_accuracy_verified": false,
+    "clock_offset_verified": false,
+    "camera_latency_s": null
+  },
+  "limitations": [
+    "H0 endpoint comparison uses the same endpoint measurements recorded after actual navigation with H1. It is not an actual uncorrected re-run or an uncorrected control outcome.",
+    "No new transform, trajectory alignment, calibration, or error model was fitted. Both H0 and H1 were already saved during the real experiment.",
+    "This comparison proves the coordinate update changes the endpoint residual; it cannot alone distinguish native localization error, spatial calibration inconsistency, and rigid-body/extrinsic bias.",
+    "The total 1.519 degree rotation is mostly pitch and roll. It must not be described as 1.519 degrees of planar yaw.",
+    "Actual trial included approximately 1383 seconds of stationary pause, a 3-second native age allowance and 0.10 m/s continuation limit. It is not a same-speed controlled comparison with previous groups.",
+    "Current mocap reference and cross-device exposure timing have not been independently certified as absolute ground truth."
+  ],
+  "input_files": [
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/manifest.json",
+      "bytes": 4983,
+      "sha256": "1622aaee7e209f74113dfd6906cb0e719197a79fde09b07828a119913281e009"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/middle_correction.json",
+      "bytes": 1104,
+      "sha256": "6e1d83362d52469547667aa77ce43350bbb72b23254f85478e451ca6ba20dbe4"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/endpoint_validation.json",
+      "bytes": 264,
+      "sha256": "5c07046e5347285be2e77c5a7b8a4b2577cbebe9c9e0277e5459206bfde49d95"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/calibration.yaml",
+      "bytes": 4450,
+      "sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/calibration.lock.json",
+      "bytes": 83,
+      "sha256": "2e42ba51ef35efeac4141cc52ddd81f36f2b159441f810435d12a4c271feccbe"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/checkpoints/middle_1792347834544835127/summary.json",
+      "bytes": 30313,
+      "sha256": "f084e80ebfd47f232341846f50f71bb16f2463b2fac76eb1c4b27adb931fa8bd"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/checkpoints/middle_1792347834544835127/summary.lock.json",
+      "bytes": 83,
+      "sha256": "4adaf8c0f26d92d55e8815ff64d8236c487ae645284b764a403f26be5938e2af"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792346217960168639/pairs.json",
+      "bytes": 33991,
+      "sha256": "31cfccc64f483392931312fac66f6f07e7d7fb38b389d92ab4d35441c8c53b73"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792346217960168639/summary.json",
+      "bytes": 14217,
+      "sha256": "4477cb1c566092f0d72f44c4a06d7140b872ac8d7243619ddfe208ca2f0cbd0c"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347822645033924/pairs.json",
+      "bytes": 34075,
+      "sha256": "a4429ce337fc0fb85ad568505c803b9cd95fcbdd9c5cdb11410b24559d64ba2b"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347822645033924/summary.json",
+      "bytes": 14038,
+      "sha256": "78a899584086476fc843083bfee3a92c491fce399dbd8be8d37dbf850c23b922"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/checkpoints/middle_1792347834544835127/pairs.json",
+      "bytes": 34061,
+      "sha256": "a56674e45739c14a1a1e85f508b08fbda5672d6e6c8a60110a4ebebb60913428"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347845448738824/pairs.json",
+      "bytes": 35143,
+      "sha256": "f67253681073a334169c9fa64b13f04c13648a50a008decee4f34a9bac9468f8"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347845448738824/summary.json",
+      "bytes": 14698,
+      "sha256": "98c5fc72d4bb62a36bb07a453f63d2e27f9af484eb377879beb4aa4b4181073e"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792348258297844419/pairs.json",
+      "bytes": 34099,
+      "sha256": "7157b391d56dc98194a15e15e4ec09cef5ddea1311f7c572c8038d041ebccab4"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792348258297844419/summary.json",
+      "bytes": 14026,
+      "sha256": "7188f10891801c026aa41fdeda788cbac419388416b225fbf03bbc696ba4029d"
+    }
+  ]
+}

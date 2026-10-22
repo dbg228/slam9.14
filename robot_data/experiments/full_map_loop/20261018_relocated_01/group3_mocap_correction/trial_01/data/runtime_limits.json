@@ -1,0 +1,60 @@
+{
+  "/controller_server": {
+    "previous": {
+      "InspectionStrict.vx_max": 0.2,
+      "InspectionStrict.wz_max": 0.45,
+      "InspectionStrict.transform_tolerance": 0.5
+    },
+    "applied": {
+      "InspectionStrict.vx_max": 0.1,
+      "InspectionStrict.wz_max": 0.15,
+      "InspectionStrict.transform_tolerance": 3.0
+    },
+    "restored_after_final_stop": true
+  },
+  "/local_costmap/local_costmap": {
+    "previous": {
+      "transform_tolerance": 0.5
+    },
+    "applied": {
+      "transform_tolerance": 3.0
+    },
+    "restored_after_final_stop": true
+  },
+  "/global_costmap/global_costmap": {
+    "previous": {
+      "transform_tolerance": 0.5
+    },
+    "applied": {
+      "transform_tolerance": 3.0
+    },
+    "restored_after_final_stop": true
+  },
+  "/velocity_smoother": {
+    "previous": {
+      "max_velocity": [
+        0.3,
+        0.0,
+        0.45
+      ],
+      "min_velocity": [
+        0.0,
+        0.0,
+        -0.45
+      ]
+    },
+    "applied": {
+      "max_velocity": [
+        0.1,
+        0.0,
+        0.15
+      ],
+      "min_velocity": [
+        0.0,
+        0.0,
+        -0.15
+      ]
+    },
+    "restored_after_final_stop": true
+  }
+}

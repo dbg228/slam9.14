@@ -13,3 +13,31 @@ robot_data/maps/*.png
 
 # Runtime UI selections
 robot_data/inspection_route_selection.txt
+
+# Raw experiment recordings and derived archives are stored outside Git.
+# Experiment reports, figures, summaries, parameters, and CSV results remain
+# versioned under robot_data/experiments/.
+robot_data/experiments/**/bag/
+robot_data/experiments/**/bag_*/
+robot_data/experiments/**/formal_bag_*/
+robot_data/experiments/**/raw/
+robot_data/experiments/**/native_aux/
+robot_data/experiments/**/Log/
+robot_data/experiments/**/*.jsonl
+robot_data/maps/*.bak_*
+*.db3
+*.db3.zst
+*.pcd
+
+# Regenerable or third-party binary artifacts.
+CMakeFiles/
+.vendor/
+book/
+frames_*.pdf
+tests/**/__pycache__/
+tests/**/*.so
+tests/**/results/
+tests/turning_mppi/turning_mppi_paper_bundle.zip
+
+# Office applications create these transient lock files while a document is open.
+.~lock.*#

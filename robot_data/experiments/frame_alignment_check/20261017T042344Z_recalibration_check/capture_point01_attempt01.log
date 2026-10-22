@@ -1,0 +1,1 @@
+{"completed": true, "map_ready": true, "rejections": {"unpaired_pose_or_validity": 5, "no_fresh_local_tf": 30, "map_not_initialized": 935, "mocap_interpolation_gap_too_large": 149}}

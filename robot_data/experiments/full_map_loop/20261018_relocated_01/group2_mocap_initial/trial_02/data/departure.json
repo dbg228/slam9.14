@@ -1,0 +1,5 @@
+{
+  "request_ros_ns": 1792323512896512982,
+  "service": "/inspection_route/follow",
+  "ordered_full_route_required": true
+}

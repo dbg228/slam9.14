@@ -1,0 +1,6 @@
+1792211151.2939928 [INFO] [launch]: All log files can be found below /home/zkam/.ros/log/2026-10-17-12-25-51-292378-OmniBot-15932
+1792211151.2941895 [INFO] [launch]: Default logging verbosity is set to INFO
+1792211151.4228952 [INFO] [fastlio_mapping-1]: process started with pid [15950]
+1792211151.4232726 [INFO] [static_map_localizer_node-2]: process started with pid [15954]
+1792211151.4237759 [INFO] [map_to_odom_tf_broadcaster.py-3]: process started with pid [15956]
+1792217021.9105213 [ERROR] [fastlio_mapping-1]: process has died [pid 15950, exit code -9, cmd '/home/zkam/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping --ros-args -r __node:=fastlio_static_odom --params-file /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml --params-file /tmp/launch_params_p2j0owpt -r /tf:=/tf_lio_raw'].

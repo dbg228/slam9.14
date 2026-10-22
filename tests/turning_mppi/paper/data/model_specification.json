@@ -1,0 +1,166 @@
+{
+  "evidence": "assumed_synthetic_models_not_hardware_identification",
+  "controller_parameters": {
+    "dt": 0.05,
+    "steps": 50,
+    "samples": 1000,
+    "speed": 0.2,
+    "vmax": 0.2,
+    "wmax": 0.45,
+    "accel_v": 0.45,
+    "accel_w": 0.8,
+    "tau_v": 0.12,
+    "tau_w": 0.25,
+    "delay": 0.1,
+    "temperature": 0.2,
+    "noise_v": 0.05,
+    "noise_w": 0.12,
+    "lateral_gain": 1.5,
+    "heading_gain": 2.0,
+    "half_length": 0.48,
+    "half_width": 0.385,
+    "clearance": 0.04
+  },
+  "sampling": {
+    "residual_noise_std_v_mps": 0.05,
+    "residual_noise_std_w_radps": 0.12,
+    "temporal_recursion": "epsilon[:,j] = 0.80 * epsilon[:,j-1] + 0.60 * innovation[:,j]",
+    "heuristic_weights": "exp(-(J-min(J))/temperature), normalized over feasible proposals",
+    "important_limitation": "No exact importance-sampling correction for the state-dependent guided proposal is derived."
+  },
+  "objective_no_obstacles": {
+    "stage": "dt*[140*(1+2*min(abs(kappa),2))*e_y^2 + 10*e_psi^2 + 12*(v-v_ref)^2 + .15*r_v^2 + .05*r_w^2]",
+    "terminal": "35*e_y_last^2 + 3*e_psi_last^2 - 2*(s_final-s_initial)",
+    "timing": "stage e_y/e_psi and terminal errors use their values before the final integration update, as implemented",
+    "mean_acceptance": "re-evaluate weighted residual; accept if feasible and J_mean <= J_best + .05; otherwise select best feasible sample"
+  },
+  "guidance": {
+    "yaw_command": "clip(v_ref*kappa(s_preview) - k_y*e_y - k_psi*wrap(psi-psi_ref) + tau_w*v_ref^2*kappa_prime(s_preview) + r_w, -wmax, wmax)",
+    "preview": "s_preview = s + len(pending)*dt*max(v,.05)",
+    "speed_reference": "min(speed, sqrt(2*.30*max(L-s,0)), wmax/max(abs(kappa(s_preview)),1e-5))",
+    "speed_command": "clip(v_ref+r_v,0,vmax)"
+  },
+  "sensor_perturbation": {
+    "distribution": "independent zero-mean Gaussian samples at 20Hz",
+    "std_x_m": 0.002,
+    "std_y_m": 0.002,
+    "std_yaw_rad": 0.003,
+    "std_v_mps": 0.002,
+    "std_w_radps": 0.003,
+    "generator": "numpy.default_rng(seed+1900)",
+    "limitation": "Not a learned or measured FAST-LIO/NDT noise process; no lidar or IMU rendering."
+  },
+  "plant_parameters": {
+    "nominal": {
+      "tau_v_s": 0.12,
+      "tau_w_s": 0.25,
+      "delay_s": 0.1,
+      "yaw_bias_radps": 0.0
+    },
+    "heldout": {
+      "tau_v_s": 0.12,
+      "tau_w_s": 0.38,
+      "delay_s": 0.15,
+      "yaw_bias_radps": 0.008
+    }
+  },
+  "plant_timing": {
+    "controller_dt_s": 0.05,
+    "smoother_dt_s": 0.03333333333333333,
+    "body_integration_dt_s": 0.005,
+    "smoother": "clip target and independently rate-limit v/w at each 30Hz event before the 20Hz interval end",
+    "within_interval_approximation": "The final smoother snapshot is used for the entire body integration interval; this is not exact multirate event-time integration.",
+    "transport": "append smoother snapshot, pop oldest from D=round(delay/dt) queue",
+    "body": "10 substeps; z <- z+(1-exp(-h/tau))*(delayed_input+bias-z), then midpoint-yaw pose update",
+    "recording": "Original traces store state at t_end; corresponding cmd_v/cmd_w were issued at t_end-dt."
+  },
+  "original_baseline": {
+    "plugin": "nav2_mppi_controller::MPPIController",
+    "parameter_section": "InspectionStrict",
+    "version": "1.1.20",
+    "parameters": {
+      "plugin": "nav2_mppi_controller::MPPIController",
+      "time_steps": 50,
+      "model_dt": 0.05,
+      "batch_size": 1000,
+      "iteration_count": 1,
+      "vx_std": 0.05,
+      "vy_std": 0.0,
+      "wz_std": 0.12,
+      "vx_max": 0.2,
+      "vx_min": 0.0,
+      "vy_max": 0.0,
+      "wz_max": 0.45,
+      "ax_max": 0.35,
+      "ax_min": -0.35,
+      "ay_max": 0.0,
+      "ay_min": 0.0,
+      "az_max": 0.65,
+      "temperature": 0.2,
+      "gamma": 0.015,
+      "motion_model": "DiffDrive",
+      "visualize": false,
+      "reset_period": 1.0,
+      "regenerate_noises": false,
+      "transform_tolerance": 0.5,
+      "prune_distance": 1.5,
+      "critics": [
+        "ConstraintCritic",
+        "GoalCritic",
+        "PathAlignCritic",
+        "PathFollowCritic",
+        "PathAngleCritic"
+      ],
+      "ConstraintCritic": {
+        "enabled": true,
+        "cost_power": 1,
+        "cost_weight": 4.0
+      },
+      "GoalCritic": {
+        "enabled": true,
+        "cost_power": 1,
+        "cost_weight": 1.0,
+        "threshold_to_consider": 0.7
+      },
+      "PathAlignCritic": {
+        "enabled": true,
+        "cost_power": 1,
+        "cost_weight": 50.0,
+        "max_path_occupancy_ratio": 1.0,
+        "trajectory_point_step": 1,
+        "threshold_to_consider": 0.0,
+        "offset_from_furthest": 8,
+        "use_path_orientations": true
+      },
+      "PathFollowCritic": {
+        "enabled": true,
+        "cost_power": 1,
+        "cost_weight": 40.0,
+        "offset_from_furthest": 5,
+        "threshold_to_consider": 0.0
+      },
+      "PathAngleCritic": {
+        "enabled": true,
+        "cost_power": 1,
+        "cost_weight": 15.0,
+        "offset_from_furthest": 5,
+        "threshold_to_consider": 0.0,
+        "max_angle_to_furthest": 1.0,
+        "mode": 0
+      }
+    },
+    "production_navigation_sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452",
+    "limitations": [
+      "Original pluginlib factory, empty in-memory costmap; not the full Nav2/FAST-LIO/NDT pipeline.",
+      "Long native traces are not bitwise reproducible after seeding; see native/smoke_test_results.json.",
+      "An upstream helper boundary defect has an independent ASan reproducer; causality in benchmark variance is unestablished."
+    ]
+  },
+  "scope": "fixed-route inspection tracking; obstacle costs intentionally absent",
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "1.21.5",
+    "scipy": "1.8.0",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "ros_domain_id": "0",
+  "nodes": [
+    {
+      "name": "arbitrator_controller",
+      "namespace": "/"
+    },
+    {
+      "name": "controller_manager",
+      "namespace": "/"
+    },
+    {
+      "name": "joint_state_broadcaster",
+      "namespace": "/"
+    },
+    {
+      "name": "joy_node",
+      "namespace": "/"
+    },
+    {
+      "name": "ndt_full_loop_readonly_preflight",
+      "namespace": "/"
+    },
+    {
+      "name": "omni_velocity_controller",
+      "namespace": "/"
+    },
+    {
+      "name": "robot_state_publisher",
+      "namespace": "/"
+    },
+    {
+      "name": "teleop_node",
+      "namespace": "/"
+    }
+  ],
+  "topics": {
+    "/arbitrator_controller/transition_event": [
+      "lifecycle_msgs/msg/TransitionEvent"
+    ],
+    "/dynamic_joint_states": [
+      "control_msgs/msg/DynamicJointState"
+    ],
+    "/joint_state_broadcaster/transition_event": [
+      "lifecycle_msgs/msg/TransitionEvent"
+    ],
+    "/joint_states": [
+      "sensor_msgs/msg/JointState"
+    ],
+    "/joy": [
+      "sensor_msgs/msg/Joy"
+    ],
+    "/joy/set_feedback": [
+      "sensor_msgs/msg/JoyFeedback"
+    ],
+    "/mocap/Tracker0/diagnostics": [
+      "diagnostic_msgs/msg/DiagnosticArray"
+    ],
+    "/mocap/Tracker0/pose": [
+      "geometry_msgs/msg/PoseStamped"
+    ],
+    "/nav/cmd_vel": [
+      "geometry_msgs/msg/Twist"
+    ],
+    "/omni_velocity_controller/diagnostics/fai": [
+      "std_msgs/msg/Float32MultiArray"
+    ],
+    "/omni_velocity_controller/diagnostics/joint_vel": [
+      "std_msgs/msg/Float32MultiArray"
+    ],
+    "/omni_velocity_controller/diagnostics/ref_vel": [
+      "geometry_msgs/msg/Twist"
+    ],
+    "/omni_velocity_controller/transition_event": [
+      "lifecycle_msgs/msg/TransitionEvent"
+    ],
+    "/parameter_events": [
+      "rcl_interfaces/msg/ParameterEvent"
+    ],
+    "/reference_velocity": [
+      "geometry_msgs/msg/Twist"
+    ],
+    "/robot_description": [
+      "std_msgs/msg/String"
+    ],
+    "/rosout": [
+      "rcl_interfaces/msg/Log"
+    ],
+    "/static_localization/ready": [
+      "std_msgs/msg/Bool"
+    ],
+    "/teleop/cmd_vel": [
+      "geometry_msgs/msg/Twist"
+    ],
+    "/teleop/mode": [
+      "std_msgs/msg/String"
+    ],
+    "/tf": [
+      "tf2_msgs/msg/TFMessage"
+    ],
+    "/tf_static": [
+      "tf2_msgs/msg/TFMessage"
+    ]
+  },
+  "latest": {
+    "/reference_velocity": {
+      "receive_ros_ns": 1792307228536717356,
+      "command": [
+        8.4e-323,
+        8.4e-323,
+        0.0,
+        0.0,
+        0.0,
+        -8.4e-323
+      ]
+    },
+    "/teleop/mode": {
+      "receive_ros_ns": 1792307228533596895,
+      "data": "MANUAL"
+    }
+  },
+  "counts": {
+    "/reference_velocity": 2623,
+    "/teleop/mode": 601
+  },
+  "critical_tf": [],
+  "checked_ros_ns": 1792307228537008146,
+  "publishes_motion": false
+}

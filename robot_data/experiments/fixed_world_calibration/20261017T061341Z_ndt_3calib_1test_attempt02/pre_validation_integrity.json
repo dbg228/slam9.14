@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-17T06:23:56.420323+00:00",
+  "calibration_sha256": "939920cefbf169cedb9cd5cb4f9be5d6ff689770c2cba3dc8b7b9a849871c3b7",
+  "frozen_before_holdout": true,
+  "holdout_exists": false,
+  "training_groups": [
+    "calib_01",
+    "calib_02",
+    "calib_03"
+  ],
+  "training_hashes": {
+    "calib_01": {
+      "summary.json": "c6ad2fd85191ea83e1dc3161bd5d2033bab0bcc977d05ac238fe502fcb378cec",
+      "raw.jsonl": "ad2a331a977292736d68ddd72f13f566476c56066cfe716e07a7052ae7e0f36f"
+    },
+    "calib_02": {
+      "summary.json": "53c0879bf5d594ca17255090eb5bd4cecc1bdd15271152c579ccea2db4da481c",
+      "raw.jsonl": "43b42d71aa8fb067283bc4e979198f0113143d1a3011ed5461213576ca838d45"
+    },
+    "calib_03": {
+      "summary.json": "456dcc6466fe6c3a8d822069589c9815548141a7873838f5421cba4cf0fa5847",
+      "raw.jsonl": "37ba4cadb362a5772632a599ee66a42a7065ff8925476067a251fff1245979ca"
+    }
+  },
+  "transform_refit": false,
+  "tf_published": false
+}

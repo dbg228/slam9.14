@@ -1,0 +1,1573 @@
+{
+  "reason": "User authorized deleting obsolete M-coordinate map export implementation and generated software/prepared artifacts; keep original maps/calibration/ABC and common modules",
+  "deletion_roots": [
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache",
+    "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/launch_smoke.py",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/current_sources.json",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/current_sources_recheck.json",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/live_preflight.json",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/prepared_run_check.json",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/software_checks.json",
+    "/home/zkam/test_nav/docs/mocap_anchored_mapping/file_manifest.json",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/__pycache__",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/__pycache__",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/__pycache__",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/__pycache__",
+    "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__"
+  ],
+  "files": [
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/build_final.log",
+      "bytes": 117,
+      "sha256": "651e0cec783d79beefd7d08afe281ae0c87cd5305ed90168291e778020cfece3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/final_tests.log",
+      "bytes": 201,
+      "sha256": "4e242ad82c92215302df9e735b8b2f2a60612113d886636b270dec3455f3185d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/final_tests.xml",
+      "bytes": 7003,
+      "sha256": "c08fe08877479f167d431637414fa5973fbc2e0b2eda2148fca1cf5d32a117f5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/legacy_localization_arguments.txt",
+      "bytes": 303,
+      "sha256": "b9169ee2fe704bd34ae5f64ef181cfa23dc57322581b502eceba3ad09f25ba0a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/legacy_navigation_arguments.txt",
+      "bytes": 927,
+      "sha256": "414e898994946eb918f8ce59dfff0932df062dcf836043eccf917ac9e25bb06b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_01/launch.log",
+      "bytes": 16154,
+      "sha256": "8e9fb31c615fd2597f12260b85140f1fb95eb9c3c53f5139d057503339272469"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_01/result.json",
+      "bytes": 742,
+      "sha256": "133d322822587b771e2903484cb5447748126b1f51e177c741cde17a32bf29d2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_02/launch.log",
+      "bytes": 8136,
+      "sha256": "25ea110b34e4ccf94cbf240b3f63364bf35e612de24534c7185ef4a6b93bcde1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_02/result.json",
+      "bytes": 742,
+      "sha256": "133d322822587b771e2903484cb5447748126b1f51e177c741cde17a32bf29d2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_03/launch.log",
+      "bytes": 13715,
+      "sha256": "cbb8a669bdc2dae5acd2f1af5ff90fbcdd35b772d1c254fa93765ff3ea660dd2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_03/result.json",
+      "bytes": 840,
+      "sha256": "ccd5029c665b334de59cc91818dc9053362b0f8e4bb7bf547e1c52a27e71e066"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_04/launch.log",
+      "bytes": 23258,
+      "sha256": "7fdae1b794a4a9dd5057d757e412b880c4a87a25d88857eb57278c656cb08ce6"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_04/navigation_preflight.log",
+      "bytes": 343,
+      "sha256": "bc4fe854158c035366e03eddc235083d5e083bd9824c925379fdbc916b6b20db"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/load_launch_04/result.json",
+      "bytes": 979,
+      "sha256": "778750329cf6e220e10c2d9a5c56f65f9c317533be6e29fba0bd2caafcda4ebf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/launch.log",
+      "bytes": 2958,
+      "sha256": "33ff1e93b0211f54e8a7e7d4fa1b958a66a866e095fcdea855cc613407905a0f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/result.json",
+      "bytes": 561,
+      "sha256": "5a14e03c8ad97e5c545452bfab184fe4710bb980749df930fc238174da7b6233"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/site.yaml",
+      "bytes": 1671,
+      "sha256": "99ffc0b1980d9ad7a01c38192dfca2ee38357c0c230601ea2466afc7e586179b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/config.yaml",
+      "bytes": 1696,
+      "sha256": "02655ca7bd4729f049632de0bac8dd022b252df2c4b191c91404bda58dcd53e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/fastlio.yaml",
+      "bytes": 1194,
+      "sha256": "de63c1bb257aab460ac05f3c97d6d239bbe8b49e7be5ab14eaf1348315744b55"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/initialization/raw.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "f0780afb9373691d5d0d7096b2ad8997f54c5e51f0e29bc8c212d411412712d8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/products.json",
+      "bytes": 1013,
+      "sha256": "cb720c2ae11d3b831e3e120e00f05418e99d1f30e2dc39370e6aff26410b9a1b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_01/software_fixture/state.json",
+      "bytes": 954,
+      "sha256": "da7f290a7322d671026991685b47359a025de190315ac1f1780a74a5d8575d92"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/launch.log",
+      "bytes": 1035,
+      "sha256": "83b5c2e0c405d5574266bf9c1a6339084719e46ed89cf0d506b02f2f6292f8f5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/result.json",
+      "bytes": 561,
+      "sha256": "b3f1488c6d60e1bf7d43e9e9e0da704108264748928acffcb818365d93a4239c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/site.yaml",
+      "bytes": 1671,
+      "sha256": "99ffc0b1980d9ad7a01c38192dfca2ee38357c0c230601ea2466afc7e586179b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/config.yaml",
+      "bytes": 1696,
+      "sha256": "02655ca7bd4729f049632de0bac8dd022b252df2c4b191c91404bda58dcd53e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/fastlio.yaml",
+      "bytes": 1194,
+      "sha256": "db8dbb7a5323f91c8c2a2941124222514c822a67ab3a088b5c1ce087b6535b84"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/initialization/raw.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "3f122f2fdc4582ae9fd494ce38ab7dc4c575333e8d4174ecc141cd0c1e85258d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/products.json",
+      "bytes": 1013,
+      "sha256": "2a6f942ea4f0482e1e8bfd24cf1e246700141d00621a4e3911c6fb602ac69bdb"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_02/software_fixture/state.json",
+      "bytes": 954,
+      "sha256": "c4e9302e1fc5acf25bb4b9b095faa2b2e34eccc1ca65e9c3b108cf1e26e9718f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/launch.log",
+      "bytes": 1823,
+      "sha256": "bd60cbde21f2f6224eb0f43e0ee0a96762e22ce160ec7cadf8043070d4803b41"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/result.json",
+      "bytes": 659,
+      "sha256": "4d250d5b7e4717451213df8883a39b4700a684ce6b454109661eb1943f12c67c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/site.yaml",
+      "bytes": 1671,
+      "sha256": "99ffc0b1980d9ad7a01c38192dfca2ee38357c0c230601ea2466afc7e586179b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/config.yaml",
+      "bytes": 1696,
+      "sha256": "02655ca7bd4729f049632de0bac8dd022b252df2c4b191c91404bda58dcd53e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/fastlio.yaml",
+      "bytes": 1194,
+      "sha256": "ce5ecccdd59a955a1ab497b1f4cb49809f1e172bb285e88269bee0d42e1ae84d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/initialization/raw.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "c0e2b6b9d97f730da388795fa11112476b0000bc58bb8ab3eda35f67e573d18d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/native_aux/Log/dbg.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/native_aux/Log/mat_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/native_aux/Log/mat_pre.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/native_aux/Log/pos_log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/products.json",
+      "bytes": 1013,
+      "sha256": "d1063c7c060146d826eac1406ce50b3705192abe88ee4bd68b90a45230ac8405"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/native_launch_03/software_fixture/state.json",
+      "bytes": 954,
+      "sha256": "855803e5bd79209dbca863c45dc9bd1e276d749e1f49e89b46683b14bd307d5c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/online.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/site.yaml",
+      "bytes": 1670,
+      "sha256": "bd4bd4e203cb47623c2e9190070d91e344ebdc284d34faccd340472959b492e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/config.yaml",
+      "bytes": 1695,
+      "sha256": "352f61ff2c4697eb60048205ccc139e3e2ea7087a6bf62313bc0d2b29ef14bbc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/fastlio.yaml",
+      "bytes": 1197,
+      "sha256": "e2d023744a26d8a459f7587637c2b7cfbbbc2c71ef089f5d963a90c73e57db3e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "475a5e1465fe2d7126dec4fc29b4f60612dcf83f96cda14849841bf38bc5d462"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/products.json",
+      "bytes": 1031,
+      "sha256": "dd53b260b0983a071f76d47727b1665c643ac67ae6b0f9d4504c16c67426f5c3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_01/software_fixture/state.json",
+      "bytes": 972,
+      "sha256": "446ffb774571ccdfe25b196c580d6f5190bdc987eea304871e96602ad5656b2b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/online.log",
+      "bytes": 1442,
+      "sha256": "9896a8c756c24040932a4e00e948a1e8cf040ccc75a0276b4dca67d60ce98284"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/site.yaml",
+      "bytes": 1670,
+      "sha256": "bd4bd4e203cb47623c2e9190070d91e344ebdc284d34faccd340472959b492e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/anchor.lock.json",
+      "bytes": 83,
+      "sha256": "bfd0bb8578af9fac9edb5df5b35984dfd22183cf917988fea2f21333494b40a4"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/anchor.yaml",
+      "bytes": 3817,
+      "sha256": "ba6e8a1904dbfa76d2b4436ffb180d88962106cfff4aaf424577f3dbd94f169a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/config.yaml",
+      "bytes": 1695,
+      "sha256": "352f61ff2c4697eb60048205ccc139e3e2ea7087a6bf62313bc0d2b29ef14bbc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/fastlio.yaml",
+      "bytes": 1197,
+      "sha256": "e6380e81a3ecf2770c49a198aa05f1f1332f575534fb375110e064f7da04fd21"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/initialization/pairs.json",
+      "bytes": 33923,
+      "sha256": "200393cdb098964a82309b9ebf0a051826cd49781d627a04a4d8dedc44d2f7e1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/initialization/raw.jsonl",
+      "bytes": 449537,
+      "sha256": "73b3ffc7e309de81acc5198d5d8f660eee06392f55620b185806928877583cf1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "76ec11ae1f6c21ea833f13669e0ccad839730cedd119c59918c8e3575e9fc4b0"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/products.json",
+      "bytes": 1233,
+      "sha256": "1ba85fa7df39e00971410c327a12abc3c5bc103aad6447138b26c0e0cb7dd157"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_02/software_fixture/state.json",
+      "bytes": 972,
+      "sha256": "3e7410e139a2a16c5a6173324af4bf17df838d31dcd2d87acf8857cb81b54c91"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/online.log",
+      "bytes": 1567,
+      "sha256": "d6bd3b1ef707fc376c6d49d227a375bb8abaa064e4073954a21bb73259409f94"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/result.json",
+      "bytes": 4967,
+      "sha256": "7933122711ed9a47678ede0f2e6c6af76dc3df97e7093327d5fc5f2bd2f93cdc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/save.log",
+      "bytes": 647,
+      "sha256": "fb25d3f75ff77c4a910ba154f5ca6b451237ca34a15bd707dca6213c1e7c5a93"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/site.yaml",
+      "bytes": 1670,
+      "sha256": "bd4bd4e203cb47623c2e9190070d91e344ebdc284d34faccd340472959b492e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/anchor.lock.json",
+      "bytes": 83,
+      "sha256": "76bae0b7abf51339d01297fe53cc32c09d85f27a38dca3b703bca745668ea42d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/anchor.yaml",
+      "bytes": 3816,
+      "sha256": "d92b215520c26cb9a65465f7b752e03b13183bf2b0c31f820b8f8b32facb8308"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/config.yaml",
+      "bytes": 1695,
+      "sha256": "352f61ff2c4697eb60048205ccc139e3e2ea7087a6bf62313bc0d2b29ef14bbc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/fastlio.yaml",
+      "bytes": 1197,
+      "sha256": "db33760cb28dd600e11c36c5e0463bcbc4915ea4bb8b9feef47ef94a5515fbbb"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/grid/map.pgm",
+      "bytes": 11691,
+      "sha256": "1cd5a7d0897cea39e90f4b00fe6f56ad2d740bc5ff8104fc3efea456c3332aef"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/grid/map.yaml",
+      "bytes": 136,
+      "sha256": "cf45df4fab6768feefd19a917dd5c321786bd69e0ee6f99d9cbc45bec20f198d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/grid/projection.json",
+      "bytes": 3189,
+      "sha256": "cac5e08992cb7bb029d9f446c5bba1b8220a35171351c4baee56362d17376395"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/grid/projection.log",
+      "bytes": 1511,
+      "sha256": "bf6b7846ef99cffcbc17fac3219624bc6b3f40212df003fbffb7b0141b53c75c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/grid/projection_inputs.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/initialization/failure.json",
+      "bytes": 119,
+      "sha256": "2b8293607a427ab9fbc4ecfffe8cb823ca53ead9525cd75f03a9f10202d0239e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/initialization/pairs.json",
+      "bytes": 32863,
+      "sha256": "0d8b36f648fe9af7f7d715cb8e3b42a241422e9849e98d33377aeef31b071d0d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/initialization/raw.jsonl",
+      "bytes": 438285,
+      "sha256": "0124251e50c7bae8a6eebe2f3ad3202fed79a391b65f5eb993a017ab5401df81"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "fecd918576c83b8d5f766edf0ef0e7702665b4514a0c7391c35ff172f0220a27"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/pcd/conversion.json",
+      "bytes": 1011,
+      "sha256": "36481b91618f26ae8815826aff05dfe2def484c7d68ddec429b2d846abbf7961"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/pcd/mocap_M.pcd",
+      "bytes": 328330,
+      "sha256": "1fe0db53a907f31a4dac7b8fc40d2c8d939744dcee594a03c6302189c2234fdf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/products.json",
+      "bytes": 1637,
+      "sha256": "2346d759126175e60c49f10808c0534335c2f6f0276e088abaf3ade7c4f83cad"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/projection.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/raw/native_F.pcd",
+      "bytes": 328163,
+      "sha256": "dc504422a003fc69a15375798bbac115e65a597f9f19db66117dd9e418a328fe"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/raw/native_receipt.json",
+      "bytes": 647,
+      "sha256": "fb25d3f75ff77c4a910ba154f5ca6b451237ca34a15bd707dca6213c1e7c5a93"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_03/software_fixture/state.json",
+      "bytes": 972,
+      "sha256": "8ea2ed7371e8ecdc3bc52e5328101b6c5b7d40b1f0718bc7937772500d7915ce"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/online.log",
+      "bytes": 1567,
+      "sha256": "0790171d29867abfa21712e570264153951aa1e46dea96eaed0cb22a8e546198"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/result.json",
+      "bytes": 4975,
+      "sha256": "56c544b9c13a3d165b8b283b6c1acb78f57bb088525bce54c66c8b41d2cc1ef0"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/save.log",
+      "bytes": 647,
+      "sha256": "c1707c7194902f1220e94f58f24e0be89cb4a69df8356440deb9efb11c39f6e9"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/site.yaml",
+      "bytes": 1670,
+      "sha256": "bd4bd4e203cb47623c2e9190070d91e344ebdc284d34faccd340472959b492e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/anchor.lock.json",
+      "bytes": 83,
+      "sha256": "dc1ec5cb38363f0f42d81c83db6b69cec782492bd42102607b9a88dd87850eb4"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/anchor.yaml",
+      "bytes": 3824,
+      "sha256": "84070236ff0562a87d3993efc0a3846caa9aa75f86d34376de6195dbba96b4ed"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/config.yaml",
+      "bytes": 1695,
+      "sha256": "352f61ff2c4697eb60048205ccc139e3e2ea7087a6bf62313bc0d2b29ef14bbc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/fastlio.yaml",
+      "bytes": 1197,
+      "sha256": "2da487d8e3dcddcefc675370252bc3ef1cd5ae9df469aba3ff074c12e320940f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/grid/map.pgm",
+      "bytes": 11691,
+      "sha256": "1cd5a7d0897cea39e90f4b00fe6f56ad2d740bc5ff8104fc3efea456c3332aef"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/grid/map.yaml",
+      "bytes": 136,
+      "sha256": "cf45df4fab6768feefd19a917dd5c321786bd69e0ee6f99d9cbc45bec20f198d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/grid/projection.json",
+      "bytes": 3189,
+      "sha256": "a93479cc813f5c9a6ce69206d134729d5a03f70f3f2d23f4b2879febb29248d8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/grid/projection.log",
+      "bytes": 1511,
+      "sha256": "77ea956ef8787368ad7fca12d1d8c6311479d6583bb17c759ab86ceec710d394"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/grid/projection_inputs.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/initialization/failure.json",
+      "bytes": 119,
+      "sha256": "2b8293607a427ab9fbc4ecfffe8cb823ca53ead9525cd75f03a9f10202d0239e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/initialization/pairs.json",
+      "bytes": 33923,
+      "sha256": "58473ce30b6e1d09005fed7d5902359f6c6c3275d22ec169929c1b20cd8e55fa"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/initialization/raw.jsonl",
+      "bytes": 450495,
+      "sha256": "a8b77cbceb603940f4d3ad0e8f9552d1f5cff4cee4c3de074ead47b8d279c227"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "10d96561c99cd12bff84cd5623ce19b7edf9ceceb57e17fd61042403b810dbf4"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/loading/1792221914996682107/native_aux/Log/dbg.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/loading/1792221914996682107/native_aux/Log/mat_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/loading/1792221914996682107/native_aux/Log/mat_pre.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/loading/1792221914996682107/native_aux/Log/pos_log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/pcd/conversion.json",
+      "bytes": 1011,
+      "sha256": "d761bac8021887c001cb43848ee94dd4e2cb2f2dbc1fcaced12f28592da9ec5e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/pcd/mocap_M.pcd",
+      "bytes": 328330,
+      "sha256": "1fe0db53a907f31a4dac7b8fc40d2c8d939744dcee594a03c6302189c2234fdf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/products.json",
+      "bytes": 1637,
+      "sha256": "f7e0a9ce8326301a0b1caf6d21c7172613547217961bac08e23a87c966ec8c46"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/projection.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/raw/native_F.pcd",
+      "bytes": 328163,
+      "sha256": "dc504422a003fc69a15375798bbac115e65a597f9f19db66117dd9e418a328fe"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/raw/native_receipt.json",
+      "bytes": 647,
+      "sha256": "c1707c7194902f1220e94f58f24e0be89cb4a69df8356440deb9efb11c39f6e9"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_04/software_fixture/state.json",
+      "bytes": 972,
+      "sha256": "5fe1848cce64cec49072b9d0e3ae16efde70cbcf6c79408bb71531633235faae"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/online.log",
+      "bytes": 1567,
+      "sha256": "bf0e588913e4c74bc68af6ca7ee1b56cbff1f4a294b4860ddc756e38dec002dc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/result.json",
+      "bytes": 5020,
+      "sha256": "5be61c1bcccf109a453a4344cc91658ba92feaf6b5772eaf247ff8130c771e0b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/save.log",
+      "bytes": 697,
+      "sha256": "a80897a6110a6d8812ce594ed4d4de879fe1920a9a5500b9d475e321eec60f11"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/site.yaml",
+      "bytes": 1670,
+      "sha256": "bd4bd4e203cb47623c2e9190070d91e344ebdc284d34faccd340472959b492e8"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/anchor.lock.json",
+      "bytes": 83,
+      "sha256": "6809cc3b02e6960f290a160b49ebe36ce9b387b3787cad2c223822c6524b5a6c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/anchor.yaml",
+      "bytes": 3860,
+      "sha256": "eb514d570c145a1d57fa0b045c93719b1e51572bef767d7e139d5e90fc9982a3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/config.yaml",
+      "bytes": 1695,
+      "sha256": "352f61ff2c4697eb60048205ccc139e3e2ea7087a6bf62313bc0d2b29ef14bbc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/fastlio.yaml",
+      "bytes": 1197,
+      "sha256": "e6c615b652d24039316fa31ef553200099b2771b92fa974bf1302cb4fc2b2792"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/grid/map.pgm",
+      "bytes": 11691,
+      "sha256": "1cd5a7d0897cea39e90f4b00fe6f56ad2d740bc5ff8104fc3efea456c3332aef"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/grid/map.yaml",
+      "bytes": 136,
+      "sha256": "cf45df4fab6768feefd19a917dd5c321786bd69e0ee6f99d9cbc45bec20f198d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/grid/projection.json",
+      "bytes": 3189,
+      "sha256": "89c4eeb191d0f6a45f0a988a0ca0e78c64d5457722ec17abdc86ba2840015a35"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/grid/projection.log",
+      "bytes": 1511,
+      "sha256": "9a5ebf026ea26cf8400013e91b5fe6c31a0312f82a6198f8d792096ae3da18d0"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/grid/projection_inputs.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/initialization/failure.json",
+      "bytes": 119,
+      "sha256": "2b8293607a427ab9fbc4ecfffe8cb823ca53ead9525cd75f03a9f10202d0239e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/initialization/pairs.json",
+      "bytes": 33931,
+      "sha256": "f6820f9362c67083fcaf39f2fbab47ff066419016505af0bd047724371082b12"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/initialization/raw.jsonl",
+      "bytes": 427895,
+      "sha256": "f92ae47e918045e680271c61207031602414f99b406887f6d77c3ee05513a81a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "9aeb3b329be90a12ae050d5bed56fdffb00e19305cb871828c41964d435d4684"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/loading/1792222274521618307/native_aux/Log/dbg.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/loading/1792222274521618307/native_aux/Log/mat_out.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/loading/1792222274521618307/native_aux/Log/mat_pre.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/loading/1792222274521618307/native_aux/Log/pos_log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/pcd/conversion.json",
+      "bytes": 1061,
+      "sha256": "9ba9db5da5bd3c4625a4c98165ba66db0c3770a9bfc62ab93d03f71bd63884be"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/pcd/mocap_M.pcd",
+      "bytes": 328330,
+      "sha256": "1fe0db53a907f31a4dac7b8fc40d2c8d939744dcee594a03c6302189c2234fdf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/products.json",
+      "bytes": 1637,
+      "sha256": "9f0cf687f35f16057cc0bc414d031ac9621dbb6f79d963513daa5979b941e470"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/projection.yaml",
+      "bytes": 185,
+      "sha256": "a006d61f9f435aa9219ba84c01af39c4ab5d898074b10281e7bbfcef6e88273d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/raw/native_F.pcd",
+      "bytes": 328163,
+      "sha256": "dc504422a003fc69a15375798bbac115e65a597f9f19db66117dd9e418a328fe"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/raw/native_receipt.json",
+      "bytes": 697,
+      "sha256": "a80897a6110a6d8812ce594ed4d4de879fe1920a9a5500b9d475e321eec60f11"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/software_fixture_05/software_fixture/state.json",
+      "bytes": 1013,
+      "sha256": "e29417fbcfcc41ea16c9d9c43af3974b975b2cf153f9990a52dc5286e8edf7ec"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.validation/unit_final.xml",
+      "bytes": 1520,
+      "sha256": "66b924ee3a91da549f9b63b070d655b349c7dc305399cef7e5337e15de54f1bb"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/.built_by",
+      "bytes": 7,
+      "sha256": "d16cd6e1ca1feefc1e7897d9357700f5f509e530b5b76b031c635e02eccdca12"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/COLCON_IGNORE",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/README.md",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/README.md"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/__pycache__/setup.cpython-310.pyc",
+      "bytes": 885,
+      "sha256": "12ebaf6424155c39168dce60ffc849061ede81924fda65d76fbe2cee519e21e3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/colcon_build.rc",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/colcon_command_prefix_setup_py.sh",
+      "bytes": 65,
+      "sha256": "025a07cb442dfaedc93a955d89fdf6d1b21420ad6f4257ab63d3d853f9e5e176"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/colcon_command_prefix_setup_py.sh.env",
+      "bytes": 7703,
+      "sha256": "eff80811001913ad2ca40ee433ab0ef78f13d9998ff1c17299417d2f1a4b0790"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/config/site.yaml",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/config/site.yaml"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/__pycache__/anchored_localization.launch.cpython-310.pyc",
+      "bytes": 398,
+      "sha256": "f49b2f8c72c57a81d02b71ce61b198bcaa6130391e42b14fda2b1727b5055ebd"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/__pycache__/anchored_mapping.launch.cpython-310.pyc",
+      "bytes": 388,
+      "sha256": "a07a2dd50f0e7a76336d0a2ddb3ac5f10657b4a1087e87b22f2c4abca1ab065d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/__pycache__/anchored_navigation.launch.cpython-310.pyc",
+      "bytes": 394,
+      "sha256": "eb9c08d0b431b5a0642a35132a804987bfba426845b6956f0f5eae4f5d0e3eb9"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_localization.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_localization.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_mapping.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_mapping.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_navigation.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/anchored_navigation.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/PKG-INFO",
+      "bytes": 202,
+      "sha256": "5e938b9aa0d4bed6271a4a716ab79b1d5d206b9c5c1d7ba1eb0fc0d3dac4fbd4"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/SOURCES.txt",
+      "bytes": 713,
+      "sha256": "b4b319dadd9c15d73015abe14f4142b8566d3a9143827be382dfd851b21177c7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/entry_points.txt",
+      "bytes": 118,
+      "sha256": "952c6c7d254f66ff4cedd525c41ffd43816dda29770ba1e0f39872bf472d29bc"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/requires.txt",
+      "bytes": 30,
+      "sha256": "1336eeb0ca1d75581a6e5aa305d37b8679dfe9d3058cead2bd5de34737cd94fa"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/mocap_anchored_mapping.egg-info/top_level.txt",
+      "bytes": 23,
+      "sha256": "2d254d3c66a06b0c45d84bc46d91f024fdee6598502ce4aa1c94fad07d2bcc5f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/package.xml",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/package.xml"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/prefix_override/__pycache__/sitecustomize.cpython-310.pyc",
+      "bytes": 383,
+      "sha256": "1ca5a02610bee8452867452a34ff336eeef6d48c78ddb457f2900a774e83eb36"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/prefix_override/sitecustomize.py",
+      "bytes": 187,
+      "sha256": "2e6446ad19752c36e63fdedbfc4bb0a79bad9d66088018f386ed92cc17692806"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/resource/mocap_anchored_mapping",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/resource/mocap_anchored_mapping"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/setup.cfg",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/setup.cfg"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/setup.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/setup.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath_develop.dsv",
+      "bytes": 112,
+      "sha256": "c2651a80a0ebf9c0d7b0dcdd4ef48d78e2dfb647a5696cf58d66da53ed1a7e3d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath_develop.ps1",
+      "bytes": 224,
+      "sha256": "eb791441eb13522be8a77144f2e7a21d673700a2e5d45a47253d9d0e62f40f2f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath_develop.sh",
+      "bytes": 191,
+      "sha256": "1f87aa869704b3a484edd9c5f7149e82b182909bbfc51f91d2f7a299bcd56b55"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/.colcon_install_layout",
+      "bytes": 9,
+      "sha256": "9b8d77949b6e468746790cc1ada9432ca9984c51533a086544c8d0c01f18cc66"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/COLCON_IGNORE",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/__pycache__/_local_setup_util_ps1.cpython-310.pyc",
+      "bytes": 9222,
+      "sha256": "c483311efa720730cdd7d9f93e90de911a0198939cc13c2186f2669b709a9ca4"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/__pycache__/_local_setup_util_sh.cpython-310.pyc",
+      "bytes": 9277,
+      "sha256": "e49319b2cc3fbd01399216d1bc72fbed434b14d0529109e3caab22f77f36579d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/_local_setup_util_ps1.py",
+      "bytes": 14818,
+      "sha256": "6bd62f5634832008b01eb0ccf38600512b7ee47c735ca53af22f92319f7e5a60"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/_local_setup_util_sh.py",
+      "bytes": 14872,
+      "sha256": "3f6e8b7fae1039cdc824678256f56160cb425ac6fd4e17e441b98d5cefab9f57"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/local_setup.bash",
+      "bytes": 3760,
+      "sha256": "0e10d666bbf43cf559467b11b75cf6d26cf8d210e7f94e79dfe5a7dddb2fe91c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/local_setup.ps1",
+      "bytes": 2045,
+      "sha256": "79cfdc40aa006498cb2a008f05efe6563f311dcc1ab5b1c385c9c84f128feacb"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/local_setup.sh",
+      "bytes": 4361,
+      "sha256": "273b2ed70a4b32aa350939b547d166eafa3188a91a4fd0fc9234aee61795b013"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/local_setup.zsh",
+      "bytes": 4155,
+      "sha256": "5fc7b5cfa0b484f14c21854fdcbb31653d831dc235e214b8ed88a63f6d2c4c02"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/lib/mocap_anchored_mapping/anchored_map",
+      "bytes": 992,
+      "sha256": "dc20b08d98f1009cbcf678aa7228c13d24cea8a0f2d55eaa735eae9772a15ef5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/lib/mocap_anchored_mapping/initial_anchor",
+      "bytes": 996,
+      "sha256": "cf0d5f914ec70e32193ad33bb18d3a1e171f106406cd90a3e88bee75281e4624"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/lib/python3.10/site-packages/mocap-anchored-mapping.egg-link",
+      "bytes": 80,
+      "sha256": "944ff66c73e33360937d3fdcdf3038b5260f842d4bebb958764f6f316a5cf0b5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/ament_index/resource_index/packages/mocap_anchored_mapping",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/resource/mocap_anchored_mapping"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/colcon-core/packages/mocap_anchored_mapping",
+      "bytes": 333,
+      "sha256": "eb44d9f0a8f52f3d9e4c781213d22bc17e4d83ce02e1f2f86f3af8f6cb9c55c5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/README.md",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/README.md"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/config/site.yaml",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/config/site.yaml"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/ament_prefix_path.dsv",
+      "bytes": 41,
+      "sha256": "c4797d0a0670c70b4d3bcb5b7d47563635c7950595603f3af66f70af546ad57e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/ament_prefix_path.ps1",
+      "bytes": 152,
+      "sha256": "0aad623e5d52cbe955cc1d27b5002c3ce9a4c1f8de754b6afd4e6ac27e1eb2dd"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/ament_prefix_path.sh",
+      "bytes": 142,
+      "sha256": "c07f082a166d9644cabb3237d58e59177e5830868363f0fc32b646e1fb5cb3a5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath.dsv",
+      "bytes": 62,
+      "sha256": "cfce05cf41576f99a9a11fda6cf7d4db2551b4f291d3a5a04a63171ada4ac911"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath.ps1",
+      "bytes": 174,
+      "sha256": "fa6f7248f005ec99fa329faeb2ded431fb4a9e9c21a94f083899b1cd94efafd6"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/hook/pythonpath.sh",
+      "bytes": 164,
+      "sha256": "bf815589093fe891f26abdd945cffc27230d749fe330c8dd2725f2b82ef02dad"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/__pycache__/anchored_localization.launch.cpython-310.pyc",
+      "bytes": 449,
+      "sha256": "ea7f469e868094f2712b7510493ec5202fedb1f8f64c15b89a4b160b10a40eaf"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/__pycache__/anchored_mapping.launch.cpython-310.pyc",
+      "bytes": 439,
+      "sha256": "45b507cdec8e8a6edb28115d75abbe7093d08aeb414804d702d85878b9c0f80e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/__pycache__/anchored_navigation.launch.cpython-310.pyc",
+      "bytes": 425,
+      "sha256": "911a178a002ed374e0377e548c2ac810ed02669edd9f090a60aefbbfb1f30162"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/anchored_localization.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_localization.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/anchored_mapping.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_mapping.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/launch/anchored_navigation.launch.py",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/launch/anchored_navigation.launch.py"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.bash",
+      "bytes": 1084,
+      "sha256": "ecf29a82ce8f52a95665d1c66ada9de2378e841d421f1591796c43da0f35dc0f"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.dsv",
+      "bytes": 654,
+      "sha256": "2221b0dc7a3ac0f919312e3014f61a456813ae665e31e1f83a0c8a4c1ba62b89"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.ps1",
+      "bytes": 3439,
+      "sha256": "4b41713c015b202da8832c28cba4b0cf4c95556477e8e616615c93f984d41e68"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.sh",
+      "bytes": 3074,
+      "sha256": "39270fd71b94a8be9695c2cce87e611c02215b588a493e150e9fe1b084466755"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.xml",
+      "symlink": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.build/mocap_anchored_mapping/package.xml"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/mocap_anchored_mapping/share/mocap_anchored_mapping/package.zsh",
+      "bytes": 1372,
+      "sha256": "8ce1de1d5c18f25ef668157bfcb9c23f314cfead924ef24d09821220c85380cd"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/setup.bash",
+      "bytes": 2059,
+      "sha256": "a1ff04942b76eb56b2dc4f22460eee9fd678d8b70776c9c5715cb6789f9bdac6"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/setup.ps1",
+      "bytes": 1581,
+      "sha256": "59738ddbed69d2bd544947ce53185fb123559c77292dd1300489de401f1bce4e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/setup.sh",
+      "bytes": 2881,
+      "sha256": "a69b9d792d4518795d7d50cc8ccd68461ae309e25d87517dbcca4953974450aa"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.install/setup.zsh",
+      "bytes": 2039,
+      "sha256": "aa0f9a9a0f9b89b88f55744a2c6880ffa551207f6c55707f6f100e4e9ec4b07d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/COLCON_IGNORE",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/events.log",
+      "bytes": 16034,
+      "sha256": "b440b85684774dbfad0d7c174134ee4a2302aa70d5bb9e2e7349db7dee0e6b0b"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/logger_all.log",
+      "bytes": 17287,
+      "sha256": "a180704867ffa5839ca5e458a4834bbee2efdbf2ebdb2f991551eeaa7e395963"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/mocap_anchored_mapping/command.log",
+      "bytes": 1352,
+      "sha256": "5cab3ba2c31468a59bf78fdb92f301bd87d40e26a5aeb5cdb3c315f7cec40ca2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/mocap_anchored_mapping/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/mocap_anchored_mapping/stdout.log",
+      "bytes": 3529,
+      "sha256": "9f44f2c13ddf17e467190b7f896b3d732533ab6db78123cc8f22bfea3b8d4f0d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/mocap_anchored_mapping/stdout_stderr.log",
+      "bytes": 3529,
+      "sha256": "9f44f2c13ddf17e467190b7f896b3d732533ab6db78123cc8f22bfea3b8d4f0d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-13-19/mocap_anchored_mapping/streams.log",
+      "bytes": 5169,
+      "sha256": "b4b6d43195845d7524af6bf047cc1a5552482d2b178501e3bf5770a61b3ad52c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/events.log",
+      "bytes": 12775,
+      "sha256": "d4e22b1fd6cc5a3592360334f6ad7b97329f9f08e11cafd2903f59ced209a3c5"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/logger_all.log",
+      "bytes": 17287,
+      "sha256": "58a2af39a35d2ae4a6253d6eeaa6aaf9d3661732da9ee4bc2042e6ddf8f71920"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/mocap_anchored_mapping/command.log",
+      "bytes": 1352,
+      "sha256": "5cab3ba2c31468a59bf78fdb92f301bd87d40e26a5aeb5cdb3c315f7cec40ca2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/mocap_anchored_mapping/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/mocap_anchored_mapping/stdout.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/mocap_anchored_mapping/stdout_stderr.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-22-49/mocap_anchored_mapping/streams.log",
+      "bytes": 2606,
+      "sha256": "73b1027f0d9989eb95283ffbaade1a473f758ee463efc5a7f38f46f2f3310860"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/events.log",
+      "bytes": 12745,
+      "sha256": "410bd11f4475a54cf7aaaa2b08f771e8f613d19c8a5fd1940294981d9c0d41b1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/logger_all.log",
+      "bytes": 17287,
+      "sha256": "a40982fd8c422a908fe080cf8cd0cf29642d46284c4eb2264ce147017ec93369"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/mocap_anchored_mapping/command.log",
+      "bytes": 1352,
+      "sha256": "5cab3ba2c31468a59bf78fdb92f301bd87d40e26a5aeb5cdb3c315f7cec40ca2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/mocap_anchored_mapping/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/mocap_anchored_mapping/stdout.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/mocap_anchored_mapping/stdout_stderr.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-29-05/mocap_anchored_mapping/streams.log",
+      "bytes": 2606,
+      "sha256": "cdf19e531261d305ee71dcdd691f93fbb55f5ca714b53158232b3347ff755042"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/events.log",
+      "bytes": 12625,
+      "sha256": "68c1c3b844c8d7773fc426a7d7f5ce132924fe205c2764ee9ce186420af8f618"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/logger_all.log",
+      "bytes": 17287,
+      "sha256": "c3fd29de5b155c2afc190be3b27456628a8226bbbb5a19bf7689f748371f3d27"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/mocap_anchored_mapping/command.log",
+      "bytes": 1352,
+      "sha256": "5cab3ba2c31468a59bf78fdb92f301bd87d40e26a5aeb5cdb3c315f7cec40ca2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/mocap_anchored_mapping/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/mocap_anchored_mapping/stdout.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/mocap_anchored_mapping/stdout_stderr.log",
+      "bytes": 1092,
+      "sha256": "8ff9e7bf72a920d5506769c4b411e49d049479f779496ea153ce12cb9a1b9bf2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/build_2026-10-17_15-32-50/mocap_anchored_mapping/streams.log",
+      "bytes": 2606,
+      "sha256": "18901a08637403206d79ccce44bbcc1a428a4b28ebd5d16874536fe5d2f6c572"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/latest",
+      "symlink": "latest_build"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.log/latest_build",
+      "symlink": "build_2026-10-17_15-32-50"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache/.gitignore",
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache/CACHEDIR.TAG",
+      "bytes": 194,
+      "sha256": "ffacb1561d9688b9d9b5e06f3ffa10814a03c2a6f892d7bea3e7fef62599eb23"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache/README.md",
+      "bytes": 295,
+      "sha256": "27a7071ba39c9ef4054eaf99bc59e3f0aa328a62166f426e6549ef923ade7533"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache/v/cache/nodeids",
+      "bytes": 884,
+      "sha256": "d71728a6bf9accd470733d6e45536314e7bef4bd7299964761f912b1d3e94ba6"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/.pytest_cache/v/cache/stepwise",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/config.yaml",
+      "bytes": 1705,
+      "sha256": "8a8138851532fdd36ecbeae530d4c5c1b20669fee04c451b0a7138cc52520c20"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/extrinsics.yaml",
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/fastlio.yaml",
+      "bytes": 1177,
+      "sha256": "248135a80d8209ae36760de0b8e348bd79954478cb82df685b1210feb6e1b82b"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/inputs.lock.json",
+      "bytes": 1532,
+      "sha256": "c412ad47e1b621c808766ae5b9f7cbfd3eca88b15b62a506d722ded3e3bd5e5a"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/mocap.yaml",
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/nav2.yaml",
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/products.json",
+      "bytes": 911,
+      "sha256": "4293072433c0f6373a6a379ce52799860b1585661b8751ee47c1caa565709e71"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/projection.yaml",
+      "bytes": 145,
+      "sha256": "e10a8ea2b107850442f17f9231dfb5f67450aaca4718f712e8d6f420ee3c94d7"
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/maps/mocap_anchored/20261017_initial_anchor_01/state.json",
+      "bytes": 893,
+      "sha256": "ea6cdb42c2fe03be34ccf73113d1c2cb9dac631b16863297596c5b5aea66ed53"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/launch_smoke.py",
+      "bytes": 6720,
+      "sha256": "2eeb97f9fe18b356eecf11c2c66d8fce5a3ca17dae621b90e4c0886d9a2db8d1"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/current_sources.json",
+      "bytes": 1107,
+      "sha256": "0e461885faf32cc45fe018ff5ce626d70c85b313b5f0e20a49ba49064ff1a23c"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/current_sources_recheck.json",
+      "bytes": 1074,
+      "sha256": "cbbe2d57bd28ce04d24ebdb6896dda2d1ebeb2a3741260b0e8cb5d33d356c18b"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/live_preflight.json",
+      "bytes": 981,
+      "sha256": "e752175ee7ed5261ad7af2a0296cb47646bf027b1220c32ef1d8dd910c7abc57"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/prepared_run_check.json",
+      "bytes": 1169,
+      "sha256": "3e0cd4cd0c907c1974334b8d0f00144859275516586c35e8b2dbfbf9aa36b3df"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/software_checks.json",
+      "bytes": 1117,
+      "sha256": "c4f5b08103417f5225bd67dfa7b618e5d7ab4ad50dc315a25206a058fe2f4157"
+    },
+    {
+      "path": "/home/zkam/test_nav/docs/mocap_anchored_mapping/file_manifest.json",
+      "bytes": 11403,
+      "sha256": "16e235a6dbe571a7954f8a8de638dd98c03dc51e2db1f2578ac2f45e4af052d3"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/__pycache__/setup.cpython-310.pyc",
+      "bytes": 855,
+      "sha256": "f46a73af0b6891a4ac91f35d891bfbb1410245a688e234f2fe35339531442700"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/__pycache__/anchored_localization.launch.cpython-310.pyc",
+      "bytes": 368,
+      "sha256": "031736116055cd4f96b7bb44c87bde679412dc9a5c811c28df1f699cbebfa0a6"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/__pycache__/anchored_mapping.launch.cpython-310.pyc",
+      "bytes": 358,
+      "sha256": "c648ac798f5af34ae3a9d95b487177f764a28fe77c84458e89fc9803ad97a768"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/launch/__pycache__/anchored_navigation.launch.cpython-310.pyc",
+      "bytes": 364,
+      "sha256": "63895de2f2cf5fe92ca7df687a2946db5dc92bc84a53bd7b996b7cd60071bae2"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/__pycache__/test_mapping.cpython-310-pytest-6.2.5.pyc",
+      "bytes": 15662,
+      "sha256": "78c8f746b04c4f10fd74ea4db2959fc9be0ddc859ae45ff31c65a8751c8ef418"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/test/__pycache__/test_mapping.cpython-310.pyc",
+      "bytes": 9266,
+      "sha256": "1feb8f984134e741d2bf86f1008a11bf265599e9d0c517228e9bdb4d794f733d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/__pycache__/launch_smoke.cpython-310.pyc",
+      "bytes": 6505,
+      "sha256": "f8bf6fc5bf2f8695dc26014f7a27138bf241893038053d1e124275da170cb33e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/__pycache__/software_smoke.cpython-310.pyc",
+      "bytes": 7938,
+      "sha256": "2296bc2133b988bc8716a632c45a9696ef87217ad68d59c0993d2c5ed1306509"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/__pycache__/source_audit.cpython-310.pyc",
+      "bytes": 4125,
+      "sha256": "1a72e8ae7e2c8094590326fd15c62c6d8a44ed3caee0bf603b26859ab32ecd6c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/tools/__pycache__/verify_protected.cpython-310.pyc",
+      "bytes": 1460,
+      "sha256": "1bfa158f14adfe0a2c2a9cbdacaca55d8b133c248a59a5ad9d85361dd3ab91f7"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 156,
+      "sha256": "1a6be2a6119cc6c58c8c52a060fa627305a95e437c3af30b0dabe0dfb5c4602e"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/cli.cpython-310.pyc",
+      "bytes": 8242,
+      "sha256": "e2ad0ff1d649175798a5a4b47ee4b720e19e00fb493bb8eefe4f30b9cf7e4a1a"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/core.cpython-310.pyc",
+      "bytes": 12307,
+      "sha256": "288c0c7a9036513c8b3b163dd87220533c4a0260aa67969431ea16ad49ce1f9c"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/isolation.cpython-310.pyc",
+      "bytes": 1367,
+      "sha256": "dbe395a80c79f02d2e332217f271e37f772a940a2073593983c3cb60a063a4e1"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/launching.cpython-310.pyc",
+      "bytes": 6136,
+      "sha256": "dc3c8e45e1ce67b559026d751c439a5a6e99a9b23b731d3ce6ad73eb48b6589d"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/online.cpython-310.pyc",
+      "bytes": 14791,
+      "sha256": "4ed6b2126d0ea5d6a1f142c70253d4874fd3b5a23d611176bee4ee09365287ff"
+    },
+    {
+      "path": "/home/zkam/test_nav/tests/mocap_anchored_mapping/mocap_anchored_mapping/__pycache__/products.cpython-310.pyc",
+      "bytes": 8425,
+      "sha256": "ba4975b12b3f0ee374f9a58e350f34faafa5c84a63918cf54ce65f44e4d0a9d7"
+    }
+  ],
+  "old_prepared_run_verified_no_collected_map": true,
+  "retained_protection_audit": [
+    "protected_before.json",
+    "protected_after.json"
+  ],
+  "source_functions_to_remove": [
+    "transform_pcd",
+    "convert",
+    "M-coordinate slice reconfiguration",
+    "new-map NDT launch branch"
+  ],
+  "removed_empty_parent": "/home/zkam/test_nav/robot_data/maps/mocap_anchored"
+}

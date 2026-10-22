@@ -1,0 +1,31 @@
+{
+  "samples": 386,
+  "latest": {
+    "stamp": 1792315750025223574,
+    "xyz": [
+      -0.42212374877929687,
+      4.751892578125,
+      0.4215780944824219
+    ],
+    "age_s": 0.0011896370000000001
+  },
+  "max_radius_m": 0.0009943471201132748,
+  "diagnostic": [
+    {
+      "level": 0,
+      "values": {
+        "valid": "true",
+        "input_topic": "/vrpn_mocap/Tracker0/pose",
+        "input_stamp_ns": "1792315750025223574",
+        "receive_clock_ns": "1792315750025625909",
+        "receive_clock_minus_header_stamp_ns": "402335",
+        "receive_clock_minus_header_stamp_ms": "0.402335",
+        "receive_clock_comparison_note": "header_and_receive_clock_are_ubuntu_receiver_clock; value_is_ros_delivery_and_callback_delay_not_camera_measurement_latency",
+        "timestamp_source": "ubuntu_receiver_clock",
+        "position_scale_to_m": "0.001",
+        "raw_position_unit": "millimetres_verified_manual_1m_2026-10-15"
+      }
+    }
+  ],
+  "max_command": 0.033209999999999996
+}

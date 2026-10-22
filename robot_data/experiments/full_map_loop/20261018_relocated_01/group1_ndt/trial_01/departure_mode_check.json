@@ -1,0 +1,24 @@
+{
+  "/reference_velocity": {
+    "record_ns": 1792307681479176779,
+    "value": [
+      1.585315305735852e-223,
+      -1.28981851048274e-224,
+      0.0,
+      0.0,
+      0.0,
+      -7.876365899234603e-223
+    ],
+    "record_age_s": 2366.837004286
+  },
+  "/static_localization/ready": {
+    "record_ns": 1792307536508944355,
+    "value": true,
+    "record_age_s": 2511.87477335
+  },
+  "/teleop/mode": {
+    "record_ns": 1792307681477364297,
+    "value": "MANUAL",
+    "record_age_s": 2366.906613693
+  }
+}

@@ -1,0 +1,80 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: map
+    Background Color: 40; 40; 40
+    Frame Rate: 10
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid 1m
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 30
+      Reference Frame: map
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Fixed PCD map (blue)
+      Enabled: true
+      Value: true
+      Topic:
+        Value: /static_localization/map_cloud
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: FlatColor
+      Color: 80; 180; 255
+      Alpha: 0.7
+      Size (Pixels): 3
+      Style: Points
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Live cloud (red)
+      Enabled: true
+      Value: true
+      Topic:
+        Value: /cloud_registered
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Position Transformer: XYZ
+      Color Transformer: FlatColor
+      Color: 255; 80; 80
+      Alpha: 1
+      Size (Pixels): 2
+      Style: Points
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Value: true
+      Show Names: true
+      Marker Scale: 0.3
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Value: /initialpose_user
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.0685389
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Target Frame: map
+      Scale: 35
+      X: 0
+      Y: 0
+      Angle: 0
+Window Geometry:
+  Width: 1500
+  Height: 950

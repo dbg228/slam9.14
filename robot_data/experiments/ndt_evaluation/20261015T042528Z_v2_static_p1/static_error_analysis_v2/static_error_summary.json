@@ -1,0 +1,185 @@
+{
+  "evaluable_frames": 54,
+  "error_components_m": {
+    "ex": {
+      "mean": 0.007609141508278821,
+      "std_sample": 0.015501237853259726,
+      "rmse": 0.01713877547418223,
+      "p95_absolute": 0.03765967817229959,
+      "max_absolute": 0.04568760318062859
+    },
+    "ey": {
+      "mean": -0.0002407509379442937,
+      "std_sample": 0.013904237849950584,
+      "rmse": 0.013776996994941896,
+      "p95_absolute": 0.02556480460782632,
+      "max_absolute": 0.036776804319415435
+    }
+  },
+  "xy_error_m": {
+    "mean": 0.01823981652708886,
+    "rmse": 0.021989617344398433,
+    "p95": 0.044844140517090327,
+    "max": 0.05062096179423808
+  },
+  "yaw_error_deg": {
+    "mean": -0.12127367947377349,
+    "std_sample": 0.10339027516861382,
+    "rmse": 0.15874161307435572,
+    "p95_absolute": 0.2998842033278219,
+    "max_absolute": 0.3618928158922319
+  },
+  "residual_center_m": [
+    0.007609141508278821,
+    -0.0002407509379442937
+  ],
+  "residual_center_norm_m": 0.007612949199037961,
+  "center_removed_random_xy_rms_m": 0.02062974249587075,
+  "center_squared_fraction_of_xy_rmse_squared": 0.11985896400315726,
+  "fitness_error_pearson_r": 0.14709943998005337,
+  "correction_error_pearson_r": 0.25063353417707906,
+  "outlier_threshold_m": 0.04,
+  "outlier_count": 5,
+  "outlier_match_ids": [
+    179,
+    185,
+    186,
+    197,
+    205
+  ],
+  "outlier_field_means": {
+    "fitness": {
+      "all_mean": 0.14834391634201244,
+      "outlier_mean": 0.15272323097263352,
+      "non_outlier_mean": 0.14789704750215313
+    },
+    "correction_translation_m": {
+      "all_mean": 0.02167438563494081,
+      "outlier_mean": 0.03193803653120995,
+      "non_outlier_mean": 0.02062707431899498
+    },
+    "correction_yaw_rad": {
+      "all_mean": 0.0014642737646176505,
+      "outlier_mean": 0.0018793567724060267,
+      "non_outlier_mean": 0.001421918355659653
+    },
+    "iterations": {
+      "all_mean": 1.0,
+      "outlier_mean": 1.0,
+      "non_outlier_mean": 1.0
+    },
+    "input_points": {
+      "all_mean": 4620.444444444444,
+      "outlier_mean": 4570.4,
+      "non_outlier_mean": 4625.551020408163
+    },
+    "source_points": {
+      "all_mean": 2023.4444444444443,
+      "outlier_mean": 2011.0,
+      "non_outlier_mean": 2024.7142857142858
+    },
+    "target_points": {
+      "all_mean": 4564.814814814815,
+      "outlier_mean": 4565.4,
+      "non_outlier_mean": 4564.755102040816
+    }
+  },
+  "point_cloud_overlap_ratio": "unavailable: current NdtMatchDiagnostic records source/target point counts but no overlap-ratio metric",
+  "relative_motion": {
+    "pairs": 53,
+    "skipped_long_or_nonpositive_gap_pairs": 0,
+    "dt_seconds": {
+      "median": 1.999966976,
+      "max": 2.299813632
+    },
+    "ndt_delta_position": {
+      "samples": 53,
+      "mean_vector_m": [
+        0.0004024370661321676,
+        0.00018583153778651976
+      ],
+      "rmse_m": 0.027072685027444685,
+      "p95_m": 0.048544879783345055,
+      "max_m": 0.058196191016595906
+    },
+    "mocap_delta_position": {
+      "samples": 53,
+      "mean_vector_m": [
+        -9.627175842975923e-07,
+        4.6654517684205e-06
+      ],
+      "rmse_m": 0.00014285624319868674,
+      "p95_m": 0.00026974132346980334,
+      "max_m": 0.00029994587495115117
+    },
+    "relative_delta_position_error": {
+      "samples": 53,
+      "mean_vector_m": [
+        0.0004033997837164652,
+        0.00018116608601809924
+      ],
+      "rmse_m": 0.027083856793257866,
+      "p95_m": 0.04847172783571903,
+      "max_m": 0.05822629859075505
+    },
+    "ndt_delta_yaw_deg": {
+      "samples": 53,
+      "rmse": 0.10571706034247448,
+      "p95_absolute": 0.20607157161636416,
+      "max_absolute": 0.32832103204904456
+    },
+    "mocap_delta_yaw_deg": {
+      "samples": 53,
+      "rmse": 0.0063910426038483615,
+      "p95_absolute": 0.012426677400003304,
+      "max_absolute": 0.01646353365821706
+    },
+    "relative_delta_yaw_error_deg": {
+      "samples": 53,
+      "rmse": 0.10752883515362935,
+      "p95_absolute": 0.20579285711164913,
+      "max_absolute": 0.32918121447331145
+    }
+  },
+  "source_report": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2",
+  "pose_kind": "final",
+  "coordinate_chain": "NDT map->base_link compared with Tracker0->base_link transformed pose, then common map<-mocap start alignment",
+  "alignment_mode": "start",
+  "start_alignment": {
+    "map_from_mocap_yaw_rad": -0.6924751883972758,
+    "translation_m": [
+      2.4709050106091253,
+      -2.7506049448477987
+    ],
+    "mocap_to_base_yaw_rad": 0.0,
+    "start_stamp_ns": 1792038333215970277,
+    "end_stamp_ns": 1792038358215970277,
+    "metrics_exclusion_start_stamp_ns": 1792038333215970277,
+    "warmup_seconds": 0.0,
+    "samples": 13,
+    "rejected_during_alignment": {
+      "alignment_mocap_timestamp_outside_recording": 2
+    },
+    "limitation": "Initial fixed offset is absorbed; reports relative localization error after start alignment."
+  },
+  "tracker_to_base_applied": {
+    "config_file": "/home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml",
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "notes": "User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation path must apply it before comparing against map->base_link; this passive receiver never publishes a base_link pose or TF."
+  },
+  "excluded_records": {
+    "alignment_or_warmup": 13,
+    "invalid_reference": 2,
+    "invalid_pose": 0
+  }
+}

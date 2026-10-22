@@ -1,17 +1,23 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /home/zkam/test_nav
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+cd "${SCRIPT_DIR}"
 
-PCD_FILE="${1:-robot_data/maps/data/scans.pcd}"
+## mapping.sh / FAST-LIO overwrites this export on every successful save.
+# Do not pick the newest *.pcd recursively: debug/filter outputs are newer
+# than the original scan, but are not complete maps.
+PCD_FILE="${1:-${SCRIPT_DIR}/robot_data/maps/data/scans.pcd}"
 OUTPUT_PREFIX="${2:-robot_data/maps/map}"
 
-if [ ! -f "${PCD_FILE}" ]; then
+if [ ! -s "${PCD_FILE}" ]; then
     echo "[pcd_to_2d_map] PCD not found: ${PCD_FILE}" >&2
     exit 1
 fi
 
+PCD_FILE="$(realpath -- "${PCD_FILE}")"
 echo "[pcd_to_2d_map] input:  ${PCD_FILE}"
+stat --printf='[pcd_to_2d_map] PCD saved: %y | size: %s bytes\n' -- "${PCD_FILE}"
 echo "[pcd_to_2d_map] output: ${OUTPUT_PREFIX}.pgm / ${OUTPUT_PREFIX}.yaml"
 
 ./make_2d_map_from_pcd.py \

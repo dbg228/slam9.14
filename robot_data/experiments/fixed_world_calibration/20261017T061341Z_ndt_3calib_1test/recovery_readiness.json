@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "local_tf": 50,
+    "ndt": 2
+  },
+  "last": {
+    "map_ready": false,
+    "local_tf": {
+      "age_s": 0.040572246,
+      "xyz_m": [
+        -0.4598866462957257,
+        0.06490449442526154,
+        -0.14067179172772531
+      ]
+    },
+    "ndt": {
+      "stage": "waiting_for_initialization",
+      "accepted": false,
+      "valid": true,
+      "age_s": 0.063624946
+    }
+  },
+  "node_names": [
+    "world_calibration_recovery_check",
+    "rviz",
+    "transform_listener_impl_5d37bfd22f70",
+    "client",
+    "mocap_tracker0_normalizer",
+    "lio_tf_to_base_tf",
+    "tf_to_odom_bridge",
+    "livox_lidar_publisher",
+    "fastlio_static_odom",
+    "static_map_localizer",
+    "static_map_tf_broadcaster",
+    "joy_node",
+    "teleop_node",
+    "robot_state_publisher",
+    "controller_manager",
+    "joint_state_broadcaster",
+    "arbitrator_controller",
+    "omni_velocity_controller"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "map_ready": false,
+  "mocap_count": 358,
+  "tf_base_count": 49,
+  "map_tf_count": 148,
+  "base_age_s": 0.054858996,
+  "latest_mocap_frame": "mocap_world",
+  "latest_mocap_stamp_ns": 1792211509434566606,
+  "ros_ns": 1792211509442388233,
+  "nodes": [
+    [
+      "lio_tf_to_base_tf",
+      "/"
+    ],
+    [
+      "tf_to_odom_bridge",
+      "/"
+    ],
+    [
+      "fastlio_static_odom",
+      "/"
+    ],
+    [
+      "static_map_localizer",
+      "/"
+    ],
+    [
+      "static_map_tf_broadcaster",
+      "/"
+    ],
+    [
+      "map_mocap_stream_readiness",
+      "/"
+    ],
+    [
+      "rviz",
+      "/"
+    ],
+    [
+      "transform_listener_impl_5d37bfd22f70",
+      "/"
+    ],
+    [
+      "client",
+      "/vrpn_mocap"
+    ],
+    [
+      "mocap_tracker0_normalizer",
+      "/"
+    ],
+    [
+      "livox_lidar_publisher",
+      "/"
+    ],
+    [
+      "joy_node",
+      "/"
+    ],
+    [
+      "teleop_node",
+      "/"
+    ],
+    [
+      "robot_state_publisher",
+      "/"
+    ],
+    [
+      "controller_manager",
+      "/"
+    ],
+    [
+      "joint_state_broadcaster",
+      "/"
+    ],
+    [
+      "arbitrator_controller",
+      "/"
+    ],
+    [
+      "omni_velocity_controller",
+      "/"
+    ]
+  ]
+}

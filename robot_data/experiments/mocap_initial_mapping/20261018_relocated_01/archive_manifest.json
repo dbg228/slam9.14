@@ -1,0 +1,91 @@
+{
+  "data_kind": "real_manual_mapping_archive",
+  "calibration_sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608",
+  "files": {
+    "config.yaml": {
+      "bytes": 1847,
+      "sha256": "b003272cd11f4a9f4d3d98da538ad626be27a2fe1b7495217c6690bc0af73287"
+    },
+    "extrinsics.yaml": {
+      "bytes": 1146,
+      "sha256": "3b7405826a1dac89e8b4b8cd38a3cb22373341debf1db2754e7b6afc83dcfb99"
+    },
+    "mocap.yaml": {
+      "bytes": 1079,
+      "sha256": "945f6d0d15331e4c5159ed583f836298bf88f470e1f50734b8246e66dd667ea3"
+    },
+    "fastlio.yaml": {
+      "bytes": 1186,
+      "sha256": "b510e21cf266fc411af95d5fccc853d97cb1a4106e98d2b50a4f361403852bbd"
+    },
+    "nav2.yaml": {
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    "inputs.lock.json": {
+      "bytes": 1648,
+      "sha256": "ba7e9bfab7000f34c7285a3a553284b459f5048d09e6de5e35682a06daa90bf7"
+    },
+    "calibration.yaml": {
+      "bytes": 4450,
+      "sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608"
+    },
+    "calibration.lock.json": {
+      "bytes": 83,
+      "sha256": "2e42ba51ef35efeac4141cc52ddd81f36f2b159441f810435d12a4c271feccbe"
+    },
+    "raw/native_F.pcd": {
+      "bytes": 102033309,
+      "sha256": "d9c64f4b9b001c6cf7a10785626c9265308970e11060099d4ec9ded2f32c0b0c"
+    },
+    "raw/native_receipt.json": {
+      "bytes": 702,
+      "sha256": "ae08b5532f8c328de5c2b4b64d1261e275410a14893978752ec8966902e96067"
+    },
+    "grid/map.yaml": {
+      "bytes": 138,
+      "sha256": "89629b59137b3b075cc52b945671a1aea0e61e9bf22dec2cf89730fa78fa6625"
+    },
+    "grid/map.pgm": {
+      "bytes": 311668,
+      "sha256": "e207d5402ff16be9fe5ef5683cb1f538f1df55a1ef91201a8ccf8872a76ae514"
+    },
+    "grid/map_preview.png": {
+      "bytes": 63852,
+      "sha256": "b173afae2685e614488f144734bbf721a3f8900b1349f52bdaf21c1f328e1141"
+    },
+    "grid/projection.json": {
+      "bytes": 985,
+      "sha256": "943539e11c51388517000f764f9f6a066f2a62d8a040c7b9df2be01e4b6bc3c9"
+    },
+    "initialization/raw.jsonl": {
+      "bytes": 1308569,
+      "sha256": "acd655f7f1e285cdd0b6506629dfe1c72556ff22472cc57e734916ee11a1b3ca"
+    },
+    "initialization/pairs.json": {
+      "bytes": 35147,
+      "sha256": "79b6000c673f344397b3b8a41177630ca2e383a305018b37b3a1491ea56798cc"
+    },
+    "real_save_summary.json": {
+      "bytes": 3575,
+      "sha256": "4c4fd2ebd0b1c38fe10dbe3fa5d54b38608f9e2ce43ab6d0197c886268ded648"
+    },
+    "save_integrity_checks.json": {
+      "bytes": 226,
+      "sha256": "9f5b1c72dd1f9536d6ce635cd222a0954c6c671b3022191c12ec2e95e9814f89"
+    },
+    "SESSION_STATUS.md": {
+      "bytes": 1744,
+      "sha256": "bab428aa129d2687f0226694836397a966eec31a089d20e9ed5e40fd76f6c9f1"
+    },
+    "mapping_bag/mapping_bag_0.db3": {
+      "bytes": 86310912,
+      "sha256": "462624fe062713638a8ba8ab28b1de897523d401369443a4afe604692ffd2c99"
+    },
+    "mapping_bag/metadata.yaml": {
+      "bytes": 5912,
+      "sha256": "136a5a3558cc80cb3659f093eb0f3929e510f9ea6cc89e45cb90c26526940bc1"
+    }
+  },
+  "legacy_maps_unchanged": true
+}

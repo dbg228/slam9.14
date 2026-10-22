@@ -1,0 +1,316 @@
+{
+  "protocol": "original_NDT_full_route_endpoint_test_user_allows_noncoincident_endpoints",
+  "stage": "route_completed_accuracy_comparison_unvalidated",
+  "camera_world_id": "20261018_relocated_shared_world_01",
+  "group": "group1_original_NDT",
+  "trial": "trial_01",
+  "real_motion_started_by_agent": true,
+  "mocap_feedback_to_localization": false,
+  "world_transform_policy": "new_camera_world; three separately parked NDT/mocap pairs; freeze before initial and endpoint evaluation; no refit",
+  "measurement_label": "frozen_NDT_participating_registration_consistency_error",
+  "absolute_current_world_calibration_available": false,
+  "route": {
+    "start_equals_end": false,
+    "start_end_separation_m": 0.795562291060608,
+    "selected_points_xyz_m": {
+      "start": [
+        3.040634409977778,
+        -3.3506043515353285,
+        0.05
+      ],
+      "middle": [
+        -4.123459029864366,
+        -6.980476319737932,
+        0.05
+      ],
+      "end": [
+        2.456411492544869,
+        -2.8106016277423977,
+        0.05
+      ]
+    },
+    "selection_archive": "frozen_route_selection_02.txt",
+    "user_allows_noncoincident_endpoints": true,
+    "user_instruction": "还没重合，不重合也行，开始测试"
+  },
+  "endpoints_collected": true,
+  "files": {
+    "robot_data/maps/data/scans.pcd": {
+      "bytes": 71288669,
+      "sha256": "04601e746b0e200ab8a6223e4094edc324eca75cfc6623151e96eceaed2a18c6"
+    },
+    "robot_data/maps/map.yaml": {
+      "bytes": 138,
+      "sha256": "92c911f7cc9313732cb3da4653f25946438087263d9205f88a6d648fa673f325"
+    },
+    "robot_data/maps/map.pgm": {
+      "bytes": 386630,
+      "sha256": "d50082bf3876ea7ec212aff5818a5c63ab2c59c0af99f363c2c3940830213a35"
+    },
+    "robot_data/config/navigation.yaml": {
+      "bytes": 22599,
+      "sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452"
+    },
+    "robot_data/config/mocap_tracker0.yaml": {
+      "bytes": 2252,
+      "sha256": "fc3a86a254f6679205e3abf97f7f51310790b9ea28697aa590ba41b18d937758"
+    },
+    "robot_data/config/mocap_world_session.yaml": {
+      "bytes": 457,
+      "sha256": "aaedff77a29c5de2eb744e50b39b91887b890f9c1b16949be6425af64b07f887"
+    },
+    "robot_data/urdf/robot.urdf": {
+      "bytes": 1985,
+      "sha256": "1006d2016badbb9ba38709b040b74c3bd724ef7b691ee7e1e18ed60d0b4a51d1"
+    },
+    "localization.sh": {
+      "bytes": 3094,
+      "sha256": "0a721d5fcc185d36d05aec327bf2fd970b7a0b8b1da17b869c34a6d4b7130ad5"
+    },
+    "navigation.sh": {
+      "bytes": 1885,
+      "sha256": "b0ba03bc1711d2f8f363dae51a91f5e58d0cffcec1d64153ba0f3c930b0ad340"
+    },
+    "lio_tf_to_base_tf.py": {
+      "bytes": 4808,
+      "sha256": "bd1e4c275687050919d532c1626366e64ea766a558cbcfa33f4ccd8a33c6fca6"
+    },
+    "src/static_map_localization/src/static_map_localizer_node.cpp": {
+      "bytes": 38944,
+      "sha256": "835a10d4a46147b36c8f05e7eefd5a8750727d61d4efe9b22edc63cf636639a1"
+    }
+  },
+  "fastlio_config_override": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/fastlio_no_accumulated_map_display.yaml",
+  "algorithm_parameters_changed": false,
+  "launch_output_diff": {
+    "publish.map_en": {
+      "original": true,
+      "trial": false
+    }
+  },
+  "reason": "Accumulated whole-map visualization was enabled while stationary odometry measurement stamps lagged reception by approximately 1.9 seconds.",
+  "manual_seed_replay_source": "manual_initialpose_before_restart.cdr",
+  "independent_absolute_accuracy_certified": false,
+  "initial_error_forced_to_zero": false,
+  "registration_session": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01",
+  "initial_error_diagnostic_requested": true,
+  "curve_outputs": [
+    "initial_position_and_heading",
+    "endpoint_position_and_heading",
+    "accumulated_LIO_estimated_distance"
+  ],
+  "distance_source": "Recorded continuous odom->base_link plus camera_init->body converted by existing measured sensor mount",
+  "registration_completed_groups": [
+    "calib_01",
+    "calib_02",
+    "calib_03"
+  ],
+  "registration_failed_windows_retained": [
+    "registration/calib_02"
+  ],
+  "registration_frozen": true,
+  "registration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "initial_location_was_calib_03_user_confirmed": true,
+  "provisional_initial_capture": "initial_capture_02",
+  "provisional_initial_xy_rmse_m": 0.008685581391478637,
+  "formal_initial_capture": "initial_capture_06/initial/summary.json",
+  "formal_initial_pending_after_route_change": false,
+  "tracking_report_outputs": [
+    "trajectory_tracking",
+    "tracking_errors",
+    "overall_tracking_error",
+    "tracking_samples.csv"
+  ],
+  "route_recording": "formal_bag_01",
+  "tracking_definition": "estimated map/base_link versus fixed inspection FollowPath; not mocap localization accuracy",
+  "route_revision_reason": "User explicitly allowed different START/END and authorized starting the selected route",
+  "formal_bag": "formal_bag_01",
+  "previous_recorders_failed_sqlite_lock": [
+    "bag",
+    "route_bag"
+  ],
+  "formal_initial_missing_after_restart": false,
+  "post_restart_failed_initial_captures": [
+    "initial_capture_04",
+    "initial_capture_05"
+  ],
+  "old_initial_capture_for_history_only": "initial_capture_02",
+  "localization_queue_restarted_before_formal_trial": true,
+  "localization_restart_seed": "ndt_own_pose_before_queue_restart.cdr",
+  "localization_restart_seed_source": "NDT own pose, no mocap input",
+  "post_restart_tf_age_s": [
+    0.049912335,
+    0.308772942
+  ],
+  "cpu_affinities_restored": true,
+  "scan_projection_resumed": true,
+  "lidar_adjustments_after_user_stop_request": false,
+  "motion_goals_sent_by_agent": true,
+  "formal_route_reference_length_m": 47.80025866780632,
+  "formal_departure_request": "formal_departure_request.json",
+  "last_monitor": "route_monitor_latest.json",
+  "formal_endpoint_capture": "endpoint_arrival_capture_02/endpoint/summary.json",
+  "auxiliary_late_endpoint_capture": "endpoint_capture_04/endpoint/summary.json",
+  "route_result": "SUCCEEDED",
+  "goal_status": 4,
+  "formal_bag_closed": true,
+  "final_report": "final_report/experiment_report.md",
+  "tracking_report": "tracking_report_final/report.md",
+  "experiment_summary": "final_report/experiment_summary.json",
+  "motion_interval": {
+    "start_ns": 1792311426466115189,
+    "end_ns": 1792311783321916928,
+    "first_command_ns": 1792311426466115189,
+    "last_nonzero_command_ns": 1792311782319644136,
+    "zero_command_ns": 1792311782321916928,
+    "navigation_terminal_ns": 1792311782033557803,
+    "command_threshold": 0.0001,
+    "settling_margin_s": 1.0,
+    "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+  },
+  "metric_summary": {
+    "schema": 1,
+    "data_kind": "real_robot_measurement",
+    "group": "group1_original_NDT",
+    "trial": "trial_01",
+    "navigation_result": "SUCCEEDED",
+    "navigation_goal_status": 4,
+    "generated_utc": "2026-10-18T08:51:44.885780+00:00",
+    "reference_length_m": 47.80025866780632,
+    "lio_estimated_travel_m": 63.739144843642144,
+    "motion_duration_s": 356.855801739,
+    "tracking_duration_s": 355.46341859300003,
+    "motion_interval": {
+      "start_ns": 1792311426466115189,
+      "end_ns": 1792311783321916928,
+      "first_command_ns": 1792311426466115189,
+      "last_nonzero_command_ns": 1792311782319644136,
+      "zero_command_ns": 1792311782321916928,
+      "navigation_terminal_ns": 1792311782033557803,
+      "command_threshold": 0.0001,
+      "settling_margin_s": 1.0,
+      "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+    },
+    "start_equals_end": false,
+    "user_allowed_noncoincident_endpoints": true,
+    "start_end_marker_separation_m": 0.795562291060608,
+    "initial": {
+      "samples": 3,
+      "xy_rmse_m": 0.011846938627679571,
+      "xy_max_m": 0.01651090431856136,
+      "yaw_rmse_deg": 0.7306032927181807
+    },
+    "endpoint": {
+      "samples": 3,
+      "xy_rmse_m": 0.01299072805190989,
+      "xy_max_m": 0.01981464569220211,
+      "yaw_rmse_deg": 1.0486794225944327,
+      "source_window_ns": [
+        1792311790976820468,
+        1792311795976820468
+      ],
+      "seconds_after_goal": [
+        8.943262665,
+        13.943262665
+      ],
+      "window_index": 1
+    },
+    "full_follow_path": {
+      "samples": 3548,
+      "path_distance_m": {
+        "n": 3548,
+        "rmse": 0.04267376467774969,
+        "p95_abs": 0.08470048691241383,
+        "max_abs": 0.12317932177499293,
+        "mean": 0.035943958895705515,
+        "std": 0.023001782771685103
+      },
+      "lateral_m": {
+        "n": 3548,
+        "rmse": 0.0426309634683187,
+        "p95_abs": 0.08470048691241383,
+        "max_abs": 0.12317932177499294,
+        "mean": 0.023128334166574647,
+        "std": 0.03581171882102811
+      },
+      "heading_error_deg": {
+        "n": 3548,
+        "rmse": 6.079459793054318,
+        "p95_abs": 7.817745414349821,
+        "max_abs": 60.637327008057106,
+        "mean": -0.6285093335583097,
+        "std": 6.046884106132194
+      }
+    },
+    "whole_run_vs_inspection_purple_path": {
+      "samples": 3548,
+      "path_distance_m": {
+        "n": 3548,
+        "rmse": 0.04851668387906555,
+        "p95_abs": 0.09572082090268234,
+        "max_abs": 0.21789743474840503,
+        "mean": 0.03833862819734018,
+        "std": 0.02973244360235618
+      },
+      "lateral_m": {
+        "n": 3548,
+        "rmse": 0.048507102512826174,
+        "p95_abs": 0.09572082090268236,
+        "max_abs": 0.217897434748405,
+        "mean": 0.025551854870308626,
+        "std": 0.04123156202324273
+      },
+      "heading_error_deg": {
+        "n": 3548,
+        "rmse": 3.9706847030472043,
+        "p95_abs": 7.8675852770582075,
+        "max_abs": 22.715918570613816,
+        "mean": -1.2459791588718607,
+        "std": 3.770129035811644
+      }
+    },
+    "registration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+    "registration_used_NDT": true,
+    "independent_absolute_accuracy_certified": false,
+    "transform_refitted": false,
+    "mocap_feedback": false,
+    "source_files_unchanged": {
+      "robot_data/maps/data/scans.pcd": true,
+      "robot_data/maps/map.yaml": true,
+      "robot_data/maps/map.pgm": true,
+      "robot_data/config/navigation.yaml": true,
+      "robot_data/config/mocap_tracker0.yaml": true,
+      "robot_data/config/mocap_world_session.yaml": true,
+      "robot_data/urdf/robot.urdf": true,
+      "localization.sh": true,
+      "navigation.sh": true,
+      "lio_tf_to_base_tf.py": true,
+      "src/static_map_localization/src/static_map_localizer_node.cpp": true
+    },
+    "previous_native_pcd_unchanged": true,
+    "initial_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_06/initial/summary.json",
+    "endpoint_capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/endpoint_arrival_capture_02/endpoint/summary.json",
+    "formal_bag": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/formal_bag_01",
+    "software_tests_passed": 35
+  },
+  "software_tests_passed": 35,
+  "source_files_verified_unchanged": {
+    "robot_data/maps/data/scans.pcd": true,
+    "robot_data/maps/map.yaml": true,
+    "robot_data/maps/map.pgm": true,
+    "robot_data/config/navigation.yaml": true,
+    "robot_data/config/mocap_tracker0.yaml": true,
+    "robot_data/config/mocap_world_session.yaml": true,
+    "robot_data/urdf/robot.urdf": true,
+    "localization.sh": true,
+    "navigation.sh": true,
+    "lio_tf_to_base_tf.py": true,
+    "src/static_map_localization/src/static_map_localizer_node.cpp": true
+  },
+  "formal_route_selection_archive": "formal_route_selection.txt",
+  "completed_utc": "2026-10-18T08:51:44.885780+00:00",
+  "review_report": "review_01/review_report.md",
+  "review_summary": "review_01/review_summary.json",
+  "physical_total_distance_m": null,
+  "stable_baseline_accuracy_established": false
+}

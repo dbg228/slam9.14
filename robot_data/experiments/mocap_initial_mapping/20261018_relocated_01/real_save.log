@@ -1,0 +1,16 @@
+[37;1m2026-10-18 17:42:26.540 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7425: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+{
+  "run_id": "20261018_relocated_01",
+  "data_kind": "real_mapping_pending_collection",
+  "frame": "map=native_F0",
+  "transform_count": 0,
+  "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/raw/native_F.pcd",
+  "sha256": "d9c64f4b9b001c6cf7a10785626c9265308970e11060099d4ec9ded2f32c0b0c",
+  "bytes": 102033309,
+  "points": 3188533,
+  "service": "/anchored_mapping/save_native",
+  "service_message": "Map saved.",
+  "native_parameters_verified": true,
+  "calibration_sha256": "f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608",
+  "source": "native FAST-LIO map_publish_callback accumulated world scans; no NDT, no loop-optimized merge"
+}

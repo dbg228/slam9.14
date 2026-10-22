@@ -1,0 +1,49 @@
+{
+  "review_reason": "User questioned decreasing endpoint error; operator reports a small ground slope. Height difference alone is not the exclusion basis.",
+  "status": "endpoint_reference_suspect_requires_retest",
+  "continuous_mocap_correction_found": false,
+  "recorded_localization_sessions": [
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792336777957474258"
+  ],
+  "recorded_faults": [
+    "None"
+  ],
+  "static_transform_unique_value_counts": {
+    "base_link->imu_link": 1,
+    "imu_link->livox_frame": 1,
+    "map->odom": 1,
+    "odom->camera_init": 1
+  },
+  "endpoint_raw_vrpn_has_same_orientation_flip": true,
+  "flip": {
+    "time_from_departure_s": 336.462227841,
+    "gap_s": 0.7399913,
+    "orientation_change_deg": 178.84943733920937,
+    "roll_pitch_yaw_before_deg": [
+      -1.0967335998817809,
+      -1.2567502423926644,
+      -1.8335391162062493
+    ],
+    "roll_pitch_yaw_after_deg": [
+      -179.96544610486572,
+      0.5102663719390029,
+      1.2075288363790782
+    ],
+    "tracker_position_change_m": [
+      0.10595056152343751,
+      -0.010275878906250036,
+      0.004501159667968768
+    ],
+    "native_orientation_change_deg": 0.302299945294942
+  },
+  "mount_translation_m": [
+    0,
+    0,
+    -0.18
+  ],
+  "mount_offset_explanation": "Near 180-degree roll reverses the vertical 0.18 m lever arm, creating approximately 0.36 m base-reference displacement while raw tracker height changes only millimetres.",
+  "interpretation": "The 14.39 mm XY residual is retained as an unvalidated numerical value. It does not demonstrate mocap correction or validated endpoint localization accuracy. Middle moving comparisons and endpoint static comparisons have different timing sensitivity; error magnitude is not required to increase monotonically.",
+  "raw_data_modified": false,
+  "rotation_repaired": false,
+  "transform_refitted": false
+}

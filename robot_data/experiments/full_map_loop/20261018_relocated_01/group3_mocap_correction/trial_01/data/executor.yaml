@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    controller_id: InspectionStrict
+    experiment_label: group3_middle
+    experiment_output_dir: /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/figures
+    frame_id: map
+    goal_checker_id: inspection_route_goal_checker
+    route_selection_file: /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group3_mocap_correction/trial_01/data/route_selection.txt
+    tracking_base_frame: base_link
+    tracking_odom_topic: /anchored_localization/native_odom

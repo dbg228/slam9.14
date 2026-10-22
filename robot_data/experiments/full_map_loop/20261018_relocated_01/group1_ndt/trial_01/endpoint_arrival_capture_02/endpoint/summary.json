@@ -1,0 +1,323 @@
+{
+  "quality_passed": true,
+  "failures": [],
+  "rejection_counts": {},
+  "estimator_instability_warnings": [],
+  "valid_mocap_samples": 447,
+  "mocap_span_s": 4.9698816830000005,
+  "maximum_mocap_gap_s": 0.050034484000000004,
+  "matched_pairs": [
+    {
+      "ndt_stamp_ns": 1792311791476820468,
+      "mocap_stamp_ns": 1792311791468840785,
+      "skew_s": 0.007979683000000001,
+      "match_id": 529,
+      "map_xyz_m": [
+        2.51633882522583,
+        -2.8571903705596924,
+        -0.10187980532646179
+      ],
+      "ndt_receive_age_s": 1.879859696,
+      "mocap_xyz_m": [
+        0.00402317589092119,
+        4.698185345386702,
+        0.24731934843388664
+      ],
+      "map_rotation": [
+        [
+          0.6579545063253835,
+          0.7530183066549407,
+          -0.0077004836631412174
+        ],
+        [
+          -0.75304167765332,
+          0.6578394670241858,
+          -0.013246408660781606
+        ],
+        [
+          -0.00490910615021184,
+          0.014514319407422692,
+          0.9998826107143505
+        ]
+      ],
+      "mocap_rotation": [
+        [
+          0.9941363425940629,
+          0.10744214255719464,
+          -0.012211401902297216
+        ],
+        [
+          -0.10742923369882329,
+          0.994211262907453,
+          0.0017101037544366763
+        ],
+        [
+          0.012324450518525168,
+          -0.0003882147431399101,
+          0.9999239757145189
+        ]
+      ],
+      "accepted": true,
+      "stage": "accepted"
+    },
+    {
+      "ndt_stamp_ns": 1792311793776895523,
+      "mocap_stamp_ns": 1792311793778763971,
+      "skew_s": 0.0018684480000000002,
+      "match_id": 530,
+      "map_xyz_m": [
+        2.5217127799987793,
+        -2.8513882160186768,
+        -0.05883747339248657
+      ],
+      "ndt_receive_age_s": 1.581970981,
+      "mocap_xyz_m": [
+        0.003958954602398454,
+        4.698243097253975,
+        0.2472614657290713
+      ],
+      "map_rotation": [
+        [
+          0.656486459289447,
+          0.754263455610779,
+          -0.010590953672441627
+        ],
+        [
+          -0.7543273469719265,
+          0.6563387066706875,
+          -0.014482946390295454
+        ],
+        [
+          -0.0039727043559904,
+          0.017496904181479412,
+          0.9998390250256108
+        ]
+      ],
+      "mocap_rotation": [
+        [
+          0.9943471542991791,
+          0.10549878237375103,
+          -0.011989314191418549
+        ],
+        [
+          -0.105479413103356,
+          0.9944189676912422,
+          0.002238326887634396
+        ],
+        [
+          0.01215854220275625,
+          -0.0009610481466880342,
+          0.9999256203528158
+        ]
+      ],
+      "accepted": true,
+      "stage": "accepted"
+    },
+    {
+      "ndt_stamp_ns": 1792311795777262687,
+      "mocap_stamp_ns": 1792311795768926731,
+      "skew_s": 0.008335956,
+      "match_id": 531,
+      "map_xyz_m": [
+        2.523292064666748,
+        -2.872704029083252,
+        -0.10802990198135376
+      ],
+      "ndt_receive_age_s": 1.563762039,
+      "mocap_xyz_m": [
+        0.004095623555528355,
+        4.698521288088068,
+        0.2471782666269802
+      ],
+      "map_rotation": [
+        [
+          0.6574383308425974,
+          0.7534762621189516,
+          -0.006954391573136687
+        ],
+        [
+          -0.753507961059806,
+          0.6574194240813209,
+          -0.0050451422257601665
+        ],
+        [
+          0.0007705571967232556,
+          0.008557059298452992,
+          0.9999630908077405
+        ]
+      ],
+      "mocap_rotation": [
+        [
+          0.993976486525515,
+          0.1088774040767199,
+          -0.012508201945419845
+        ],
+        [
+          -0.10886282004525745,
+          0.9940550738153474,
+          0.0018429958649051246
+        ],
+        [
+          0.012634502213646594,
+          -0.00047021641700546897,
+          0.9999200709308392
+        ]
+      ],
+      "accepted": true,
+      "stage": "accepted"
+    }
+  ],
+  "pair_count": 3,
+  "maximum_command_abs": 0.0,
+  "mocap_xyz_m": [
+    0.004025918016282666,
+    4.698316576909581,
+    0.24725302692997939
+  ],
+  "map_xyz_m": [
+    2.5204478899637857,
+    -2.8604275385538735,
+    -0.08958239356676738
+  ],
+  "mocap_base_rotation_matrix": [
+    [
+      0.9940883423608151,
+      0.10788055382036148,
+      -0.012253721464904523
+    ],
+    [
+      -0.10786093473015343,
+      0.9941634392122699,
+      0.0022527522653215393
+    ],
+    [
+      0.012425230036701637,
+      -0.0009177369140556113,
+      0.9999223826965231
+    ]
+  ],
+  "mocap_static": {
+    "mean_xyz_m": [
+      0.004021975780331425,
+      4.698367900271919,
+      0.2472271637178553
+    ],
+    "mean_rotation_matrix": [
+      [
+        0.9940883423608151,
+        0.10788055382036148,
+        -0.012253721464904523
+      ],
+      [
+        -0.10786093473015343,
+        0.9941634392122699,
+        0.0022527522653215393
+      ],
+      [
+        0.012425230036701637,
+        -0.0009177369140556113,
+        0.9999223826965231
+      ]
+    ],
+    "std_xyz_m": [
+      4.100394746622634e-05,
+      0.00019689466792521405,
+      5.718921568771821e-05
+    ],
+    "maximum_radius_m": 0.0008928846342527939,
+    "maximum_orientation_deviation_deg": 0.5515823023699363
+  },
+  "map_static": {
+    "mean_xyz_m": [
+      2.5204478899637857,
+      -2.8604275385538735,
+      -0.08958239356676738
+    ],
+    "mean_rotation_matrix": [
+      [
+        0.6572922715707593,
+        0.7535887873907421,
+        -0.008414823367317387
+      ],
+      [
+        -0.7536309197927875,
+        0.6572070224447369,
+        -0.01092549228182782
+      ],
+      [
+        -0.0027030474706762897,
+        0.013522912714155955,
+        0.9999049076617719
+      ]
+    ],
+    "std_xyz_m": [
+      0.0029762218534190492,
+      0.008998163298432726,
+      0.021884446678075615
+    ],
+    "maximum_radius_m": 0.03207116173790469,
+    "maximum_orientation_deviation_deg": 0.3474195309411615
+  },
+  "map_provenance": {
+    "source": "ndt",
+    "method": "Current original NDT final_map_to_base_at_cloud; three separately parked calibration placements; initial and endpoint are not fitted",
+    "independently_measured": false,
+    "ndt_pose_field": "final_map_to_base_at_cloud",
+    "topic": "/static_localization/ndt_match_diagnostic",
+    "stamp_meaning": "input cloud measurement time, not publication time"
+  },
+  "raw_marker_positions_available": false,
+  "mocap_point_method": "Tracker0 world pose * separately measured Tracker0->base_link; not individual marker coordinates",
+  "camera_native_visibility_available": false,
+  "interpolation_used": false,
+  "clock_offset_s": 0.0,
+  "clock_offset_verified": false,
+  "camera_latency_s": null,
+  "group": "endpoint",
+  "evaluation_only": true,
+  "transform_refitted": false,
+  "no_motion_published": true,
+  "inputs_sha256": "919dc8237409e49d152a5f83119a18ff5e614ba2c1119a5dc878d6aeddabd581",
+  "raw_sha256": "a87ecd7d244ba8b249b18eca539eec2ff9edde75c94fcd716edd8259d02c18ac",
+  "calibration_sha256_at_capture": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "data_kind": "real_measurement_from_recorded_bag",
+  "raw_normalized_check": {
+    "matched_samples": 447,
+    "normalized_samples": 447,
+    "coverage": 1.0,
+    "scale_to_m": 0.001,
+    "mismatched_stamp_ns": [],
+    "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+  },
+  "invalid_events": {},
+  "observed_messages_in_window": {
+    "/vrpn_mocap/Tracker0/pose": 447,
+    "/mocap/Tracker0/pose": 447,
+    "/mocap/Tracker0/diagnostics": 447,
+    "/static_localization/ndt_match_diagnostic": 3,
+    "/reference_velocity": 2042
+  },
+  "ndt_age_policy": "same_timestamp_valid_static_history",
+  "source_age_limit_s": 2.0,
+  "ndt_source_age_limit_s": null,
+  "source_window_ns": [
+    1792311790976820468,
+    1792311795976820468
+  ],
+  "motion_interval": {
+    "start_ns": 1792311426466115189,
+    "end_ns": 1792311783321916928,
+    "first_command_ns": 1792311426466115189,
+    "last_nonzero_command_ns": 1792311782319644136,
+    "zero_command_ns": 1792311782321916928,
+    "navigation_terminal_ns": 1792311782033557803,
+    "command_threshold": 0.0001,
+    "settling_margin_s": 1.0,
+    "definition": "First nonzero final chassis command through first following zero plus one second; original ROS receive times; distance itself uses continuous odom source stamps"
+  },
+  "time_from_navigation_terminal_to_window_start_s": 8.943262665,
+  "extraction_policy": "First NDT source stamp after recorded final command stop plus original warmup; fixed five-second source-time window centered by cadence, never selected by residual or fitness",
+  "source_bag_manifest": "source_bag_manifest.json",
+  "time_window_index": 1,
+  "publisher_identity_note": "Bag messages do not encode publisher identity; live trial source audits retained separately"
+}

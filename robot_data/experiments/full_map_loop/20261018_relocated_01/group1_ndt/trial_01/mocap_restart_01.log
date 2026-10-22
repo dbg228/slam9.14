@@ -1,0 +1,12 @@
+[mocap-tracker0] client: project-local Humble vrpn_mocap binary
+[mocap-tracker0] server: 192.168.1.168:3883; rigid body: Tracker0
+[mocap-tracker0] raw: /vrpn_mocap/Tracker0/pose; normalized: /mocap/Tracker0/pose
+[mocap-tracker0] use_vrpn_timestamps=false; no TF or base_link pose is published.
+check_vrpn_cookie(): VRPN Note: minor version number doesn't match: (prefer 'vrpn: ver. 07.35', got 'vrpn: ver. 07.34  0').  This is not normally a problem.
+[INFO] [1792307882.016196036] [vrpn_mocap.client]: Created new tracker Tracker0
+[INFO] [1792307882.046383920] [vrpn_mocap.client]: Creating sensor 0
+[INFO] [1792307882.355812170] [mocap_tracker0_normalizer]: Passive mocap normalizer: /vrpn_mocap/Tracker0/pose -> /mocap/Tracker0/pose; frame=mocap_world; scale=0.001; raw unit=millimetres_verified_manual_1m_2026-10-15; timestamp source=ubuntu_receiver_clock. No TF, map alignment, rigid-body->base_link transform, NDT, or Nav2 data is published.
+[ERROR] [1792308709.792132349] [mocap_tracker0_normalizer]: Mocap stream stale for 0.626 s; no old pose is republished.
+[INFO] [1792308878.899054467] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+vrpn_Connection::~vrpn_Connection: Connection was deleted while 2 references still remain.
+[INFO] [1792308878.899624887] [vrpn_mocap.client]: Destroyed new tracker Tracker0

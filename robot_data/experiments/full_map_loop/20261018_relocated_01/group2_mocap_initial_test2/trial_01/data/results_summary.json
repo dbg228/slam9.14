@@ -1,0 +1,99 @@
+{
+  "experiment_display_name": "第2轮测试版2",
+  "offset_distance_m": 0.6,
+  "navigation_status": 4,
+  "full_route_succeeded": true,
+  "duration_s": 354.02188589300005,
+  "correction_performed": false,
+  "reference_length_m": 46.245572590093914,
+  "tracking_rmse_mm": 49.93180488081861,
+  "tracking_samples": 3540,
+  "lio_estimated_total_m": null,
+  "lio_observed_segments_m": 15.928389499691106,
+  "lio_1s_sample_polyline_m": 15.886644308132963,
+  "lio_distance_complete": false,
+  "lio_gap_count": 1,
+  "distance_interpretation": "Continuous LIO estimate, not independently measured physical travel. Motion-boundary window; gaps >0.5 s are not bridged. 1 s actual-sample decimation is a sensitivity check, not truth.",
+  "map_trajectory_polyline_length_m": 45.833970116308066,
+  "recording_interruption": {
+    "cause": "Recorder SQLite database locked during concurrent read-only inspection; recorder aborted. Original navigation and static validator recorders continued.",
+    "resumed": true,
+    "route_restarted": false,
+    "missing_native_stream_is_not_interpolated": true,
+    "tracking_source": "Original executor retained actual_path contains its complete sampled map trajectory.",
+    "first_segment_end_from_departure_s": 30.346260864,
+    "resumed_native_stream_from_departure_s": 263.051014786
+  },
+  "wheel_feedback_plot_samples": 2399,
+  "wheel_target_plot_samples": 2286,
+  "wheel_physical_scale_verified": false,
+  "initial_xy_rmse_mm": 4.0763296091297,
+  "initial_position_3d_rmse_mm": 11.223493194099342,
+  "initial_orientation_rmse_deg": 0.11343146962480946,
+  "initial_reference_suspect": false,
+  "initial_valid_for_localization_accuracy": true,
+  "initial_static_samples": 32,
+  "endpoint_xy_rmse_mm": 10.439789404346188,
+  "endpoint_position_3d_rmse_mm": 18.507329836767408,
+  "endpoint_orientation_rmse_deg": 0.49635172798593696,
+  "endpoint_reference_suspect": false,
+  "endpoint_valid_for_localization_accuracy": true,
+  "endpoint_static_samples": 32,
+  "endpoint_static_available": true,
+  "localization_static_pairs_added_from_original_validators": 31,
+  "mocap_valid_pairs": 430,
+  "mocap_visibility_windows": [
+    {
+      "start_s": 0.029174132000000002,
+      "end_s": 10.328977151,
+      "samples": 102,
+      "xy_rmse_mm": 24.25136780508493
+    },
+    {
+      "start_s": 153.52840857,
+      "end_s": 156.52857594,
+      "samples": 31,
+      "xy_rmse_mm": 181.97816263667522
+    },
+    {
+      "start_s": 348.827765746,
+      "end_s": 350.42858199600005,
+      "samples": 17,
+      "xy_rmse_mm": 22.387008814723178
+    },
+    {
+      "start_s": 351.228559775,
+      "end_s": 351.328554196,
+      "samples": 2,
+      "xy_rmse_mm": 15.59730423904559
+    },
+    {
+      "start_s": 353.228437943,
+      "end_s": 380.928587956,
+      "samples": 278,
+      "xy_rmse_mm": 15.400237428456139
+    }
+  ],
+  "middle_coverage_windows": [
+    {
+      "start_s": 153.52840857,
+      "end_s": 156.52857594,
+      "samples": 31,
+      "xy_rmse_mm": 181.97816263667522
+    }
+  ],
+  "dynamic_error_note": "Exact source-header pose/validity pairing; recorded receiver age <=0.25 s and validity arrival separation <=0.08 s; nearest native pose <=25 ms, no interpolation. Camera exposure latency and device clock offset unverified.",
+  "initial_error_scope": "Subsequent static samples after mocap initialization at the same starting placement; not spatial holdout absolute accuracy.",
+  "middle_static_available": true,
+  "middle_static_xy_rmse_mm": 181.97816263667522,
+  "middle_static_orientation_rmse_deg": 1.9318399484797195,
+  "middle_static_samples": 31,
+  "middle_static_reference_suspect": false,
+  "endpoint_fixed_15s": {
+    "samples": 150,
+    "complete": true,
+    "reference_suspect": false,
+    "valid_for_localization_accuracy": true,
+    "xy_rmse_mm": 10.336749657246616
+  }
+}

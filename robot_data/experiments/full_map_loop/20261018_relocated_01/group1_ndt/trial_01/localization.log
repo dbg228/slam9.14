@@ -1,0 +1,504 @@
+[localization] Static PCD: /home/zkam/test_nav/robot_data/maps/data/scans.pcd
+[localization] FAST-LIO local odometry config: /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml
+[localization] Use RViz 2D Pose Estimate to seed fixed-map NDT matching.
+[localization] The PCD is read-only in this mode.
+[INFO] [launch]: All log files can be found below /tmp/test_nav_group1_ros_logs/2026-10-18-15-09-17-678347-OmniBot-10452
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [fastlio_mapping-1]: process started with pid [10465]
+[INFO] [static_map_localizer_node-2]: process started with pid [10470]
+[INFO] [map_to_odom_tf_broadcaster.py-3]: process started with pid [10474]
+[INFO] [1792307357.902553430] [lio_tf_to_base_tf]: LIO TF bridge: /tf_lio_raw camera_init->body as sensor, base->sensor=(x=+0.370, y=+0.280, z=+0.150, yaw=+47.1deg) -> /tf odom->base_link
+[INFO] [1792307357.934660453] [tf_to_odom_bridge]: TF -> odom bridge: TF odom->base_link publishing /odom @ 50.0 Hz
+[WARN] [1792307357.997416433] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[fastlio_mapping-1] [INFO] [1792307358.046281185] [fastlio_static_odom]: p_pre->lidar_type 1
+[fastlio_mapping-1] Multi thread started 
+[fastlio_mapping-1] ~~~~/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/ file opened
+[fastlio_mapping-1] [INFO] [1792307358.061239192] [fastlio_static_odom]: Node init finished.
+[WARN] [1792307358.063074792] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.127639321] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.190777436] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.253927333] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.317537595] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.382217480] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[static_map_localizer_node-2] [INFO] [1792307358.435740317] [static_map_localizer]: Loaded static PCD: raw=2227763, voxel=16324, file=/home/zkam/test_nav/robot_data/maps/data/scans.pcd
+[WARN] [1792307358.446613554] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[static_map_localizer_node-2] [INFO] [1792307358.456565758] [static_map_localizer]: Global PCD localization ready: false
+[static_map_localizer_node-2] [INFO] [1792307358.456642284] [static_map_localizer]: 等待 RViz 2D Pose Estimate；固定 PCD 已加载，不会写入地图。
+[WARN] [1792307358.510316803] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1792307358.573453787] [tf_to_odom_bridge]: Waiting for TF odom->base_link: "odom" passed to lookupTransform argument target_frame does not exist. 
+[map_to_odom_tf_broadcaster.py-3] [INFO] [1792307358.588350053] [static_map_tf_broadcaster]: Publishing map->odom at 30.0 Hz from fixed-map localization.
+[WARN] [1792307358.636800435] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307358.700546675] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307358.763974314] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307358.826922855] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307358.890604003] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307358.952917452] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.015851166] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.078367360] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.140785556] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.203883938] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.266733903] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.329950628] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.392859101] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.455157687] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.518038039] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.580554538] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.643649837] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.706150603] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.768515554] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.832319418] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.894639165] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307359.957734028] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.020343817] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.083195563] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.146719747] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.210211181] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.274179400] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.337130773] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.400156536] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.463512718] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.526724004] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.590738223] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.653758852] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.716656164] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.780084518] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.842709938] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.906414037] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307360.969129025] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.031456658] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.094656978] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.157221028] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.220069463] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.282405254] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.344841683] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.407948053] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.470626369] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.533347792] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.595641177] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.658065815] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.721056817] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.783991453] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.846381179] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.910040254] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307361.972613812] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.035758666] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.098406542] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.160781988] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.223593990] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.286743212] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.349126841] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.412200340] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.475057440] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.538331685] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.600804510] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.663466098] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.726582799] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.789846812] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.853354549] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.917256747] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307362.980106778] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.042600612] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.104965588] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.167254912] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.230283250] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.292770362] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.355139728] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.418132701] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.481333095] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.544009197] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.606531408] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.668805320] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.731950268] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.794973407] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.857907221] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.920870767] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307363.984034253] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.046941961] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.111435405] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.174833749] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.239192623] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.302495538] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.365001407] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.428535532] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.492766367] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.555495877] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.618558476] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.681698751] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.744429043] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.807245522] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.869891819] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.933052766] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307364.996437403] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.059361460] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.122279806] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.185301359] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.248281505] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.310622475] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.373306371] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.435874999] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.499554362] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.562103339] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.625000914] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.688611856] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.751891035] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.815003622] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.879507150] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307365.943118133] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.005995635] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.068259659] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.131182019] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.195049159] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.257977381] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.320811559] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.384223286] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.448401504] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.511923760] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.575245914] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.638213303] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.701947753] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.765996555] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.829264488] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.893680666] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307366.957690691] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.020083194] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.083317855] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.147190426] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.210407238] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.273253146] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.336188307] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.400011200] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.464656778] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.528344139] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.591984695] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.655056633] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.717491017] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.780674986] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.844862963] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.909765700] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307367.973227719] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.036172317] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.099608277] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.162704142] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.225182606] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.288177727] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.351495634] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.414874155] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.477660240] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.541388294] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[fastlio_mapping-1] [WARN] [1792307368.561286413] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.570692163] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.582768456] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.590669998] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.602143498] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[WARN] [1792307368.604071696] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[fastlio_mapping-1] [WARN] [1792307368.610618868] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.620585934] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.630622321] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.640610073] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.650937792] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.662575099] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[WARN] [1792307368.667267188] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[fastlio_mapping-1] [WARN] [1792307368.673003660] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [WARN] [1792307368.680654371] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] IMU Initial Done
+[fastlio_mapping-1] [WARN] [1792307368.690701828] [fastlio_static_odom]: No point, skip this scan!
+[fastlio_mapping-1] 
+[fastlio_mapping-1] [INFO] [1792307368.706253622] [fastlio_static_odom]: Initialize the map kdtree
+[WARN] [1792307368.730289334] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[INFO] [1792307368.752941275] [lio_tf_to_base_tf]: TF odom->base_link: x=-0.458, y=+0.081, yaw=-47.2deg
+[WARN] [1792307368.792861727] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.855180861] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.917534824] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307368.980515575] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.043107462] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.106332680] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.169314312] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.232557445] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.295635490] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.358756845] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.421816587] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.485059977] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.547283066] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.609752667] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.672084353] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.735004813] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.798789206] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.861808171] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.925202136] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307369.988694043] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.052791454] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.116106594] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.180580735] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.244687454] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.308600230] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.371496611] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.434803561] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.498514649] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.561933349] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.626272807] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.689220354] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.752435985] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.816180679] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.879461204] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307370.943385562] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.005802882] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.068866213] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.132033203] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.194542009] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.258496784] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.321557500] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.384349896] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.448307498] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[WARN] [1792307371.511688495] [tf_to_odom_bridge]: Waiting for TF odom->base_link: Could not find a connection between 'odom' and 'base_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+[INFO] [1792307371.514524119] [tf_to_odom_bridge]: /odom: x=-0.458, y=+0.085, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307376.475289535] [tf_to_odom_bridge]: /odom: x=-0.462, y=+0.083, yaw=-0.823, vx=+0.007, vy=+0.004, wz=-0.000
+[INFO] [1792307381.475461188] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.080, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307386.474843745] [tf_to_odom_bridge]: /odom: x=-0.464, y=+0.079, yaw=-0.823, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307391.474704797] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.078, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307394.795373141] [lio_tf_to_base_tf]: TF odom->base_link: x=-0.465, y=+0.077, yaw=-47.2deg
+[INFO] [1792307396.475158473] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.079, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307401.475095032] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.077, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307406.474953527] [tf_to_odom_bridge]: /odom: x=-0.457, y=+0.078, yaw=-0.824, vx=+0.130, vy=+0.115, wz=+0.010
+[INFO] [1792307411.475159700] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.079, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307416.474686360] [tf_to_odom_bridge]: /odom: x=-0.459, y=+0.076, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307419.805131729] [lio_tf_to_base_tf]: TF odom->base_link: x=-0.471, y=+0.077, yaw=-47.2deg
+[INFO] [1792307421.474827844] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.077, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307426.474767301] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.078, yaw=-0.824, vx=+0.002, vy=-0.001, wz=-0.000
+[INFO] [1792307431.475240425] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.084, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307436.475227964] [tf_to_odom_bridge]: /odom: x=-0.461, y=+0.077, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307441.474975337] [tf_to_odom_bridge]: /odom: x=-0.460, y=+0.078, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307444.895106094] [lio_tf_to_base_tf]: TF odom->base_link: x=-0.462, y=+0.085, yaw=-47.3deg
+[INFO] [1792307446.475224371] [tf_to_odom_bridge]: /odom: x=-0.634, y=+0.511, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307451.475494874] [tf_to_odom_bridge]: /odom: x=-0.982, y=+0.847, yaw=-0.824, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307456.475201947] [tf_to_odom_bridge]: /odom: x=-0.881, y=+0.581, yaw=-1.392, vx=+0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307461.475247420] [tf_to_odom_bridge]: /odom: x=-0.773, y=+0.206, yaw=-2.188, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307466.475183683] [tf_to_odom_bridge]: /odom: x=-1.257, y=-0.360, yaw=-2.429, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307470.001063116] [lio_tf_to_base_tf]: TF odom->base_link: x=-2.066, y=-1.131, yaw=-131.5deg
+[INFO] [1792307471.555056668] [tf_to_odom_bridge]: /odom: x=-2.259, y=-1.370, yaw=-2.291, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307476.614878022] [tf_to_odom_bridge]: /odom: x=-3.377, y=-2.541, yaw=-2.293, vx=+0.560, vy=+0.522, wz=-0.017
+[INFO] [1792307481.615162320] [tf_to_odom_bridge]: /odom: x=-4.434, y=-3.790, yaw=-2.280, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307486.617787748] [tf_to_odom_bridge]: /odom: x=-5.197, y=-4.738, yaw=-2.273, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307491.615037754] [tf_to_odom_bridge]: /odom: x=-5.215, y=-4.767, yaw=-2.140, vx=-0.000, vy=+0.000, wz=+0.000
+[INFO] [1792307494.910576770] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.256, y=-4.781, yaw=-161.3deg
+[INFO] [1792307496.616271602] [tf_to_odom_bridge]: /odom: x=-5.236, y=-4.799, yaw=+3.041, vx=+0.000, vy=-0.000, wz=+0.000
+[INFO] [1792307501.616368821] [tf_to_odom_bridge]: /odom: x=-5.239, y=-4.792, yaw=+2.268, vx=+0.000, vy=-0.000, wz=+0.000
+[INFO] [1792307506.614727662] [tf_to_odom_bridge]: /odom: x=-5.508, y=-4.415, yaw=+2.307, vx=+3.997, vy=+0.300, wz=+0.176
+[INFO] [1792307511.614896108] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[INFO] [1792307516.615784826] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.407, yaw=+2.343, vx=-0.080, vy=-0.050, wz=-0.001
+[INFO] [1792307519.774162699] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.503, y=-4.406, yaw=+134.2deg
+[INFO] [1792307521.616706896] [tf_to_odom_bridge]: /odom: x=-5.503, y=-4.405, yaw=+2.343, vx=+0.069, vy=+0.050, wz=-0.020
+[static_map_localizer_node-2] [INFO] [1792307521.747269599] [static_map_localizer]: Received operator seed: x=+1.22 y=-1.46 yaw=-42.2 deg.
+[static_map_localizer_node-2] [INFO] [1792307522.454477539] [static_map_localizer]: 已接收 2D 初始位姿，开始固定地图 NDT 匹配。
+[static_map_localizer_node-2] [INFO] [1792307522.509953992] [static_map_localizer]: NDT accepted: fitness=0.320, update=0.20m / 2.1deg, target=4556, source=1992.
+[static_map_localizer_node-2] [INFO] [1792307522.510197080] [static_map_localizer]: Global PCD localization ready: true
+[static_map_localizer_node-2] [INFO] [1792307524.514814194] [static_map_localizer]: NDT accepted: fitness=0.312, update=0.18m / 0.2deg, target=4571, source=1975.
+[INFO] [1792307526.615899322] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307528.488300917] [static_map_localizer]: NDT accepted: fitness=0.344, update=0.03m / 0.2deg, target=4606, source=1991.
+[static_map_localizer_node-2] [INFO] [1792307530.490140988] [static_map_localizer]: NDT accepted: fitness=0.319, update=0.01m / 0.0deg, target=4611, source=1985.
+[INFO] [1792307531.616283263] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307532.497062119] [static_map_localizer]: NDT accepted: fitness=0.310, update=0.00m / 0.0deg, target=4609, source=2018.
+[static_map_localizer_node-2] [INFO] [1792307534.693562932] [static_map_localizer]: Global PCD localization ready: false
+[static_map_localizer_node-2] [INFO] [1792307534.693736509] [static_map_localizer]: Received operator seed: x=+2.08 y=-2.70 yaw=-35.5 deg.
+[static_map_localizer_node-2] [INFO] [1792307536.454289952] [static_map_localizer]: 已接收 2D 初始位姿，开始固定地图 NDT 匹配。
+[static_map_localizer_node-2] [INFO] [1792307536.508615298] [static_map_localizer]: NDT accepted: fitness=0.173, update=0.52m / 7.3deg, target=4589, source=1951.
+[static_map_localizer_node-2] [INFO] [1792307536.508828001] [static_map_localizer]: Global PCD localization ready: true
+[INFO] [1792307536.614842102] [tf_to_odom_bridge]: /odom: x=-5.504, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307540.506940166] [static_map_localizer]: NDT accepted: fitness=0.184, update=0.05m / 0.6deg, target=4510, source=1973.
+[INFO] [1792307541.615395219] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307542.508318969] [static_map_localizer]: NDT accepted: fitness=0.217, update=0.12m / 1.0deg, target=4484, source=2042.
+[INFO] [1792307544.787537837] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.502, y=-4.405, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307546.490829170] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.01m / 0.1deg, target=4475, source=2019.
+[INFO] [1792307546.614904047] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307550.491999775] [static_map_localizer]: NDT accepted: fitness=0.208, update=0.01m / 0.0deg, target=4473, source=1975.
+[INFO] [1792307551.615341802] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307554.490701747] [static_map_localizer]: NDT accepted: fitness=0.221, update=0.01m / 0.0deg, target=4473, source=2017.
+[INFO] [1792307556.615066806] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307558.489016794] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.01m / 0.1deg, target=4474, source=2051.
+[static_map_localizer_node-2] [INFO] [1792307560.501343321] [static_map_localizer]: NDT accepted: fitness=0.195, update=0.01m / 0.0deg, target=4473, source=2056.
+[INFO] [1792307561.615558915] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307562.565008760] [static_map_localizer]: NDT accepted: fitness=0.213, update=0.00m / 0.0deg, target=4474, source=2024.
+[static_map_localizer_node-2] [INFO] [1792307566.489796885] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.01m / 0.0deg, target=4473, source=2053.
+[INFO] [1792307566.616119235] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.408, yaw=+2.343, vx=-0.104, vy=+0.172, wz=+0.011
+[static_map_localizer_node-2] [INFO] [1792307568.495083994] [static_map_localizer]: NDT accepted: fitness=0.221, update=0.00m / 0.0deg, target=4473, source=2005.
+[INFO] [1792307569.875461439] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.499, y=-4.404, yaw=+134.2deg
+[INFO] [1792307571.616245308] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307572.499104057] [static_map_localizer]: NDT accepted: fitness=0.208, update=0.01m / 0.0deg, target=4474, source=1998.
+[static_map_localizer_node-2] [INFO] [1792307576.484007303] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.01m / 0.0deg, target=4473, source=1971.
+[INFO] [1792307576.615549821] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307578.508996871] [static_map_localizer]: NDT accepted: fitness=0.203, update=0.00m / 0.0deg, target=4473, source=1964.
+[static_map_localizer_node-2] [INFO] [1792307580.529018560] [static_map_localizer]: NDT accepted: fitness=0.211, update=0.01m / 0.0deg, target=4473, source=2014.
+[INFO] [1792307581.615896718] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.044, vy=-0.051, wz=-0.014
+[static_map_localizer_node-2] [INFO] [1792307584.516144618] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.00m / 0.0deg, target=4474, source=1976.
+[INFO] [1792307586.615013408] [tf_to_odom_bridge]: /odom: x=-5.502, y=-4.403, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307588.486266813] [static_map_localizer]: NDT accepted: fitness=0.203, update=0.01m / 0.0deg, target=4474, source=2062.
+[static_map_localizer_node-2] [INFO] [1792307590.535452870] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.00m / 0.1deg, target=4475, source=2004.
+[INFO] [1792307591.777216614] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.406, yaw=+2.342, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307594.502790757] [static_map_localizer]: NDT accepted: fitness=0.218, update=0.00m / 0.0deg, target=4472, source=2033.
+[INFO] [1792307595.517957708] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.499, y=-4.407, yaw=+134.2deg
+[INFO] [1792307596.794905727] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307598.489252787] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.01m / 0.0deg, target=4474, source=1969.
+[static_map_localizer_node-2] [INFO] [1792307600.508545422] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.00m / 0.0deg, target=4474, source=1996.
+[INFO] [1792307601.795717411] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307604.485323437] [static_map_localizer]: NDT accepted: fitness=0.203, update=0.01m / 0.1deg, target=4473, source=1992.
+[static_map_localizer_node-2] [INFO] [1792307606.574956513] [static_map_localizer]: NDT accepted: fitness=0.209, update=0.00m / 0.0deg, target=4471, source=1961.
+[INFO] [1792307606.795202564] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.408, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307610.486536504] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.02m / 0.0deg, target=4472, source=2003.
+[INFO] [1792307611.795193894] [tf_to_odom_bridge]: /odom: x=-5.496, y=-4.409, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307612.486093834] [static_map_localizer]: NDT accepted: fitness=0.206, update=0.01m / 0.0deg, target=4474, source=2014.
+[static_map_localizer_node-2] [INFO] [1792307614.540575595] [static_map_localizer]: NDT accepted: fitness=0.210, update=0.00m / 0.0deg, target=4474, source=2002.
+[INFO] [1792307616.795549271] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.403, yaw=+2.343, vx=+0.018, vy=+0.056, wz=-0.013
+[static_map_localizer_node-2] [INFO] [1792307618.564429703] [static_map_localizer]: NDT accepted: fitness=0.205, update=0.00m / 0.0deg, target=4472, source=1974.
+[INFO] [1792307621.795582663] [tf_to_odom_bridge]: /odom: x=-5.503, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[INFO] [1792307622.043890094] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.504, y=-4.403, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307622.501158661] [static_map_localizer]: NDT accepted: fitness=0.184, update=0.00m / 0.1deg, target=4474, source=2027.
+[static_map_localizer_node-2] [INFO] [1792307626.482905433] [static_map_localizer]: NDT accepted: fitness=0.191, update=0.01m / 0.1deg, target=4474, source=1985.
+[INFO] [1792307626.795455642] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307628.483750027] [static_map_localizer]: NDT accepted: fitness=0.207, update=0.02m / 0.1deg, target=4474, source=1989.
+[static_map_localizer_node-2] [INFO] [1792307630.496337273] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.01m / 0.1deg, target=4475, source=1954.
+[INFO] [1792307631.795384655] [tf_to_odom_bridge]: /odom: x=-5.502, y=-4.406, yaw=+2.342, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307634.484177089] [static_map_localizer]: NDT accepted: fitness=0.184, update=0.01m / 0.1deg, target=4473, source=1999.
+[static_map_localizer_node-2] [INFO] [1792307636.512218387] [static_map_localizer]: NDT accepted: fitness=0.207, update=0.00m / 0.0deg, target=4473, source=2012.
+[INFO] [1792307636.795813048] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.405, yaw=+2.343, vx=+0.102, vy=-0.017, wz=-0.009
+[static_map_localizer_node-2] [INFO] [1792307640.483278563] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.02m / 0.1deg, target=4473, source=1962.
+[INFO] [1792307641.794905232] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307642.515949882] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.02m / 0.1deg, target=4474, source=2021.
+[static_map_localizer_node-2] [INFO] [1792307646.553763454] [static_map_localizer]: NDT accepted: fitness=0.205, update=0.00m / 0.0deg, target=4474, source=2000.
+[INFO] [1792307646.795493211] [tf_to_odom_bridge]: /odom: x=-5.497, y=-4.406, yaw=+2.343, vx=+0.024, vy=+0.007, wz=+0.001
+[INFO] [1792307649.388222532] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.499, y=-4.408, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307650.489504544] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.01m / 0.1deg, target=4474, source=1968.
+[INFO] [1792307651.795965570] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307654.484816403] [static_map_localizer]: NDT accepted: fitness=0.214, update=0.03m / 0.1deg, target=4475, source=2029.
+[static_map_localizer_node-2] [INFO] [1792307656.494368072] [static_map_localizer]: NDT accepted: fitness=0.203, update=0.01m / 0.1deg, target=4475, source=2043.
+[INFO] [1792307656.795305332] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307660.549434188] [static_map_localizer]: NDT accepted: fitness=0.200, update=0.00m / 0.0deg, target=4474, source=2049.
+[INFO] [1792307661.795399371] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307664.501662803] [static_map_localizer]: NDT accepted: fitness=0.197, update=0.02m / 0.0deg, target=4472, source=1956.
+[INFO] [1792307666.795738161] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307668.496499365] [static_map_localizer]: NDT accepted: fitness=0.202, update=0.01m / 0.1deg, target=4473, source=2022.
+[static_map_localizer_node-2] [INFO] [1792307670.499164642] [static_map_localizer]: NDT accepted: fitness=0.198, update=0.01m / 0.0deg, target=4473, source=2010.
+[INFO] [1792307671.799078845] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307672.499734124] [static_map_localizer]: NDT accepted: fitness=0.209, update=0.00m / 0.0deg, target=4473, source=2032.
+[INFO] [1792307675.373896219] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.494, y=-4.406, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307676.556497572] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.00m / 0.0deg, target=4473, source=2039.
+[INFO] [1792307676.795363654] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307678.564152758] [static_map_localizer]: NDT accepted: fitness=0.215, update=0.00m / 0.0deg, target=4473, source=2039.
+[INFO] [1792307681.795148301] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.405, yaw=+2.343, vx=+0.086, vy=-0.011, wz=+0.007
+[static_map_localizer_node-2] [INFO] [1792307682.489511811] [static_map_localizer]: NDT accepted: fitness=0.193, update=0.02m / 0.0deg, target=4473, source=2004.
+[static_map_localizer_node-2] [INFO] [1792307684.495711323] [static_map_localizer]: NDT accepted: fitness=0.221, update=0.01m / 0.1deg, target=4471, source=2026.
+[static_map_localizer_node-2] [INFO] [1792307686.555728425] [static_map_localizer]: NDT accepted: fitness=0.225, update=0.00m / 0.0deg, target=4474, source=1930.
+[INFO] [1792307686.794858563] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307690.492788638] [static_map_localizer]: NDT accepted: fitness=0.210, update=0.02m / 0.1deg, target=4472, source=1995.
+[INFO] [1792307691.795331333] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.403, yaw=+2.343, vx=+0.002, vy=+0.002, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307694.484742258] [static_map_localizer]: NDT accepted: fitness=0.205, update=0.01m / 0.0deg, target=4473, source=2034.
+[static_map_localizer_node-2] [INFO] [1792307696.490526308] [static_map_localizer]: NDT accepted: fitness=0.202, update=0.01m / 0.0deg, target=4473, source=2013.
+[INFO] [1792307696.798181687] [tf_to_odom_bridge]: /odom: x=-5.498, y=-4.410, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307698.492703072] [static_map_localizer]: NDT accepted: fitness=0.185, update=0.02m / 0.1deg, target=4474, source=2022.
+[INFO] [1792307701.794741184] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[INFO] [1792307702.275954583] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.500, y=-4.407, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307702.494537822] [static_map_localizer]: NDT accepted: fitness=0.215, update=0.01m / 0.1deg, target=4472, source=1994.
+[static_map_localizer_node-2] [INFO] [1792307706.547302936] [static_map_localizer]: NDT accepted: fitness=0.210, update=0.00m / 0.1deg, target=4474, source=1946.
+[INFO] [1792307706.794913695] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.408, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307710.494261481] [static_map_localizer]: NDT accepted: fitness=0.202, update=0.01m / 0.0deg, target=4471, source=1968.
+[INFO] [1792307711.799779471] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307712.497866491] [static_map_localizer]: NDT accepted: fitness=0.193, update=0.01m / 0.0deg, target=4472, source=1974.
+[static_map_localizer_node-2] [INFO] [1792307714.507212334] [static_map_localizer]: NDT accepted: fitness=0.206, update=0.00m / 0.0deg, target=4473, source=1972.
+[INFO] [1792307716.795826962] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307718.483864304] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.01m / 0.1deg, target=4473, source=1981.
+[static_map_localizer_node-2] [INFO] [1792307720.493281626] [static_map_localizer]: NDT accepted: fitness=0.187, update=0.00m / 0.1deg, target=4474, source=1972.
+[INFO] [1792307721.795475431] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.406, yaw=+2.343, vx=-0.075, vy=-0.025, wz=-0.006
+[static_map_localizer_node-2] [INFO] [1792307724.521518013] [static_map_localizer]: NDT accepted: fitness=0.171, update=0.02m / 0.0deg, target=4473, source=1978.
+[INFO] [1792307726.798382391] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=-0.003, vy=+0.003, wz=-0.000
+[INFO] [1792307727.697496634] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.502, y=-4.407, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307728.490922955] [static_map_localizer]: NDT accepted: fitness=0.226, update=0.02m / 0.1deg, target=4475, source=2061.
+[static_map_localizer_node-2] [INFO] [1792307730.539237711] [static_map_localizer]: NDT accepted: fitness=0.208, update=0.00m / 0.0deg, target=4474, source=1997.
+[INFO] [1792307731.795396695] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.406, yaw=+2.342, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307734.541852689] [static_map_localizer]: NDT accepted: fitness=0.214, update=0.00m / 0.0deg, target=4474, source=2015.
+[INFO] [1792307736.795631677] [tf_to_odom_bridge]: /odom: x=-5.502, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307738.492502706] [static_map_localizer]: NDT accepted: fitness=0.211, update=0.02m / 0.1deg, target=4475, source=2032.
+[INFO] [1792307741.795267933] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.405, yaw=+2.343, vx=+0.045, vy=-0.206, wz=+0.012
+[static_map_localizer_node-2] [INFO] [1792307742.485939351] [static_map_localizer]: NDT accepted: fitness=0.212, update=0.02m / 0.2deg, target=4474, source=2024.
+[static_map_localizer_node-2] [INFO] [1792307744.489909016] [static_map_localizer]: NDT accepted: fitness=0.217, update=0.01m / 0.0deg, target=4474, source=1974.
+[INFO] [1792307746.795507203] [tf_to_odom_bridge]: /odom: x=-5.497, y=-4.404, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307748.485433599] [static_map_localizer]: NDT accepted: fitness=0.193, update=0.01m / 0.1deg, target=4472, source=2023.
+[INFO] [1792307751.795694779] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307752.488687753] [static_map_localizer]: NDT accepted: fitness=0.179, update=0.01m / 0.1deg, target=4474, source=1983.
+[INFO] [1792307753.281863496] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.499, y=-4.408, yaw=+134.2deg
+[static_map_localizer_node-2] [INFO] [1792307756.489790308] [static_map_localizer]: NDT accepted: fitness=0.217, update=0.01m / 0.2deg, target=4473, source=1951.
+[INFO] [1792307756.795553954] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307758.510074754] [static_map_localizer]: NDT accepted: fitness=0.207, update=0.01m / 0.1deg, target=4471, source=1972.
+[INFO] [1792307761.795389867] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.408, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307762.492355311] [static_map_localizer]: NDT accepted: fitness=0.195, update=0.03m / 0.2deg, target=4475, source=1975.
+[static_map_localizer_node-2] [INFO] [1792307766.489208211] [static_map_localizer]: NDT accepted: fitness=0.208, update=0.01m / 0.1deg, target=4471, source=2024.
+[INFO] [1792307766.795419174] [tf_to_odom_bridge]: /odom: x=-5.498, y=-4.408, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307770.495169521] [static_map_localizer]: NDT accepted: fitness=0.188, update=0.02m / 0.0deg, target=4473, source=1991.
+[INFO] [1792307771.795173711] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.405, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307774.552610674] [static_map_localizer]: NDT accepted: fitness=0.202, update=0.01m / 0.1deg, target=4472, source=1981.
+[INFO] [1792307776.795536678] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307778.494612584] [static_map_localizer]: NDT accepted: fitness=0.196, update=0.02m / 0.1deg, target=4475, source=2067.
+[INFO] [1792307779.820645631] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.500, y=-4.402, yaw=+134.2deg
+[INFO] [1792307781.795494553] [tf_to_odom_bridge]: /odom: x=-5.500, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307782.490030438] [static_map_localizer]: NDT accepted: fitness=0.200, update=0.00m / 0.1deg, target=4474, source=2018.
+[static_map_localizer_node-2] [INFO] [1792307786.487181790] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.02m / 0.0deg, target=4476, source=1996.
+[INFO] [1792307786.795210073] [tf_to_odom_bridge]: /odom: x=-5.501, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307788.489062215] [static_map_localizer]: NDT accepted: fitness=0.204, update=0.02m / 0.0deg, target=4470, source=2049.
+[static_map_localizer_node-2] [INFO] [1792307790.493610828] [static_map_localizer]: NDT accepted: fitness=0.188, update=0.02m / 0.1deg, target=4473, source=2038.
+[INFO] [1792307791.795390418] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.406, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307794.481587666] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.02m / 0.0deg, target=4475, source=2061.
+[static_map_localizer_node-2] [INFO] [1792307796.482710170] [static_map_localizer]: NDT accepted: fitness=0.207, update=0.01m / 0.0deg, target=4474, source=1994.
+[INFO] [1792307796.797191586] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.409, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307798.494344923] [static_map_localizer]: NDT accepted: fitness=0.193, update=0.02m / 0.1deg, target=4474, source=1973.
+[static_map_localizer_node-2] [INFO] [1792307800.495686387] [static_map_localizer]: NDT accepted: fitness=0.194, update=0.00m / 0.0deg, target=4474, source=1998.
+[INFO] [1792307801.795483681] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.407, yaw=+2.343, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307804.498859291] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.01m / 0.1deg, target=4474, source=2046.
+[INFO] [1792307806.332182664] [lio_tf_to_base_tf]: TF odom->base_link: x=-5.501, y=-4.397, yaw=+134.2deg
+[INFO] [1792307806.795112830] [tf_to_odom_bridge]: /odom: x=-5.502, y=-4.407, yaw=+2.342, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307808.563878122] [static_map_localizer]: NDT accepted: fitness=0.207, update=0.00m / 0.0deg, target=4474, source=2025.
+[INFO] [1792307811.796235995] [tf_to_odom_bridge]: /odom: x=-5.495, y=-4.412, yaw=+2.343, vx=-0.360, vy=-0.009, wz=+0.004
+[static_map_localizer_node-2] [INFO] [1792307812.488286559] [static_map_localizer]: NDT accepted: fitness=0.190, update=0.03m / 0.1deg, target=4475, source=2006.
+[static_map_localizer_node-2] [INFO] [1792307814.557010095] [static_map_localizer]: NDT accepted: fitness=0.201, update=0.00m / 0.0deg, target=4473, source=2041.
+[INFO] [1792307816.795433820] [tf_to_odom_bridge]: /odom: x=-5.499, y=-4.406, yaw=+2.342, vx=+0.012, vy=+0.004, wz=+0.001
+[static_map_localizer_node-2] [INFO] [1792307818.482700926] [static_map_localizer]: NDT accepted: fitness=0.186, update=0.02m / 0.1deg, target=4474, source=2032.
+[static_map_localizer_node-2] [INFO] [1792307820.489137500] [static_map_localizer]: NDT accepted: fitness=0.188, update=0.09m / 0.4deg, target=4502, source=1978.
+[INFO] [1792307821.795201892] [tf_to_odom_bridge]: /odom: x=-5.172, y=-4.753, yaw=+2.318, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307822.496555538] [static_map_localizer]: NDT accepted: fitness=0.122, update=0.11m / 0.7deg, target=4575, source=2063.
+[static_map_localizer_node-2] [INFO] [1792307826.481047971] [static_map_localizer]: NDT accepted: fitness=0.176, update=0.03m / 0.1deg, target=4577, source=2051.
+[INFO] [1792307826.795244359] [tf_to_odom_bridge]: /odom: x=-4.892, y=-5.046, yaw=+2.314, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307828.479979940] [static_map_localizer]: NDT accepted: fitness=0.146, update=0.01m / 0.2deg, target=4581, source=2029.
+[static_map_localizer_node-2] [INFO] [1792307830.495631633] [static_map_localizer]: NDT accepted: fitness=0.154, update=0.02m / 0.0deg, target=4581, source=2058.
+[INFO] [1792307831.345660720] [lio_tf_to_base_tf]: TF odom->base_link: x=-4.803, y=-5.141, yaw=+132.6deg
+[INFO] [1792307831.795625304] [tf_to_odom_bridge]: /odom: x=-4.785, y=-5.160, yaw=+2.314, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307834.498565782] [static_map_localizer]: NDT accepted: fitness=0.149, update=0.02m / 0.0deg, target=4591, source=2106.
+[INFO] [1792307836.795269363] [tf_to_odom_bridge]: /odom: x=-4.782, y=-5.162, yaw=+2.313, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307838.479003624] [static_map_localizer]: NDT accepted: fitness=0.142, update=0.00m / 0.0deg, target=4575, source=2056.
+[static_map_localizer_node-2] [INFO] [1792307840.483647697] [static_map_localizer]: NDT accepted: fitness=0.156, update=0.03m / 0.0deg, target=4579, source=2098.
+[INFO] [1792307841.795678066] [tf_to_odom_bridge]: /odom: x=-4.783, y=-5.162, yaw=+2.314, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307842.496243678] [static_map_localizer]: NDT accepted: fitness=0.159, update=0.00m / 0.1deg, target=4583, source=2059.
+[static_map_localizer_node-2] [INFO] [1792307846.493377858] [static_map_localizer]: NDT accepted: fitness=0.152, update=0.01m / 0.1deg, target=4576, source=2015.
+[INFO] [1792307846.795436727] [tf_to_odom_bridge]: /odom: x=-4.782, y=-5.165, yaw=+2.313, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307848.496058024] [static_map_localizer]: NDT accepted: fitness=0.136, update=0.01m / 0.0deg, target=4583, source=2041.
+[INFO] [1792307851.797726969] [tf_to_odom_bridge]: /odom: x=-4.785, y=-5.173, yaw=+2.314, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307852.482478116] [static_map_localizer]: NDT accepted: fitness=0.118, update=0.03m / 0.0deg, target=4591, source=2108.
+[static_map_localizer_node-2] [INFO] [1792307854.497226071] [static_map_localizer]: NDT accepted: fitness=0.152, update=0.04m / 0.0deg, target=4589, source=2103.
+[INFO] [1792307856.306948657] [lio_tf_to_base_tf]: TF odom->base_link: x=-4.730, y=-5.231, yaw=+132.5deg
+[INFO] [1792307856.795425820] [tf_to_odom_bridge]: /odom: x=-4.727, y=-5.232, yaw=+2.312, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307858.498522100] [static_map_localizer]: NDT accepted: fitness=0.151, update=0.03m / 0.0deg, target=4574, source=2119.
+[INFO] [1792307861.803431042] [tf_to_odom_bridge]: /odom: x=-4.800, y=-5.189, yaw=+2.307, vx=+0.000, vy=-0.000, wz=+0.000
+[static_map_localizer_node-2] [INFO] [1792307862.499143185] [static_map_localizer]: NDT accepted: fitness=0.136, update=0.05m / 0.1deg, target=4567, source=2082.
+[static_map_localizer_node-2] [INFO] [1792307864.551539748] [static_map_localizer]: NDT accepted: fitness=0.114, update=0.00m / 0.0deg, target=4579, source=2061.
+
+[localization] Static localization stopped.
+
+[localization] Static localization stopped.

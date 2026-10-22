@@ -1,0 +1,41 @@
+{
+  "actions": [
+    {
+      "pid": 15932,
+      "signal": "SIGINT",
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_fastlio_localization.launch.py fastlio_config:=/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml map_pcd_path:=/home/zkam/test_nav/robot_data/maps/data/scans.pcd "
+    },
+    {
+      "pid": 15932,
+      "signal": "SIGTERM",
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_fastlio_localization.launch.py fastlio_config:=/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml map_pcd_path:=/home/zkam/test_nav/robot_data/maps/data/scans.pcd "
+    },
+    {
+      "pid": 15899,
+      "signal": "SIGTERM",
+      "command": "bash /home/zkam/test_nav/localization.sh "
+    },
+    {
+      "pid": 15930,
+      "signal": "SIGTERM",
+      "command": "python3 /home/zkam/test_nav/lio_tf_to_base_tf.py --ros-args -p raw_tf_topic:=/tf_lio_raw -p raw_parent_frame:=camera_init -p raw_child_frame:=body -p odom_frame:=odom -p base_frame:=base_link -p sensor_x:=0.37 -p sensor_y:=0.28 -p sensor_z:=0.15 -p sensor_yaw:=0.8229227423153264 "
+    },
+    {
+      "pid": 15931,
+      "signal": "SIGTERM",
+      "command": "python3 /home/zkam/test_nav/tf_to_odom_bridge.py --ros-args -p odom_frame:=odom -p base_frame:=base_link -p odom_topic:=/odom -p publish_rate:=50.0 "
+    },
+    {
+      "pid": 15954,
+      "signal": "SIGTERM",
+      "command": "/home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/static_map_localizer_node --ros-args -r __node:=static_map_localizer --params-file /tmp/launch_params_kt3zas38 "
+    },
+    {
+      "pid": 15956,
+      "signal": "SIGTERM",
+      "command": "python3 /home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/map_to_odom_tf_broadcaster.py --ros-args -r __node:=static_map_tf_broadcaster "
+    }
+  ],
+  "remaining": {},
+  "no_chassis_lidar_or_mocap_signalled": true
+}

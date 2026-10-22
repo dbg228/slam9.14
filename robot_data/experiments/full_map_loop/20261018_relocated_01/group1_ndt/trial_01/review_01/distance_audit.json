@@ -1,0 +1,52 @@
+{
+  "reference_length_m": 47.80025866780632,
+  "lio_decimation_sensitivity": [
+    {
+      "period_s": 0.1,
+      "samples": 3569,
+      "polyline_m": 63.73914484364217
+    },
+    {
+      "period_s": 0.2,
+      "samples": 1785,
+      "polyline_m": 59.54320233067752
+    },
+    {
+      "period_s": 0.5,
+      "samples": 714,
+      "polyline_m": 50.055780673741666
+    },
+    {
+      "period_s": 1.0,
+      "samples": 357,
+      "polyline_m": 48.090061259655315
+    },
+    {
+      "period_s": 2.0,
+      "samples": 179,
+      "polyline_m": 48.029376190008065
+    }
+  ],
+  "/odom": {
+    "samples": 17809,
+    "frames": [
+      [
+        "odom",
+        "base_link"
+      ]
+    ],
+    "speed_integral_m": 62.31446531501157,
+    "max_sample_gap_s": 0.356386048,
+    "max_speed_mps": 15.870935468491895,
+    "meaning": "Recorded /odom twist integral; runtime publisher provenance not certified by bag; large speed spikes; do not use as physical total distance"
+  },
+  "/reference_velocity": {
+    "samples": 145719,
+    "frames": [],
+    "speed_integral_m": 70.84963938354412,
+    "max_sample_gap_s": 0.015921664000000002,
+    "max_speed_mps": 0.2015659064054489,
+    "meaning": "Commanded-speed integral; not measured travel"
+  },
+  "policy": "Decimated polyline lengths are sensitivity diagnostics only; none is an independently measured total. No rate selected to replace the original result."
+}

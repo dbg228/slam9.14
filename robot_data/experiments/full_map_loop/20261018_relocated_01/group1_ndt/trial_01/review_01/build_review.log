@@ -1,0 +1,55 @@
+{
+  "comparison": [
+    {
+      "label": "previous_fourth_point",
+      "calibration_sha256": "939920cefbf169cedb9cd5cb4f9be5d6ff689770c2cba3dc8b7b9a849871c3b7",
+      "samples": 3,
+      "sample_errors_mm": [
+        56.18517384257274,
+        56.45299226187215,
+        48.7281503882131
+      ],
+      "sample_xy_rmse_mm": 53.90778155113734,
+      "mean_point_xy_error_mm": 53.691374852794496,
+      "training_xy_rmse_mm": 11.142342944614429,
+      "nearest_training_m": 0.5440231416470236,
+      "pose_field": "final_map_to_base_at_cloud",
+      "capture": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test_attempt02/validation_retry_02/test_04/summary.json"
+    },
+    {
+      "label": "current_initial",
+      "calibration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+      "samples": 3,
+      "sample_errors_mm": [
+        8.022782054467346,
+        9.169235040822512,
+        16.510904318561362
+      ],
+      "sample_xy_rmse_mm": 11.84693862767957,
+      "mean_point_xy_error_mm": 7.800552846768366,
+      "training_xy_rmse_mm": 4.094498101865196,
+      "nearest_training_m": 0.3534671243165624,
+      "pose_field": "final_map_to_base_at_cloud",
+      "capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_06/initial/summary.json"
+    },
+    {
+      "label": "current_endpoint_short_window",
+      "calibration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+      "samples": 3,
+      "sample_errors_mm": [
+        3.7620860370012967,
+        9.975147652978963,
+        19.81464569220211
+      ],
+      "sample_xy_rmse_mm": 12.99072805190989,
+      "mean_point_xy_error_mm": 8.848694714995478,
+      "training_xy_rmse_mm": 4.094498101865196,
+      "nearest_training_m": 0.25925337672267096,
+      "pose_field": "final_map_to_base_at_cloud",
+      "capture": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/endpoint_arrival_capture_02/endpoint/summary.json"
+    }
+  ],
+  "diagnostic_arrival_15s_rmse_mm": 31.735192532075388,
+  "physical_total_distance_m": null,
+  "review": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/review_01/review_report.md"
+}

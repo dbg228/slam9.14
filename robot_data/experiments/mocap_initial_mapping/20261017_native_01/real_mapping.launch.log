@@ -1,0 +1,25 @@
+[INFO] [launch]: All log files can be found below /home/zkam/.ros/log/2026-10-17-16-30-33-011915-OmniBot-29450
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [bwrap-1]: process started with pid [29516]
+[INFO] [initial_anchor-2]: process started with pid [29518]
+[bwrap-1] [INFO] [1792225835.703984978] [anchored_fastlio]: p_pre->lidar_type 1
+[bwrap-1] Multi thread started 
+[bwrap-1] ~~~~/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/ file opened
+[bwrap-1] [INFO] [1792225835.716563035] [anchored_fastlio]: Node init finished.
+[bwrap-1] [WARN] [1792225836.766138362] [anchored_fastlio]: No point, skip this scan!
+[bwrap-1] 
+[bwrap-1] [WARN] [1792225836.775550280] [anchored_fastlio]: No point, skip this scan!
+[bwrap-1] 
+[bwrap-1] [WARN] [1792225836.785486090] [anchored_fastlio]: No point, skip this scan!
+[bwrap-1] 
+[bwrap-1] IMU Initial Done
+[bwrap-1] [WARN] [1792225836.795549371] [anchored_fastlio]: No point, skip this scan!
+[bwrap-1] 
+[bwrap-1] [INFO] [1792225836.852623088] [anchored_fastlio]: Initialize the map kdtree
+[initial_anchor-2] [INFO] [1792225840.703152724] [initial_anchor]: Static initialization saved. No NDT or continuous mocap correction. Manual operation only.
+[bwrap-1] [INFO] [1792226161.283718772] [anchored_fastlio]: Saving map to /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd...
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [initial_anchor-2]: sending signal 'SIGINT' to process[initial_anchor-2]
+[INFO] [bwrap-1]: sending signal 'SIGINT' to process[bwrap-1]
+[ERROR] [bwrap-1]: process has died [pid 29516, exit code -2, cmd '/usr/bin/bwrap --die-with-parent --bind / / --bind /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/native_aux/Log /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/Log --bind /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/native_aux/PCD /home/zkam/fastlio_ws/src/FAST_LIO_ROS2/PCD -- /home/zkam/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping --ros-args -r __node:=anchored_fastlio --params-file /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/fastlio.yaml -r /Odometry:=/anchored_mapping/native_odom -r /tf:=/anchored_mapping/native_tf -r /cloud_registered:=/anchored_mapping/cloud_F -r /cloud_registered_body:=/anchored_mapping/cloud_I -r /cloud_effected:=/anchored_mapping/effected_F -r /Laser_map:=/anchored_mapping/map_F -r /path:=/anchored_mapping/path_F -r /map_save:=/anchored_mapping/save_native'].
+[INFO] [initial_anchor-2]: process has finished cleanly [pid 29518]

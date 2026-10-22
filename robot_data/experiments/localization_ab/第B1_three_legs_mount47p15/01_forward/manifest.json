@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "group": "B",
+  "execute_requested": true,
+  "onsite_route_clear_confirmed": true,
+  "direction": "forward",
+  "protocol": {
+    "speed_mps": 0.15,
+    "direction": 1,
+    "distance_m": 2.0,
+    "settle_s": 5.0,
+    "post_stop_s": 5.0,
+    "stale_s": 0.2,
+    "acquire_timeout_s": 15.0,
+    "max_motion_s": 25.0,
+    "max_jump_m": 0.06,
+    "max_cross_track_m": 0.25,
+    "max_yaw_deg": 15.0,
+    "no_progress_s": 3.0,
+    "min_progress_m": 0.03,
+    "max_static_radius_m": 0.005
+  },
+  "mocap_offset_s": 0.0,
+  "timing_verified": false,
+  "mount": {
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "independent_reference": true,
+  "status": "completed",
+  "control": "constant +0.15 m/s body x; zero yaw; common mocap displacement >=2 m stop",
+  "endpoint_note": "2 m is zero-command trigger; braking overshoot is measured separately",
+  "common_controller_sha256": "d6eb619e2d3908f5530b705041bfa4ce1ed772700405b52a0ff0e56bfb71a9f3",
+  "control_transport": {
+    "private_realtime_topics": "BEST_EFFORT / KEEP_LAST; watchdog limits unchanged",
+    "chassis_and_events": "original reliable delivery",
+    "nodes_sha256": "5a58329f7b073377873b5651c008fd6b518b2e30cda6a97c6f3096d6393712f2",
+    "qos_sha256": "200c1c2e20b5f2c6c47f10061ffad42e667708800db855dbe007f0244c4cd726"
+  },
+  "preflight": {
+    "nav2_absent": true,
+    "mocap_messages_received": 40,
+    "mocap_fresh": true,
+    "mocap_frame": "mocap_world",
+    "mocap_header_age_s": 0.002554763,
+    "mocap_base_pose": {
+      "stamp_ns": 1792088883232485108,
+      "valid": true,
+      "x": -0.8968224482364449,
+      "y": -0.1608490149020134,
+      "z": 0.20960865206526152,
+      "qx": -0.0016798935987358073,
+      "qy": -0.001456376178742264,
+      "qz": 0.022624388548262465,
+      "qw": 0.999741563589681
+    },
+    "fastlio_present": true,
+    "fastlio_node_count": 1,
+    "cmd_publishers": [],
+    "mode_publishers": [],
+    "cmd_subscribers": [
+      "arbitrator_controller"
+    ],
+    "external_watchdog_timeout_s": 0.25,
+    "wheel_homing_done": {
+      "wheel_2_turn": 0.0,
+      "wheel_1_turn": 0.0,
+      "wheel_3_turn": 0.0,
+      "wheel_4_turn": 0.0
+    },
+    "all_wheels_homed": false,
+    "chassis_driver_evidence": {
+      "process_pid": 26856,
+      "log_file": "/home/zkam/.ros/log/ros2_control_node_26856_1792088059314.log",
+      "ready": true,
+      "last_open_offset": 17773,
+      "last_restore_offset": 17854,
+      "last_reset_offset": 12045,
+      "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+    },
+    "chassis_states_fresh": true,
+    "chassis_homing_verified": true,
+    "local_pose_finite_fresh": true,
+    "local_xy_norm_m": 0.47362691954070985,
+    "ndt_present": true,
+    "ndt_initialized_ready": true,
+    "ndt_diagnostic_fresh": true,
+    "local_fastlio_processes": [
+      27555
+    ],
+    "free_disk_bytes": 13569675264,
+    "ready_to_arm": true,
+    "blocking_reasons": []
+  },
+  "recorded_topics": [
+    "/mocap/Tracker0/pose",
+    "/vrpn_mocap/Tracker0/pose",
+    "/mocap/Tracker0/diagnostics",
+    "/tf",
+    "/tf_lio_raw",
+    "/tf_static",
+    "/odom",
+    "/cloud_registered",
+    "/nav/cmd_vel",
+    "/teleop/mode",
+    "/reference_velocity",
+    "/localization_ab/estimate/B",
+    "/localization_ab/request",
+    "/localization_ab/state",
+    "/localization_ab/events",
+    "/localization_ab/guard_status",
+    "/localization_ab/recorder_ready",
+    "/static_localization/ndt_match_diagnostic_detail",
+    "/static_localization/map_to_odom",
+    "/static_localization/ready"
+  ],
+  "final_state": {
+    "group": "B",
+    "direction": 1,
+    "state": "DONE",
+    "reason": "target_reached",
+    "displacement_m": 2.000726821020234,
+    "path_length_m": 2.002643764629877,
+    "mocap_stamp_ns": 1792088910981793357,
+    "ros_stamp_ns": 1792088916003440841,
+    "request_linear_x": 0.0,
+    "request_angular_z": 0.0,
+    "duplicates": 0
+  }
+}

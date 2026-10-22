@@ -1,0 +1,25 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792232069.343433247] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1792232069.352324683] [rosbag2_storage]: Opened database '/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T101420Z_forward_2m_round04_retry/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1792232069.359373535] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1792232069.360389746] [rosbag2_recorder]: Listening for topics...
+[INFO] [1792232069.371317522] [rosbag2_recorder]: Subscribed to topic '/vrpn_mocap/Tracker0/pose'
+[INFO] [1792232069.381958020] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/pose'
+[INFO] [1792232069.391437463] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/diagnostics'
+[INFO] [1792232069.391620664] [rosbag2_recorder]: Recording...
+[INFO] [1792232069.409984499] [rosbag2_recorder]: Subscribed to topic '/teleop/mode'
+[INFO] [1792232069.425572341] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1792232069.459346374] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1792232069.566141772] [rosbag2_recorder]: Subscribed to topic '/anchored_localization/native_odom'
+[INFO] [1792232069.569735687] [rosbag2_recorder]: Subscribed to topic '/reference_velocity'
+[INFO] [1792232069.881333759] [rosbag2_recorder]: Subscribed to topic '/localization_ab/estimate/A'
+[INFO] [1792232069.882917515] [rosbag2_recorder]: Subscribed to topic '/localization_ab/recorder_ready'
+[INFO] [1792232069.995691279] [rosbag2_recorder]: Subscribed to topic '/anchored_localization/status'
+[INFO] [1792232070.101536087] [rosbag2_recorder]: Subscribed to topic '/localization_ab/guard_status'
+[INFO] [1792232070.104147775] [rosbag2_recorder]: Subscribed to topic '/nav/cmd_vel'
+[INFO] [1792232070.313924699] [rosbag2_recorder]: Subscribed to topic '/localization_ab/request'
+[INFO] [1792232070.315675353] [rosbag2_recorder]: Subscribed to topic '/localization_ab/events'
+[INFO] [1792232070.317583917] [rosbag2_recorder]: Subscribed to topic '/localization_ab/state'
+[INFO] [1792232070.317646279] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1792232101.398216985] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1792232101.401994562] [rosbag2_recorder]: Event publisher thread: Exiting
+[INFO] [1792232101.402204735] [rosbag2_recorder]: Recording stopped

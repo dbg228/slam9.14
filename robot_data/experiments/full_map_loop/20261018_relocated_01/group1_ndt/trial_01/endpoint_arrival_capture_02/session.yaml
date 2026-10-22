@@ -1,0 +1,84 @@
+schema_version: 1
+protocol: three_training_placements_one_holdout
+data_kind: real_measurement_from_recorded_bag
+unit: metre
+reference_point: base_link_origin
+mocap_frame: mocap_world
+map_frame: map
+calibration_id: 20261018_relocated_shared_world_01__group1_ndt_registration
+map_reference_id: preserved_original_NDT_scans_pcd
+map_reference_files:
+- /home/zkam/test_nav/robot_data/maps/data/scans.pcd
+- /home/zkam/test_nav/robot_data/maps/map.yaml
+- /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.yaml
+- /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.lock.json
+- /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/frozen_inputs.json
+- /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/endpoint_arrival_capture_02/source_bag_manifest.json
+physical_reference_confirmed: true
+map_source: ndt
+map_method: Current original NDT final_map_to_base_at_cloud; three separately parked
+  calibration placements; initial and endpoint are not fitted
+mocap:
+  server: 192.168.1.168
+  port: 3883
+  tracker: Tracker0
+  world_frame: mocap_world
+  raw_position_unit: millimetres_verified_manual_1m_2026-10-15
+  position_scale_to_m: 0.001
+  use_vrpn_timestamps: false
+  timestamp_source: ubuntu_receiver_clock
+  update_frequency_hz: 100.0
+  refresh_frequency_hz: 1.0
+normalizer:
+  input_topic: /vrpn_mocap/Tracker0/pose
+  output_topic: /mocap/Tracker0/pose
+  diagnostics_topic: /mocap/Tracker0/diagnostics
+  expected_input_frame: mocap_world
+  output_frame: mocap_world
+  stale_after_seconds: 0.5
+topics:
+  ndt: /static_localization/ndt_match_diagnostic
+  command: /reference_velocity
+  map_ready: /static_localization/ready
+ndt_pose_field: final_map_to_base_at_cloud
+ndt_base_frame: base_link
+camera_latency_s: null
+clock_offset_s: 0.0
+clock_offset_verified: false
+limits:
+  seconds: 5.0
+  warmup_s: 4.0
+  minimum_mocap_samples: 30
+  minimum_pairs: 3
+  minimum_raw_normalized_coverage: 0.9
+  maximum_mocap_gap_s: 0.15
+  maximum_ndt_gap_s: 2.5
+  maximum_pair_skew_s: 0.05
+  maximum_source_age_s: 2.0
+  maximum_cloud_odom_skew_s: 0.05
+  maximum_mocap_radius_m: 0.01
+  maximum_map_radius_m: 0.05
+  maximum_orientation_deviation_deg: 2.0
+  minimum_baseline_m: 0.1
+  minimum_triangle_altitude_m: 0.05
+  holdout_minimum_separation_m: 0.1
+  holdout_minimum_heading_difference_deg: 10.0
+  maximum_command_abs: 0.0001
+acceptance:
+  validation_3d_max_m: null
+  validation_xy_max_m: null
+camera_world_id: 20261018_relocated_shared_world_01
+retain_mocap_warmup: true
+ndt_capture_phase:
+  period_s: 2.0
+  lead_s: 0.5
+  maximum_wait_s: 10.0
+timing_note: Observed native processing delay approximately 1.4 seconds. Static-only
+  capture keeps actual stamps and warmup mocap history; no offset fit, retiming, or
+  estimator change. Four-second warmup precedes a five-second NDT collection window.
+evaluation_only: true
+static_history_pairing: true
+fixed_calibration_session: /home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01
+extraction_policy: First NDT source stamp after recorded final command stop plus original
+  warmup; fixed five-second source-time window centered by cadence, never selected
+  by residual or fitness

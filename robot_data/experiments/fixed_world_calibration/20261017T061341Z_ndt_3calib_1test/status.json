@@ -1,0 +1,11 @@
+{
+  "stage": "failed_first_capture_kept_insufficient_ndt_samples",
+  "real_robot_motion_command_sent": false,
+  "initial_pose_required": true,
+  "training_captured": 0,
+  "holdout_captured": false,
+  "localization_pid": 20399,
+  "initial_pose_user_reported_set": true,
+  "ndt_ready_observed": true,
+  "next_attempt": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test_attempt02"
+}

@@ -1,0 +1,76 @@
+{
+  "navigation_status": 4,
+  "duration_s": 354.583491158,
+  "full_route_succeeded": true,
+  "correction_performed": false,
+  "tracking_rmse_mm": 41.85287793960234,
+  "reference_length_m": 48.12167949387329,
+  "actual_tracking_samples": 3546,
+  "lio_raw_polyline_m": 47.57448860659885,
+  "lio_1s_sample_polyline_m": 47.495551069569274,
+  "lio_samples": 3526,
+  "lio_gap_count": 1,
+  "distance_interpretation": "LIO estimates, not independently measured travel; raw accumulation is noise-sensitive; 1 s actual-sample decimation is a sensitivity check.",
+  "wheel_feedback_plot_samples": 17372,
+  "wheel_target_plot_samples": 16415,
+  "wheel_physical_scale_verified": false,
+  "initial_xy_rmse_mm": 5.651354719605591,
+  "endpoint_xy_rmse_mm": 13.360148196068675,
+  "endpoint_static_available": true,
+  "mocap_visibility_windows": [
+    {
+      "start_s": 0.080451491,
+      "end_s": 8.080368045,
+      "samples": 81,
+      "xy_rmse_mm": 27.188706176126587,
+      "first_map_xyz_m": [
+        -0.4529947561417971,
+        0.02453169538218436,
+        -0.14654261596113077
+      ]
+    },
+    {
+      "start_s": 349.280660394,
+      "end_s": 350.88078832900004,
+      "samples": 17,
+      "xy_rmse_mm": 18.51888808455706,
+      "first_map_xyz_m": [
+        -0.8290118660346941,
+        0.45252687414415016,
+        -0.1434504800246088
+      ]
+    },
+    {
+      "start_s": 351.78075623800004,
+      "end_s": 364.780929807,
+      "samples": 131,
+      "xy_rmse_mm": 13.875563474621782,
+      "first_map_xyz_m": [
+        -0.5726758145412498,
+        0.2350483175290763,
+        -0.14458998084391134
+      ]
+    },
+    {
+      "start_s": 367.38044309900005,
+      "end_s": 379.480999949,
+      "samples": 122,
+      "xy_rmse_mm": 13.396187062217471,
+      "first_map_xyz_m": [
+        -0.3436346867731377,
+        0.0246070937503986,
+        -0.14520381861168255
+      ]
+    }
+  ],
+  "mocap_valid_samples": 351,
+  "middle_coverage_windows": [],
+  "dynamic_error_note": "Valid measured coverage only; exposure latency and cross-device clock offset are not independently verified. Moving error is auxiliary and is not a certified static absolute accuracy.",
+  "initial_error_scope": "Subsequent static samples after mocap initialization at the same physical starting placement; initialization residual, not a spatial holdout absolute-accuracy result.",
+  "endpoint_fixed_15s": {
+    "samples": 125,
+    "complete": false,
+    "xy_rmse_mm": 13.486696818999297,
+    "policy": "Final zero command +4 to +19 s; missing samples remain missing"
+  }
+}

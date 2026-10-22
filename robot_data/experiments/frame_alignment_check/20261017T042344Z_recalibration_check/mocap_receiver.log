@@ -1,0 +1,4 @@
+bash: connect: 连接被拒绝
+bash: 行 1: /dev/tcp/192.168.1.168/3883: 连接被拒绝
+[mocap-tracker0] ERROR: Cannot open TCP 192.168.1.168:3883.
+[mocap-tracker0] Check Windows server NIC/VRPN/port and this Ubuntu route; no network setting was changed.

@@ -1,0 +1,43 @@
+{
+  "software_passed": true,
+  "physical_test_performed": false,
+  "pytest": {
+    "passed": 16,
+    "duration_s": 7.06
+  },
+  "packages_built": [
+    "controller_tracking_probe",
+    "controller_tracking"
+  ],
+  "native_timestamp_probe_built": true,
+  "ros_integration": {
+    "domain": 192,
+    "source": "software_fixture",
+    "passed": true,
+    "result": "tests/controller_tracking/.validation/verified_smoke/result.json"
+  },
+  "original_entry_syntax_checked": [
+    "navigation.sh",
+    "localization.sh",
+    "mocap_tracker0_vrpn.sh",
+    "src/static_map_localization/launch/static_nav2.launch.py",
+    "/home/zkam/OmniBot_ws/src/omnibot_control/launch/robot_control.launch.py"
+  ],
+  "new_launch_show_args_passed": true,
+  "default_csv_files": [],
+  "protected_files": {
+    "protected_files": 836,
+    "unchanged": 835,
+    "changed": [
+      "README.md"
+    ],
+    "missing": [],
+    "authorized_changes": [
+      "README.md"
+    ],
+    "readme_existing_content_preserved": true,
+    "forbidden_changes": [],
+    "large_files_check": "size and mtime identity; small files content SHA256"
+  },
+  "software_data_only": "No real car goals or chassis launches were sent in this task"
+}

@@ -1,0 +1,14 @@
+{
+  "protected_files": 836,
+  "unchanged": 835,
+  "changed": [
+    "README.md"
+  ],
+  "missing": [],
+  "authorized_changes": [
+    "README.md"
+  ],
+  "readme_existing_content_preserved": true,
+  "forbidden_changes": [],
+  "large_files_check": "size and mtime identity; small files content SHA256"
+}

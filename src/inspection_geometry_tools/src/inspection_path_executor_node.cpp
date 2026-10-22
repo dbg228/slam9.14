@@ -19,6 +19,8 @@
 #include <vector>
 
 #include "geometry_msgs/msg/point_stamped.hpp"
+#include "lifecycle_msgs/msg/state.hpp"
+#include "lifecycle_msgs/srv/get_state.hpp"
 #include "nav2_msgs/action/compute_path_to_pose.hpp"
 #include "nav2_msgs/action/follow_path.hpp"
 #include "nav_msgs/msg/odometry.hpp"
@@ -30,6 +32,7 @@
 #include "tf2_ros/buffer.h"
 #include "tf2_ros/transform_listener.h"
 #include "visualization_msgs/msg/marker_array.hpp"
+#include "inspection_geometry_tools/ordered_path_progress.hpp"
 
 namespace inspection_geometry_tools
 {
@@ -68,7 +71,7 @@ public:
     // Nav2 Humble does not treat an empty FollowPath goal_checker_id as
     // "use the default": it tries to find a checker literally named "" and
     // aborts before publishing any velocity command.  Select it explicitly.
-    goal_checker_id_ = declare_parameter<std::string>("goal_checker_id", "goal_checker");
+    goal_checker_id_ = declare_parameter<std::string>("goal_checker_id", "inspection_route_goal_checker");
     route_selection_file_ = declare_parameter<std::string>(
       "route_selection_file", "/home/zkam/test_nav/robot_data/inspection_route_selection.txt");
     // /Odometry is only the sampling clock.  The localization binary labels
@@ -79,10 +82,13 @@ public:
     experiment_output_dir_ = declare_parameter<std::string>(
       "experiment_output_dir", "/home/zkam/test_nav/robot_data/experiments");
     experiment_label_ = declare_parameter<std::string>("experiment_label", "mppi");
+    follow_feedback_timeout_sec_ = declare_parameter<double>("follow_feedback_timeout_sec", 5.0);
 
     path_sub_ = create_subscription<nav_msgs::msg::Path>(
       "/inspection_path", rclcpp::QoS(1).reliable().transient_local(),
       std::bind(&InspectionPathExecutorNode::pathCallback, this, std::placeholders::_1));
+    active_reference_path_pub_ = create_publisher<nav_msgs::msg::Path>(
+      "/inspection_route/active_reference_path", rclcpp::QoS(1).reliable());
     start_sub_ = create_subscription<geometry_msgs::msg::PointStamped>(
       "/inspection_route_start", 10,
       [this](geometry_msgs::msg::PointStamped::SharedPtr point) {
@@ -115,6 +121,12 @@ public:
     cancel_service_ = create_service<std_srvs::srv::Trigger>(
       "/inspection_route/cancel",
       std::bind(&InspectionPathExecutorNode::cancel, this, std::placeholders::_1, std::placeholders::_2));
+    pause_service_ = create_service<std_srvs::srv::Trigger>(
+      "/inspection_route/pause",
+      std::bind(&InspectionPathExecutorNode::pause, this, std::placeholders::_1, std::placeholders::_2));
+    resume_service_ = create_service<std_srvs::srv::Trigger>(
+      "/inspection_route/resume",
+      std::bind(&InspectionPathExecutorNode::resume, this, std::placeholders::_1, std::placeholders::_2));
     save_service_ = create_service<std_srvs::srv::Trigger>(
       "/inspection_route/save",
       std::bind(&InspectionPathExecutorNode::save, this, std::placeholders::_1, std::placeholders::_2));
@@ -123,10 +135,19 @@ public:
       std::bind(&InspectionPathExecutorNode::load, this, std::placeholders::_1, std::placeholders::_2));
     action_client_ = rclcpp_action::create_client<FollowPath>(this, follow_path_action_);
     compute_path_client_ = rclcpp_action::create_client<ComputePathToPose>(this, "/compute_path_to_pose");
+    // A stale FollowPath action endpoint can remain visible while Nav2 is
+    // already deactivating. Query controller_server itself: its lifecycle
+    // manager service can disappear during heavy FAST-LIO load even while the
+    // controller is healthy and active.
+    nav_ready_client_ = create_client<lifecycle_msgs::srv::GetState>(
+      "/controller_server/get_state");
     tf_buffer_ = std::make_unique<tf2_ros::Buffer>(get_clock());
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
     status_timer_ = create_wall_timer(std::chrono::milliseconds(250),
       std::bind(&InspectionPathExecutorNode::publishStatus, this));
+    nav_health_timer_ = create_wall_timer(std::chrono::seconds(1),
+      std::bind(&InspectionPathExecutorNode::refreshNavHealth, this));
+    refreshNavHealth();
     publishStatus();
   }
 
@@ -400,6 +421,15 @@ private:
 
   void publishStatus()
   {
+    checkFollowHealth();
+    if (active_goal_ && recording_) {
+      // The ordered goal checker only accepts a path published after its
+      // action reset. Repeating the same immutable path also removes the
+      // goal-acceptance/reset callback race; pose geometry never changes.
+      auto reference = active_follow_route_;
+      reference.header.stamp = now();
+      active_reference_path_pub_->publish(reference);
+    }
     const auto start = selectedPoint(start_index_, start_click_);
     const auto end = selectedPoint(end_index_, end_click_);
     const auto route = selectedRoute();
@@ -407,6 +437,7 @@ private:
     text << std::fixed << std::setprecision(2);
     text << "START: " << (start_index_.has_value() ? "已选" : "未选")
          << " | END: " << (end_index_.has_value() ? "已选" : "未选");
+    text << "\nNav2: " << (nav_active_ ? "控制器已就绪" : nav_health_message_);
     if (route.has_value()) {
       text << "\n紫线路程 START→END: " << pathLength(*route) << " m";
     }
@@ -426,14 +457,73 @@ private:
     }
     if (approach_planning_) {
       text << "\n正在一次性计算固定全程路径…";
+    } else if (paused_ || pause_requested_) {
+      text << "\n巡检已暂停，保留原路线进度；纠偏后从剩余紫线继续。";
     } else if (active_goal_) {
       text << "\n固定路径跟踪中，距 END（Nav2）: " << follow_distance_remaining_ << " m";
-    } else if (start.has_value() && end.has_value()) {
+      text << "\n终点判定：需按顺序经过 START 和完整巡检路线。";
+    } else if (start.has_value() && end.has_value() && nav_active_) {
       text << "\n可保存后点击“开始路线”。";
+    } else if (start.has_value() && end.has_value()) {
+      text << "\n等待 Nav2 控制器恢复 active 后再开始路线。";
     }
     std_msgs::msg::String status;
     status.data = text.str();
     status_pub_->publish(status);
+  }
+
+  void refreshNavHealth()
+  {
+    const auto now_wall = std::chrono::steady_clock::now();
+    if (nav_health_request_in_flight_ &&
+      now_wall - nav_health_request_time_ < std::chrono::seconds(2))
+    {
+      return;
+    }
+    if (!nav_ready_client_->service_is_ready()) {
+      nav_active_ = false;
+      nav_health_message_ = "导航控制器未启动/已停止";
+      nav_health_request_in_flight_ = false;
+      return;
+    }
+    nav_health_request_in_flight_ = true;
+    nav_health_request_time_ = now_wall;
+    auto request = std::make_shared<lifecycle_msgs::srv::GetState::Request>();
+    nav_ready_client_->async_send_request(request,
+      [this](rclcpp::Client<lifecycle_msgs::srv::GetState>::SharedFuture future) {
+        nav_health_request_in_flight_ = false;
+        try {
+          const auto response = future.get();
+          nav_active_ = response->current_state.id ==
+            lifecycle_msgs::msg::State::PRIMARY_STATE_ACTIVE;
+          nav_health_message_ = nav_active_ ? "控制器已就绪" : "导航生命周期未 active";
+        } catch (const std::exception &) {
+          nav_active_ = false;
+          nav_health_message_ = "导航控制器健康检查失败";
+        }
+      });
+  }
+
+  void checkFollowHealth()
+  {
+    if (!active_goal_ || follow_feedback_timeout_sec_ <= 0.0 || follow_fault_reported_) {
+      return;
+    }
+    const auto elapsed = std::chrono::duration<double>(
+      std::chrono::steady_clock::now() - last_follow_feedback_time_).count();
+    if (elapsed <= follow_feedback_timeout_sec_) {
+      return;
+    }
+    follow_fault_reported_ = true;
+    nav_active_ = false;
+    nav_health_message_ = "FollowPath 无反馈，已判定控制器失效";
+    RCLCPP_ERROR(get_logger(),
+      "FollowPath was accepted but produced no feedback for %.1f s. "
+      "Canceling it; restart navigation.sh before retrying.", elapsed);
+    action_client_->async_cancel_goal(active_goal_);
+    active_goal_.reset();
+    follow_distance_remaining_ = 0.0;
+    exportExperiment("controller_no_feedback");
   }
 
   struct TrackingSample
@@ -530,6 +620,18 @@ private:
       }
     }
     tracking_samples_.push_back(sample);
+    if (!paused_ && !pause_requested_ && !resume_pending_) {
+      route_progress_.update(sample.x, sample.y);
+      const size_t next = std::min(route_progress_.visited(), progress_indices_.size() - 1U);
+      const size_t first = next > 12U ? next - 12U : 0U;
+      double best = std::numeric_limits<double>::infinity();
+      for (size_t i = first; i <= next; ++i) {
+        const auto index = progress_indices_[i];
+        const auto & point = tracking_reference_.poses[index].pose.position;
+        const double separation = std::hypot(sample.x - point.x, sample.y - point.y);
+        if (separation < best) {best = separation; resume_index_ = index;}
+      }
+    }
     geometry_msgs::msg::PoseStamped pose;
     pose.header.stamp = sample_stamp;
     pose.header.frame_id = frame_id_;
@@ -547,7 +649,18 @@ private:
   {
     tracking_reference_ = reference;
     tracking_reference_.header.frame_id = frame_id_;
+    tracking_reference_.header.stamp = now();
     tracking_samples_.clear();
+    progress_indices_.clear();
+    std::vector<RoutePoint> points;
+    for (size_t i = 0U; i < reference.poses.size(); ++i) {
+      const auto & p = reference.poses[i].pose.position;
+      if (points.empty() || std::hypot(p.x - points.back().x, p.y - points.back().y) > 1e-6) {
+        points.push_back({p.x, p.y}); progress_indices_.push_back(i);
+      }
+    }
+    route_progress_.setPath(points, 0.35);
+    resume_index_ = 0U;
     actual_path_.poses.clear();
     actual_path_.header.frame_id = frame_id_;
     experiment_start_stamp_ = now();
@@ -730,29 +843,47 @@ private:
     }
   }
 
-  void sendFollowPath(const nav_msgs::msg::Path & route)
+  void sendFollowPath(const nav_msgs::msg::Path & route, bool continuing = false)
   {
     FollowPath::Goal goal;
     goal.path = route;
     goal.controller_id = controller_id_;
     goal.goal_checker_id = goal_checker_id_;
     rclcpp_action::Client<FollowPath>::SendGoalOptions options;
-    options.goal_response_callback = [this, route](GoalHandleFollowPath::SharedPtr goal_handle) {
+    options.goal_response_callback = [this, route, continuing](GoalHandleFollowPath::SharedPtr goal_handle) {
+        resume_pending_ = false;
         if (!goal_handle) {
           RCLCPP_ERROR(get_logger(), "Nav2 rejected the inspection FollowPath goal.");
           return;
         }
         active_goal_ = goal_handle;
-        beginExperiment(route);
+        active_follow_route_ = route;
+        paused_ = false;
+        last_follow_feedback_time_ = std::chrono::steady_clock::now();
+        follow_fault_reported_ = false;
+        if (!continuing) {beginExperiment(route);}
         RCLCPP_INFO(get_logger(), "Nav2 accepted %zu-pose inspection route.", selected_route_size_);
       };
     options.feedback_callback = [this](GoalHandleFollowPath::SharedPtr,
         const std::shared_ptr<const FollowPath::Feedback> feedback) {
         follow_distance_remaining_ = feedback->distance_to_goal;
+        last_follow_feedback_time_ = std::chrono::steady_clock::now();
       };
     options.result_callback = [this](const GoalHandleFollowPath::WrappedResult & result) {
-        active_goal_.reset();
-        follow_distance_remaining_ = 0.0;
+      active_goal_.reset();
+      follow_distance_remaining_ = 0.0;
+        if (pause_requested_ && result.code == rclcpp_action::ResultCode::CANCELED) {
+          pause_requested_ = false; paused_ = true;
+          RCLCPP_INFO(get_logger(), "Inspection paused at original pose %zu; tracking retained.", resume_index_);
+          publishStatus();
+          return;
+        }
+        pause_requested_ = false; paused_ = false;
+        if (follow_fault_reported_) {
+          RCLCPP_WARN(get_logger(),
+            "Inspection FollowPath result received after the no-feedback watchdog; result ignored.");
+          return;
+        }
         if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
           RCLCPP_INFO(get_logger(), "Inspection FollowPath route completed.");
           exportExperiment("succeeded");
@@ -804,9 +935,14 @@ private:
       response->message = "Select both /inspection_route_start and /inspection_route_end on /inspection_path first.";
       return;
     }
-    if (active_goal_ || approach_planning_) {
+    if (active_goal_ || approach_planning_ || paused_ || resume_pending_) {
       response->success = false;
       response->message = "An inspection static approach or FollowPath goal is already active.";
+      return;
+    }
+    if (!nav_active_) {
+      response->success = false;
+      response->message = "Nav2 controller is not active. Restart navigation.sh and wait for Nav2 ready before starting.";
       return;
     }
     if (!action_client_->wait_for_action_server(std::chrono::seconds(2))) {
@@ -849,9 +985,44 @@ private:
     response->message = "Computing one fixed global-plus-purple path; START is a waypoint, not a stop goal.";
   }
 
+  void pause(const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+  {
+    if (!active_goal_ || pause_requested_ || !recording_) {
+      response->success = false; response->message = "No active inspection route to pause."; return;
+    }
+    pause_requested_ = true;
+    action_client_->async_cancel_goal(active_goal_);
+    response->success = true;
+    response->message = "Pause requested; wait for FollowPath cancellation and a stationary chassis before correction.";
+  }
+
+  void resume(const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+    std::shared_ptr<std_srvs::srv::Trigger::Response> response)
+  {
+    if (!paused_ || active_goal_ || resume_pending_ || !recording_ || !nav_active_) {
+      response->success = false; response->message = "No idle paused route with an active controller."; return;
+    }
+    if (resume_index_ + 1U >= tracking_reference_.poses.size()) {
+      response->success = false; response->message = "No remaining route poses."; return;
+    }
+    auto remaining = tracking_reference_;
+    remaining.poses.erase(remaining.poses.begin(), remaining.poses.begin() + resume_index_);
+    remaining.header.stamp = now();
+    resume_pending_ = true;
+    sendFollowPath(remaining, true);
+    response->success = true;
+    response->message = "Resuming the unchanged remaining reference poses; no START replanning.";
+  }
+
   void cancel(const std::shared_ptr<std_srvs::srv::Trigger::Request>,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response)
   {
+    if (paused_ && !active_goal_) {
+      paused_ = false; pause_requested_ = false;
+      exportExperiment("canceled");
+      response->success = true; response->message = "Paused route canceled."; return;
+    }
     if (approach_planning_) {
       compute_path_client_->async_cancel_all_goals();
       approach_planning_ = false;
@@ -865,6 +1036,7 @@ private:
       response->message = "No active inspection FollowPath goal.";
       return;
     }
+    pause_requested_ = false;
     action_client_->async_cancel_goal(active_goal_);
     response->success = true;
     response->message = "FollowPath cancellation requested.";
@@ -929,6 +1101,7 @@ private:
 
   std::string frame_id_;
   std::string follow_path_action_;
+  rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr active_reference_path_pub_;
   std::string controller_id_;
   std::string goal_checker_id_;
   std::string route_selection_file_;
@@ -939,6 +1112,13 @@ private:
   int executor_lock_fd_{-1};
   size_t selected_route_size_{0U};
   double follow_distance_remaining_{0.0};
+  double follow_feedback_timeout_sec_{5.0};
+  bool follow_fault_reported_{false};
+  std::chrono::steady_clock::time_point last_follow_feedback_time_{std::chrono::steady_clock::now()};
+  bool nav_active_{false};
+  bool nav_health_request_in_flight_{false};
+  std::chrono::steady_clock::time_point nav_health_request_time_{std::chrono::steady_clock::now()};
+  std::string nav_health_message_{"等待 Nav2 控制器"};
   nav_msgs::msg::Path path_;
   std::optional<size_t> start_index_;
   std::optional<size_t> middle_index_;
@@ -950,12 +1130,20 @@ private:
   std::optional<geometry_msgs::msg::Point> end_click_;
   rclcpp_action::Client<FollowPath>::SharedPtr action_client_;
   rclcpp_action::Client<ComputePathToPose>::SharedPtr compute_path_client_;
+  rclcpp::Client<lifecycle_msgs::srv::GetState>::SharedPtr nav_ready_client_;
   GoalHandleFollowPath::SharedPtr active_goal_;
   bool approach_planning_{false};
   std::optional<nav_msgs::msg::Path> pending_route_;
   bool recording_{false};
   rclcpp::Time experiment_start_stamp_{0, 0, RCL_ROS_TIME};
   nav_msgs::msg::Path tracking_reference_;
+  nav_msgs::msg::Path active_follow_route_;
+  OrderedPathProgress route_progress_;
+  std::vector<size_t> progress_indices_;
+  size_t resume_index_{0U};
+  bool pause_requested_{false};
+  bool paused_{false};
+  bool resume_pending_{false};
   nav_msgs::msg::Path actual_path_;
   std::vector<TrackingSample> tracking_samples_;
   rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr path_sub_;
@@ -969,11 +1157,14 @@ private:
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr actual_path_pub_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr follow_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr cancel_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr pause_service_;
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr resume_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr save_service_;
   rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr load_service_;
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
   rclcpp::TimerBase::SharedPtr status_timer_;
+  rclcpp::TimerBase::SharedPtr nav_health_timer_;
 };
 }  // namespace inspection_geometry_tools
 

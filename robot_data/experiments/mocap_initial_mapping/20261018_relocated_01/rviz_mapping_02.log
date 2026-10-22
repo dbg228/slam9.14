@@ -1,0 +1,7 @@
+Gtk-Message: 17:32:16.140: Failed to load module "canberra-gtk-module"
+Gtk-Message: 17:32:16.146: Failed to load module "canberra-gtk-module"
+[37;1m2026-10-18 17:32:16.181 [31;1m[[37;1mRTPS_TRANSPORT_SHM[31;1m Error] [37mFailed init_port fastrtps_port7425: open_and_lock_file failed[34;1m -> Function [36mopen_port_internal[m
+[INFO] [1792315936.617831249] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792315936.617963757] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792315936.676051136] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792317509.443035483] [rclcpp]: signal_handler(SIGINT/SIGTERM)

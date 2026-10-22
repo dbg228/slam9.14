@@ -1,0 +1,23 @@
+{
+  "stage": "completed_acquisition_and_independent_verification_not_precision_certified",
+  "training_captured": 3,
+  "holdout_captured": true,
+  "calibration_solved": true,
+  "real_robot_motion_command_sent": false,
+  "previous_failed_attempt": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test",
+  "localization_pid": 20399,
+  "completed_groups": [
+    "calib_01",
+    "calib_02",
+    "calib_03",
+    "test_04"
+  ],
+  "calibration_sha256": "939920cefbf169cedb9cd5cb4f9be5d6ff689770c2cba3dc8b7b9a849871c3b7",
+  "holdout_first_attempt_quality_passed": false,
+  "holdout_attempt_count": 2,
+  "holdout_retry_quality_passed": true,
+  "validation_protocol_passed": true,
+  "numeric_acceptance_passed": null,
+  "verification_session": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test_attempt02/validation_retry_02",
+  "report": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test_attempt02/report.md"
+}

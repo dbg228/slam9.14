@@ -1,0 +1,323 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-10-15T06:03:27.649523+00:00",
+  "alignment_mode": "first_init",
+  "measurement_time": "NDT input /cloud_registered header timestamp; never matching completion timestamp",
+  "time_offset_seconds": 0.0,
+  "mocap_interpolation_max_gap_seconds": 0.1,
+  "alignment_window_excluded_from_metrics": false,
+  "alignment_warmup_excluded_from_metrics": false,
+  "metrics_analysis_scope": "first true NDT registration only; later rows retained in matches.csv but excluded from metrics",
+  "metrics_scored_rows": 1,
+  "counts": {
+    "total_attempts": 33,
+    "reference_valid": 33,
+    "initial_fastlio_pose_evaluable": 33,
+    "final_pose_evaluable": 33,
+    "raw_pose_evaluable": 26
+  },
+  "total_attempts": 33,
+  "attempted_ndt_registrations": 26,
+  "converged_attempts": 26,
+  "accepted_attempts": 26,
+  "failed_or_not_accepted_attempts": 0,
+  "reference_coverage_all_attempts": 1.0,
+  "reference_coverage_test_attempts": 1.0,
+  "initial_fastlio_all_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -1.1102230246251565e-16,
+      "rmse": 1.1102230246251565e-16,
+      "p95_absolute": 1.1102230246251565e-16,
+      "max_absolute": 1.1102230246251565e-16
+    },
+    "y_m": {
+      "mean": 0.0,
+      "rmse": 0.0,
+      "p95_absolute": 0.0,
+      "max_absolute": 0.0
+    },
+    "xy_m": {
+      "mean": 1.1102230246251565e-16,
+      "rmse": 1.1102230246251565e-16,
+      "p95_absolute": 1.1102230246251565e-16,
+      "max_absolute": 1.1102230246251565e-16
+    },
+    "yaw_deg": {
+      "mean": 0.0,
+      "rmse": 0.0,
+      "p95_absolute": 0.0,
+      "max_absolute": 0.0
+    }
+  },
+  "initial_fastlio_accepted_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": -1.1102230246251565e-16,
+      "rmse": 1.1102230246251565e-16,
+      "p95_absolute": 1.1102230246251565e-16,
+      "max_absolute": 1.1102230246251565e-16
+    },
+    "y_m": {
+      "mean": 0.0,
+      "rmse": 0.0,
+      "p95_absolute": 0.0,
+      "max_absolute": 0.0
+    },
+    "xy_m": {
+      "mean": 1.1102230246251565e-16,
+      "rmse": 1.1102230246251565e-16,
+      "p95_absolute": 1.1102230246251565e-16,
+      "max_absolute": 1.1102230246251565e-16
+    },
+    "yaw_deg": {
+      "mean": 0.0,
+      "rmse": 0.0,
+      "p95_absolute": 0.0,
+      "max_absolute": 0.0
+    }
+  },
+  "raw_ndt_all_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": 0.14924687147140492,
+      "rmse": 0.14924687147140492,
+      "p95_absolute": 0.14924687147140492,
+      "max_absolute": 0.14924687147140492
+    },
+    "y_m": {
+      "mean": -0.0180056095123291,
+      "rmse": 0.0180056095123291,
+      "p95_absolute": 0.0180056095123291,
+      "max_absolute": 0.0180056095123291
+    },
+    "xy_m": {
+      "mean": 0.15032907442644797,
+      "rmse": 0.15032907442644797,
+      "p95_absolute": 0.15032907442644797,
+      "max_absolute": 0.15032907442644797
+    },
+    "yaw_deg": {
+      "mean": -0.6602492524731897,
+      "rmse": 0.6602492524731897,
+      "p95_absolute": 0.6602492524731897,
+      "max_absolute": 0.6602492524731897
+    }
+  },
+  "raw_ndt_accepted_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": 0.14924687147140492,
+      "rmse": 0.14924687147140492,
+      "p95_absolute": 0.14924687147140492,
+      "max_absolute": 0.14924687147140492
+    },
+    "y_m": {
+      "mean": -0.0180056095123291,
+      "rmse": 0.0180056095123291,
+      "p95_absolute": 0.0180056095123291,
+      "max_absolute": 0.0180056095123291
+    },
+    "xy_m": {
+      "mean": 0.15032907442644797,
+      "rmse": 0.15032907442644797,
+      "p95_absolute": 0.15032907442644797,
+      "max_absolute": 0.15032907442644797
+    },
+    "yaw_deg": {
+      "mean": -0.6602492524731897,
+      "rmse": 0.6602492524731897,
+      "p95_absolute": 0.6602492524731897,
+      "max_absolute": 0.6602492524731897
+    }
+  },
+  "final_map_base_all_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": 0.14924687147140492,
+      "rmse": 0.14924687147140492,
+      "p95_absolute": 0.14924687147140492,
+      "max_absolute": 0.14924687147140492
+    },
+    "y_m": {
+      "mean": -0.0180056095123291,
+      "rmse": 0.0180056095123291,
+      "p95_absolute": 0.0180056095123291,
+      "max_absolute": 0.0180056095123291
+    },
+    "xy_m": {
+      "mean": 0.15032907442644797,
+      "rmse": 0.15032907442644797,
+      "p95_absolute": 0.15032907442644797,
+      "max_absolute": 0.15032907442644797
+    },
+    "yaw_deg": {
+      "mean": -0.6602492524731897,
+      "rmse": 0.6602492524731897,
+      "p95_absolute": 0.6602492524731897,
+      "max_absolute": 0.6602492524731897
+    }
+  },
+  "final_map_base_accepted_evaluable": {
+    "samples": 1,
+    "metrics_available": true,
+    "weighting": "one record per NDT input-cloud timestamp",
+    "x_m": {
+      "mean": 0.14924687147140492,
+      "rmse": 0.14924687147140492,
+      "p95_absolute": 0.14924687147140492,
+      "max_absolute": 0.14924687147140492
+    },
+    "y_m": {
+      "mean": -0.0180056095123291,
+      "rmse": 0.0180056095123291,
+      "p95_absolute": 0.0180056095123291,
+      "max_absolute": 0.0180056095123291
+    },
+    "xy_m": {
+      "mean": 0.15032907442644797,
+      "rmse": 0.15032907442644797,
+      "p95_absolute": 0.15032907442644797,
+      "max_absolute": 0.15032907442644797
+    },
+    "yaw_deg": {
+      "mean": -0.6602492524731897,
+      "rmse": 0.6602492524731897,
+      "p95_absolute": 0.6602492524731897,
+      "max_absolute": 0.6602492524731897
+    }
+  },
+  "fitness_vs_error_samples": 1,
+  "fitness_definition": "PCL NormalDistributionsTransform::getFitnessScore(): mean squared nearest-neighbor distance after the final transform; lower is better; not covariance or absolute error",
+  "score_lower_is_better": true,
+  "covariance": "No covariance is reported unless upstream diagnostics explicitly expose it; this node reports unavailable.",
+  "initial_pose_time_semantics": "Available only in NdtMatchDiagnosticDetail: T_map_odom before NDT multiplied by T_odom_base nearest the input-cloud timestamp. V1 diagnostics do not provide this pose.",
+  "final_pose_time_semantics": "final_map_base is evaluated at input-cloud time for fair comparison. The separately recorded final_publish_pose has publication time and is not used for measurement-time error metrics.",
+  "matching_duration_s": {
+    "samples": 33,
+    "mean": 0.024610193696969693,
+    "p95": 0.04279536399999999,
+    "max": 0.069694859
+  },
+  "ndt_align_duration_s": {
+    "samples": 26,
+    "mean": 0.018955496538461538,
+    "p95": 0.027287762,
+    "max": 0.05740304,
+    "definition": "PCL NormalDistributionsTransform::align() only; excludes post-alignment diagnostics"
+  },
+  "first_initial_prediction_baseline": {
+    "match_id": 8,
+    "stamp_ns": 1792044138416043043,
+    "stage": "accepted",
+    "accepted": true,
+    "converged": true,
+    "raw_pose_available": true,
+    "final_pose_available": true,
+    "map_from_mocap_yaw_rad": -0.7600826630333452,
+    "translation_m": [
+      1.4443305481664985,
+      -1.8129262210111585
+    ],
+    "mocap_to_base_yaw_rad": 0.0,
+    "rejected_before_baseline": {
+      "baseline_not_a_registration": 7
+    },
+    "limitation": "The selected pre-NDT T_init is zero by construction. The raw/final value at this same timestamp is retained, so it measures the first NDT correction relative to T_init; this does not measure manual 2D-pose initialization bias."
+  },
+  "cold_start_first_match": {
+    "match_id": 8,
+    "cloud_stamp_ns": 1792044138416043043,
+    "stage": "accepted",
+    "accepted": true,
+    "converged": true,
+    "iterations": 2,
+    "fitness": 0.2731992191630841,
+    "fitness_definition": "PCL NormalDistributionsTransform::getFitnessScore(): mean squared nearest-neighbor distance after the final transform; lower is better; not covariance or absolute error",
+    "initial_error_relative_to_T_init": {
+      "x_m": -1.1102230246251565e-16,
+      "y_m": 0.0,
+      "xy_m": 1.1102230246251565e-16,
+      "yaw_rad": 0.0
+    },
+    "raw_ndt_error_relative_to_T_init": {
+      "x_m": 0.14924687147140492,
+      "y_m": -0.0180056095123291,
+      "xy_m": 0.15032907442644797,
+      "yaw_rad": -0.011523523339488473
+    },
+    "final_error_relative_to_T_init": {
+      "x_m": 0.14924687147140492,
+      "y_m": -0.0180056095123291,
+      "xy_m": 0.15032907442644797,
+      "yaw_rad": -0.011523523339488473
+    },
+    "init_to_ndt_correction": {
+      "available": true,
+      "translation_m": 0.1503290981054306,
+      "yaw_rad": -0.01152349729090929
+    },
+    "map_odom_correction": {
+      "available": true,
+      "translation_m": 0.14596571028232574,
+      "yaw_rad": 0.011270859278738499
+    },
+    "poses_at_input_cloud_timestamp": {
+      "T_init": {
+        "x": 0.7052095532417297,
+        "y": -0.815193235874176,
+        "z": 0.0,
+        "qx": 4.285510488144517e-11,
+        "qy": -3.11673499509002e-11,
+        "qz": -0.357815682888031,
+        "qw": 0.933792233467102
+      },
+      "T_ndt": {
+        "x": 0.8544564247131348,
+        "y": -0.8331988453865051,
+        "z": -0.1077314019203186,
+        "qx": 0.007227539084851742,
+        "qy": -0.015070722438395023,
+        "qz": -0.36300939321517944,
+        "qw": 0.9316355586051941
+      },
+      "T_final": {
+        "x": 0.8544564247131348,
+        "y": -0.8331988453865051,
+        "z": -0.1077314019203186,
+        "qx": 0.007227539084851742,
+        "qy": -0.015070722438395023,
+        "qz": -0.36300939321517944,
+        "qw": 0.9316355586051941
+      }
+    },
+    "interpretation": "T_init is the zero relative origin only for this one cold-start registration. T_ndt/T_final values are retained; this is the NDT-induced change relative to the pre-NDT initial prediction, not an absolute map-localization error."
+  },
+  "mocap_topic": "/mocap/Tracker0/pose",
+  "mocap_reference_pose": "base_link pose derived offline from recorded Tracker rigid-body pose",
+  "tracker_to_base_applied": {
+    "config_file": "/home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml",
+    "translation_m": [
+      0.0,
+      0.0,
+      -0.18
+    ],
+    "quaternion_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "notes": "User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation path must apply it before comparing against map->base_link; this passive receiver never publishes a base_link pose or TF."
+  }
+}

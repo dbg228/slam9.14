@@ -1,0 +1,23 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792307402.600750968] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1792307402.608526152] [rosbag2_storage]: Opened database '/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/bag/bag_0.db3' for READ_WRITE.
+[INFO] [1792307402.613896675] [rosbag2_recorder]: Listening for topics...
+[INFO] [1792307402.613919252] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1792307402.621130363] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1792307402.623137986] [rosbag2_recorder]: Subscribed to topic '/tf_lio_raw'
+[INFO] [1792307402.625825607] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1792307402.628353995] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/pose'
+[INFO] [1792307402.633738648] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/diagnostics'
+[INFO] [1792307402.634163989] [rosbag2_recorder]: Recording...
+[INFO] [1792307403.043060158] [rosbag2_recorder]: Subscribed to topic '/static_localization/map_to_odom'
+[INFO] [1792307403.046107361] [rosbag2_recorder]: Subscribed to topic '/static_localization/ndt_match_diagnostic'
+[INFO] [1792307403.048701411] [rosbag2_recorder]: Subscribed to topic '/static_localization/ndt_match_diagnostic_detail'
+[INFO] [1792307403.052553429] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1792307403.054472481] [rosbag2_recorder]: Subscribed to topic '/reference_velocity'
+[INFO] [1792307403.056586282] [rosbag2_recorder]: Subscribed to topic '/static_localization/ready'
+[INFO] [1792307403.058542491] [rosbag2_recorder]: Subscribed to topic '/teleop/mode'
+[INFO] [1792307403.060073619] [rosbag2_recorder]: Subscribed to topic '/vrpn_mocap/Tracker0/pose'
+[INFO] [1792307423.846869412] [rosbag2_recorder]: Subscribed to topic '/initialpose_user'
+[WARN] [1792307472.801924886] [ROSBAG2_TRANSPORT]: Hidden topics are not recorded. Enable them with --include-hidden-topics
+[INFO] [1792307474.125782437] [rosbag2_recorder]: Subscribed to topic '/nav/cmd_vel'
+terminate called after throwing an instance of 'rosbag2_storage_plugins::SqliteException'
+  what():  Error when processing SQL statement. SQLite error (5): database is locked

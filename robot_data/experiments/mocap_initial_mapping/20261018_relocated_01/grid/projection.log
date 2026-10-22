@@ -1,0 +1,23 @@
+[pcd] input=/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/raw/native_F.pcd
+[stats] raw_points=3188533
+[stats] height_filtered_points=181645 z=[0.05, 0.35]
+[stats] voxel_filtered_points=55406 leaf_size=0.03
+[stats] radius_filtered_points=54046 radius_search=0.1 radius_min_neighbors=2
+[map] size=576x541, resolution=0.05, origin=[-17.550, -14.950, 0]
+[stats] raw_2d_occupied_cells=11178
+[stats] min_points_per_cell=2 removed_cells=3635 kept_cells=7543
+[vertical] z_bin_size=0.05, min_z_bins=2, min_z_span=0.08, keep_dense_cells=6, removed_cells=1086, kept_cells=6457
+[multi-height] layers=-0.15:0.05,0.05:0.35,0.35:0.60, min_layers=2, evidence_cells=8882
+[multi-height] occupied_before=6457, line_evidence_after=9807
+[line-bridge] accepted_lines=39, min_length_m=1.50, max_gap_m=0.40, min_support=0.65, added_cells=708
+[closing] radius_cells=1, radius_m=0.050, added_cells=720
+[closing] occupied_before=7165, occupied_after=7885
+[components] connectivity=8, min_component_size=8, total_components=306, removed_components=236, removed_cells=469
+[stats] component_total_count=306
+[stats] vertical_removed_cells=1086
+[stats] hough_line_count=39
+[stats] component_removed_count=236
+[stats] component_removed_cells=469
+[stats] final_occupied_cells=7416 (2.380%)
+[done] wrote /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/grid/map.pgm
+[done] wrote /home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/grid/map.yaml

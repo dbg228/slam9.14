@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\caption{Phase-resolved tracking errors. Phases are fixed by reference curvature and its arc-length derivative; the nine-observation variability is descriptive.}
+\label{tab:table03_phase_errors}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+\shortstack{Condition} & \shortstack{Controller} & \shortstack{Geometry phase} & \shortstack{Lateral RMSE\\[mm]} & \shortstack{Lateral P95\\[mm]} & \shortstack{Yaw RMSE\\[deg]} \\
+\midrule
+nominal & Native MPPI & line & 2.685 $\pm$ 0.859 & 4.289 $\pm$ 1.437 & 0.416 $\pm$ 0.108 \\
+nominal & Native MPPI & entry & 2.612 $\pm$ 0.856 & 3.972 $\pm$ 1.392 & 0.943 $\pm$ 0.104 \\
+nominal & Native MPPI & apex & 4.251 $\pm$ 2.259 & 5.782 $\pm$ 2.782 & 0.384 $\pm$ 0.070 \\
+nominal & Native MPPI & exit & 4.855 $\pm$ 2.793 & 5.857 $\pm$ 3.137 & 0.550 $\pm$ 0.081 \\
+nominal & Preview tracker & line & 0.220 $\pm$ 0.091 & 0.446 $\pm$ 0.184 & 0.061 $\pm$ 0.011 \\
+nominal & Preview tracker & entry & 0.305 $\pm$ 0.119 & 0.508 $\pm$ 0.198 & 0.137 $\pm$ 0.043 \\
+nominal & Preview tracker & apex & 0.430 $\pm$ 0.137 & 0.686 $\pm$ 0.164 & 0.078 $\pm$ 0.012 \\
+nominal & Preview tracker & exit & 0.331 $\pm$ 0.147 & 0.536 $\pm$ 0.253 & 0.143 $\pm$ 0.039 \\
+nominal & Ideal-dynamics ablation & line & 2.598 $\pm$ 0.450 & 7.158 $\pm$ 0.578 & 0.962 $\pm$ 0.239 \\
+nominal & Ideal-dynamics ablation & entry & 2.413 $\pm$ 0.194 & 4.470 $\pm$ 0.311 & 1.373 $\pm$ 0.191 \\
+nominal & Ideal-dynamics ablation & apex & 2.525 $\pm$ 0.408 & 5.085 $\pm$ 0.403 & 1.544 $\pm$ 0.390 \\
+nominal & Ideal-dynamics ablation & exit & 2.009 $\pm$ 0.585 & 3.956 $\pm$ 0.899 & 1.889 $\pm$ 0.344 \\
+nominal & Guided MPC & line & 0.687 $\pm$ 0.195 & 1.450 $\pm$ 0.411 & 0.170 $\pm$ 0.023 \\
+nominal & Guided MPC & entry & 1.143 $\pm$ 0.208 & 1.664 $\pm$ 0.254 & 0.454 $\pm$ 0.112 \\
+nominal & Guided MPC & apex & 0.865 $\pm$ 0.161 & 1.499 $\pm$ 0.232 & 0.212 $\pm$ 0.030 \\
+nominal & Guided MPC & exit & 0.640 $\pm$ 0.144 & 1.134 $\pm$ 0.247 & 0.479 $\pm$ 0.078 \\
+heldout & Native MPPI & line & 1.512 $\pm$ 0.355 & 2.854 $\pm$ 0.662 & 0.632 $\pm$ 0.117 \\
+heldout & Native MPPI & entry & 2.473 $\pm$ 0.571 & 4.731 $\pm$ 1.334 & 1.711 $\pm$ 0.118 \\
+heldout & Native MPPI & apex & 6.395 $\pm$ 1.286 & 8.507 $\pm$ 1.617 & 0.739 $\pm$ 0.053 \\
+heldout & Native MPPI & exit & 5.081 $\pm$ 1.801 & 6.055 $\pm$ 2.182 & 0.960 $\pm$ 0.160 \\
+heldout & Preview tracker & line & 3.756 $\pm$ 1.306 & 6.738 $\pm$ 2.694 & 0.476 $\pm$ 0.066 \\
+heldout & Preview tracker & entry & 4.471 $\pm$ 1.655 & 6.784 $\pm$ 2.983 & 1.096 $\pm$ 0.076 \\
+heldout & Preview tracker & apex & 5.282 $\pm$ 2.778 & 7.931 $\pm$ 4.464 & 0.534 $\pm$ 0.039 \\
+heldout & Preview tracker & exit & 4.470 $\pm$ 1.145 & 6.027 $\pm$ 1.586 & 0.860 $\pm$ 0.074 \\
+heldout & Ideal-dynamics ablation & line & 6.193 $\pm$ 4.483 & 13.637 $\pm$ 9.049 & 3.126 $\pm$ 2.180 \\
+heldout & Ideal-dynamics ablation & entry & 4.293 $\pm$ 1.438 & 7.914 $\pm$ 2.754 & 2.494 $\pm$ 0.754 \\
+heldout & Ideal-dynamics ablation & apex & 8.801 $\pm$ 1.135 & 15.212 $\pm$ 2.590 & 4.592 $\pm$ 0.588 \\
+heldout & Ideal-dynamics ablation & exit & 10.507 $\pm$ 3.984 & 15.060 $\pm$ 5.818 & 4.684 $\pm$ 1.575 \\
+heldout & Guided MPC & line & 1.784 $\pm$ 0.405 & 3.402 $\pm$ 1.099 & 0.286 $\pm$ 0.028 \\
+heldout & Guided MPC & entry & 1.620 $\pm$ 0.327 & 2.078 $\pm$ 0.341 & 0.435 $\pm$ 0.167 \\
+heldout & Guided MPC & apex & 1.440 $\pm$ 0.191 & 2.520 $\pm$ 0.502 & 0.396 $\pm$ 0.057 \\
+heldout & Guided MPC & exit & 1.211 $\pm$ 0.595 & 1.668 $\pm$ 0.846 & 0.276 $\pm$ 0.092 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,349 @@
+    PID    PPID STAT     ELAPSED COMMAND
+      1       0 Ss      05:22:01 /sbin/init splash
+      2       0 S       05:22:01 [kthreadd]
+      3       2 S       05:22:01 [pool_workqueue_release]
+      4       2 I<      05:22:01 [kworker/R-rcu_g]
+      5       2 I<      05:22:01 [kworker/R-rcu_p]
+      6       2 I<      05:22:01 [kworker/R-slub_]
+      7       2 I<      05:22:01 [kworker/R-netns]
+      9       2 I<      05:22:01 [kworker/0:0H-events_highpri]
+     12       2 I<      05:22:01 [kworker/R-mm_pe]
+     13       2 I       05:22:01 [rcu_tasks_kthread]
+     14       2 I       05:22:01 [rcu_tasks_rude_kthread]
+     15       2 I       05:22:01 [rcu_tasks_trace_kthread]
+     16       2 S       05:22:01 [ksoftirqd/0]
+     17       2 I       05:22:01 [rcu_preempt]
+     18       2 S       05:22:01 [migration/0]
+     19       2 S       05:22:01 [idle_inject/0]
+     20       2 S       05:22:01 [cpuhp/0]
+     21       2 S       05:22:01 [cpuhp/1]
+     22       2 S       05:22:01 [idle_inject/1]
+     23       2 S       05:22:01 [migration/1]
+     24       2 S       05:22:01 [ksoftirqd/1]
+     26       2 I<      05:22:01 [kworker/1:0H-events_highpri]
+     27       2 S       05:22:01 [cpuhp/2]
+     28       2 S       05:22:01 [idle_inject/2]
+     29       2 S       05:22:01 [migration/2]
+     30       2 S       05:22:01 [ksoftirqd/2]
+     32       2 I<      05:22:01 [kworker/2:0H-events_highpri]
+     33       2 S       05:22:01 [cpuhp/3]
+     34       2 S       05:22:01 [idle_inject/3]
+     35       2 S       05:22:01 [migration/3]
+     36       2 S       05:22:01 [ksoftirqd/3]
+     38       2 I<      05:22:01 [kworker/3:0H-events_highpri]
+     39       2 S       05:22:01 [cpuhp/4]
+     40       2 S       05:22:01 [idle_inject/4]
+     41       2 S       05:22:01 [migration/4]
+     42       2 S       05:22:01 [ksoftirqd/4]
+     44       2 I<      05:22:01 [kworker/4:0H-events_highpri]
+     45       2 S       05:22:01 [cpuhp/5]
+     46       2 S       05:22:01 [idle_inject/5]
+     47       2 S       05:22:01 [migration/5]
+     48       2 S       05:22:01 [ksoftirqd/5]
+     50       2 I<      05:22:01 [kworker/5:0H-events_highpri]
+     51       2 S       05:22:01 [cpuhp/6]
+     52       2 S       05:22:01 [idle_inject/6]
+     53       2 S       05:22:01 [migration/6]
+     54       2 S       05:22:01 [ksoftirqd/6]
+     56       2 I<      05:22:01 [kworker/6:0H-events_highpri]
+     57       2 S       05:22:01 [cpuhp/7]
+     58       2 S       05:22:01 [idle_inject/7]
+     59       2 S       05:22:01 [migration/7]
+     60       2 S       05:22:01 [ksoftirqd/7]
+     62       2 I<      05:22:01 [kworker/7:0H-events_highpri]
+     63       2 S       05:22:01 [cpuhp/8]
+     64       2 S       05:22:01 [idle_inject/8]
+     65       2 S       05:22:01 [migration/8]
+     66       2 S       05:22:01 [ksoftirqd/8]
+     67       2 I       05:22:01 [kworker/8:0-events]
+     68       2 I<      05:22:01 [kworker/8:0H-events_highpri]
+     69       2 S       05:22:01 [cpuhp/9]
+     70       2 S       05:22:01 [idle_inject/9]
+     71       2 S       05:22:01 [migration/9]
+     72       2 S       05:22:01 [ksoftirqd/9]
+     74       2 I<      05:22:01 [kworker/9:0H-events_highpri]
+     75       2 S       05:22:01 [cpuhp/10]
+     76       2 S       05:22:01 [idle_inject/10]
+     77       2 S       05:22:01 [migration/10]
+     78       2 S       05:22:01 [ksoftirqd/10]
+     80       2 I<      05:22:01 [kworker/10:0H-events_highpri]
+     81       2 S       05:22:01 [cpuhp/11]
+     82       2 S       05:22:01 [idle_inject/11]
+     83       2 S       05:22:01 [migration/11]
+     84       2 S       05:22:01 [ksoftirqd/11]
+     86       2 I<      05:22:01 [kworker/11:0H-events_highpri]
+     87       2 S       05:22:01 [kdevtmpfs]
+     88       2 I<      05:22:01 [kworker/R-inet_]
+     89       2 S       05:22:01 [kauditd]
+     90       2 S       05:22:01 [khungtaskd]
+     92       2 S       05:22:01 [oom_reaper]
+     94       2 I<      05:22:01 [kworker/R-write]
+     95       2 S       05:22:01 [kcompactd0]
+     96       2 SN      05:22:01 [ksmd]
+     97       2 SN      05:22:01 [khugepaged]
+     98       2 I<      05:22:01 [kworker/R-kinte]
+     99       2 I<      05:22:01 [kworker/R-kbloc]
+    100       2 I<      05:22:01 [kworker/R-blkcg]
+    101       2 S       05:22:01 [irq/9-acpi]
+    103       2 I       05:22:01 [kworker/0:2-i915-unordered]
+    105       2 I<      05:22:01 [kworker/R-tpm_d]
+    106       2 I<      05:22:01 [kworker/R-ata_s]
+    107       2 I<      05:22:01 [kworker/R-md]
+    108       2 I<      05:22:01 [kworker/R-md_bi]
+    109       2 I<      05:22:01 [kworker/R-edac-]
+    110       2 I<      05:22:01 [kworker/R-devfr]
+    111       2 S       05:22:01 [watchdogd]
+    112       2 I<      05:22:01 [kworker/R-quota]
+    113       2 I<      05:22:00 [kworker/0:1H-events_highpri]
+    115       2 S       05:22:00 [kswapd0]
+    116       2 S       05:22:00 [ecryptfs-kthread]
+    117       2 I       05:22:00 [kworker/7:1-events]
+    118       2 I<      05:22:00 [kworker/R-kthro]
+    119       2 S       05:22:00 [irq/122-aerdrv]
+    120       2 S       05:22:00 [irq/122-pcie-dpc]
+    121       2 I<      05:22:00 [kworker/R-acpi_]
+    122       2 S       05:22:00 [hwrng]
+    123       2 I<      05:22:00 [kworker/R-mld]
+    124       2 I<      05:22:00 [kworker/6:1H-events_highpri]
+    125       2 I<      05:22:00 [kworker/R-ipv6_]
+    128       2 I       05:22:00 [kworker/4:1-i915-unordered]
+    129       2 I       05:22:00 [kworker/5:1-events]
+    135       2 I<      05:22:00 [kworker/R-kstrp]
+    137       2 I       05:22:00 [kworker/9:1-i915-unordered]
+    154       2 I<      05:22:00 [kworker/R-charg]
+    173       2 I<      05:22:00 [kworker/10:1H-events_highpri]
+    177       2 I<      05:22:00 [kworker/11:1H-events_highpri]
+    178       2 I<      05:22:00 [kworker/1:1H-kblockd]
+    190       2 I<      05:22:00 [kworker/3:1H-kblockd]
+    191       2 I       05:22:00 [kworker/11:1-events]
+    192       2 I<      05:22:00 [kworker/7:1H-kblockd]
+    193       2 I<      05:22:00 [kworker/4:1H-kblockd]
+    194       2 I<      05:22:00 [kworker/8:1H-kblockd]
+    195       2 I<      05:22:00 [kworker/2:1H-kblockd]
+    196       2 I<      05:22:00 [kworker/5:1H-kblockd]
+    197       2 I<      05:22:00 [kworker/9:1H-events_highpri]
+    236       2 S       05:22:00 [scsi_eh_0]
+    237       2 I<      05:22:00 [kworker/R-scsi_]
+    239       2 S       05:22:00 [scsi_eh_1]
+    240       2 I<      05:22:00 [kworker/R-scsi_]
+    241       2 S       05:22:00 [scsi_eh_2]
+    242       2 I<      05:22:00 [kworker/R-scsi_]
+    258       2 I<      05:21:58 [kworker/R-uas]
+    259       2 I       05:21:58 [kworker/3:2-i915-unordered]
+    291       2 S       05:21:58 [jbd2/sda3-8]
+    292       2 I<      05:21:58 [kworker/R-ext4-]
+    331       1 S<s     05:21:57 /lib/systemd/systemd-journald
+    365       2 I<      05:21:57 [kworker/R-cfg80]
+    373       1 Ss      05:21:57 /lib/systemd/systemd-udevd
+    445       2 S       05:21:57 [irq/133-mei_me]
+    515       2 I<      05:21:57 [kworker/R-crypt]
+    555       2 I<      05:21:56 [kworker/R-ttm]
+    567       2 S       05:21:56 [card1-crtc0]
+    568       2 S       05:21:56 [card1-crtc1]
+    569       2 S       05:21:56 [card1-crtc2]
+    592       1 Ss      05:21:56 /lib/systemd/systemd-oomd
+    593       1 Ss      05:21:56 /lib/systemd/systemd-resolved
+    594       1 Ssl     05:21:56 /lib/systemd/systemd-timesyncd
+    610       2 S       05:21:56 [aicwf_busrx_thread]
+    611       2 S       05:21:56 [aicwf_bustx_thread]
+    612       2 S       05:21:56 [aicwf_msg_busrx_thread]
+    613       2 I<      05:21:56 [kworker/R-cmd_w]
+    614       2 I<      05:21:56 [kworker/R-apmSt]
+    641       1 Ssl     05:21:56 /usr/libexec/accounts-daemon
+    642       1 Ss      05:21:56 /usr/sbin/acpid
+    645       1 Ss      05:21:56 avahi-daemon: running [OmniBot.local]
+    646       1 Ss      05:21:56 /usr/sbin/cron -f -P
+    648       1 Ss      05:21:56 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    650       1 Ssl     05:21:56 /usr/sbin/NetworkManager --no-daemon
+    657       1 Ssl     05:21:56 /usr/sbin/irqbalance --foreground
+    658       1 Ss      05:21:56 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    660       1 Ssl     05:21:56 /usr/libexec/polkitd --no-debug
+    663       1 Ssl     05:21:56 /usr/libexec/power-profiles-daemon
+    665       1 Ssl     05:21:56 /usr/sbin/rsyslogd -n -iNONE
+    670       1 Ssl     05:21:56 /snap/snapd/current/usr/lib/snapd/snapd
+    673       1 Ssl     05:21:56 /usr/libexec/switcheroo-control
+    677       1 Ss      05:21:56 /lib/systemd/systemd-logind
+    678       1 Ssl     05:21:56 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+    679       1 Ssl     05:21:56 /usr/libexec/udisks2/udisksd
+    680       1 Ss      05:21:56 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    683     645 S       05:21:56 avahi-daemon: chroot helper
+    847       1 Ss      05:21:56 /usr/sbin/cupsd -l
+    853       1 Ssl     05:21:56 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    855       1 Ssl     05:21:56 /usr/sbin/ModemManager
+    863       1 Ssl     05:21:56 /usr/bin/anydesk --service
+    881       1 Ssl     05:21:56 /usr/sbin/gdm3
+    901     881 Sl      05:21:55 gdm-session-worker [pam/gdm-autologin]
+    924       1 Ss      05:21:55 /lib/systemd/systemd --user
+    925     924 S       05:21:55 (sd-pam)
+    964     924 S<sl    05:21:55 /usr/bin/pipewire
+    965     924 Ssl     05:21:55 /usr/bin/pipewire-media-session
+    966     924 S<sl    05:21:55 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+    985       1 SLl     05:21:55 /usr/bin/gnome-keyring-daemon --daemonize --login
+    988       1 SNsl    05:21:55 /usr/libexec/rtkit-daemon
+    991     901 Ssl+    05:21:55 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+    993     991 Sl+     05:21:55 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+    999     924 Ss      05:21:55 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1097     991 Sl+     05:21:53 /usr/libexec/gnome-session-binary --session=ubuntu
+   1182     924 Ssl     05:21:53 /usr/libexec/at-spi-bus-launcher
+   1190    1182 S       05:21:53 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+   1255     924 Ssl     05:21:53 /usr/libexec/gnome-session-ctl --monitor
+   1268     924 Ssl     05:21:53 /usr/libexec/gvfsd
+   1282     924 Sl      05:21:53 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   1283     924 Ssl     05:21:53 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   1296     924 Ssl     05:21:53 /usr/libexec/xdg-document-portal
+   1301     924 Ssl     05:21:53 /usr/libexec/xdg-permission-store
+   1309    1296 Ss      05:21:53 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   1342     924 Ssl     05:21:53 /usr/bin/gnome-shell
+   1408       1 Ssl     05:21:52 /usr/bin/clash-verge-service
+   1426       1 Ssl     05:21:52 /usr/sbin/cups-browsed
+   1449       1 Ss      05:21:52 /usr/sbin/kerneloops --test
+   1452       1 Ss      05:21:52 /usr/sbin/kerneloops
+   1460     924 Sl      05:21:52 /usr/libexec/gnome-shell-calendar-server
+   1473     924 Ssl     05:21:52 /usr/libexec/evolution-source-registry
+   1483       1 Ssl     05:21:52 /usr/libexec/upowerd
+   1486     924 Sl      05:21:52 /usr/libexec/goa-daemon
+   1498     924 Ssl     05:21:52 /usr/libexec/dconf-service
+   1500     924 Ssl     05:21:52 /usr/libexec/evolution-calendar-factory
+   1506     924 Ssl     05:21:52 /usr/libexec/gvfs-udisks2-volume-monitor
+   1515     924 Sl      05:21:52 /usr/libexec/goa-identity-service
+   1524     924 Ssl     05:21:52 /usr/libexec/gvfs-afc-volume-monitor
+   1534     924 Ssl     05:21:52 /usr/libexec/gvfs-mtp-volume-monitor
+   1542     924 Ssl     05:21:52 /usr/libexec/evolution-addressbook-factory
+   1543     924 Ssl     05:21:52 /usr/libexec/gvfs-goa-volume-monitor
+   1547     924 Ssl     05:21:52 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1559       1 Ssl     05:21:51 /usr/libexec/packagekitd
+   1578    1268 Sl      05:21:51 /usr/libexec/gvfsd-trash --spawner :1.18 /org/gtk/gvfs/exec_spaw/0
+   1594     924 Sl      05:21:51 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   1616     924 Sl      05:21:51 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1644     924 Ssl     05:21:51 /usr/libexec/xdg-desktop-portal
+   1646     924 Ss      05:21:51 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+   1647     924 Ssl     05:21:51 /usr/libexec/gsd-a11y-settings
+   1649    1646 Sl      05:21:51 /usr/bin/ibus-daemon --panel disable --xim
+   1650     924 Ssl     05:21:51 /usr/libexec/gsd-color
+   1651     924 Ssl     05:21:51 /usr/libexec/gsd-datetime
+   1653     924 Ssl     05:21:51 /usr/libexec/gsd-housekeeping
+   1655     924 Ssl     05:21:51 /usr/libexec/gsd-keyboard
+   1657     924 Ssl     05:21:51 /usr/libexec/gsd-media-keys
+   1660     924 Ssl     05:21:51 /usr/libexec/gsd-power
+   1662     924 Ssl     05:21:51 /usr/libexec/gsd-print-notifications
+   1664     924 Ssl     05:21:51 /usr/libexec/gsd-rfkill
+   1665     924 Ssl     05:21:51 /usr/libexec/gsd-screensaver-proxy
+   1666     924 Ssl     05:21:51 /usr/libexec/gsd-sharing
+   1667     924 Ssl     05:21:51 /usr/libexec/gsd-smartcard
+   1668     924 Ssl     05:21:51 /usr/libexec/gsd-sound
+   1669     924 Ssl     05:21:51 /usr/libexec/gsd-wacom
+   1670     924 Ssl     05:21:51 /usr/libexec/gsd-xsettings
+   1693    1283 Sl      05:21:51 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   1705     924 Ssl     05:21:51 /usr/libexec/xdg-desktop-portal-gnome
+   1719    1283 Sl      05:21:51 /usr/bin/anydesk --tray
+   1723    1283 Sl      05:21:51 /usr/libexec/gsd-disk-utility-notify
+   1749    1649 Sl      05:21:51 /usr/libexec/ibus-dconf
+   1758    1649 Sl      05:21:51 /usr/libexec/ibus-extension-gtk3
+   1776     924 Sl      05:21:51 /usr/libexec/ibus-x11 --kill-daemon
+   1780     924 Sl      05:21:51 /usr/libexec/ibus-portal
+   1799     924 Sl      05:21:51 /usr/libexec/gsd-printer
+   1834       1 Ssl     05:21:51 /usr/libexec/colord
+   1875     924 Sl      05:21:51 /snap/snap-store/1216/usr/bin/snap-store --gapplication-service
+   1946     924 Sl      05:21:51 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+   1947     924 SNsl    05:21:51 /usr/libexec/tracker-miner-fs-3
+   1985    1649 Sl      05:21:50 /usr/libexec/ibus-engine-libpinyin --ibus
+   2023     924 Ssl     05:21:50 /usr/libexec/xdg-desktop-portal-gtk
+   2142    1342 Sl      05:21:48 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com -M 0 -D 0:0:1600:900:1:27:0:70:0:0
+   2171     924 Ssl     05:21:48 /usr/libexec/gvfsd-metadata
+   2237     924 Ssl     05:21:47 /snap/snapd-desktop-integration/391/usr/bin/user-session-helper /snap/snapd-desktop-integration/391/usr/bin/snapd-desktop-integration
+   2315    2237 Sl      05:21:46 /snap/snapd-desktop-integration/391/usr/bin/snapd-desktop-integration
+   2526       2 I       05:21:34 [kworker/2:3-i915-unordered]
+   3442    1649 Sl      05:21:05 /usr/libexec/ibus-engine-simple
+   3571    1283 Sl      05:20:51 update-notifier
+   3589     924 Ssl     05:20:50 /usr/libexec/gnome-terminal-server
+   3620    3589 Ss      05:20:50 bash
+   3712    3620 Sl+     05:20:47 /usr/bin/python3 /opt/ros/humble/bin/ros2 launch omnibot_control robot_control.launch.py
+   3732    3712 Sl+     05:20:46 /opt/ros/humble/lib/joy/joy_node --ros-args -r __node:=joy_node
+   3734    3712 Sl+     05:20:46 /home/zkam/OmniBot_ws/install/omnibot_control/lib/omnibot_control/teleop_node --ros-args -r __node:=teleop_node --params-file /tmp/launch_params_g1anuvht
+   3736    3712 Rl+     05:20:46 /opt/ros/humble/lib/robot_state_publisher/robot_state_publisher --ros-args -r __node:=robot_state_publisher --params-file /tmp/launch_params_j4fnnfxt
+   3738    3712 Sl+     05:20:46 /opt/ros/humble/lib/controller_manager/ros2_control_node --ros-args --params-file /tmp/launch_params_9o2ld96f --params-file /home/zkam/OmniBot_ws/install/omnibot_control/share/omnibot_control/config/hardware_params.yaml
+   4497    1342 Sl      04:57:37 clash-verge
+   4642    4497 SLl     04:57:36 /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitNetworkProcess 1 31 34
+   4687    4497 SLl     04:57:36 /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitWebProcess 4 45 47
+   4767    1408 Sl      04:57:35 /usr/bin/verge-mihomo -d /home/zkam/.local/share/io.github.clash-verge-rev.clash-verge-rev -f /home/zkam/.local/share/io.github.clash-verge-rev.clash-verge-rev/clash-verge.yaml -ext-ctl-unix /tmp/verge/verge-mihomo.sock
+   5215     924 SLsl    04:57:15 /snap/code/268/usr/share/code/code --no-sandbox --force-user-env --ozone-platform=x11
+   5228    5215 S       04:57:15 /snap/code/268/usr/share/code/code --type=zygote --no-zygote-sandbox --no-sandbox
+   5229    5215 S       04:57:15 /snap/code/268/usr/share/code/code --type=zygote --no-sandbox
+   5281     924 Sl      04:57:15 /snap/code/268/usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/zkam/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=c7fefbcb-b4fa-47c0-a34f-b5ae5a88e49b&iid=c7fefbcb-b4fa-47c0-a34f-b5ae5a88e49b&sid=c7fefbcb-b4fa-47c0-a34f-b5ae5a88e49b --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.141.0 --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=43.7.7 --initial-client-fd=40 --shared-client-connection
+   5326    5215 Sl      04:57:15 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708989122997041
+   5405    5215 Sl      04:57:14 /snap/code/268/usr/share/code/code --type=gpu-process --disable-gpu-sandbox --no-sandbox --ozone-platform=x11 --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --gpu-preferences=WAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --use-gl=disabled --shared-files --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708990060038890
+   5485    5229 Sl      04:57:14 /snap/code/268/usr/share/code/code --type=renderer --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/snap/code/268/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --no-sandbox --max-active-webgl-contexts=32 --ozone-platform=x11 --disable-gpu-compositing --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1487295522 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708990997080739 --vscode-window-config=vscode:96a12c4f-e7c4-417a-8b80-a834b9760b7d
+   5562    5215 Sl      04:57:13 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=zh-CN --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708992871164437
+   5633    5215 Sl      04:57:12 dconf watch /system/proxy/
+   5640    5229 Sl      04:57:12 /snap/code/268/usr/share/code/code --type=renderer --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/snap/code/268/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --no-sandbox --max-active-webgl-contexts=32 --ozone-platform=x11 --disable-gpu-compositing --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1489905779 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708994745248135 --vscode-window-config=vscode:96a12c4f-e7c4-417a-8b80-a834b9760b7d
+   5646    5215 Sl      04:57:12 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=zh-CN --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708995682289984
+   5654    5215 Sl      04:57:12 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=zh-CN --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708996619331833
+   5700    5215 Sl      04:57:11 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=zh-CN --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708997556373682
+   5746    5215 Sl      04:57:11 /snap/code/268/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=zh-CN --service-sandbox-type=none --no-sandbox --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190708999430457380
+   5828    5746 Sl      04:57:08 /home/zkam/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64/codex -c features.code_mode_host=true app-server --analytics-default-enabled
+   5864    5746 Sl      04:57:08 /snap/code/268/usr/share/code/code /snap/code/268/usr/share/code/resources/app/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=5746
+   5994    5229 Sl      04:56:53 /snap/code/268/usr/share/code/code --type=renderer --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/snap/code/268/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --no-sandbox --max-active-webgl-contexts=32 --ozone-platform=x11 --disable-gpu-compositing --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1508995803 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190709000367499229 --vscode-window-config=vscode:96a12c4f-e7c4-417a-8b80-a834b9760b7d
+   6149    5828 Sl      04:55:38 /home/zkam/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64/codex-code-mode-host
+   6387    1342 Sl      04:50:43 /opt/google/chrome/chrome
+   6393    6387 S       04:50:43 cat
+   6394    6387 S       04:50:43 cat
+   6396     924 Sl      04:50:42 /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/zkam/.config/google-chrome/Crash Reports --metrics-dir=/home/zkam/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=151.0.7922.71 --initial-client-fd=5 --shared-client-connection
+   6398     924 Sl      04:50:42 /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/zkam/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 22.04.5 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=151.0.7922.71 --initial-client-fd=4 --shared-client-connection
+   6404    6387 S       04:50:42 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable
+   6405    6387 S       04:50:42 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable
+   6407    6405 S       04:50:42 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable
+   6431    6404 Sl      04:50:42 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --gpu-preferences=YAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAASAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAMAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,7145425514610743204,1350098126447235303,262144 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708988185955192
+   6436    6387 Sl      04:50:42 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=none --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15392798331622703615,440593772272809019,524288 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708989122997041
+   6447    6407 Sl      04:50:42 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=zh-CN --service-sandbox-type=utility --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6439383867422616746,17544532386164922481,524288 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708990060038890
+   6501    6407 Sl      04:50:42 /opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1879897056 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,10750114707504489920,1666283711734861001,2097152 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708990997080739
+   6717    6407 Sl      04:50:37 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1884743390 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13215475072806071941,16645904928378521197,2097152 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708994745248135
+   6765    6407 Sl      04:50:26 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1895782645 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,5166803851430693931,3815439949163134642,2097152 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190708997556373682
+   6807    6407 Sl      04:50:18 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=1903146550 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,12574118044681055135,1908984741579284635,2097152 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190709000367499229
+   6986    1342 Sl      04:39:05 /usr/lib/libreoffice/program/oosplash --writer
+   7003    6986 Sl      04:39:05 /usr/lib/libreoffice/program/soffice.bin --writer
+   7061    1268 Sl      04:38:57 /usr/libexec/gvfsd-network --spawner :1.18 /org/gtk/gvfs/exec_spaw/1
+   7075    1268 Sl      04:38:56 /usr/libexec/gvfsd-dnssd --spawner :1.18 /org/gtk/gvfs/exec_spaw/3
+   7370     924 Sl      04:19:14 /usr/bin/nautilus --gapplication-service
+   7421       2 I       04:18:43 [kworker/1:2-mm_percpu_wq]
+  10439       2 I       03:48:14 [kworker/10:2-events]
+  15767    3589 Ss      01:48:39 bash
+  15799   15767 S+      01:48:26 bash ./livox_driver.sh
+  15833   15799 Sl+     01:48:22 /usr/bin/python3 /opt/ros/humble/bin/ros2 launch livox_ros_driver2 msg_MID360_launch.py
+  15834   15833 Sl+     01:48:21 /home/zkam/test_nav/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node --ros-args -r __node:=livox_lidar_publisher --params-file /tmp/launch_params_sx934p6r --params-file /tmp/launch_params_c0tojulo --params-file /tmp/launch_params_c9u10wqs --params-file /tmp/launch_params_7m1r5bwc --params-file /tmp/launch_params_10p295vc --params-file /tmp/launch_params_k2zgo9qb --params-file /tmp/launch_params_bfyogxjh --params-file /tmp/launch_params_e9y98qrp --params-file /tmp/launch_params_0iqrbc9d
+  15899     924 Ss      01:47:52 bash /home/zkam/test_nav/localization.sh
+  15930   15899 Sl      01:47:50 python3 /home/zkam/test_nav/lio_tf_to_base_tf.py --ros-args -p raw_tf_topic:=/tf_lio_raw -p raw_parent_frame:=camera_init -p raw_child_frame:=body -p odom_frame:=odom -p base_frame:=base_link -p sensor_x:=0.37 -p sensor_y:=0.28 -p sensor_z:=0.15 -p sensor_yaw:=0.8229227423153264
+  15931   15899 Sl      01:47:50 python3 /home/zkam/test_nav/tf_to_odom_bridge.py --ros-args -p odom_frame:=odom -p base_frame:=base_link -p odom_topic:=/odom -p publish_rate:=50.0
+  15932   15899 Sl      01:47:50 /usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_fastlio_localization.launch.py fastlio_config:=/home/zkam/fastlio_ws/src/FAST_LIO_ROS2/config/mid360.yaml map_pcd_path:=/home/zkam/test_nav/robot_data/maps/data/scans.pcd
+  15954   15932 Sl      01:47:50 /home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/static_map_localizer_node --ros-args -r __node:=static_map_localizer --params-file /tmp/launch_params_kt3zas38
+  15956   15932 Sl      01:47:50 python3 /home/zkam/test_nav/install/static_map_localization/lib/static_map_localization/map_to_odom_tf_broadcaster.py --ros-args -r __node:=static_map_tf_broadcaster
+  16033     924 Ssl     01:47:28 /opt/ros/humble/bin/rviz2 -d /home/zkam/test_nav/src/localization_ab_test/config/ndt_initialization.rviz
+  16119       2 I       01:46:47 [kworker/4:2]
+  16138       2 I       01:46:21 [kworker/11:2-events]
+  16210    1342 Sl      01:44:41 gnome-control-center wifi
+  16287       2 I       01:43:46 [kworker/6:1-events]
+  16290       2 I       01:43:46 [kworker/0:1]
+  16415     863 Ssl     01:43:20 /usr/bin/anydesk --backend
+  16506     924 Ss      01:41:58 bash /home/zkam/test_nav/mocap_tracker0_vrpn.sh
+  16561   16506 Sl      01:41:57 /home/zkam/test_nav/.vendor/ros-humble-vrpn/opt/ros/humble/lib/vrpn_mocap/client_node --ros-args -r __ns:=/vrpn_mocap -p server:=192.168.1.168 -p port:=3883 -p frame_id:=mocap_world -p update_freq:=100.0 -p refresh_freq:=1.0 -p use_vrpn_timestamps:=false
+  16562   16506 Sl      01:41:57 python3 /home/zkam/test_nav/mocap_pose_normalizer.py --config /home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml --ros-args -p timestamp_source:=ubuntu_receiver_clock
+  16822       2 I       01:38:58 [kworker/8:1]
+  16890       2 I       01:38:23 [kworker/7:2-i915-unordered]
+  17879       2 I       01:20:14 [kworker/9:2-i915-unordered]
+  17886       2 I       01:19:58 [kworker/10:0-events]
+  17889       2 I       01:19:58 [kworker/2:1]
+  17891       2 I       01:19:58 [kworker/6:0-i915-unordered]
+  17892       2 I       01:19:58 [kworker/5:2]
+  18475    6407 Sl      01:04:03 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=6396 --enable-crash-reporter=3ea4dfaf-da53-4f7c-9ab9-b78a02dcfb66, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=21 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=15478124805 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,15235886993197433321,12738153624559167962,2097152 --field-trial-handle=3,i,2396697160559727464,17052177491925180889,262144 --variations-seed-version=20261015-170106.572000-production --pseudonymization-salt-handle=7,i,16081459580184839121,9739069929901743638,4 --trace-process-track-uuid=3190709005989750323
+  18705       2 I          47:52 [kworker/u24:4-flush-8:0]
+  18879       2 I          38:43 [kworker/1:0]
+  18972       2 I<         22:44 [kworker/u25:2-i915_flip]
+  19026       2 I          20:08 [kworker/u24:5-events_unbound]
+  19197       2 I          18:22 [kworker/3:0]
+  19437       2 I          10:02 [kworker/u24:1-events_unbound]
+  19439       2 I          10:02 [kworker/u24:6-events_unbound]
+  19591    5229 Sl         08:58 /snap/code/268/usr/share/code/code --type=renderer --crashpad-handler-pid=5281 --enable-crash-reporter=4f5ca45b-f8f9-435c-95de-d45d339b261b,no_channel --user-data-dir=/home/zkam/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/snap/code/268/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --no-sandbox --max-active-webgl-contexts=32 --ozone-platform=x11 --disable-gpu-compositing --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --lang=zh-CN --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=17 --time-ticks-at-unix-epoch=-1792198299666814 --launch-time-ticks=18783324988 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,73816401983746366,10236575972851597453,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,GlobalShortcutsPortal,GlobalShortcutsPortalPreferredTrigger,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,HideCursorWhileTyping,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,17944500209326573524,3092556692487782103,4 --trace-process-track-uuid=3190709002241582927 --vscode-window-config=vscode:96a12c4f-e7c4-417a-8b80-a834b9760b7d
+  19988       2 I<         05:50 [kworker/u25:1-i915_flip]
+  20225       2 I          00:31 [kworker/u24:0-flush-8:0]
+  20280    5828 Ss         00:00 /bin/bash -c python3 - <<'PY' import datetime,json,subprocess,sys from pathlib import Path sys.path.insert(0,'tests/controller_tracking') from controller_tracking.world_calibration import init_session,save stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ') session=Path('robot_data/experiments/fixed_world_calibration')/(stamp+'_ndt_3calib_1test') init_session(session,'robot_data/config/mocap_tracker0.yaml','ndt') save(session/'preflight_before_recovery.json',json.loads(Path('/tmp/fixed_world_live_preflight.json').read_text())) save(session/'status.json',dict(stage='recovering_failed_fastlio_before_any_calibration_capture',real_robot_motion_command_sent=False,initial_pose_required=True,training_captured=0,holdout_captured=False)) (session/'processes_before_recovery.txt').write_text(subprocess.check_output(['ps','-eo','pid,ppid,stat,etime,args'],text=True)) Path('/tmp/fixed_world_calibration_current.json').write_text(json.dumps(dict(session=str(session.resolve()),stage='recovering_readonly_localization'),indent=2)) print(session.resolve()) PY rg -n 'process has died|15950|fastlio_static_odom.*(died|exit)|exit code' /home/zkam/.ros/log/2026-10-17-*/launch.log
+  20281   20280 S          00:00 python3 -
+  20282   20281 R          00:00 ps -eo pid,ppid,stat,etime,args

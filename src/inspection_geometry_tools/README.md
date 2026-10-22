@@ -84,9 +84,11 @@ tangent direction. Execute the route with:
 ros2 service call /inspection_route/follow std_srvs/srv/Trigger '{}'
 ```
 
-The service first sends Nav2 `NavigateToPose` to START using that tangent yaw.
-After Nav2 confirms arrival, it automatically sends the selected segment to
-`FollowPath`; do not send a separate ordinary Nav2 Goal to START.
+The service computes one static global approach to START and appends the
+selected purple segment into one immutable `FollowPath`. START is a waypoint,
+with no separate stop or terminal-heading search. The ordered route goal
+checker requires traversing the approach, START and the selected segment
+before the ordinary END tolerances can finish the action.
 
 The selected purple segment uses the `InspectionStrict` MPPI controller profile.
 It deliberately omits MPPI's obstacle `CostCritic` and strongly follows the
@@ -110,6 +112,21 @@ ros2 service call /inspection_route/cancel std_srvs/srv/Trigger '{}'
 ```
 
 ## Parameters
+
+Inspection completion now requires visiting the immutable combined path in
+order, including the approach, START and the selected purple segment. The
+`inspection_route_goal_checker` then applies the original endpoint position
+and heading tolerances. Starting near END, crossing END early, or jumping
+over an unvisited part of a closed loop cannot complete the action. The
+default ordered-point corridor is 0.35 m. A pose outside that corridor does
+not advance progress; missing TF or a missing fresh active path keeps the
+completion check closed. Ordinary Nav2 goals retain `goal_checker`.
+
+`navigation.sh` and the anchored navigation entry add this checker in a
+runtime parameter layer; frozen source parameter snapshots are unchanged.
+`/inspection_route/active_reference_path` carries the repeated immutable
+active geometry for completion checking. The recorded reference topic still
+publishes once per accepted action, so analysis can distinguish executions.
 
 `map_alignment_node`: `alignment_method` (currently `pca`),
 `occupied_threshold`, `min_line_length`, `grid_resolution` (default `0.10`),

@@ -1,0 +1,180 @@
+{
+  "protocol": "4 total placements, 3 training base_link origins + 1 held-out base_link origin",
+  "real_robot_capture_performed": true,
+  "tf_published": false,
+  "unit_tests": {
+    "passed": 35,
+    "new_tests": 15,
+    "existing_tests": 20
+  },
+  "build": {
+    "package": "controller_tracking",
+    "passed": true,
+    "installed_cli_help_passed": true
+  },
+  "python_compilation_passed": true,
+  "synthetic_ros": {
+    "data_kind": "software_fixture",
+    "domain": 197,
+    "four_capture_commands_passed": true,
+    "injected_holdout_error_xyz_m": [
+      0.03,
+      -0.04,
+      0.12
+    ],
+    "recovered_holdout_3d_m": 0.13000000000000012,
+    "calibration_unchanged": true,
+    "interrupted_capture_retained": true,
+    "real_robot_tested": false
+  },
+  "synthetic_artifacts": "tests/controller_tracking/.validation/fixed_world_calibration/software_fixture_05_ready_check",
+  "per_group": {
+    "calib_01": {
+      "quality_passed": true,
+      "valid_mocap_samples": 300,
+      "pair_count": 15,
+      "raw_normalized_check": {
+        "matched_samples": 300,
+        "normalized_samples": 300,
+        "coverage": 1.0,
+        "scale_to_m": 0.001,
+        "mismatched_stamp_ns": [],
+        "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+      },
+      "map_ready_at_end": true
+    },
+    "calib_02": {
+      "quality_passed": true,
+      "valid_mocap_samples": 299,
+      "pair_count": 15,
+      "raw_normalized_check": {
+        "matched_samples": 299,
+        "normalized_samples": 299,
+        "coverage": 1.0,
+        "scale_to_m": 0.001,
+        "mismatched_stamp_ns": [],
+        "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+      },
+      "map_ready_at_end": true
+    },
+    "calib_03": {
+      "quality_passed": true,
+      "valid_mocap_samples": 300,
+      "pair_count": 15,
+      "raw_normalized_check": {
+        "matched_samples": 300,
+        "normalized_samples": 300,
+        "coverage": 1.0,
+        "scale_to_m": 0.001,
+        "mismatched_stamp_ns": [],
+        "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+      },
+      "map_ready_at_end": true
+    },
+    "test_04": {
+      "quality_passed": true,
+      "valid_mocap_samples": 300,
+      "pair_count": 15,
+      "raw_normalized_check": {
+        "matched_samples": 300,
+        "normalized_samples": 300,
+        "coverage": 1.0,
+        "scale_to_m": 0.001,
+        "mismatched_stamp_ns": [],
+        "note": "xyz_m in raw internal records retains native units until this explicit scale check"
+      },
+      "map_ready_at_end": true
+    }
+  },
+  "protected": {
+    "count": 836,
+    "changed_vs_prior_cleanup_baseline": [
+      "README.md"
+    ],
+    "missing": [],
+    "note": "README.md contains preexisting authorized changes; no edits this turn"
+  },
+  "historical_candidate_unchanged": true,
+  "csv_files_in_new_validation": [],
+  "files": {
+    "added": [
+      "tests/controller_tracking/controller_tracking/world_calibration.py",
+      "tests/controller_tracking/controller_tracking/world_capture.py",
+      "tests/controller_tracking/tools/world_calibration.py",
+      "tests/controller_tracking/tools/world_calibration_smoke.py",
+      "tests/controller_tracking/test/test_world_calibration.py",
+      "docs/controller_tracking/FIXED_WORLD_CALIBRATION.md",
+      "docs/controller_tracking/FIXED_WORLD_VALIDATION.md",
+      "docs/controller_tracking/fixed_world_checks.json",
+      "tests/controller_tracking/tools/world_calibration_report.py"
+    ],
+    "modified": [
+      "tests/controller_tracking/setup.py",
+      "tests/controller_tracking/package.xml",
+      "tests/controller_tracking/README.md",
+      "ARCHITECTURE.md",
+      "docs/controller_tracking/MAP_MOCAP_RECHECK.md"
+    ],
+    "deleted": []
+  },
+  "sha256": {
+    "tests/controller_tracking/controller_tracking/world_calibration.py": "0e507eb876a3621db3e9b40c1f13a220cabea55a804b0434d74b030c91a4ab98",
+    "tests/controller_tracking/controller_tracking/world_capture.py": "b770d3ab1523519d7f2c54372d248ae8e3781e69a49794cc0b5f411f2b03b7b0",
+    "tests/controller_tracking/tools/world_calibration.py": "dc9fba941288b55c1b1a6d141c391db253b87cf878778aafc86875c643f0349e",
+    "tests/controller_tracking/tools/world_calibration_smoke.py": "93726cffd9cb1b6e98dbc0539080bf7fea020d658fac565a8cfac51276e55333",
+    "tests/controller_tracking/test/test_world_calibration.py": "5310a436a98e9dd19c46397b515caead6c67e60b013c6eb06e65823b6e60731c",
+    "docs/controller_tracking/FIXED_WORLD_CALIBRATION.md": "64e6c993a99af57b350143489886c9deeed6657514a3f0d550f9bc84d033ed0c",
+    "docs/controller_tracking/FIXED_WORLD_VALIDATION.md": "fc6ed443734dd17e412453d4ce9e99fdf36d84c6063e3c790c424ec3e6e5b5be",
+    "tests/controller_tracking/setup.py": "d09dcba4e3ac20036dcb2609c48a71ba990a0f4ad85e7677baf48af8c6ff1e42",
+    "tests/controller_tracking/package.xml": "d4f6240aab6dfe566e58a8309d41608370a208efa84decaf89a7d2311d59d7a0",
+    "tests/controller_tracking/README.md": "d206f87f62b604822ccf0ceda311674173795d75a0987ab3fa10711366566ff7",
+    "ARCHITECTURE.md": "6d46627bb03db637a19f293e73a7a6e84b2a1564dcbea118e84627356e1fd7cf",
+    "docs/controller_tracking/MAP_MOCAP_RECHECK.md": "b902fb98932dc4ec7e6d740d6c7051a67da9b53e55610aafe09af474193bac44",
+    "tests/controller_tracking/tools/world_calibration_report.py": "893beaae16f48978677d493e7ed5ff6963ca0d225c143e1c885dc606f5161b24"
+  },
+  "global_git_diff_check": {
+    "exit_code": 2,
+    "reason": "preexisting README.md:38 trailing whitespace; unchanged this turn"
+  },
+  "real_calibration_completed": true,
+  "real_independent_validation_completed": true,
+  "real_precision_certified": false,
+  "real_session": "/home/zkam/test_nav/robot_data/experiments/fixed_world_calibration/20261017T061341Z_ndt_3calib_1test_attempt02",
+  "real_summary": {
+    "stage": "completed_acquisition_and_independent_verification_not_precision_certified",
+    "actual_physical_placements": 4,
+    "total_capture_windows": 6,
+    "qualified_windows": 4,
+    "failed_windows_retained": 2,
+    "original_algorithm_or_parameter_files_modified": false,
+    "motion_commands_published": false,
+    "tf_published": false,
+    "calibration_frozen_before_holdout": true,
+    "calibration_unchanged": true,
+    "training_data_unchanged": true,
+    "calibration_sha256": "939920cefbf169cedb9cd5cb4f9be5d6ff689770c2cba3dc8b7b9a849871c3b7",
+    "rigid_inverse_max_roundtrip_error_m": 3.885780586188048e-16,
+    "rotation_determinant": 1.0,
+    "scale": 1.0,
+    "protocol_passed": true,
+    "numeric_acceptance_passed": null,
+    "absolute_accuracy_certified": false,
+    "software_tests_passed": 35,
+    "build_passed": true,
+    "all_capture_processes_finished": true,
+    "calibration_report": "calibration_report.md",
+    "verification_report": "validation_retry_02/validation_report.md",
+    "main_report": "report.md",
+    "verification_data": "validation_retry_02/test_04",
+    "csv_files": [],
+    "camera_recalibration_external_id": null,
+    "physical_scale_after_recalibration_independently_verified": false,
+    "ground_plane_independently_measured": false,
+    "camera_timing_independently_verified": false
+  },
+  "followup_fixes": [
+    "Require latched NDT map readiness as well as pose-valid and initialized stage; two regression cases added",
+    "Retain quality-failed real captures and one unchanged-placement held-out recapture without refitting",
+    "Added read-only report/plot command"
+  ]
+}

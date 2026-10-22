@@ -1,0 +1,19 @@
+{
+  "outcome": "applied_and_resumed",
+  "original_controller_used": true,
+  "original_correction_used": true,
+  "request": {
+    "pose_ns": 1792347816682281110,
+    "receive_ros_ns": 1792347816700423703,
+    "trigger_source": "fresh_mocap_at_already_paused_original_route"
+  },
+  "pause_ros_ns": 1792347816703754441,
+  "pause_response": "Original route already paused; verified canceled goal and fresh zero command",
+  "before_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347822645033924",
+  "correction_capture": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/checkpoints/middle_1792347834544835127",
+  "map_odom_version": 1,
+  "correction_applied_ros_ns": 1792347839875793626,
+  "after_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347845448738824",
+  "resume_response": "Resuming the unchanged remaining reference poses; no START replanning.",
+  "resume_ros_ns": 1792347855852546460
+}

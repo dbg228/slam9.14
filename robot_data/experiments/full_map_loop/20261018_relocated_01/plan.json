@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "data_kind": "real_group1_route_and_endpoint_completed_groups2_3_pending",
+  "date": "2026-10-18",
+  "camera_world": {
+    "schema": 1,
+    "camera_world_id": "20261018_relocated_shared_world_01",
+    "reported_date": "2026-10-18",
+    "cameras_relocated": true,
+    "two_regions_share_one_world": true,
+    "confirmation": "User confirmed both regions share one world and requested rebuilding the map with the current layout.",
+    "region_roles": [
+      "start_and_end",
+      "middle"
+    ],
+    "absolute_map_transforms": "New native map to current mocap relationship frozen from synchronous static initialization; prior NDT registration used only for baseline evaluation",
+    "vendor_calibration_id": null,
+    "previous_world_calibrations": "historical_only_not_valid_for_current_layout"
+  },
+  "map_strategy": "rebuild_with_current_camera_layout",
+  "new_map_run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "route": {
+    "shape": "group1_noncoincident_endpoints_user_approved",
+    "start_equals_end": false,
+    "physical_route_coordinates": {
+      "start": [
+        3.040634409977778,
+        -3.3506043515353285,
+        0.05
+      ],
+      "middle": [
+        -4.123459029864366,
+        -6.980476319737932,
+        0.05
+      ],
+      "end": [
+        2.456411492544869,
+        -2.8106016277423977,
+        0.05
+      ]
+    },
+    "checkpoints": [
+      "middle",
+      "end"
+    ],
+    "route_execution": "Group1 original FollowPath started after explicit user confirmation; succeeded",
+    "user_allows_group1_noncoincident_endpoints": true,
+    "group1_selected_points_xyz_m": {
+      "start": [
+        3.040634409977778,
+        -3.3506043515353285,
+        0.05
+      ],
+      "middle": [
+        -4.123459029864366,
+        -6.980476319737932,
+        0.05
+      ],
+      "end": [
+        2.456411492544869,
+        -2.8106016277423977,
+        0.05
+      ]
+    }
+  },
+  "groups": [
+    {
+      "id": "group1",
+      "method": "original_NDT",
+      "pcd": "/home/zkam/test_nav/robot_data/maps/data/scans.pcd",
+      "initial_mocap_feedback": false,
+      "checkpoint_feedback": false,
+      "world_calibration_for_evaluation": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01",
+      "world_calibration_reference": "NDT participates; three separate calibration placements; no independent surveyed reference",
+      "evaluation_registration_frozen": true,
+      "registration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+      "stage": "route_completed_accuracy_comparison_unvalidated",
+      "formal_report": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/final_report/experiment_report.md",
+      "metrics": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/final_report/experiment_summary.json",
+      "review_report": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/review_01/review_report.md"
+    },
+    {
+      "id": "group2",
+      "method": "new_native_map_mocap_initial_then_LIO",
+      "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+      "checkpoint_feedback": false,
+      "stage": "new_map_saved_group2_trial_pending",
+      "mapping_initialization": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/real_initialization_summary.json",
+      "map_save_summary": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/real_save_summary.json"
+    },
+    {
+      "id": "group3",
+      "method": "same_new_map_initialization_plus_static_mocap_checkpoints",
+      "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+      "checkpoint_order": [
+        "middle",
+        "end"
+      ],
+      "stage": "new_map_saved_group3_trial_pending"
+    }
+  ],
+  "pending": [
+    "same_physical_route_in_new_map",
+    "real_group2_and_group3_trials"
+  ],
+  "legacy_map": {
+    "path": "/home/zkam/test_nav/robot_data/maps/data/scans.pcd",
+    "bytes": 71288669,
+    "sha256": "04601e746b0e200ab8a6223e4094edc324eca75cfc6623151e96eceaed2a18c6"
+  },
+  "previous_anchored_map": {
+    "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/raw/native_F.pcd",
+    "sha256": "fc530f6f108e52475d37774404c93954cb400080a7bfe2d48c4235dd28b66e51"
+  },
+  "new_absolute_calibration_collected": false,
+  "real_motion_started": true,
+  "evaluation": {
+    "scope": "endpoint_only",
+    "midpoint_role": "group3_correction_and_auxiliary_log_only",
+    "formal_columns": [
+      "group1_endpoint",
+      "group2_endpoint",
+      "group3_endpoint_before_end_correction",
+      "group3_endpoint_after_end_correction"
+    ],
+    "group3_primary": "endpoint_before_end_correction_includes_midpoint_correction_effect",
+    "post_correction_measurement": "new_heldout_static_window_not_same_fit_window",
+    "route_stop_duration_s": null,
+    "repeat_count": null,
+    "initial_error_diagnostic": true,
+    "curve_outputs": [
+      "initial_position_and_heading",
+      "endpoint_position_and_heading",
+      "accumulated_LIO_estimated_distance"
+    ],
+    "travel_distance": "LIO accumulated planar estimate from continuous odom frame; report gaps",
+    "full_route_tracking_error": true
+  },
+  "software_validation": {
+    "unit_tests_passed": 62,
+    "checkpoint_ros_simulation_passed": true,
+    "legacy_native_ros_simulation_passed": true,
+    "real_trials_started": true,
+    "real_static_measurements_collected": true,
+    "group1_real_route_completed": true,
+    "report_tests_passed": 35
+  },
+  "new_mapping_stage": "saved_and_projected",
+  "new_map_pcd": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/raw/native_F.pcd",
+  "new_grid": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/grid/map.yaml",
+  "new_map_calibration": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/calibration.yaml"
+}

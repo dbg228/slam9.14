@@ -1,0 +1,145 @@
+method: mean_of_synchronous_static_T_M_B_times_inverse_T_F_B
+pairs: 31
+duration_s: 3.0009865760000003
+static_spread:
+  T_M_B:
+    mean_xyz_m:
+    - -0.41167265037645995
+    - 4.733630740223972
+    - 0.24198296067192204
+    mean_rotation_matrix:
+    - - 0.9971598173585137
+      - 0.07437464685855906
+      - -0.01186214779038235
+    - - -0.07441803924457314
+      - 0.997221808037644
+      - -0.0032589889729090493
+    - - 0.011586806312759254
+      - 0.004132490628789232
+      - 0.9999243313574652
+    std_xyz_m:
+    - 4.114673011219191e-05
+    - 0.00010429959998194799
+    - 4.6130489795235085e-05
+    maximum_radius_m: 0.0002305191471491438
+    maximum_orientation_deviation_deg: 0.09568337135566318
+  T_F_B:
+    mean_xyz_m:
+    - -0.4618085002329403
+    - 0.07498543296764887
+    - -0.14454465221956986
+    mean_rotation_matrix:
+    - - 0.6802748015691391
+      - 0.7329564189773238
+      - 0.0010403028428530858
+    - - -0.7329565915832988
+      - 0.6802753546999597
+      - -0.0002768437021763992
+    - - -0.0009106067539812746
+      - -0.0005741670313480075
+      - 0.9999994205636108
+    std_xyz_m:
+    - 0.0007687551285629555
+    - 0.0016270784127715534
+    - 0.0008326841013588034
+    maximum_radius_m: 0.003158334956121968
+    maximum_orientation_deviation_deg: 0.03437674375065415
+position_residual_m:
+  n: 31
+  rmse: 0.0019896435727698686
+  p95_abs: 0.0030371571471288113
+  max_abs: 0.0031862113001621117
+  mean: 0.0018576177050112204
+  std: 0.0007126976979710923
+ndt_used: false
+scale_fitted: false
+frozen: true
+transform_refit: false
+run_id: 20261018_relocated_01
+data_kind: real_mapping_pending_collection
+inputs_sha256: ba7e9bfab7000f34c7285a3a553284b459f5048d09e6de5e35682a06daa90bf7
+camera_world_id: 20261018_relocated_shared_world_01
+raw_sha256: d16c105ae2b710837ef1f17fe4ae4b44f82d35aeae3cc14ec2772f4128cb68d9
+pairs_sha256: f56185e16d8ba0ba972cc9fa78d48e4235e38d17af4a1faa6c73c0f35611637c
+raw_normalized_check:
+  matched_samples: 270
+  normalized_samples: 270
+  coverage: 1.0
+  scale_to_m: 0.001
+  mismatched_stamp_ns: []
+  note: xyz_m in raw internal records retains native units until this explicit scale
+    check
+clock:
+  mocap_source: ubuntu_receiver_clock
+  fastlio_source: lidar_end_time
+  offset_s: 0.0
+  offset_verified: false
+  camera_latency_s: null
+  scope: static timestamp pairing, not exposure synchronization certification
+reference_point: base_link
+motion_commands_published: false
+T_map_odom:
+  parent: map
+  child: odom
+  equation: p_map = T_map_odom * p_odom
+  matrix:
+  - - 0.9992763778018223
+    - -0.0380270704971311
+    - 0.0008140495545634844
+    - 0.0015630243562743118
+  - - 0.0380284250939167
+    - 0.9992751796431695
+    - -0.0017187885238396025
+    - -0.009295699452672501
+  - - -0.0007480990225093784
+    - 0.001748501792817464
+    - 0.9999981915430324
+    - -0.0012082247800136448
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - 0.0015630243562743118
+  - -0.009295699452672501
+  - -0.0012082247800136448
+  quaternion_xyzw:
+  - 0.0008669797606970144
+  - 0.00039060796063641667
+  - 0.019017321696555567
+  - 0.9998187021890546
+  scale: 1.0
+T_mocap_odom:
+  parent: mocap_world
+  child: odom
+  equation: p_mocap_world = T_mocap_world_odom * p_odom
+  matrix:
+  - - 0.7328437324929679
+    - -0.6802763363472781
+    - -0.01281288225581732
+    - -0.024080180555156636
+  - - 0.680292016765355
+    - 0.7329315150482344
+    - -0.0037637978730118427
+    - 4.9922919442687785
+  - - 0.011951387831694388
+    - -0.0059582258287805
+    - 0.9999108279611094
+    - 0.3924808110025058
+  - - 0.0
+    - 0.0
+    - 0.0
+    - 1.0
+  translation_m:
+  - -0.024080180555156636
+  - 4.9922919442687785
+  - 0.3924808110025058
+  quaternion_xyzw:
+  - -0.0005893818001744004
+  - -0.006651214065066083
+  - 0.3654228989882504
+  - 0.9308176614544748
+  scale: 1.0
+calibration_sha256: f2dedfadfe2c3a2066ec4f32c5fc05b2b098cab655efe70a6107ec4715b75608
+initialization_only: true
+continuous_mocap_correction: false

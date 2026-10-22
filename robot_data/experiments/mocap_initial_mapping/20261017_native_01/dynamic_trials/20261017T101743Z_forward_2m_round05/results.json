@@ -1,0 +1,146 @@
+{
+  "data_kind": "real_2m_dynamic_localization_test",
+  "state": {
+    "group": "A",
+    "direction": 1,
+    "state": "DONE",
+    "reason": "target_reached",
+    "displacement_m": 2.0003092647712846,
+    "path_length_m": 2.004267708347698,
+    "mocap_stamp_ns": 1792232297140485255,
+    "ros_stamp_ns": 1792232302171498668,
+    "request_linear_x": 0.0,
+    "request_angular_z": 0.0,
+    "duplicates": 0
+  },
+  "guard_during_trial": {
+    "armed": true,
+    "moving": false,
+    "ready": true,
+    "latched_failure": "",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792232302181125190
+  },
+  "guard_after_intentional_disarm": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "recorder_not_ready",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792232303222263744
+  },
+  "events": [
+    {
+      "event": "motion_start",
+      "steady_s": 33977.724357483,
+      "start_base_pose": {
+        "stamp_ns": 1792232277381022765,
+        "valid": true,
+        "x": -1.0607248350475427,
+        "y": -0.07837358258501764,
+        "z": 0.20947939150395073,
+        "qx": 0.0,
+        "qy": 0.0,
+        "qz": -0.004920065994139347,
+        "qw": 0.9999878964020581
+      },
+      "direction": 1,
+      "group": "A",
+      "ros_stamp_ns": 1792232277397746244,
+      "event_id": 0
+    },
+    {
+      "event": "stop_command",
+      "steady_s": 33997.476692885,
+      "reason": "target_reached",
+      "displacement_m": 2.0003092647712846,
+      "path_length_m": 2.004267708347698,
+      "mocap_stamp_ns": 1792232297140485255,
+      "group": "A",
+      "ros_stamp_ns": 1792232297152789610,
+      "event_id": 1
+    }
+  ],
+  "motion_started": true,
+  "reference_coverage": 0.9798387096774194,
+  "XY_error_m": {
+    "n": 243,
+    "rmse": 0.0070564419670494545,
+    "p95_abs": 0.00801829636938575,
+    "max_abs": 0.008832447437612566,
+    "mean": 0.007028125323644472,
+    "std": 0.0006315280433077063
+  },
+  "yaw_error_deg": {
+    "n": 243,
+    "rmse": 0.046532146844358135,
+    "p95_abs": 0.078645200915611,
+    "max_abs": 0.12774332309960396,
+    "mean": 0.037643673701465,
+    "std": 0.027353144612686512
+  },
+  "phases": {
+    "pre_motion": {
+      "total": 81,
+      "XY_error_m": {
+        "n": 76,
+        "rmse": 0.007699298684247079,
+        "p95_abs": 0.008551289568237837,
+        "max_abs": 0.008731221806578546,
+        "mean": 0.007674954501605162,
+        "std": 0.0006117790675884944
+      }
+    },
+    "motion": {
+      "total": 198,
+      "XY_error_m": {
+        "n": 193,
+        "rmse": 0.007072250683710461,
+        "p95_abs": 0.008127002202023016,
+        "max_abs": 0.008832447437612566,
+        "mean": 0.007041551479237409,
+        "std": 0.0006582419756385538
+      }
+    },
+    "post_stop": {
+      "total": 50,
+      "XY_error_m": {
+        "n": 50,
+        "rmse": 0.006995085213816801,
+        "p95_abs": 0.007784049789008354,
+        "max_abs": 0.007925267147229935,
+        "mean": 0.006976300363055739,
+        "std": 0.0005122991245227898
+      }
+    },
+    "cleanup": {
+      "total": 18,
+      "XY_error_m": {
+        "n": 14,
+        "rmse": 0.007169559515144437,
+        "p95_abs": 0.007743999922016501,
+        "max_abs": 0.00806625047012017,
+        "mean": 0.007159228927080498,
+        "std": 0.00038473992625142624
+      }
+    }
+  },
+  "evaluation_window": "motion_start through stop_command+5s; pre-motion and cleanup retained separately",
+  "stale_native_samples_retained_for_offline_analysis": true,
+  "timing_verified": false,
+  "matching": "nearest within 25ms; no interpolation, extrapolation, zero-fill or alignment fit",
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "initialization_sha256": "a1b420a5cae9125fdd757f4e9b0900a588d21fa14b821ad2c627daffa45066fc",
+  "motion_duration_s": 19.755043366000002,
+  "post_stop_2_to_5s_XY_error_m": {
+    "n": 30,
+    "rmse": 0.007052171932474414,
+    "p95_abs": 0.007616791826920624,
+    "max_abs": 0.007855351718398448,
+    "mean": 0.007037274537603632,
+    "std": 0.0004581441340620877
+  },
+  "stopped_displacement_m": 2.0070091500412213,
+  "analysis_tool_sha256": "81ef7817f4b3d67e20d5103f58be8da2b6b6713e2a43b347a2e0f2b76f9f1894",
+  "raw_sha256": "b0b56ab802931d4a50140b2b908b0902bec323c9b1667ccce47d64f810a46e88"
+}

@@ -1,0 +1,38 @@
+{
+  "software_result": "31 passed",
+  "test_files": [
+    "test_auto_2m_safety.py",
+    "test_forward_mean_curve.py",
+    "src/localization_ab_test/test/test_protocol.py"
+  ],
+  "completed_physical_trials": 5,
+  "source_replay_matches_archived_rmse": true,
+  "CSV_files_generated": false,
+  "protected_hash_audit": [
+    {
+      "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02",
+      "protected_files_match": true,
+      "bag_metadata_exists": true
+    },
+    {
+      "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095917Z_forward_2m_round02_retry",
+      "protected_files_match": true,
+      "bag_metadata_exists": true
+    },
+    {
+      "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T100326Z_forward_2m_round03",
+      "protected_files_match": true,
+      "bag_metadata_exists": true
+    },
+    {
+      "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T101420Z_forward_2m_round04_retry",
+      "protected_files_match": true,
+      "bag_metadata_exists": true
+    },
+    {
+      "trial": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T101743Z_forward_2m_round05",
+      "protected_files_match": true,
+      "bag_metadata_exists": true
+    }
+  ]
+}

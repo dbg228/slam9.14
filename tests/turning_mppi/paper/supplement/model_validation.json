@@ -1,0 +1,368 @@
+{
+  "evidence": "synthetic_closed_loop_not_fastlio_ndt_not_hardware_identification",
+  "dt_s": 0.05,
+  "profiles": {
+    "step": "45s; at3s v=0.15m/s, at38s v=0; w=+0.25rad/s at7-15s, -0.25 at23-31s, otherwise0",
+    "multisine": "45s independent validation; first2s zero; then v=.12+.03sin(.31t)+.015sin(.83t); w=.12sin(.51t)+.08sin(1.17t)+.04sin(2.39t), t relative to2s"
+  },
+  "plants": {
+    "nominal": {
+      "assumed_true_parameters": {
+        "tau_w": 0.25,
+        "delay": 0.1,
+        "tau_v": 0.12,
+        "bias": 0.0
+      },
+      "fits": {
+        "v": {
+          "delay_steps": 2,
+          "delay_s": 0.1,
+          "tau_s": 0.11999999999999997,
+          "a": 0.6592406302004437,
+          "bias": -2.295182147127559e-16,
+          "train_one_step_rmse": 5.308017900433573e-17,
+          "design_condition_number": 150.54798315168395,
+          "fit_available": true,
+          "train_profile": "step",
+          "validation_profile": "independent_multisine",
+          "validation_recursive_rmse": 2.3041842490760466e-16,
+          "validation_recursive_max_abs": 3.0531133177191805e-16,
+          "validation_one_step_rmse": 8.052858091283802e-17,
+          "all_delay_candidates": [
+            {
+              "delay_steps": 0,
+              "delay_s": 0.0,
+              "tau_s": 0.23294543278084576,
+              "a": 0.806829795845644,
+              "bias": -2.297548628931697e-16,
+              "train_one_step_rmse": 0.0008395718606657897,
+              "design_condition_number": 91.89863021634952
+            },
+            {
+              "delay_steps": 1,
+              "delay_s": 0.05,
+              "tau_s": 0.17435035529747187,
+              "a": 0.7506776987027513,
+              "bias": -2.299808926786631e-16,
+              "train_one_step_rmse": 0.0005366318632349751,
+              "design_condition_number": 113.38363756207238
+            },
+            {
+              "delay_steps": 2,
+              "delay_s": 0.1,
+              "tau_s": 0.11999999999999997,
+              "a": 0.6592406302004437,
+              "bias": -2.295182147127559e-16,
+              "train_one_step_rmse": 5.308017900433573e-17,
+              "design_condition_number": 150.54798315168395
+            },
+            {
+              "delay_steps": 3,
+              "delay_s": 0.15000000000000002,
+              "tau_s": 0.0741228095360261,
+              "a": 0.5093824394195379,
+              "bias": -2.300701544629748e-16,
+              "train_one_step_rmse": 0.0007125264847913153,
+              "design_condition_number": 228.36575334549633
+            },
+            {
+              "delay_steps": 4,
+              "delay_s": 0.2,
+              "tau_s": 0.04602663966222893,
+              "a": 0.3374535511194,
+              "bias": -2.2950624334446696e-16,
+              "train_one_step_rmse": 0.0016481385187570525,
+              "design_condition_number": 427.05918729721384
+            }
+          ],
+          "input": "30Hz smoother output sampled at 20Hz, before transport queue",
+          "output": "true synthetic body velocity; no sensor measurement noise",
+          "gain_constraint": 1.0,
+          "model": "G(s)=exp(-D*s)/(tau*s+1), additive steady-state bias",
+          "identification_scope": "synthetic parameter recovery and heldout-input consistency only"
+        },
+        "w": {
+          "delay_steps": 2,
+          "delay_s": 0.1,
+          "tau_s": 0.24999999999999928,
+          "a": 0.8187307530779814,
+          "bias": 2.829528050786486e-18,
+          "train_one_step_rmse": 1.3429562094869765e-17,
+          "design_condition_number": 41.15756356899006,
+          "fit_available": true,
+          "train_profile": "step",
+          "validation_profile": "independent_multisine",
+          "validation_recursive_rmse": 2.907795572375844e-17,
+          "validation_recursive_max_abs": 1.3877787807814457e-16,
+          "validation_one_step_rmse": 1.516944844817604e-17,
+          "all_delay_candidates": [
+            {
+              "delay_steps": 0,
+              "delay_s": 0.0,
+              "tau_s": 0.36869844568179205,
+              "a": 0.8731812039228356,
+              "bias": 2.887379501535085e-18,
+              "train_one_step_rmse": 0.001484240885620903,
+              "design_condition_number": 30.583464970512154
+            },
+            {
+              "delay_steps": 1,
+              "delay_s": 0.05,
+              "tau_s": 0.3060241708673843,
+              "a": 0.849263490388645,
+              "bias": 2.232849441084813e-18,
+              "train_one_step_rmse": 0.0009089842004261816,
+              "design_condition_number": 34.978102793635344
+            },
+            {
+              "delay_steps": 2,
+              "delay_s": 0.1,
+              "tau_s": 0.24999999999999928,
+              "a": 0.8187307530779814,
+              "bias": 2.829528050786486e-18,
+              "train_one_step_rmse": 1.3429562094869765e-17,
+              "design_condition_number": 41.15756356899006
+            },
+            {
+              "delay_steps": 3,
+              "delay_s": 0.15000000000000002,
+              "tau_s": 0.20679542053076558,
+              "a": 0.7852250995485688,
+              "bias": 2.6156671467555785e-18,
+              "train_one_step_rmse": 0.0010695713038803136,
+              "design_condition_number": 50.269961662317
+            },
+            {
+              "delay_steps": 4,
+              "delay_s": 0.2,
+              "tau_s": 0.17506128733441173,
+              "a": 0.7515524640451472,
+              "bias": 3.503581568018406e-18,
+              "train_one_step_rmse": 0.0020655473180540905,
+              "design_condition_number": 63.87025230000765
+            },
+            {
+              "delay_steps": 5,
+              "delay_s": 0.25,
+              "tau_s": 0.17763205862052336,
+              "a": 0.7546654644468138,
+              "bias": 2.745759698846167e-18,
+              "train_one_step_rmse": 0.0032874199894461246,
+              "design_condition_number": 83.70456840669563
+            },
+            {
+              "delay_steps": 6,
+              "delay_s": 0.30000000000000004,
+              "tau_s": 0.43144268673428476,
+              "a": 0.8905729600219843,
+              "bias": 1.7645061375474425e-18,
+              "train_one_step_rmse": 0.004277254386812462,
+              "design_condition_number": 104.20502065256247
+            }
+          ],
+          "input": "30Hz smoother output sampled at 20Hz, before transport queue",
+          "output": "true synthetic body velocity; no sensor measurement noise",
+          "gain_constraint": 1.0,
+          "model": "G(s)=exp(-D*s)/(tau*s+1), additive steady-state bias",
+          "identification_scope": "synthetic parameter recovery and heldout-input consistency only"
+        }
+      }
+    },
+    "heldout": {
+      "assumed_true_parameters": {
+        "tau_w": 0.38,
+        "delay": 0.15,
+        "tau_v": 0.12,
+        "bias": 0.008
+      },
+      "fits": {
+        "v": {
+          "delay_steps": 3,
+          "delay_s": 0.15000000000000002,
+          "tau_s": 0.11999999999999997,
+          "a": 0.6592406302004437,
+          "bias": -2.295182147127559e-16,
+          "train_one_step_rmse": 5.308017900433573e-17,
+          "design_condition_number": 150.54798315168395,
+          "fit_available": true,
+          "train_profile": "step",
+          "validation_profile": "independent_multisine",
+          "validation_recursive_rmse": 2.3035975229491283e-16,
+          "validation_recursive_max_abs": 3.0531133177191805e-16,
+          "validation_one_step_rmse": 8.048573398320906e-17,
+          "all_delay_candidates": [
+            {
+              "delay_steps": 0,
+              "delay_s": 0.0,
+              "tau_s": 0.2983717169517088,
+              "a": 0.8457121673547534,
+              "bias": -2.3117924391479953e-16,
+              "train_one_step_rmse": 0.0011058999068254028,
+              "design_condition_number": 78.1243019863816
+            },
+            {
+              "delay_steps": 1,
+              "delay_s": 0.05,
+              "tau_s": 0.23294543278084576,
+              "a": 0.806829795845644,
+              "bias": -2.2975486289302174e-16,
+              "train_one_step_rmse": 0.0008395718606657898,
+              "design_condition_number": 91.89863021634952
+            },
+            {
+              "delay_steps": 2,
+              "delay_s": 0.1,
+              "tau_s": 0.17435035529747187,
+              "a": 0.7506776987027513,
+              "bias": -2.2998089267859207e-16,
+              "train_one_step_rmse": 0.0005366318632349751,
+              "design_condition_number": 113.38363756207238
+            },
+            {
+              "delay_steps": 3,
+              "delay_s": 0.15000000000000002,
+              "tau_s": 0.11999999999999997,
+              "a": 0.6592406302004437,
+              "bias": -2.295182147127559e-16,
+              "train_one_step_rmse": 5.308017900433573e-17,
+              "design_condition_number": 150.54798315168395
+            },
+            {
+              "delay_steps": 4,
+              "delay_s": 0.2,
+              "tau_s": 0.0741228095360261,
+              "a": 0.5093824394195379,
+              "bias": -2.3007015446303395e-16,
+              "train_one_step_rmse": 0.0007125264847913153,
+              "design_condition_number": 228.36575334549633
+            },
+            {
+              "delay_steps": 5,
+              "delay_s": 0.25,
+              "tau_s": 0.04602663966222893,
+              "a": 0.3374535511194,
+              "bias": -2.29506243344561e-16,
+              "train_one_step_rmse": 0.0016481385187570527,
+              "design_condition_number": 427.05918729721384
+            }
+          ],
+          "input": "30Hz smoother output sampled at 20Hz, before transport queue",
+          "output": "true synthetic body velocity; no sensor measurement noise",
+          "gain_constraint": 1.0,
+          "model": "G(s)=exp(-D*s)/(tau*s+1), additive steady-state bias",
+          "identification_scope": "synthetic parameter recovery and heldout-input consistency only"
+        },
+        "w": {
+          "delay_steps": 3,
+          "delay_s": 0.15000000000000002,
+          "tau_s": 0.38000000000000134,
+          "a": 0.8767100584536124,
+          "bias": 0.008,
+          "train_one_step_rmse": 2.1729590513631317e-17,
+          "design_condition_number": 32.54561502737806,
+          "fit_available": true,
+          "train_profile": "step",
+          "validation_profile": "independent_multisine",
+          "validation_recursive_rmse": 4.121660746618032e-17,
+          "validation_recursive_max_abs": 1.6653345369377348e-16,
+          "validation_one_step_rmse": 1.652815558971997e-17,
+          "all_delay_candidates": [
+            {
+              "delay_steps": 0,
+              "delay_s": 0.0,
+              "tau_s": 0.5764400237904657,
+              "a": 0.9169161111155043,
+              "bias": 0.008010783584857621,
+              "train_one_step_rmse": 0.0015789839616225524,
+              "design_condition_number": 24.12770125328464
+            },
+            {
+              "delay_steps": 1,
+              "delay_s": 0.05,
+              "tau_s": 0.5014158394076178,
+              "a": 0.9050929515197305,
+              "bias": 0.008006664180213716,
+              "train_one_step_rmse": 0.001148847703028282,
+              "design_condition_number": 26.29122627058558
+            },
+            {
+              "delay_steps": 2,
+              "delay_s": 0.1,
+              "tau_s": 0.43668772064329187,
+              "a": 0.891813457858209,
+              "bias": 0.008003110928334566,
+              "train_one_step_rmse": 0.0006812015122828611,
+              "design_condition_number": 29.031854328358623
+            },
+            {
+              "delay_steps": 3,
+              "delay_s": 0.15000000000000002,
+              "tau_s": 0.38000000000000134,
+              "a": 0.8767100584536124,
+              "bias": 0.008,
+              "train_one_step_rmse": 2.1729590513631317e-17,
+              "design_condition_number": 32.54561502737806
+            },
+            {
+              "delay_steps": 4,
+              "delay_s": 0.2,
+              "tau_s": 0.3373835265294627,
+              "a": 0.8622592558430472,
+              "bias": 0.007997662142245864,
+              "train_one_step_rmse": 0.00076364907686831,
+              "design_condition_number": 37.12226869241349
+            },
+            {
+              "delay_steps": 5,
+              "delay_s": 0.25,
+              "tau_s": 0.3060195868345551,
+              "a": 0.8492614118663274,
+              "bias": 0.007995942252380909,
+              "train_one_step_rmse": 0.00144168626623161,
+              "design_condition_number": 43.02881907630125
+            },
+            {
+              "delay_steps": 6,
+              "delay_s": 0.30000000000000004,
+              "tau_s": 0.29546715062215523,
+              "a": 0.8443201349116415,
+              "bias": 0.007995363758868853,
+              "train_one_step_rmse": 0.0022044195026570805,
+              "design_condition_number": 50.531128550774426
+            },
+            {
+              "delay_steps": 7,
+              "delay_s": 0.35000000000000003,
+              "tau_s": 0.32504847576349627,
+              "a": 0.8574235913913741,
+              "bias": 0.007996985650896503,
+              "train_one_step_rmse": 0.0029287301101591167,
+              "design_condition_number": 59.333528976468045
+            },
+            {
+              "delay_steps": 8,
+              "delay_s": 0.4,
+              "tau_s": 0.5093865734181336,
+              "a": 0.9065063181445676,
+              "bias": 0.008007101793286543,
+              "train_one_step_rmse": 0.0035287084934057977,
+              "design_condition_number": 67.8200981879418
+            }
+          ],
+          "input": "30Hz smoother output sampled at 20Hz, before transport queue",
+          "output": "true synthetic body velocity; no sensor measurement noise",
+          "gain_constraint": 1.0,
+          "model": "G(s)=exp(-D*s)/(tau*s+1), additive steady-state bias",
+          "identification_scope": "synthetic parameter recovery and heldout-input consistency only"
+        }
+      }
+    }
+  },
+  "limitations": [
+    "No real FAST-LIO, NDT, CAN, motor or lidar identification",
+    "Delay is restricted to an integer multiple of 50ms; cannot infer sub-sample delay",
+    "Body velocities are noiseless synthetic states; exact recovery is expected from matching assumed plant",
+    "Raw command->body response includes a nonlinear rate limiter; the stated transfer applies downstream of smoother",
+    "Dynamic input-output loop area reflects lag and input frequency; no static mechanical hysteresis model is present"
+  ]
+}

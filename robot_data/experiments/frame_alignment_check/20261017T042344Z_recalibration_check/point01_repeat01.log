@@ -1,0 +1,1 @@
+{"completed": true, "map_ready": true, "rejections": {"unpaired_pose_or_validity": 2, "map_not_initialized": 5, "no_synchronous_map_tf": 3}}

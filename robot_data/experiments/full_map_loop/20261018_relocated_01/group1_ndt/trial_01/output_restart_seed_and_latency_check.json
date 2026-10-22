@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "mocap_count": 855,
+  "replay_ros_ns": 1792308045922644705,
+  "seed_geometry_source": "recorded user /initialpose_user; only stamp refreshed; no mocap input",
+  "raw_pose_samples": 103,
+  "raw_age_min_s": 1.329559548,
+  "raw_age_max_s": 1.758092266,
+  "raw_age_last_s": 1.410466851
+}

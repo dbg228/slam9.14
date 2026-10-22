@@ -1,0 +1,56 @@
+{
+  "group": "B",
+  "trials": [
+    {
+      "trial": 1,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 16.87878311668866,
+      "p95_mm": 33.08470655801414,
+      "max_mm": 35.251879691326884,
+      "yaw_rmse_deg": 0.1593752709418505,
+      "endpoint_mm": 8.779199769205912,
+      "max_pose_jump_mm": 35.42321276039592,
+      "max_error_jump_mm": 30.813492953095935,
+      "trigger_m": 2.000726821020234,
+      "parked_m": 2.0092168341804264,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/01_forward"
+    },
+    {
+      "trial": 2,
+      "direction": "reverse",
+      "status": "completed",
+      "xy_rmse_mm": 20.011960459033396,
+      "p95_mm": 36.6105146168946,
+      "max_mm": 42.103571697667114,
+      "yaw_rmse_deg": 0.14448372140801785,
+      "endpoint_mm": 11.145651157251423,
+      "max_pose_jump_mm": 47.54098836271995,
+      "max_error_jump_mm": 47.55470488059898,
+      "trigger_m": 2.001057269421985,
+      "parked_m": 2.008337103019018,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/02_reverse"
+    },
+    {
+      "trial": 3,
+      "direction": "forward",
+      "status": "completed",
+      "xy_rmse_mm": 29.42528298093494,
+      "p95_mm": 41.19630434596943,
+      "max_mm": 49.03752265412088,
+      "yaw_rmse_deg": 0.2120938944162953,
+      "endpoint_mm": 35.77777674260136,
+      "max_pose_jump_mm": 36.41851205984518,
+      "max_error_jump_mm": 26.260448482269666,
+      "trigger_m": 2.000728795440788,
+      "parked_m": 2.009453904849859,
+      "coverage": 1.0,
+      "timing_verified": false,
+      "directory": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/03_forward"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+digraph G {
+"wheel_1_turn_link" -> "wheel_1_roll_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"base_link" -> "wheel_1_turn_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10.334\nBuffer length: 3.0\nMost recent transform: 1789535015.641353\nOldest transform: 1789535012.641416\n"];
+"wheel_2_turn_link" -> "wheel_2_roll_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"base_link" -> "wheel_2_turn_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"wheel_3_turn_link" -> "wheel_3_roll_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"base_link" -> "wheel_3_turn_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"wheel_4_turn_link" -> "wheel_4_roll_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"base_link" -> "wheel_4_turn_link"[label=" Broadcaster: default_authority\nAverage rate: 20.101\nBuffer length: 4.477\nMost recent transform: 1789535017.130173\nOldest transform: 1789535012.652856\n"];
+"base_link" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"imu_link" -> "livox_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 1.498\nBuffer length: 4.006\nMost recent transform: 1789535016.797275\nOldest transform: 1789535012.791598\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1789535017.2125661"[ shape=plaintext ] ;
+}->"map";
+}

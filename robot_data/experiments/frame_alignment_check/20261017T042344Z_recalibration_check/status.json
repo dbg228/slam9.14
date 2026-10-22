@@ -1,0 +1,23 @@
+{
+  "stage": "recheck_acquisition_complete_not_precision_validated",
+  "training_positions": 1,
+  "verification_positions_observed": 3,
+  "verification_attempts": 5,
+  "quality_passed_attempts": 2,
+  "observed_position_rank": 2,
+  "sufficient_qualified_spatial_coverage": false,
+  "frozen_candidate_unchanged": true,
+  "candidate_applied_to_navigation": false,
+  "absolute_calibration_passed": false,
+  "no_motion_command_sent": true,
+  "new_frame_tool_tests_passed": 4,
+  "csv_files_generated": 0,
+  "report": "report.md",
+  "spatial_report": "spatial_report/report.md",
+  "limits": [
+    "point4 continuous-data check failed in both attempts",
+    "map/FAST-LIO/NDT errors remain in observed residuals",
+    "no independently surveyed map landmarks",
+    "camera exposure timing, scale and ground not independently verified"
+  ]
+}

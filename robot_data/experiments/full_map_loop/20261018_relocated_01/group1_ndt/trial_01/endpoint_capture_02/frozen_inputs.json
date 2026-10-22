@@ -1,0 +1,118 @@
+{
+  "config": {
+    "schema_version": 1,
+    "protocol": "three_training_placements_one_holdout",
+    "data_kind": "real_measurement",
+    "unit": "metre",
+    "reference_point": "base_link_origin",
+    "mocap_frame": "mocap_world",
+    "map_frame": "map",
+    "calibration_id": "20261018_relocated_shared_world_01__group1_ndt_registration",
+    "map_reference_id": "preserved_original_NDT_scans_pcd",
+    "map_reference_files": [
+      "/home/zkam/test_nav/robot_data/maps/data/scans.pcd",
+      "/home/zkam/test_nav/robot_data/maps/map.yaml",
+      "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.yaml",
+      "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.lock.json",
+      "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/frozen_inputs.json"
+    ],
+    "physical_reference_confirmed": true,
+    "map_source": "ndt",
+    "map_method": "Current original NDT final_map_to_base_at_cloud; three separately parked calibration placements; initial and endpoint are not fitted",
+    "mocap": {
+      "server": "192.168.1.168",
+      "port": 3883,
+      "tracker": "Tracker0",
+      "world_frame": "mocap_world",
+      "raw_position_unit": "millimetres_verified_manual_1m_2026-10-15",
+      "position_scale_to_m": 0.001,
+      "use_vrpn_timestamps": false,
+      "timestamp_source": "ubuntu_receiver_clock",
+      "update_frequency_hz": 100.0,
+      "refresh_frequency_hz": 1.0
+    },
+    "normalizer": {
+      "input_topic": "/vrpn_mocap/Tracker0/pose",
+      "output_topic": "/mocap/Tracker0/pose",
+      "diagnostics_topic": "/mocap/Tracker0/diagnostics",
+      "expected_input_frame": "mocap_world",
+      "output_frame": "mocap_world",
+      "stale_after_seconds": 0.5
+    },
+    "topics": {
+      "ndt": "/static_localization/ndt_match_diagnostic",
+      "command": "/reference_velocity",
+      "map_ready": "/static_localization/ready"
+    },
+    "ndt_pose_field": "final_map_to_base_at_cloud",
+    "ndt_base_frame": "base_link",
+    "camera_latency_s": null,
+    "clock_offset_s": 0.0,
+    "clock_offset_verified": false,
+    "limits": {
+      "seconds": 5.0,
+      "warmup_s": 4.0,
+      "minimum_mocap_samples": 30,
+      "minimum_pairs": 3,
+      "minimum_raw_normalized_coverage": 0.9,
+      "maximum_mocap_gap_s": 0.15,
+      "maximum_ndt_gap_s": 2.5,
+      "maximum_pair_skew_s": 0.05,
+      "maximum_source_age_s": 2.0,
+      "maximum_cloud_odom_skew_s": 0.05,
+      "maximum_mocap_radius_m": 0.01,
+      "maximum_map_radius_m": 0.05,
+      "maximum_orientation_deviation_deg": 2.0,
+      "minimum_baseline_m": 0.1,
+      "minimum_triangle_altitude_m": 0.05,
+      "holdout_minimum_separation_m": 0.1,
+      "holdout_minimum_heading_difference_deg": 10.0,
+      "maximum_command_abs": 0.0001,
+      "maximum_ndt_source_age_s": 3.0
+    },
+    "acceptance": {
+      "validation_3d_max_m": null,
+      "validation_xy_max_m": null
+    },
+    "camera_world_id": "20261018_relocated_shared_world_01",
+    "retain_mocap_warmup": true,
+    "ndt_capture_phase": {
+      "period_s": 2.0,
+      "lead_s": 0.5,
+      "maximum_wait_s": 10.0
+    },
+    "timing_note": "Observed native processing delay approximately 1.4 seconds. Static-only capture keeps actual stamps and warmup mocap history; no offset fit, retiming, or estimator change. Four-second warmup precedes a five-second NDT collection window.",
+    "static_pairing_note": "NDT processing age bound explicitly set before capture; original source stamps, valid static mocap history, skew and motion checks retained; no control freshness or estimator parameters changed.",
+    "evaluation_only": true,
+    "fixed_calibration_session": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01"
+  },
+  "body_extrinsic": {
+    "direction": "T_Tracker0_base_link; p_Tracker0 = R * p_base_link + t",
+    "source_path": "/home/zkam/test_nav/robot_data/config/mocap_tracker0.yaml",
+    "source_sha256": "fc3a86a254f6679205e3abf97f7f51310790b9ea28697aa590ba41b18d937758",
+    "rigid_body_to_base_link": {
+      "measured": true,
+      "translation_m": [
+        0.0,
+        0.0,
+        -0.18
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "notes": "User-confirmed 2026-10-15: Tracker0 rigid-body origin is directly above the ROS base_link origin by 0.18 m; both axes are X-forward, Y-left, Z-up.  This is T_Tracker0_base_link=(0,0,-0.18 m), identity rotation. The separate evaluation path must apply it before comparing against map->base_link; this passive receiver never publishes a base_link pose or TF."
+    }
+  },
+  "session_sha256": "2b6d9fb643588ab04140ee3fae9be9c1c2ceb0ca3469185ac4535aba96f8a427",
+  "body_sha256": "bda405f83b9d95e5148ace156e8886b6a38e77806729b37503146270c916169d",
+  "map_file_hashes": {
+    "/home/zkam/test_nav/robot_data/maps/data/scans.pcd": "04601e746b0e200ab8a6223e4094edc324eca75cfc6623151e96eceaed2a18c6",
+    "/home/zkam/test_nav/robot_data/maps/map.yaml": "92c911f7cc9313732cb3da4653f25946438087263d9205f88a6d648fa673f325",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.yaml": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/calibration.lock.json": "84edf515fd8fac8233141444d5bb291cc8894eb451b94497c2d809ef0f113cb0",
+    "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/registration_retry_01/frozen_inputs.json": "e4351a7d5ca9539f3f7d702bd9aa1f9a050f7ea2e91c0e89efb458c99b0077b6"
+  }
+}

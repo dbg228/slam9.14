@@ -1,0 +1,18 @@
+{
+  "source": "frozen new restart static window",
+  "frame": "mocap_world",
+  "proposed_base_start_xy_m": [
+    -1.1010004701431098,
+    -0.1453831109354007
+  ],
+  "proposed_zero_trigger_xy_m": [
+    0.8952449488173357,
+    -0.02289136721593367
+  ],
+  "body_dimensions_nominal_m": [
+    0.85,
+    0.6
+  ],
+  "route_and_parking_confirmed_by_operator": true,
+  "preview_only": true
+}

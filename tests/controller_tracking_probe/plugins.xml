@@ -1,0 +1,5 @@
+<library path="measured_controller">
+  <class name="controller_tracking::MeasuredController" type="controller_tracking::MeasuredController" base_class_type="nav2_core::Controller">
+    <description>Original MPPI delegation with measured inputs and steady-clock compute duration.</description>
+  </class>
+</library>

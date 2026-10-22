@@ -1,0 +1,16 @@
+{
+  "route": "START: 已选 | END: 已选\nNav2: 控制器已就绪\n紫线路程 START→END: 45.79 m\n到 START（直线）: 6.97 m\nSTART 后到 END（紫线）: 45.79 m\n巡检已暂停，保留原路线进度；纠偏后从剩余紫线继续。",
+  "mode": "EXTERNAL",
+  "terminal": {
+    "status": 5,
+    "receive_ros_ns": 1792346498334376444,
+    "reason": "middle_correction_or_resume_failed"
+  },
+  "native_stamp_ns": 1792346496698264360,
+  "last_mocap_ns": 1792346351042267894,
+  "first_goal_stamp_ns": 1792346320588621663,
+  "action_status": 5,
+  "last_motion_ns": 1792346473320272814,
+  "middle_requested": true,
+  "middle_goal_canceled_for_correction": true
+}

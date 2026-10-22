@@ -1,0 +1,7 @@
+{
+  "reason": "native output measured 4.43495 seconds old before motion; no motion sent",
+  "old_launch_pid": 30938,
+  "old_localization_session": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792227126754706699",
+  "signal": "SIGINT",
+  "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch mocap_anchored_mapping anchored_localization.launch.py run:=/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01 "
+}

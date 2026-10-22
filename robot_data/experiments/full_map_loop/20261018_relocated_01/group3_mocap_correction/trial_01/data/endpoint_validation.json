@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "captures": [
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792348258297844419"
+  ],
+  "trigger_policy": "Original static validation requested at navigation terminal +4 s; no refit"
+}

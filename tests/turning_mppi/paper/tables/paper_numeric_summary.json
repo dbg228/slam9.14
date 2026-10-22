@@ -1,0 +1,46 @@
+{
+  "nominal": {
+    "lateral_rmse_m": {
+      "native": 0.004182499416615538,
+      "full": 0.00089261141408372,
+      "full_minus_native_pct": -78.65842107382724
+    },
+    "cmd_w_rate_rms_radps2": {
+      "native": 0.19226768969720165,
+      "full": 0.47312374763620063,
+      "full_minus_native_pct": 146.07553582264043
+    },
+    "body_w_jerk_rms_radps3": {
+      "native": 0.5401765074356272,
+      "full": 1.5495413316644968,
+      "full_minus_native_pct": 186.85833432864638
+    },
+    "world_jerk_norm_rms_mps3": {
+      "native": 0.1868825905133979,
+      "full": 0.02814518823873537,
+      "full_minus_native_pct": -84.93964142865539
+    }
+  },
+  "heldout": {
+    "lateral_rmse_m": {
+      "native": 0.005730977989212828,
+      "full": 0.0014613126388743013,
+      "full_minus_native_pct": -74.50151367489342
+    },
+    "cmd_w_rate_rms_radps2": {
+      "native": 0.2159701918651618,
+      "full": 0.47510101980093494,
+      "full_minus_native_pct": 119.9845338367612
+    },
+    "body_w_jerk_rms_radps3": {
+      "native": 0.41161033513719414,
+      "full": 1.0279828321507218,
+      "full_minus_native_pct": 149.74660361919342
+    },
+    "world_jerk_norm_rms_mps3": {
+      "native": 0.16391303807662602,
+      "full": 0.027704574742194475,
+      "full_minus_native_pct": -83.09800424219875
+    }
+  }
+}

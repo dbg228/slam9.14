@@ -1,0 +1,644 @@
+{
+  "markers": [
+    {
+      "header": {
+        "stamp": {
+          "sec": 0,
+          "nanosec": 0
+        },
+        "frame_id": ""
+      },
+      "ns": "",
+      "id": 0,
+      "type": 0,
+      "action": 3,
+      "pose": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "scale": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978036591
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection",
+      "id": 0,
+      "type": 2,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": 0.006221480859131212,
+          "y": -0.3123711290064639,
+          "z": 0.16
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.3440338739179828,
+          "w": 0.9389572373633346
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.25
+      },
+      "color": {
+        "r": 0.10000000149011612,
+        "g": 1.0,
+        "b": 0.10000000149011612,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978036591
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_label",
+      "id": 0,
+      "type": 9,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": 0.006221480859131212,
+          "y": -0.3123711290064639,
+          "z": 0.36
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.3440338739179828,
+          "w": 0.9389572373633346
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.2
+      },
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "START",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978036591
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_direction",
+      "id": 0,
+      "type": 0,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": 0.006221480859131212,
+          "y": -0.3123711290064639,
+          "z": 0.2
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.3440338739179828,
+          "w": 0.9389572373633346
+        }
+      },
+      "scale": {
+        "x": 0.45,
+        "y": 0.1,
+        "z": 0.1
+      },
+      "color": {
+        "r": 0.10000000149011612,
+        "g": 1.0,
+        "b": 0.10000000149011612,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978055358
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection",
+      "id": 1,
+      "type": 2,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -6.549809982521157,
+          "y": -4.645622495729343,
+          "z": 0.16
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.9388540619872375,
+          "w": 0.3443153355429647
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.25
+      },
+      "color": {
+        "r": 1.0,
+        "g": 0.8500000238418579,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978055358
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_label",
+      "id": 1,
+      "type": 9,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -6.549809982521157,
+          "y": -4.645622495729343,
+          "z": 0.36
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.9388540619872375,
+          "w": 0.3443153355429647
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.2
+      },
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "MIDDLE",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978055358
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_direction",
+      "id": 1,
+      "type": 0,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -6.549809982521157,
+          "y": -4.645622495729343,
+          "z": 0.2
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.9388540619872375,
+          "w": 0.3443153355429647
+        }
+      },
+      "scale": {
+        "x": 0.45,
+        "y": 0.1,
+        "z": 0.1
+      },
+      "color": {
+        "r": 1.0,
+        "g": 0.8500000238418579,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978070711
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection",
+      "id": 2,
+      "type": 2,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -0.06979698881511531,
+          "y": -0.24802662379548934,
+          "z": 0.16
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.34403387391797907,
+          "w": 0.938957237363336
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.25
+      },
+      "color": {
+        "r": 1.0,
+        "g": 0.15000000596046448,
+        "b": 0.15000000596046448,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978070711
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_label",
+      "id": 2,
+      "type": 9,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -0.06979698881511531,
+          "y": -0.24802662379548934,
+          "z": 0.36
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.34403387391797907,
+          "w": 0.938957237363336
+        }
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 0.2
+      },
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "END",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    },
+    {
+      "header": {
+        "stamp": {
+          "sec": 1792320203,
+          "nanosec": 978070711
+        },
+        "frame_id": "map"
+      },
+      "ns": "inspection_route_selection_direction",
+      "id": 2,
+      "type": 0,
+      "action": 0,
+      "pose": {
+        "position": {
+          "x": -0.06979698881511531,
+          "y": -0.24802662379548934,
+          "z": 0.2
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.34403387391797907,
+          "w": 0.938957237363336
+        }
+      },
+      "scale": {
+        "x": 0.45,
+        "y": 0.1,
+        "z": 0.1
+      },
+      "color": {
+        "r": 1.0,
+        "g": 0.15000000596046448,
+        "b": 0.15000000596046448,
+        "a": 1.0
+      },
+      "lifetime": {
+        "sec": 0,
+        "nanosec": 0
+      },
+      "frame_locked": false,
+      "points": [],
+      "colors": [],
+      "texture_resource": "",
+      "texture": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "format": "",
+        "data": []
+      },
+      "uv_coordinates": [],
+      "text": "",
+      "mesh_resource": "",
+      "mesh_file": {
+        "filename": "",
+        "data": []
+      },
+      "mesh_use_embedded_materials": false
+    }
+  ]
+}

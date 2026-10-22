@@ -1,0 +1,11 @@
+{
+  "static_map_localizer": {
+    "base_frame": "base_link",
+    "map_frame": "map",
+    "map_pcd_path": "/home/zkam/test_nav/robot_data/maps/data/scans.pcd"
+  },
+  "normalizer": {
+    "position_scale_to_m": 0.001,
+    "timestamp_source": "ubuntu_receiver_clock"
+  }
+}

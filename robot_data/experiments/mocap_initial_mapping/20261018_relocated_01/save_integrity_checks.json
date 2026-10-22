@@ -1,0 +1,10 @@
+{
+  "saved_pcd_hash_verified": true,
+  "calibration_frozen": true,
+  "legacy_pcd_unchanged": true,
+  "yesterday_native_pcd_unchanged": true,
+  "bag_checks": {
+    "mapping_bag_0.db3": "ok"
+  },
+  "recorded_messages": 503226
+}

@@ -1,0 +1,33 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792310122.107348195] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1792310122.126895793] [rosbag2_storage]: Opened database 'robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/formal_bag_01/formal_bag_01_0.db3' for READ_WRITE.
+[INFO] [1792310122.131410551] [rosbag2_recorder]: Listening for topics...
+[INFO] [1792310122.131430269] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1792310122.137913423] [rosbag2_recorder]: Subscribed to topic '/teleop/mode'
+[INFO] [1792310122.138199479] [rosbag2_recorder]: Recording...
+[INFO] [1792310122.349245481] [rosbag2_recorder]: Subscribed to topic '/inspection_route/actual_path'
+[INFO] [1792310122.351189644] [rosbag2_recorder]: Subscribed to topic '/inspection_route/reference_path'
+[INFO] [1792310122.353182494] [rosbag2_recorder]: Subscribed to topic '/inspection_route/status'
+[INFO] [1792310122.357322083] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1792310122.361480094] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1792310122.467032130] [rosbag2_recorder]: Subscribed to topic '/static_localization/map_to_odom'
+[INFO] [1792310122.471297903] [rosbag2_recorder]: Subscribed to topic '/static_localization/ndt_match_diagnostic'
+[INFO] [1792310122.475244020] [rosbag2_recorder]: Subscribed to topic '/static_localization/ndt_match_diagnostic_detail'
+[INFO] [1792310122.477693551] [rosbag2_recorder]: Subscribed to topic '/static_localization/ready'
+[INFO] [1792310122.480761094] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1792310122.586610763] [rosbag2_recorder]: Subscribed to topic '/inspection_path'
+[INFO] [1792310123.104438743] [rosbag2_recorder]: Subscribed to topic '/tf_lio_raw'
+[INFO] [1792310123.108910136] [rosbag2_recorder]: Subscribed to topic '/Odometry'
+[INFO] [1792310123.631132084] [rosbag2_recorder]: Subscribed to topic '/vrpn_mocap/Tracker0/pose'
+[INFO] [1792310123.966981641] [rosbag2_recorder]: Subscribed to topic '/nav/cmd_vel'
+[INFO] [1792310124.104654345] [rosbag2_recorder]: Subscribed to topic '/inspection_route_start'
+[INFO] [1792310124.112407215] [rosbag2_recorder]: Subscribed to topic '/inspection_route_middle'
+[INFO] [1792310124.116922740] [rosbag2_recorder]: Subscribed to topic '/initialpose_user'
+[INFO] [1792310124.119591460] [rosbag2_recorder]: Subscribed to topic '/inspection_route_end'
+[INFO] [1792310124.123635315] [rosbag2_recorder]: Subscribed to topic '/follow_path/_action/status'
+[INFO] [1792310124.353748907] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/pose'
+[INFO] [1792310124.357092251] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/diagnostics'
+[INFO] [1792310124.361883076] [rosbag2_recorder]: Subscribed to topic '/navigate_to_pose/_action/status'
+[INFO] [1792310124.720765473] [rosbag2_recorder]: Subscribed to topic '/reference_velocity'
+[INFO] [1792312540.591316997] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1792312540.683752731] [rosbag2_recorder]: Event publisher thread: Exiting
+[INFO] [1792312540.683847252] [rosbag2_recorder]: Recording stopped

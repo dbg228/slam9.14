@@ -1,0 +1,6 @@
+{
+  "output": "robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/tracking_report",
+  "samples": 3548,
+  "reference_length_m": 47.80025866780632,
+  "tracking_rmse_m": 0.04267376467774969
+}

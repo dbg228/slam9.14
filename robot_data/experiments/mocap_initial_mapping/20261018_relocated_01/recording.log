@@ -1,0 +1,20 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792315865.619575279] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1792315865.630349277] [rosbag2_storage]: Opened database 'robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/mapping_bag/mapping_bag_0.db3' for READ_WRITE.
+[INFO] [1792315865.631879582] [rosbag2_recorder]: Listening for topics...
+[INFO] [1792315865.631895984] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1792315865.637223687] [rosbag2_recorder]: Subscribed to topic '/vrpn_mocap/Tracker0/pose'
+[INFO] [1792315865.639336196] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1792315865.640268440] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1792315865.641480896] [rosbag2_recorder]: Subscribed to topic '/teleop/mode'
+[INFO] [1792315865.642647376] [rosbag2_recorder]: Subscribed to topic '/reference_velocity'
+[INFO] [1792315865.643574473] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/pose'
+[INFO] [1792315865.645202603] [rosbag2_recorder]: Subscribed to topic '/mocap/Tracker0/diagnostics'
+[INFO] [1792315865.645318875] [rosbag2_recorder]: Recording...
+[INFO] [1792315874.863168525] [rosbag2_recorder]: Subscribed to topic '/anchored_mapping/native_odom'
+[INFO] [1792315874.865355664] [rosbag2_recorder]: Subscribed to topic '/anchored_mapping/native_tf'
+[INFO] [1792315878.128738996] [rosbag2_recorder]: Subscribed to topic '/anchored_mapping/base_pose_F'
+[INFO] [1792315878.130780656] [rosbag2_recorder]: Subscribed to topic '/anchored_mapping/status'
+[INFO] [1792315878.130839756] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1792316588.643759983] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1792316588.773854394] [rosbag2_recorder]: Event publisher thread: Exiting
+[INFO] [1792316588.774347666] [rosbag2_recorder]: Recording stopped

@@ -1,0 +1,586 @@
+{
+  "figure_groups": 26,
+  "unique_ids": 26,
+  "expected_assets": 78,
+  "algorithm_labels": {
+    "native": "Native MPPI",
+    "tracker": "Preview tracker",
+    "ideal": "Ideal-dynamics ablation",
+    "full": "Guided MPC"
+  },
+  "assets": {
+    "fig01_left_nominal.pdf": {
+      "bytes": 55061,
+      "sha256": "7c7639756a0b84a97d202cd06aa9257566c32ac9a7b3cfffcac8328a718af62d",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_left_nominal.svg": {
+      "bytes": 138205,
+      "sha256": "82333a5ea164009f30b24cad6b298371b8467bef2650cb81a65e487ca4d9b768",
+      "editable_text_elements": 82
+    },
+    "fig01_left_nominal.png": {
+      "bytes": 330994,
+      "sha256": "4142dba64ac29b9cfa1ad22f55dd40a6667e0e3060eea6f6f93655a8d35058a1",
+      "pixels": [
+        2052,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig01_left_heldout.pdf": {
+      "bytes": 53193,
+      "sha256": "2bd8b5e8154f8304ebed7f90b35867296401ea7ec0688f99b272dd5a5bc899ae",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_left_heldout.svg": {
+      "bytes": 131394,
+      "sha256": "65325bf30ac0d83efe757b16a6ea884b868d29b05e4b12aefcd0c0e4c417ae08",
+      "editable_text_elements": 81
+    },
+    "fig01_left_heldout.png": {
+      "bytes": 340601,
+      "sha256": "6bcbd9e8d2bb7b0c92b2e474d9972e2f790f96bc60188e49b10cf52fe0a32d6c",
+      "pixels": [
+        2052,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig01_right_nominal.pdf": {
+      "bytes": 57483,
+      "sha256": "084d2cbd6b26cd5eaeb9f06d9efff424f81b03e90ebe3604160b8e0892ce7674",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_right_nominal.svg": {
+      "bytes": 143983,
+      "sha256": "25829226ac6c9a822cff69e80526491c644cfd07c482d21e3938513dc158ba5b",
+      "editable_text_elements": 80
+    },
+    "fig01_right_nominal.png": {
+      "bytes": 328725,
+      "sha256": "1eac20e26356aa3798d7fe4282d654699b3fc3e9153dd644f8b73ba3d52732aa",
+      "pixels": [
+        2058,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig01_right_heldout.pdf": {
+      "bytes": 54832,
+      "sha256": "90267343f22eee66b88dffeb0e6fea34226e14aab79c08ba12e5024fec501e30",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_right_heldout.svg": {
+      "bytes": 136812,
+      "sha256": "94254e010e6fd621a2a81428811b92524f018b2e7693e36d704df40af1208421",
+      "editable_text_elements": 83
+    },
+    "fig01_right_heldout.png": {
+      "bytes": 345246,
+      "sha256": "386e2b1a8eab5a2f106d58fba4497034b4b228dfb56080fdacfda5a4b4834b87",
+      "pixels": [
+        2058,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig01_s_bend_nominal.pdf": {
+      "bytes": 66343,
+      "sha256": "743220f3fe79deac7895612751cd5d11483bee50f7ed084886f64b16a3a69b3d",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_s_bend_nominal.svg": {
+      "bytes": 167602,
+      "sha256": "21024caf828229db14ce2fc87a75dbd4717c1d1a88f1e20ad3689fbd39e44548",
+      "editable_text_elements": 80
+    },
+    "fig01_s_bend_nominal.png": {
+      "bytes": 343414,
+      "sha256": "19e7e44c36acc78a051da1666ac778ec4172d7a0dd036df43e0586775b60c168",
+      "pixels": [
+        2052,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig01_s_bend_heldout.pdf": {
+      "bytes": 63082,
+      "sha256": "190a2599907f80906e0afca3a5112bb6e27a1911e01d3fb991245dabdef26087",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig01_s_bend_heldout.svg": {
+      "bytes": 155639,
+      "sha256": "3690147d8f8f52782fe0e85fd49735c8f873b1528c1b2635776035f130d4a281",
+      "editable_text_elements": 76
+    },
+    "fig01_s_bend_heldout.png": {
+      "bytes": 348626,
+      "sha256": "6def4aa68d24c0636dc67d0625b97dc25e3a58294a9bb68deba59e2884496349",
+      "pixels": [
+        2052,
+        1265
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig02_turn_lateral_rmse.pdf": {
+      "bytes": 29170,
+      "sha256": "3e2e26ba5325b5ad99e96d16e98d7e1478a02b4ffc823153ef43ec7a687264aa",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig02_turn_lateral_rmse.svg": {
+      "bytes": 59548,
+      "sha256": "5bb43359d9a4d620d3fbd48bed2d8096b24950c492ef85c306ca0611dbf39865",
+      "editable_text_elements": 48
+    },
+    "fig02_turn_lateral_rmse.png": {
+      "bytes": 113005,
+      "sha256": "2527e4aa0572c773a1aa897b168e5a2b4df5c5a5879048dc1b28252d8a26415a",
+      "pixels": [
+        2034,
+        1097
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig03_turn_heading_rmse.pdf": {
+      "bytes": 29169,
+      "sha256": "dbf560be00eb55c4ab6ca5a5e539ffc1001e94f5e322106d8f363095cf879b73",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig03_turn_heading_rmse.svg": {
+      "bytes": 59588,
+      "sha256": "a645892e32b06fdabd63616c061c76878fff4f39c96291786a19ae3b8cdafa1d",
+      "editable_text_elements": 48
+    },
+    "fig03_turn_heading_rmse.png": {
+      "bytes": 113531,
+      "sha256": "707997e31dc7bf57c9de1aaeb83649641ab55b64f76258d882b1c24ef4ceb955",
+      "pixels": [
+        2034,
+        1097
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig02b_paired_turn_changes.pdf": {
+      "bytes": 26836,
+      "sha256": "a4c791c9959e73d3d11ec2b5082b95caf73252c3a29fbb21ce8806ca9b3d5c13",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     41  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     33  0\n"
+    },
+    "fig02b_paired_turn_changes.svg": {
+      "bytes": 50991,
+      "sha256": "7e05f3f18feff12d8beae6619f5b096b53bd9e5816dab8badf2aabe81f50559b",
+      "editable_text_elements": 42
+    },
+    "fig02b_paired_turn_changes.png": {
+      "bytes": 132384,
+      "sha256": "217b7bb5f0194c3e77979dcd7e0a1af52e91642772b9c477c24806668ab9bb25",
+      "pixels": [
+        2055,
+        1101
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig04_phase_errors.pdf": {
+      "bytes": 28889,
+      "sha256": "a08364e596bb0b90343b2e3b6e15161306eb80cfd5d28282ca177e7e1d8fec73",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     39  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     31  0\n"
+    },
+    "fig04_phase_errors.svg": {
+      "bytes": 70873,
+      "sha256": "d9edcb01ca2ef63a30c2dd752a3bceae1a016a537314cfb1d2954aca9bc6eea6",
+      "editable_text_elements": 52
+    },
+    "fig04_phase_errors.png": {
+      "bytes": 187204,
+      "sha256": "fe1b337d350d33cc7935aa7ed13609f48562b236caa6a5535b03bc39877cd83b",
+      "pixels": [
+        2025,
+        1157
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig05_angular_smoothness.pdf": {
+      "bytes": 31752,
+      "sha256": "1c51c29759ca40261457aff9622d70080297e5ec94174425eafbec3fcda21e52",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig05_angular_smoothness.svg": {
+      "bytes": 87325,
+      "sha256": "4d4f8662e012f1fc466a8d2c0c5c40a0572d0c92d52f1ec377acc8e5ebdb5dca",
+      "editable_text_elements": 71
+    },
+    "fig05_angular_smoothness.png": {
+      "bytes": 208511,
+      "sha256": "5e45a2025479518717fb2bd333da9b96f6db4d2d38df09b1d56b3b8124089264",
+      "pixels": [
+        2054,
+        1104
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig05_longitudinal_smoothness.pdf": {
+      "bytes": 30882,
+      "sha256": "13a9b9d83da83beebb6106d53f09d22d48a2d90ba861c3ef723ce3f6f0391f8a",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig05_longitudinal_smoothness.svg": {
+      "bytes": 87323,
+      "sha256": "33b5539e12424dd192888fbcd18efe989d0c1dae9ddea0f742978e8360b2ee86",
+      "editable_text_elements": 71
+    },
+    "fig05_longitudinal_smoothness.png": {
+      "bytes": 212309,
+      "sha256": "66b71b4948877d5729cdb8408d90759ba7c13e1bd1c966a1e951d3519e6f9bcb",
+      "pixels": [
+        2072,
+        1104
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig05b_turn_angular_smoothness.pdf": {
+      "bytes": 31197,
+      "sha256": "1a910965238b83edceefe8205d8285d3d0c1107b54b15249ad7a8ef45a8b6904",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig05b_turn_angular_smoothness.svg": {
+      "bytes": 87354,
+      "sha256": "d0acd7890e1ade49a8050276f24ab94e7b6489d763034cd51e1eec0afbbf1d53",
+      "editable_text_elements": 71
+    },
+    "fig05b_turn_angular_smoothness.png": {
+      "bytes": 216953,
+      "sha256": "4c3dfdfdc6d9d99ba79a1e41b880acff8e9eb15ddd3e61bee073419a725b21bc",
+      "pixels": [
+        2054,
+        1126
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig05b_turn_longitudinal_smoothness.pdf": {
+      "bytes": 29332,
+      "sha256": "54ec4096188b94e71f50727920f3c36fc06c234165ebd4726d77cee7eec072ef",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     47  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     39  0\n"
+    },
+    "fig05b_turn_longitudinal_smoothness.svg": {
+      "bytes": 87476,
+      "sha256": "4c6265dfc57db9a14ea3d2a9f86003198520712c7d26e119f14165611ec2f57a",
+      "editable_text_elements": 71
+    },
+    "fig05b_turn_longitudinal_smoothness.png": {
+      "bytes": 177440,
+      "sha256": "3c49a6529b33c895fc415f1f9bbd4cafd2a5e8e06d6b247cfa0fa13729532074",
+      "pixels": [
+        2072,
+        1108
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig05c_turn_planar_smoothness.pdf": {
+      "bytes": 25758,
+      "sha256": "c434c32beb68c3033f20dde52a93177b9691377b244509402621b9bec9b83e8b",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     39  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     31  0\n"
+    },
+    "fig05c_turn_planar_smoothness.svg": {
+      "bytes": 55870,
+      "sha256": "97affb97978f8bd2d7fbdf3c05ba4e9f9cd9832235ffdbaee7e157e2bf59aeeb",
+      "editable_text_elements": 46
+    },
+    "fig05c_turn_planar_smoothness.png": {
+      "bytes": 180958,
+      "sha256": "55b33aef2499ab875129c777d18778014097f3d9ee60ffd27eceb3c788670193",
+      "pixels": [
+        2028,
+        1183
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig06_runtime.pdf": {
+      "bytes": 29881,
+      "sha256": "e9035da18f4f354dd70d3c95d7d86896fafb59e1f7ec5ecc85c15ac44a784326",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     31  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     23  0\n"
+    },
+    "fig06_runtime.svg": {
+      "bytes": 61981,
+      "sha256": "8e88e6f54762817c1cd4a127542853ef08d102bafa30525fe0459ebddec17cda",
+      "editable_text_elements": 50
+    },
+    "fig06_runtime.png": {
+      "bytes": 154768,
+      "sha256": "559328cc2545275713acdc9f3175b9988a756e50653cf6439fe55f077d3135ad",
+      "pixels": [
+        2052,
+        1125
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig07_lag_nominal.pdf": {
+      "bytes": 53722,
+      "sha256": "af631e0c127dab11c45072493a3ba0ad6d51d4505e156e123749503418c46c12",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig07_lag_nominal.svg": {
+      "bytes": 139609,
+      "sha256": "b12b58aca074c3a7f8ba3591b46c375d101392b11bfc729cf89d5dd5efa236a5",
+      "editable_text_elements": 102
+    },
+    "fig07_lag_nominal.png": {
+      "bytes": 243130,
+      "sha256": "42bf9e28b6b9b2cdec7617f54089cacde3184d05cf8c73c737cbf831f6fe7b16",
+      "pixels": [
+        2082,
+        1219
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig07_lag_heldout.pdf": {
+      "bytes": 51416,
+      "sha256": "84bf5eb4219740381c9a2829d6a71a63ab3876b73d86f5e20d3d71c3a9cc76ef",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig07_lag_heldout.svg": {
+      "bytes": 131470,
+      "sha256": "bff6b99dd6386544260b1925834492a50dcc76e5be3b4b20d9f358b5bad74eba",
+      "editable_text_elements": 99
+    },
+    "fig07_lag_heldout.png": {
+      "bytes": 250689,
+      "sha256": "152acbb29098039966a9fe53a7dab1191991a50769e64d0159ab49a070c28b6f",
+      "pixels": [
+        2064,
+        1219
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig08_historical_route.pdf": {
+      "bytes": 56679,
+      "sha256": "497dc5f6f46f6d32a3fffee7b1bca39315372a0ad4ddc42cdde0d9151bf2914e",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig08_historical_route.svg": {
+      "bytes": 124539,
+      "sha256": "0f572ca1050736af4927c3792856bbd4147419bf861938f82f0a67058c8f45d2",
+      "editable_text_elements": 50
+    },
+    "fig08_historical_route.png": {
+      "bytes": 237149,
+      "sha256": "95bbf00c52c6c610804f48e96fe3ed38021e52ed759f687bbc675ca395741758",
+      "pixels": [
+        2049,
+        1225
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig09_initial_offset_convergence.pdf": {
+      "bytes": 62354,
+      "sha256": "7ffcb777b558d2f9127533650806cafcb2566ff87af8f746075698d6355544c9",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig09_initial_offset_convergence.svg": {
+      "bytes": 159718,
+      "sha256": "883d2d87b68055a947c7eec65cd44c15c36988efc1497a9e45e8166fd82c0116",
+      "editable_text_elements": 59
+    },
+    "fig09_initial_offset_convergence.png": {
+      "bytes": 538458,
+      "sha256": "4f194143158dc120975eb1f1927c8892d02fabbd3098fc98474d0abfbd290b91",
+      "pixels": [
+        2022,
+        1223
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig10_joint_settling.pdf": {
+      "bytes": 23379,
+      "sha256": "e84473eca25628e3e8e662824e57283d147ef598401713a48abc850b48d624a4",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig10_joint_settling.svg": {
+      "bytes": 40654,
+      "sha256": "bf8702148706784a57a9b2ef1e70c0263e88ac5ee59afd4c0db8cc84f18597bb",
+      "editable_text_elements": 52
+    },
+    "fig10_joint_settling.png": {
+      "bytes": 113950,
+      "sha256": "cc4071437a75e72c4be4c526675686f3138d8bcd326a37daaff0e6f053e4765f",
+      "pixels": [
+        2025,
+        1114
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig11_openloop_step.pdf": {
+      "bytes": 20279,
+      "sha256": "5b665c97086bf2eb9d33432a7419d03283651eacac168cbb7769ced76282ed90",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig11_openloop_step.svg": {
+      "bytes": 37687,
+      "sha256": "af831074816f797d78444e90a7761caacf0f72d9739732735af502d79bc9d39c",
+      "editable_text_elements": 48
+    },
+    "fig11_openloop_step.png": {
+      "bytes": 195645,
+      "sha256": "53ce31f6ba1d3c4ef255b0868735535eea729b264186de8649b3ad21913b9095",
+      "pixels": [
+        2076,
+        1155
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig11_openloop_multisine.pdf": {
+      "bytes": 44706,
+      "sha256": "02a41024abadc77b4f0a8feb6c8f9eb4bfd1fb07d0d9b3cd5d4780fbbc5c18a7",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig11_openloop_multisine.svg": {
+      "bytes": 113914,
+      "sha256": "3ceeda127e3fca156bcd15210e80ece482019a2064a954c7e1de647d44900ba1",
+      "editable_text_elements": 60
+    },
+    "fig11_openloop_multisine.png": {
+      "bytes": 459435,
+      "sha256": "f52662715597c0acb9db57add561e1dd127969ddbc1a6a6b880ebac974cb12dd",
+      "pixels": [
+        2058,
+        1155
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig12_assumed_frequency_response.pdf": {
+      "bytes": 22939,
+      "sha256": "2c253cafb3001f0837a11e64b3a377150a5ec1c02a925db74aeeebb4f52d198b",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig12_assumed_frequency_response.svg": {
+      "bytes": 75218,
+      "sha256": "13741dd0a13838029f21d17700e65ee7746d44856f2b4ce125f3245da524c62b",
+      "editable_text_elements": 42
+    },
+    "fig12_assumed_frequency_response.png": {
+      "bytes": 163919,
+      "sha256": "cc55289345e4691f8fc0e69d75824aa51f9a0a7247854dc27f9a12c963e80ade",
+      "pixels": [
+        2046,
+        1147
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig13_noisy_model_validation.pdf": {
+      "bytes": 60977,
+      "sha256": "e3d6ba01912a5ab1a34a303972c7a612c1ec337c7d0401efaafc53945f341496",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig13_noisy_model_validation.svg": {
+      "bytes": 142827,
+      "sha256": "3b9fd747c7cb185615dd1247c2902a53c4fd6b8c1e189c7436c2a8aa415f175a",
+      "editable_text_elements": 59
+    },
+    "fig13_noisy_model_validation.png": {
+      "bytes": 273373,
+      "sha256": "3e25ec56c3799adee272c133f40bce488715e1d318a38f4f4ec22ef072bafaee",
+      "pixels": [
+        2052,
+        1164
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "fig14_receding_horizon_diagnostics.pdf": {
+      "bytes": 109564,
+      "sha256": "b95433c48c44ea3b1915933c24c9c37679e7a49f6fe8f5bdbec18eb46003ec6f",
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     23  0\nEVICAO+DejaVuSans-Bold               CID TrueType      Identity-H       yes yes yes     15  0\n"
+    },
+    "fig14_receding_horizon_diagnostics.svg": {
+      "bytes": 320119,
+      "sha256": "a276f42a6b92f3f9c0d093cafcf9edebfa2a8bad67debfc030b54fdf4bc4635d",
+      "editable_text_elements": 60
+    },
+    "fig14_receding_horizon_diagnostics.png": {
+      "bytes": 358058,
+      "sha256": "86ed5d4634d94c7ac8b2d84e111be9f1f0ce208536ab342519b667b2dc841e4a",
+      "pixels": [
+        2031,
+        1195
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    }
+  },
+  "failures": []
+}

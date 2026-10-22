@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "evidence": "synthetic_closed_loop_not_fastlio_ndt_not_hardware_identification",
+  "controller": {
+    "dt": 0.05,
+    "steps": 50,
+    "samples": 1000,
+    "speed": 0.2,
+    "vmax": 0.2,
+    "wmax": 0.45,
+    "accel_v": 0.45,
+    "accel_w": 0.8,
+    "tau_v": 0.12,
+    "tau_w": 0.25,
+    "delay": 0.1,
+    "temperature": 0.2,
+    "noise_v": 0.05,
+    "noise_w": 0.12,
+    "lateral_gain": 1.5,
+    "heading_gain": 2.0,
+    "half_length": 0.48,
+    "half_width": 0.385,
+    "clearance": 0.04
+  },
+  "backend": {
+    "backend": "cpp_equivalent_rollout_ctypes",
+    "ros": false,
+    "source": "/home/zkam/test_nav/tests/turning_mppi/acceleration/rollout.cpp",
+    "source_sha256": "b79ce5b8521597e9198a781a8e1ae3fff85f4ae5e31fc909c28eaa93c19f0e7a",
+    "library": "/home/zkam/test_nav/tests/turning_mppi/acceleration/libguided_rollout.so",
+    "library_sha256": "562dcd6e848b86ba5b2dc72441ae1c2c3f5e76d7918a9e368a405b5dd820d459",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-shared",
+      "-fPIC",
+      "-ffp-contract=off"
+    ]
+  },
+  "initial_state": {
+    "e_y_m": 0.1,
+    "e_yaw_rad": 0.17453292519943295,
+    "v_mps": 0.0,
+    "w_radps": 0.0
+  },
+  "scenario": "left",
+  "methods": [
+    "native",
+    "tracker",
+    "ideal",
+    "full"
+  ],
+  "plants": [
+    "nominal",
+    "heldout"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "retuning": false,
+  "source_sha256": {
+    "paper_supplement.py": "d6680e97d44d144e20517c75371ee5a717658d27543076e8dff95646f57a2f44",
+    "controller.py": "aab41d72daeabdcf4df99f8bf500a2d6666a54ca607c37c03f4dd84e05f6e313",
+    "benchmark.py": "dff934dfe74e44381a7b8fc7ba17763c8735fa02753bce22bdb777bc672d6406"
+  },
+  "production_navigation_sha256": "8ce135ecc2faf778dcd420153ba63aa5277c063b7e5326ac1c5be9c16845f452",
+  "trace_columns": [
+    "t",
+    "x",
+    "y",
+    "yaw",
+    "v",
+    "w",
+    "cmd_v",
+    "cmd_w",
+    "s",
+    "e",
+    "e_yaw",
+    "k",
+    "compute_s",
+    "clearance",
+    "t_command_issue",
+    "command_valid",
+    "measured_x",
+    "measured_y",
+    "measured_yaw",
+    "measured_v",
+    "measured_w",
+    "smooth_v",
+    "smooth_w",
+    "delayed_v",
+    "delayed_w",
+    "effective_samples",
+    "diagnostics_available",
+    "min_sample_cost",
+    "selected_cost"
+  ],
+  "openloop_columns": [
+    "t",
+    "cmd_v",
+    "cmd_w",
+    "smooth_v",
+    "smooth_w",
+    "delayed_v",
+    "delayed_w",
+    "v",
+    "w"
+  ],
+  "sample_semantics": "t is post-step state timestamp; command issue time=t-dt; measured state is pre-step controller input; smooth/delayed correspond to interval ending at t; initial row command_valid=0",
+  "timing_semantics": "20Hz simulated time; compute_s uses actual perf_counter wall timing including observer; results are hardware/load dependent",
+  "native_diagnostics": "native internal rollout costs and ESS unavailable; diagnostics_available=0; numeric zero sentinels must be excluded",
+  "no_obstacles": true,
+  "clearance_column": "zero sentinel because no obstacles; do not interpret as collision",
+  "convergence_scope": "finite-sample empirical residence; no theoretical stability or asymptotic convergence claim"
+}

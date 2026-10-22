@@ -1,0 +1,702 @@
+{
+  "scope": "/home/zkam/test_nav",
+  "instruction": "User explicitly requested all CSV files deleted",
+  "excluded_directory": ".git",
+  "symlink_directories_followed": false,
+  "planned": [
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/summary.csv",
+      "bytes": 1076,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/02_reverse/report/frame_errors.csv",
+      "bytes": 81644,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/03_forward/report/frame_errors.csv",
+      "bytes": 81384,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/summary.csv",
+      "bytes": 463,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/01_forward/report/frame_errors.csv",
+      "bytes": 81659,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/summary.csv",
+      "bytes": 1210,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/01_reverse/report/frame_errors.csv",
+      "bytes": 84666,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/02_forward/report/frame_errors.csv",
+      "bytes": 84989,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/03_reverse/report/frame_errors.csv",
+      "bytes": 84641,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_ABC_three_comparison/comparison.csv",
+      "bytes": 2856,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run07_latest_transport/report/frame_errors.csv",
+      "bytes": 83116,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run04/report/frame_errors.csv",
+      "bytes": 71481,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/summary.csv",
+      "bytes": 546,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/01_reverse/report/frame_errors.csv",
+      "bytes": 83365,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/02_forward/report/frame_errors.csv",
+      "bytes": 82993,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_three_summary/summary.csv",
+      "bytes": 1051,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run08_mount_37p2/report/frame_errors.csv",
+      "bytes": 82009,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run09_mount45/report/frame_errors.csv",
+      "bytes": 83325,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run03/report/frame_errors.csv",
+      "bytes": 41397,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261015_A_auto_run01/report/frame_errors.csv",
+      "bytes": 73941,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261015_A_auto_run01/report_final/frame_errors.csv",
+      "bytes": 76066,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_AB_three_comparison/comparison.csv",
+      "bytes": 1665,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run06_cold_lio/report/frame_errors.csv",
+      "bytes": 21103,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第A1组/report/frame_errors.csv",
+      "bytes": 83531,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_tracker0/static_report_20261015/static_mocap_summary.csv",
+      "bytes": 4392,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_tracker0/static_report_20261015_selected5/static_mocap_summary.csv",
+      "bytes": 3279,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report/time_offset_candidates.csv",
+      "bytes": 64011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report/kinematic_signals.csv",
+      "bytes": 96416,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report_v2/time_offset_candidates.csv",
+      "bytes": 64011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report_v2/kinematic_signals.csv",
+      "bytes": 96416,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T225146_time_calibration/report/time_offset_candidates.csv",
+      "bytes": 64319,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T225146_time_calibration/report/kinematic_signals.csv",
+      "bytes": 108535,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/matches.csv",
+      "bytes": 46293,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/chain_analysis_v1_audit/case_context.csv",
+      "bytes": 18167,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/chain_analysis_v1_audit/chain_frame_errors.csv",
+      "bytes": 28044,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/static_error_analysis/outlier_frames.csv",
+      "bytes": 1732,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/static_error_analysis/static_frame_errors.csv",
+      "bytes": 18011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_first_ndt_relative/matches.csv",
+      "bytes": 131052,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2/case_context.csv",
+      "bytes": 27937,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2/chain_frame_errors.csv",
+      "bytes": 54722,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_first_ndt_relative/outlier_frames.csv",
+      "bytes": 2650,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_first_ndt_relative/static_frame_errors.csv",
+      "bytes": 31360,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2_full/case_context.csv",
+      "bytes": 27937,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2_full/chain_frame_errors.csv",
+      "bytes": 54722,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_first_ndt_relative/case_context.csv",
+      "bytes": 23854,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_first_ndt_relative/chain_frame_errors.csv",
+      "bytes": 67546,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_v2/outlier_frames.csv",
+      "bytes": 2652,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_v2/static_frame_errors.csv",
+      "bytes": 25391,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2_full/matches.csv",
+      "bytes": 130779,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2/matches.csv",
+      "bytes": 130779,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/forward_summary.csv",
+      "bytes": 1665,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02/samples.csv",
+      "bytes": 98826,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02/analysis_initial_draft/samples.csv",
+      "bytes": 92432,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T092725Z_forward_2m_01/samples.csv",
+      "bytes": 42067,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T092725Z_forward_2m_01/analysis_initial_draft/samples.csv",
+      "bytes": 38921,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T100326Z_forward_2m_round03/samples.csv",
+      "bytes": 97697,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095219Z_three_forward_trials_continue/return_before_02/samples.csv",
+      "bytes": 46773,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094732Z_three_forward_trials_retry/return_before_02/samples.csv",
+      "bytes": 56393,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095718Z_forward_2m_round02/samples.csv",
+      "bytes": 44174,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095917Z_forward_2m_round02_retry/samples.csv",
+      "bytes": 100315,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094519Z_three_forward_trials/return_before_02/samples.csv",
+      "bytes": 32793,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation_sessions/20261017T085200Z_three_static_points/point_summary.csv",
+      "bytes": 3888,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation_sessions/20261017T085200Z_three_static_points/samples.csv",
+      "bytes": 46719,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_first_init/matches.csv",
+      "bytes": 58100,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/tf_chain_audit.csv",
+      "bytes": 6928,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/event_persistence.csv",
+      "bytes": 5867,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/frames.csv",
+      "bytes": 109536,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/propagation.csv",
+      "bytes": 7815,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/event_context.csv",
+      "bytes": 221659,
+      "symlink": false
+    }
+  ],
+  "deleted": [
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/summary.csv",
+      "bytes": 1076,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/02_reverse/report/frame_errors.csv",
+      "bytes": 81644,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_B_three_legs_mount47p15_continued/03_forward/report/frame_errors.csv",
+      "bytes": 81384,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/summary.csv",
+      "bytes": 463,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第B1_three_legs_mount47p15/01_forward/report/frame_errors.csv",
+      "bytes": 81659,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/summary.csv",
+      "bytes": 1210,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/01_reverse/report/frame_errors.csv",
+      "bytes": 84666,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/02_forward/report/frame_errors.csv",
+      "bytes": 84989,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_C_three_legs_mount47p15/03_reverse/report/frame_errors.csv",
+      "bytes": 84641,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_ABC_three_comparison/comparison.csv",
+      "bytes": 2856,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run07_latest_transport/report/frame_errors.csv",
+      "bytes": 83116,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run04/report/frame_errors.csv",
+      "bytes": 71481,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/summary.csv",
+      "bytes": 546,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/01_reverse/report/frame_errors.csv",
+      "bytes": 83365,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_four_legs_mount47p15/02_forward/report/frame_errors.csv",
+      "bytes": 82993,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_three_summary/summary.csv",
+      "bytes": 1051,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run08_mount_37p2/report/frame_errors.csv",
+      "bytes": 82009,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run09_mount45/report/frame_errors.csv",
+      "bytes": 83325,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run03/report/frame_errors.csv",
+      "bytes": 41397,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261015_A_auto_run01/report/frame_errors.csv",
+      "bytes": 73941,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261015_A_auto_run01/report_final/frame_errors.csv",
+      "bytes": 76066,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_AB_three_comparison/comparison.csv",
+      "bytes": 1665,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/20261016_A_auto_run06_cold_lio/report/frame_errors.csv",
+      "bytes": 21103,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/localization_ab/第A1组/report/frame_errors.csv",
+      "bytes": 83531,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_tracker0/static_report_20261015/static_mocap_summary.csv",
+      "bytes": 4392,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_tracker0/static_report_20261015_selected5/static_mocap_summary.csv",
+      "bytes": 3279,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report/time_offset_candidates.csv",
+      "bytes": 64011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report/kinematic_signals.csv",
+      "bytes": 96416,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report_v2/time_offset_candidates.csv",
+      "bytes": 64011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T222012_time_calibration/report_v2/kinematic_signals.csv",
+      "bytes": 96416,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T225146_time_calibration/report/time_offset_candidates.csv",
+      "bytes": 64319,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/fastlio_mocap_time_cal/20261015T225146_time_calibration/report/kinematic_signals.csv",
+      "bytes": 108535,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/matches.csv",
+      "bytes": 46293,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/chain_analysis_v1_audit/case_context.csv",
+      "bytes": 18167,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/report_start_aligned_warmup12/chain_analysis_v1_audit/chain_frame_errors.csv",
+      "bytes": 28044,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/static_error_analysis/outlier_frames.csv",
+      "bytes": 1732,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T020255Z_ndt_static_p1/static_error_analysis/static_frame_errors.csv",
+      "bytes": 18011,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_first_ndt_relative/matches.csv",
+      "bytes": 131052,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2/case_context.csv",
+      "bytes": 27937,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2/chain_frame_errors.csv",
+      "bytes": 54722,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_first_ndt_relative/outlier_frames.csv",
+      "bytes": 2650,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_first_ndt_relative/static_frame_errors.csv",
+      "bytes": 31360,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2_full/case_context.csv",
+      "bytes": 27937,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_v2_full/chain_frame_errors.csv",
+      "bytes": 54722,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_first_ndt_relative/case_context.csv",
+      "bytes": 23854,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/chain_analysis_first_ndt_relative/chain_frame_errors.csv",
+      "bytes": 67546,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_v2/outlier_frames.csv",
+      "bytes": 2652,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/static_error_analysis_v2/static_frame_errors.csv",
+      "bytes": 25391,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2_full/matches.csv",
+      "bytes": 130779,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_evaluation/20261015T042528Z_v2_static_p1/report_start_aligned_v2/matches.csv",
+      "bytes": 130779,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/forward_summary.csv",
+      "bytes": 1665,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02/samples.csv",
+      "bytes": 98826,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02/analysis_initial_draft/samples.csv",
+      "bytes": 92432,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T092725Z_forward_2m_01/samples.csv",
+      "bytes": 42067,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T092725Z_forward_2m_01/analysis_initial_draft/samples.csv",
+      "bytes": 38921,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T100326Z_forward_2m_round03/samples.csv",
+      "bytes": 97697,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095219Z_three_forward_trials_continue/return_before_02/samples.csv",
+      "bytes": 46773,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094732Z_three_forward_trials_retry/return_before_02/samples.csv",
+      "bytes": 56393,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095718Z_forward_2m_round02/samples.csv",
+      "bytes": 44174,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T095917Z_forward_2m_round02_retry/samples.csv",
+      "bytes": 100315,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094519Z_three_forward_trials/return_before_02/samples.csv",
+      "bytes": 32793,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation_sessions/20261017T085200Z_three_static_points/point_summary.csv",
+      "bytes": 3888,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/validation_sessions/20261017T085200Z_three_static_points/samples.csv",
+      "bytes": 46719,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_first_init/matches.csv",
+      "bytes": 58100,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/tf_chain_audit.csv",
+      "bytes": 6928,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/event_persistence.csv",
+      "bytes": 5867,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/frames.csv",
+      "bytes": 109536,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/propagation.csv",
+      "bytes": 7815,
+      "symlink": false
+    },
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/ndt_cold_start/20261015T060146Z_cold_first_ndt_p1/report_post_init/event_context.csv",
+      "bytes": 221659,
+      "symlink": false
+    }
+  ],
+  "errors": [],
+  "remaining_csv": []
+}

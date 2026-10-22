@@ -1,0 +1,25 @@
+Condition,Controller,Seed,First-window [s],Last-exit [s],Observation end [s],First censored,Last censored
+nominal,Native MPPI,0,17.25,not observed,23.05,False,True
+nominal,Native MPPI,1,17.30,not observed,23.50,False,True
+nominal,Native MPPI,2,not observed,not observed,22.00,True,True
+nominal,Preview tracker,0,14.55,14.55,17.85,False,False
+nominal,Preview tracker,1,14.50,14.50,17.85,False,False
+nominal,Preview tracker,2,14.50,14.50,17.85,False,False
+nominal,Ideal-dynamics ablation,0,16.85,16.85,19.45,False,False
+nominal,Ideal-dynamics ablation,1,18.75,18.75,22.65,False,False
+nominal,Ideal-dynamics ablation,2,18.45,18.45,21.15,False,False
+nominal,Guided MPC,0,5.10,5.10,18.30,False,False
+nominal,Guided MPC,1,5.35,5.35,18.25,False,False
+nominal,Guided MPC,2,5.10,5.10,18.40,False,False
+heldout,Native MPPI,0,not observed,not observed,23.45,True,True
+heldout,Native MPPI,1,not observed,not observed,24.20,True,True
+heldout,Native MPPI,2,not observed,not observed,22.05,True,True
+heldout,Preview tracker,0,not observed,not observed,17.90,True,True
+heldout,Preview tracker,1,not observed,not observed,17.90,True,True
+heldout,Preview tracker,2,not observed,not observed,17.90,True,True
+heldout,Ideal-dynamics ablation,0,not observed,not observed,26.20,True,True
+heldout,Ideal-dynamics ablation,1,not observed,not observed,24.95,True,True
+heldout,Ideal-dynamics ablation,2,not observed,not observed,25.70,True,True
+heldout,Guided MPC,0,5.35,5.35,18.45,False,False
+heldout,Guided MPC,1,5.00,5.00,18.50,False,False
+heldout,Guided MPC,2,5.35,5.35,18.45,False,False

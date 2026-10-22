@@ -1,0 +1,1 @@
+{"completed": true, "map_ready": true, "rejections": {"mocap_timestamp_outside_recording": 3, "no_synchronous_map_tf": 9, "stale_local_tf": 12}}

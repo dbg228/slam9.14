@@ -1,0 +1,30 @@
+{
+  "reason": "User requested switching from completed NDT baseline to newly mocap-anchored mapping; no active goal, MANUAL and zero command confirmed",
+  "processes": [
+    {
+      "pid": 11193,
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch inspection_geometry_tools inspection_geometry.launch.py use_rviz:=false ",
+      "signal": "SIGINT"
+    },
+    {
+      "pid": 10936,
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_nav2.launch.py map:=/home/zkam/test_nav/robot_data/maps/map.yaml params_file:=/home/zkam/test_nav/robot_data/config/navigation.yaml use_sim_time:=false use_composition:=False ",
+      "signal": "SIGINT"
+    },
+    {
+      "pid": 10764,
+      "command": "rviz2 -d /home/zkam/test_nav/robot_xj_project.rviz ",
+      "signal": "SIGINT"
+    },
+    {
+      "pid": 14945,
+      "command": "/usr/bin/python3 /opt/ros/humble/bin/ros2 launch static_map_localization static_fastlio_localization.launch.py fastlio_config:=/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/fastlio_no_accumulated_map_display.yaml map_pcd_path:=/home/zkam/test_nav/robot_data/maps/data/scans.pcd ",
+      "signal": "SIGINT"
+    },
+    {
+      "pid": 14907,
+      "command": "bash ./localization.sh ",
+      "signal": "SIGTERM"
+    }
+  ]
+}

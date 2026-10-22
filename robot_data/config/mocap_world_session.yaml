@@ -1,0 +1,13 @@
+schema: 1
+camera_world_id: 20261018_relocated_shared_world_01
+reported_date: '2026-10-18'
+cameras_relocated: true
+two_regions_share_one_world: true
+confirmation: User confirmed both regions share one world and requested rebuilding
+  the map with the current layout.
+region_roles:
+- start_and_end
+- middle
+absolute_map_transforms: pending_new_measurements
+vendor_calibration_id: null
+previous_world_calibrations: historical_only_not_valid_for_current_layout

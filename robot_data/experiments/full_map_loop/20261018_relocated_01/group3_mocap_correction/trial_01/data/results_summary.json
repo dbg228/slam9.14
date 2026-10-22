@@ -1,0 +1,161 @@
+{
+  "experiment_display_name": "第3组：中途动捕纠偏",
+  "offset_distance_m": 0.6,
+  "navigation_status": 4,
+  "full_route_succeeded": true,
+  "duration_s": 1927.995471289,
+  "correction_performed": true,
+  "reference_length_m": 46.196395679474776,
+  "tracking_rmse_mm": 85.42528521718499,
+  "tracking_samples": 19266,
+  "active_route_tracking_rmse_mm": 155.93242793018584,
+  "active_route_tracking_samples": 5450,
+  "excluded_middle_pause_s": 1382.9721245790001,
+  "tracking_pause_policy": "All recorded samples retained. Active-route metric additionally excludes the explicitly paused middle interval; no alignment or pose refit.",
+  "lio_estimated_total_m": null,
+  "lio_observed_segments_m": 79.1924927265385,
+  "lio_1s_sample_polyline_m": 49.842497030058176,
+  "lio_distance_complete": false,
+  "lio_gap_count": 1,
+  "distance_interpretation": "Continuous LIO estimate, not independently measured physical travel. Motion-boundary window; gaps >0.5 s are not bridged. 1 s actual-sample decimation is a sensitivity check, not truth.",
+  "map_trajectory_polyline_length_m": 64.82125618534904,
+  "recording_interruption": null,
+  "lio_active_route_observed_m": 61.517155176976324,
+  "lio_active_route_unexpected_gap_count": 0,
+  "lio_active_route_scope": "Native base_link estimated polyline during active route phases. Explicitly stationary middle pause excluded. Remaining source gaps >0.5 s not bridged; not independently measured physical distance.",
+  "experimental_limitations": [
+    "Long stationary operator/debugging pause before middle correction",
+    "After middle correction operational native age allowance 3.0 s; continuation speed capped at 0.10 m/s and yaw rate 0.15 rad/s; frozen source navigation configuration unchanged",
+    "No endpoint mocap correction requested; measure arrival error only",
+    "Static recording split while parked; missing native odometry intervals are not bridged"
+  ],
+  "continuation_speed_limit_mps": 0.1,
+  "maximum_native_age_s": 3.0,
+  "same_speed_controlled_comparison": false,
+  "wheel_feedback_plot_samples": 30275,
+  "wheel_target_plot_samples": 10274,
+  "wheel_physical_scale_verified": false,
+  "initial_xy_rmse_mm": 7.859035118976987,
+  "initial_position_3d_rmse_mm": 14.483842235239939,
+  "initial_orientation_rmse_deg": 0.08382715439242917,
+  "initial_reference_suspect": false,
+  "initial_valid_for_localization_accuracy": true,
+  "initial_static_samples": 31,
+  "endpoint_xy_rmse_mm": 176.94507223104782,
+  "endpoint_position_3d_rmse_mm": 205.8406604150982,
+  "endpoint_orientation_rmse_deg": 0.9024757797694323,
+  "endpoint_reference_suspect": false,
+  "endpoint_valid_for_localization_accuracy": true,
+  "endpoint_static_samples": 31,
+  "endpoint_static_available": true,
+  "localization_static_pairs_added_from_original_validators": 0,
+  "mocap_valid_pairs": 2199,
+  "mocap_visibility_windows": [
+    {
+      "start_s": 0.025034021,
+      "end_s": 3.025919746,
+      "samples": 31,
+      "xy_rmse_mm": 14.221270773204374
+    },
+    {
+      "start_s": 3.6259849780000004,
+      "end_s": 8.42594869,
+      "samples": 47,
+      "xy_rmse_mm": 48.66400354289843
+    },
+    {
+      "start_s": 1339.5250321140002,
+      "end_s": 1472.5254686580001,
+      "samples": 1331,
+      "xy_rmse_mm": 218.8527618239463
+    },
+    {
+      "start_s": 1490.625654768,
+      "end_s": 1515.7258861770001,
+      "samples": 250,
+      "xy_rmse_mm": 218.88764697782815
+    },
+    {
+      "start_s": 1518.225991081,
+      "end_s": 1536.9252086390002,
+      "samples": 188,
+      "xy_rmse_mm": 3.719058357516639
+    },
+    {
+      "start_s": 1916.424565624,
+      "end_s": 1917.3261323680001,
+      "samples": 10,
+      "xy_rmse_mm": 282.9841296446428
+    },
+    {
+      "start_s": 1919.1260779610002,
+      "end_s": 1953.5252574190001,
+      "samples": 342,
+      "xy_rmse_mm": 175.92756450375327
+    }
+  ],
+  "middle_coverage_windows": [
+    {
+      "start_s": 1339.5250321140002,
+      "end_s": 1472.5254686580001,
+      "samples": 1331,
+      "xy_rmse_mm": 218.8527618239463
+    },
+    {
+      "start_s": 1490.625654768,
+      "end_s": 1515.7258861770001,
+      "samples": 250,
+      "xy_rmse_mm": 218.88764697782815
+    },
+    {
+      "start_s": 1518.225991081,
+      "end_s": 1536.9252086390002,
+      "samples": 188,
+      "xy_rmse_mm": 3.719058357516639
+    },
+    {
+      "start_s": 1916.424565624,
+      "end_s": 1917.3261323680001,
+      "samples": 10,
+      "xy_rmse_mm": 282.9841296446428
+    }
+  ],
+  "dynamic_error_note": "Exact source-header pose/validity pairing; recorded receiver age <=0.25 s and validity arrival separation <=0.08 s; nearest native pose <=25 ms, no interpolation. Camera exposure latency and device clock offset unverified.",
+  "initial_error_scope": "Subsequent static samples after mocap initialization at the same starting placement; not spatial holdout absolute accuracy.",
+  "middle_static_available": true,
+  "middle_static_xy_rmse_mm": 218.36742223083675,
+  "middle_static_orientation_rmse_deg": 1.5180690025058365,
+  "middle_static_samples": 31,
+  "middle_static_reference_suspect": false,
+  "middle_correction": {
+    "outcome": "applied_and_resumed",
+    "original_controller_used": true,
+    "original_correction_used": true,
+    "request": {
+      "pose_ns": 1792347816682281110,
+      "receive_ros_ns": 1792347816700423703,
+      "trigger_source": "fresh_mocap_at_already_paused_original_route"
+    },
+    "pause_ros_ns": 1792347816703754441,
+    "pause_response": "Original route already paused; verified canceled goal and fresh zero command",
+    "before_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347822645033924",
+    "correction_capture": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/localizations/1792346166005638564/checkpoints/middle_1792347834544835127",
+    "map_odom_version": 1,
+    "correction_applied_ros_ns": 1792347839875793626,
+    "after_validation": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01/validation/1792347845448738824",
+    "resume_response": "Resuming the unchanged remaining reference poses; no START replanning.",
+    "resume_ros_ns": 1792347855852546460
+  },
+  "middle_before_xy_rmse_mm": 218.36742223083675,
+  "middle_fit_before_xy_rmse_mm": 218.5423694227532,
+  "middle_fit_consistency_xy_rmse_mm": 2.1090617505659117,
+  "middle_correction_interpretation": "Original static correction changes map->odom once. Fit-window residual is not independent accuracy. Subsequent static validation is separate in time; body/world calibration uncertainty remains.",
+  "middle_after_xy_rmse_mm": 2.307621089426393,
+  "endpoint_fixed_15s": {
+    "samples": 148,
+    "complete": true,
+    "reference_suspect": false,
+    "valid_for_localization_accuracy": true,
+    "xy_rmse_mm": 175.92797073119092
+  }
+}

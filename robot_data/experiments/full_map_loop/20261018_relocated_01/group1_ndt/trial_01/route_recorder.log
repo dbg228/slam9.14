@@ -1,0 +1,15 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1792309328.210997662] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1792309328.220633021] [rosbag2_storage]: Opened database 'robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/route_bag/route_bag_0.db3' for READ_WRITE.
+[INFO] [1792309328.223185600] [rosbag2_recorder]: Listening for topics...
+[INFO] [1792309328.223204556] [rosbag2_recorder]: Event publisher thread: Starting
+[INFO] [1792309328.230548031] [rosbag2_recorder]: Subscribed to topic '/follow_waypoints/_action/status'
+[INFO] [1792309328.231268653] [rosbag2_recorder]: Recording...
+[INFO] [1792309328.339183732] [rosbag2_recorder]: Subscribed to topic '/follow_path/_action/status'
+[INFO] [1792309329.279977949] [rosbag2_recorder]: Subscribed to topic '/navigate_to_pose/_action/status'
+[INFO] [1792309330.352088190] [rosbag2_recorder]: Subscribed to topic '/inspection_route/actual_path'
+[INFO] [1792309330.357953500] [rosbag2_recorder]: Subscribed to topic '/inspection_route/reference_path'
+[INFO] [1792309330.363356271] [rosbag2_recorder]: Subscribed to topic '/inspection_route/status'
+[INFO] [1792309330.473398625] [rosbag2_recorder]: Subscribed to topic '/inspection_path'
+[INFO] [1792309330.473489835] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+terminate called after throwing an instance of 'rosbag2_storage_plugins::SqliteException'
+  what():  Error when processing SQL statement. SQLite error (5): database is locked

@@ -1,0 +1,178 @@
+{
+  "ready": true,
+  "errors": [],
+  "mode": "EXTERNAL",
+  "watchdog_s": 0.25,
+  "source": {
+    "run_id": "20261017_native_01",
+    "run_path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01",
+    "capture_dir": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/localizations/1792231164028351227",
+    "mode": "localization",
+    "context": "localization",
+    "map_basis": "native_fastlio_mapping_world",
+    "frozen": true,
+    "fault": null,
+    "reason": "mocap_initialized_local_odometry",
+    "pairs": 31,
+    "native_stamp_ns": 1792231208431447505,
+    "source_mode": "mocap_initial_then_lio",
+    "motion_commands_published": false,
+    "ndt_used": false
+  },
+  "mocap_samples": 360,
+  "native_samples": 40,
+  "hardware": {
+    "log_file": "/home/zkam/.ros/log/ros2_control_node_3738_1792198375356.log",
+    "process_pid": 3738,
+    "read_scope": "full current process log rechecked before this segment",
+    "ready": true,
+    "last_open_offset": 20845,
+    "last_restore_offset": 20926,
+    "last_reset_offset": 14807,
+    "interpretation": "driver clears homing_done after successful restore; zero is not a persistent not-homed status"
+  }
+}
+{
+  "data_kind": "real_2m_dynamic_localization_test",
+  "state": {
+    "group": "A",
+    "direction": 1,
+    "state": "DONE",
+    "reason": "target_reached",
+    "displacement_m": 2.000830549081907,
+    "path_length_m": 2.006812877425923,
+    "mocap_stamp_ns": 1792231235537781242,
+    "ros_stamp_ns": 1792231240584720490,
+    "request_linear_x": 0.0,
+    "request_angular_z": 0.0,
+    "duplicates": 0
+  },
+  "guard_during_trial": {
+    "armed": true,
+    "moving": false,
+    "ready": true,
+    "latched_failure": "",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792231240572218272
+  },
+  "guard_after_intentional_disarm": {
+    "armed": true,
+    "moving": false,
+    "ready": false,
+    "latched_failure": "recorder_not_ready",
+    "mode": "EXTERNAL",
+    "ros_stamp_ns": 1792231241612622693
+  },
+  "events": [
+    {
+      "event": "motion_start",
+      "steady_s": 32916.117334416,
+      "start_base_pose": {
+        "stamp_ns": 1792231215728296747,
+        "valid": true,
+        "x": -1.1006133487642402,
+        "y": -0.20799735136413525,
+        "z": 0.20845247551032928,
+        "qx": 0.0,
+        "qy": 0.0,
+        "qz": -0.019944132130352277,
+        "qw": 0.999801096015386
+      },
+      "direction": 1,
+      "group": "A",
+      "ros_stamp_ns": 1792231215790069581,
+      "event_id": 0
+    },
+    {
+      "event": "stop_command",
+      "steady_s": 32935.873311241,
+      "reason": "target_reached",
+      "displacement_m": 2.000830549081907,
+      "path_length_m": 2.006812877425923,
+      "mocap_stamp_ns": 1792231235537781242,
+      "group": "A",
+      "ros_stamp_ns": 1792231235544083961,
+      "event_id": 1
+    }
+  ],
+  "motion_started": true,
+  "reference_coverage": 0.9879032258064516,
+  "XY_error_m": {
+    "n": 245,
+    "rmse": 0.005052032812489003,
+    "p95_abs": 0.00688999596579822,
+    "max_abs": 0.00976066304681944,
+    "mean": 0.004897068540917228,
+    "std": 0.0012416743711715916
+  },
+  "yaw_error_deg": {
+    "n": 245,
+    "rmse": 0.0669023424450064,
+    "p95_abs": 0.09499749959856511,
+    "max_abs": 0.11732026786777813,
+    "mean": 0.06251145688799692,
+    "std": 0.02383780993231146
+  },
+  "phases": {
+    "pre_motion": {
+      "total": 113,
+      "XY_error_m": {
+        "n": 110,
+        "rmse": 0.003104434183411763,
+        "p95_abs": 0.003993906886075162,
+        "max_abs": 0.004516367660012367,
+        "mean": 0.003056656516167523,
+        "std": 0.0005425518789075188
+      }
+    },
+    "motion": {
+      "total": 198,
+      "XY_error_m": {
+        "n": 195,
+        "rmse": 0.005370492247916689,
+        "p95_abs": 0.007052922393657872,
+        "max_abs": 0.00976066304681944,
+        "mean": 0.005254936712539586,
+        "std": 0.0011080736131398902
+      }
+    },
+    "post_stop": {
+      "total": 50,
+      "XY_error_m": {
+        "n": 50,
+        "rmse": 0.0035465962410798166,
+        "p95_abs": 0.004439069940671578,
+        "max_abs": 0.004878673564154378,
+        "mean": 0.0035013826715900222,
+        "std": 0.0005645035733550346
+      }
+    },
+    "cleanup": {
+      "total": 18,
+      "XY_error_m": {
+        "n": 14,
+        "rmse": 0.00366973048832342,
+        "p95_abs": 0.0043643801991100056,
+        "max_abs": 0.004376388477815157,
+        "mean": 0.0036329552321436973,
+        "std": 0.000518225952814194
+      }
+    }
+  },
+  "evaluation_window": "motion_start through stop_command+5s; pre-motion and cleanup retained separately",
+  "stale_native_samples_retained_for_offline_analysis": true,
+  "timing_verified": false,
+  "matching": "nearest within 25ms; no interpolation, extrapolation, zero-fill or alignment fit",
+  "calibration_sha256": "8882e30413600bff0f61daf976a967eec171e5c360dd9ac73518c5a4999ecf82",
+  "initialization_sha256": "a1b420a5cae9125fdd757f4e9b0900a588d21fa14b821ad2c627daffa45066fc",
+  "motion_duration_s": 19.75401438,
+  "post_stop_2_to_5s_XY_error_m": {
+    "n": 30,
+    "rmse": 0.0034295629896829855,
+    "p95_abs": 0.004242335783044418,
+    "max_abs": 0.004878673564154378,
+    "mean": 0.0033898905378541722,
+    "std": 0.0005201388675825377
+  },
+  "stopped_displacement_m": 2.009340909593165
+}

@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "acknowledged": false,
+  "subscribers": [
+    {
+      "node": "static_map_localizer",
+      "namespace": "/"
+    },
+    {
+      "node": "rosbag2_recorder",
+      "namespace": "/"
+    }
+  ],
+  "source": "saved NDT own pose; no mocap input"
+}

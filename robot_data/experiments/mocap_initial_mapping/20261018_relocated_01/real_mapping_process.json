@@ -1,0 +1,17 @@
+{
+  "run": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261018_relocated_01",
+  "mapping_launch_pid": 20525,
+  "native_pid": 20599,
+  "anchor_pid": 20597,
+  "bag_recorder_pid": 20496,
+  "rviz_pid": 20756,
+  "mocap_session": 71199,
+  "mapping_session": 81493,
+  "bag_session": 1113,
+  "rviz_session": 24860,
+  "automatic_motion": false,
+  "pcd_not_yet_saved": false,
+  "mapping_stopped": true,
+  "recorder_stopped": true,
+  "save_summary": "real_save_summary.json"
+}

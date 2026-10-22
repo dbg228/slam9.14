@@ -1,0 +1,123 @@
+{
+  "counts": {
+    "mocap": 518,
+    "validity": 518,
+    "ndt": 3,
+    "mode": 537,
+    "command": 1894
+  },
+  "last": {
+    "mocap": {
+      "frame": "mocap_world",
+      "xyz_m": [
+        -1.111150634765625,
+        -0.17264202880859375,
+        0.38830584716796873
+      ],
+      "quat": [
+        -0.0009974017626943948,
+        -0.00047178501895973294,
+        0.01312429536251344,
+        0.9999132639783599
+      ],
+      "age_s": 0.000910299
+    },
+    "validity": [
+      {
+        "name": "mocap_tracker0_normalizer",
+        "message": "valid",
+        "values": {
+          "valid": "true",
+          "input_topic": "/vrpn_mocap/Tracker0/pose",
+          "input_stamp_ns": "1792217599782571141",
+          "receive_clock_ns": "1792217599782946427",
+          "receive_clock_minus_header_stamp_ns": "375286",
+          "receive_clock_minus_header_stamp_ms": "0.375286",
+          "receive_clock_comparison_note": "header_and_receive_clock_are_ubuntu_receiver_clock; value_is_ros_delivery_and_callback_delay_not_camera_measurement_latency",
+          "timestamp_source": "ubuntu_receiver_clock",
+          "position_scale_to_m": "0.001",
+          "raw_position_unit": "millimetres_verified_manual_1m_2026-10-15"
+        }
+      }
+    ],
+    "ndt": {
+      "frame": "map",
+      "match_id": 3223,
+      "stage": "submap_below_minimum",
+      "accepted": false,
+      "final_valid": true,
+      "raw_valid": false,
+      "sync": true,
+      "skew_s": 0.0,
+      "age_s": 651.3865885380001,
+      "xyz_m": [
+        -655957.6875,
+        -2071154.0,
+        -27562886.0
+      ]
+    },
+    "mode": "STOP"
+  },
+  "invalid_events": {},
+  "max_command": 0.0,
+  "stamp_spans": {
+    "mocap": 5.7198426730000005,
+    "ndt": 0.0
+  },
+  "nodes": [
+    "fixed_world_readonly_preflight",
+    "lio_tf_to_base_tf",
+    "tf_to_odom_bridge",
+    "static_map_localizer",
+    "static_map_tf_broadcaster",
+    "rviz",
+    "transform_listener_impl_5d37bfd22f70",
+    "client",
+    "mocap_tracker0_normalizer",
+    "livox_lidar_publisher",
+    "joy_node",
+    "teleop_node",
+    "robot_state_publisher",
+    "controller_manager",
+    "joint_state_broadcaster",
+    "arbitrator_controller",
+    "omni_velocity_controller"
+  ],
+  "publishers": {
+    "/vrpn_mocap/Tracker0/pose": [
+      {
+        "node": "client",
+        "namespace": "/vrpn_mocap",
+        "type": "geometry_msgs/msg/PoseStamped"
+      }
+    ],
+    "/mocap/Tracker0/pose": [
+      {
+        "node": "mocap_tracker0_normalizer",
+        "namespace": "/",
+        "type": "geometry_msgs/msg/PoseStamped"
+      }
+    ],
+    "/mocap/Tracker0/diagnostics": [
+      {
+        "node": "mocap_tracker0_normalizer",
+        "namespace": "/",
+        "type": "diagnostic_msgs/msg/DiagnosticArray"
+      }
+    ],
+    "/static_localization/ndt_match_diagnostic": [
+      {
+        "node": "static_map_localizer",
+        "namespace": "/",
+        "type": "static_map_localization/msg/NdtMatchDiagnostic"
+      }
+    ],
+    "/reference_velocity": [
+      {
+        "node": "arbitrator_controller",
+        "namespace": "/",
+        "type": "geometry_msgs/msg/Twist"
+      }
+    ]
+  }
+}

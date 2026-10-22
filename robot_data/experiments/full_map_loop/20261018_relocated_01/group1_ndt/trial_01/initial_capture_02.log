@@ -1,0 +1,9 @@
+[INFO] [1792309410.831522846] [fixed_world_calibration_capture]: initial: stationary capture only; no goals, commands, parameters or TF published
+{
+  "quality_passed": true,
+  "failures": [],
+  "summary": "/home/zkam/test_nav/robot_data/experiments/full_map_loop/20261018_relocated_01/group1_ndt/trial_01/initial_capture_02/initial/summary.json",
+  "pair_count": 3,
+  "calibration_sha256": "c843f19dd414b24c7e64a6d14512caa0127ec18c5406fd99027d1fecc16f6e0e",
+  "transform_refitted": false
+}

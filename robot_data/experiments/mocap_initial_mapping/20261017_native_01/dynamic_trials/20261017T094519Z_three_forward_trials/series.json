@@ -1,0 +1,28 @@
+{
+  "data_kind": "real_2m_dynamic_localization_series",
+  "stage": "stopped_on_failure",
+  "series": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094519Z_three_forward_trials",
+  "first_completed_forward": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02",
+  "completed_forward_trials": [
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T093717Z_forward_2m_02"
+  ],
+  "planned_forward_count": 3,
+  "reverse_role": "reset only; excluded from forward repeated-trial statistics",
+  "automatic_return_authorized_by_user": true,
+  "route": "same just-traversed corridor; no turn or yaw command",
+  "failed_prior_attempts": [
+    "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T092725Z_forward_2m_01"
+  ],
+  "segments": [
+    {
+      "path": "/home/zkam/test_nav/robot_data/experiments/mocap_initial_mapping/20261017_native_01/dynamic_trials/20261017T094519Z_three_forward_trials/return_before_02",
+      "role": "reset_return",
+      "direction": "reverse",
+      "stage": "aborted",
+      "exit_code": 0,
+      "final_command_zero": true
+    }
+  ],
+  "current_segment": "return_before_02",
+  "error": "Segment failed; stop series without retry: return_before_02"
+}
